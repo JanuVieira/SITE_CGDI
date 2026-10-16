@@ -119,4 +119,7 @@ body.cgdi-page main .cgdi-card[variant="inverse"] :is(h2,h3),
   .cgdi-card[variant="report"] > :first-child {min-width:0}
   .cgdi-card[variant="report"] :is(h2,h3,p) {overflow-wrap:anywhere}
   .cgdi-card[variant="metric"] {padding:16px}
+  .cgdi-card[variant="report"] {gap:12px}
+  .cgdi-card[variant="report"] > [data-card-icon] {flex:0 0 24px}
+  .cgdi-card :is(h2,h3,p,a,span,strong) {overflow-wrap:anywhere}
 }

@@ -144,4 +144,7 @@ cgdi-accordion .conteudo[hidden] { display: none !important; }
   }
   cgdi-data-table table {min-width:36rem}
   cgdi-data-table :is(th,td) {padding:.75rem}
+  cgdi-page-actions .social-links {gap:.75rem}
+  cgdi-event-details .data-evento {align-items:flex-start;flex-direction:column}
+  cgdi-accordion .toggle {gap:1rem;min-height:52px}
 }

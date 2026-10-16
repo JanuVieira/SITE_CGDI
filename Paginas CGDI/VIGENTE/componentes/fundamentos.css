@@ -272,6 +272,20 @@ body.cgdi-page cgdi-breadcrumb li {min-width:0;max-width:100%;overflow-wrap:anyw
 body.cgdi-page[data-version="V1"] #content-core iframe {display:block;width:100%!important;max-width:100%;height:clamp(240px,56.25vw,720px)!important;border:0}
 
 @media (max-width: 740px) {
+  body.cgdi-page :is(main, #main-content) {min-width:0;max-width:100%;overflow-x:clip}
+  body.cgdi-page :is(main, #main-content) :is(.container,.container-lg,.container-xl) {
+    box-sizing:border-box;
+    min-width:0;
+    max-width:100%;
+  }
+  body.cgdi-page[data-version="V2"] :is(main, #main-content) > :is(.container-lg,.container-xl,.container) {
+    box-sizing:border-box;
+    width:100%;
+    max-width:100%;
+    padding-inline:16px;
+  }
+  body.cgdi-page :is(main, #main-content) :is(img,svg,video,canvas,iframe) {max-width:100%}
+  body.cgdi-page :is(main, #main-content) :is(input,select,textarea) {font-size:16px;max-width:100%}
   body.cgdi-page[data-version="V1"] #conteudo { overflow-wrap:anywhere; }
   body.cgdi-page[data-version="V1"] #conteudo > .container-lg,
   body.cgdi-page[data-version="V1"] #conteudo > * > .container-lg { padding-inline:16px; }

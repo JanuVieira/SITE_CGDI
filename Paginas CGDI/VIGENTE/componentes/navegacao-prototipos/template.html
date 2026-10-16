@@ -53,13 +53,25 @@
     .cgdi-prototype-nav__status { color: #333; text-align: right; }
 
     @media (max-width: 575px) {
+      .cgdi-prototype-nav { padding-block: 12px; }
       .cgdi-prototype-nav__inner {
         align-items: start;
         gap: 8px;
         grid-template-columns: 1fr;
         padding-inline: 16px;
       }
-      .cgdi-prototype-nav__status { text-align: left; }
+      .cgdi-prototype-nav__home {
+        min-height: 44px;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+      }
+      .cgdi-prototype-nav__status {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: left;
+        overflow-wrap: anywhere;
+      }
     }
   </style>
   <nav class="cgdi-prototype-nav" aria-label="Navegação dos protótipos">

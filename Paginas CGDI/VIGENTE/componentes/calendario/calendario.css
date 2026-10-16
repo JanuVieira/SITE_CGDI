@@ -107,3 +107,40 @@ cgdi-calendar {display:block}
   .cgdi-calendar__link {min-height:48px}
   .cgdi-calendar__footer {gap:10px;padding-block:16px}
 }
+
+/* Calendário mobile | Fluxo vertical, data em chip e ação com largura integral. */
+@media(max-width:640px) {
+  .cgdi-calendar {min-width:0;width:100%}
+  .cgdi-calendar__header,
+  .cgdi-calendar__toolbar,
+  .cgdi-calendar__field,
+  .cgdi-calendar__control {min-width:0;width:100%}
+  .cgdi-calendar__event {
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"date" "info" "link";
+    gap:12px;
+    min-width:0;
+    padding:18px 0;
+  }
+  .cgdi-calendar__date {
+    align-items:center;
+    flex-direction:row;
+    gap:8px;
+    justify-self:start;
+    width:fit-content;
+    min-height:40px;
+    padding:8px 12px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .cgdi-calendar__date strong {font-size:1.125rem;line-height:1.2}
+  .cgdi-calendar__date span {
+    padding-left:8px;
+    border-left:1px solid var(--calendar-border);
+    font-size:.8125rem;
+  }
+  .cgdi-calendar__info,
+  .cgdi-calendar__link {grid-column:1;min-width:0;width:100%}
+  .cgdi-calendar__info :is(h3,p) {overflow-wrap:anywhere}
+  .cgdi-calendar__link {justify-content:center;text-align:center}
+}

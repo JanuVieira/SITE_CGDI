@@ -14,6 +14,7 @@ V1 e V2 são as únicas versões com HTML publicado; V3 e V4 permanecem reservad
 - `ambiente-teste/`: modal somente para rotas internas ainda não implementadas; destinos externos ficam desabilitados no protótipo.
 - `componentes.js`: carregador único dos componentes.
 - `componentes.css`: estilos mínimos compartilhados.
+- `PLANO-REVISAO-MOBILE.md`: critérios, etapas e matriz de acompanhamento da revisão responsiva.
 
 As páginas canônicas ficam em `../projetos/v1/` e `../projetos/v2/`. A V1
 mantém o fluxo completo; a V2 mantém somente sua home nesta etapa.

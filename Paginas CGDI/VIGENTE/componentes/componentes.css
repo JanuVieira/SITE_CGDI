@@ -163,6 +163,13 @@ body.cgdi-page #conteudo .states-info > p { color:#fff!important; }
   .cgdi-prototype-notice__body { padding: var(--spacing-scale-2x, 16px); }
   .cgdi-prototype-notice__footer { padding: var(--spacing-scale-2x, 16px); }
   .cgdi-prototype-notice__confirm { width: 100%; }
+  .cgdi-prototype-notice__close.br-button {
+    flex-basis:44px;
+    width:44px;
+    height:44px;
+    min-width:44px;
+    min-height:44px;
+  }
   cgdi-breadcrumb.cgdi-breadcrumb,
   cgdi-breadcrumb.br-breadcrumb { padding-inline: 0 !important; }
   main > cgdi-breadcrumb.cgdi-breadcrumb,
@@ -246,3 +253,56 @@ a[data-cgdi-external-disabled="true"] {
   text-underline-offset:3px;
 }
 a[data-cgdi-external-disabled="true"]::after {content:" — indisponível";font-size:.875em;font-weight:400}
+
+/* Base responsiva comum: protege todos os componentes contra estouro lateral. */
+@media (max-width: 740px) {
+  :is(
+    cgdi-breadcrumb,
+    cgdi-page-feedback,
+    cgdi-card-pesquisa,
+    cgdi-pre-download,
+    cgdi-map,
+    cgdi-calendar,
+    cgdi-card-grid,
+    cgdi-resource-list,
+    cgdi-state-finder,
+    cgdi-state-news,
+    cgdi-news-carousel,
+    cgdi-feature-band,
+    cgdi-format-navigation
+  ) {
+    box-sizing:border-box;
+    min-width:0;
+    max-width:100%;
+  }
+  :is(
+    cgdi-breadcrumb,
+    cgdi-page-feedback,
+    cgdi-card-pesquisa,
+    cgdi-pre-download,
+    cgdi-map,
+    cgdi-calendar,
+    cgdi-card-grid,
+    cgdi-resource-list,
+    cgdi-state-finder,
+    cgdi-state-news,
+    cgdi-news-carousel,
+    cgdi-feature-band,
+    cgdi-format-navigation
+  ) :is(img,svg,video,canvas,iframe) {max-width:100%}
+  :is(
+    cgdi-page-feedback,
+    cgdi-card-pesquisa,
+    cgdi-pre-download,
+    cgdi-calendar,
+    cgdi-card-grid,
+    cgdi-state-finder
+  ) :is(button,.br-button,[role="button"],input,select,textarea) {
+    box-sizing:border-box;
+    max-width:100%;
+    min-height:44px;
+  }
+  :is(cgdi-breadcrumb,cgdi-card-grid,cgdi-resource-list,cgdi-state-news) :is(a,p,h2,h3,h4,span,strong) {
+    overflow-wrap:anywhere;
+  }
+}
