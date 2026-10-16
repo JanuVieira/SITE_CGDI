@@ -53,6 +53,14 @@ jobs:
           test -f _site/projetos/v2/p00.html
           test -f _site/diagnosticos/index.html
 
+      - name: Atualizar cache a cada publicacao
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 .github/scripts/stamp_pages.py \
+            --site _site \
+            --version "$GITHUB_SHA"
+
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
