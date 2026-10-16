@@ -478,6 +478,14 @@
       'https://www.gov.br/inpi/pt-br/plataforma-integrada-de-atendimento'
     ]);
     // CGDI_P07_LINKS_FIM
+    // CGDI_FEDERACOES_LINKS_INICIO
+    const federationsOfficialResources = new Set([
+      'mailto:cgdi@inpi.gov.br',
+      'https://app.powerbi.com/view?r=eyJrIjoiOTQyYTQzNjYtNmM1NS00OTcyLWEwMTgtOTlhZTVlNjY2MTk1IiwidCI6IjU4MTVmODA4LTYwOTEtNDdiZC1hY2FiLTMwYzA4ZmU3YjlmMiJ9&pageName=69871dfc22e357b3f7c9',
+      'https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/programas-de-pi',
+      'https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/relatorios-trimestrais-semestrais-e-anuais'
+    ]);
+    // CGDI_FEDERACOES_LINKS_FIM
     document.querySelectorAll('a[href^="http://"], a[href^="https://"], a[href^="//"], a[href^="mailto:"], a[href^="tel:"], a.external-link[href="#cgdi-ambiente-teste"]').forEach(link => {
       if (document.body.dataset.version === 'V1' &&
           document.querySelector('main#conteudo.p01-v7')?.contains(link) &&
@@ -491,6 +499,10 @@
           document.querySelector('main#conteudo.p07-page')?.contains(link) &&
           link.dataset.cgdiP07Official === 'true' &&
           p07OfficialResources.has(link.getAttribute('href'))) return;
+      if (document.body.dataset.version === 'V1' &&
+          document.querySelector('main#conteudo.fed')?.contains(link) &&
+          link.dataset.cgdiFederacoesOfficial === 'true' &&
+          federationsOfficialResources.has(link.getAttribute('href'))) return;
       link.removeAttribute('href');
       link.removeAttribute('target');
       link.removeAttribute('data-cgdi-prototype-resource');

@@ -204,6 +204,8 @@ assert.match(federationsPage, /frame-src 'self' https:\/\/app\.powerbi\.com;/, '
 assert.equal((federationsPage.match(/<iframe\b/gi) || []).length, 1, 'A página deve incorporar exatamente um painel.');
 assert.match(federationsPage, /title="Painel interativo Federações e Secretarias IMPACT DASH"/, 'O painel deve ter título acessível.');
 assert.equal((federationsPage.match(/data-cgdi-federacoes-official="true"/g) || []).length, 4, 'A página deve preservar quatro destinos oficiais identificados.');
+assert.match(componentScript, /const federationsOfficialResources = new Set\(/, 'Os destinos oficiais de Federações e Secretarias devem estar liberados pelo carregador.');
+assert.match(componentScript, /link\.dataset\.cgdiFederacoesOfficial === 'true'/, 'O carregador deve reconhecer os destinos oficiais de Federações e Secretarias.');
 assert.match(feedbackScript, /cgdi-feedback-stepper/, 'O modal de pesquisa deve ter stepper.');
 assert.match(feedbackStyle, /cgdi-feedback-stepper-item\.is-active/, 'O stepper deve apresentar estado ativo.');
 assert.doesNotMatch(mapTemplate, /<text[^>]*>[^<]{3,}<\/text>/, 'O mapa deve exibir siglas, não nomes extensos.');

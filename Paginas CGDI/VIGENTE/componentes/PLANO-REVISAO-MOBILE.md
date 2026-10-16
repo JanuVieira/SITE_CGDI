@@ -49,3 +49,17 @@ V1 e V2 carregam `componentes/componentes.css`, `componentes/fundamentos.css` e
 os estilos específicos montados pelo carregador. O bundle `templates.js` é gerado
 automaticamente por `npm run check`, propagando mudanças de templates sem copiar
 HTML para cada página.
+
+## Resultados da execução
+
+- 11 páginas representativas da V1 e da V2 foram verificadas em 320, 360, 390 e
+  740 px: 44 combinações sem rolagem horizontal da página.
+- O cabeçalho foi validado com o menu fechado e aberto em 320 e 390 px.
+- A chamada de avaliação e seu modal, os detalhes de evento, o pré-download
+  expandido, o carrossel da V2 e os acordeões do rodapé foram acionados em 320 e
+  390 px: 12 estados interativos aprovados.
+- Os pontos do carrossel e os controles mobile mantêm alvo mínimo de 44 × 44 px.
+- A verificação automatizada pode ser repetida com
+  `node scripts/validate-mobile-interactions.mjs`, usando o servidor local na
+  porta 4173 e o Chrome com depuração remota na porta 9225.
+- `npm run check` e `git diff --check` integram o fechamento da revisão.

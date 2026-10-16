@@ -169,7 +169,7 @@
   .cgdi-footer-heading {min-height:56px;gap:12px}
 }
 
-/* Header mobile | Eixo único, identidade centralizada e sem estouro lateral. */
+/* Header mobile | Eixo único, identidade alinhada ao menu e sem estouro lateral. */
 @media(max-width:740px){
   .shell-govbar,
   #site-header {overflow-x:clip}
@@ -319,9 +319,9 @@
   }
   #site-header .site-name-wrapper{
     display:grid;
-    grid-template-columns:44px minmax(0,1fr) 44px;
+    grid-template-columns:44px minmax(0,1fr);
     align-items:center;
-    gap:8px;
+    gap:12px;
     min-width:0;
   }
   #site-header .ico-navegacao{
@@ -338,7 +338,7 @@
     min-width:0;
     font-size:18px;
     line-height:1.3;
-    text-align:center;
+    text-align:left;
   }
   #site-header .site-name a{
     display:block;
@@ -346,9 +346,8 @@
     word-break:normal;
   }
   #site-header .site-name-wrapper::after{
-    grid-column:3;
-    width:44px;
-    height:44px;
+    content:none;
+    display:none;
   }
   #site-header .govbr-busca-header,
   #site-header .govbr-busca-header>div,
