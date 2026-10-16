@@ -167,6 +167,23 @@
   #conteudo .states-section__inner { gap:var(--spacing-scale-4x); padding-block:var(--spacing-scale-5x); }
   #conteudo .states-info h2 { font-size:var(--font-size-scale-up-03); }
   #conteudo .state-finder { padding:var(--spacing-scale-2x); }
+  #conteudo cgdi-map,
+  #conteudo .states-map {
+    min-width:0;
+    width:100%;
+  }
+  #conteudo .states-map {
+    max-width:450px;
+    margin-inline:auto;
+    overflow:visible;
+  }
+  #conteudo .states-map svg {
+    width:100%;
+    max-width:450px;
+    min-width:0;
+    height:auto;
+    overflow:visible;
+  }
 }
 
 /* MCO-CHANGE-018 | escala tipográfica e leitura do conteúdo.

@@ -26,6 +26,7 @@ cgdi-page-feedback,cgdi-card-pesquisa{display:block;box-sizing:border-box;width:
 .cgdi-feedback-choices{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0 0 16px}
 .cgdi-feedback-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-width:0;min-height:108px;margin:0!important;padding:12px 4px!important;border:1px solid var(--gray-30,#c5c5c5);border-radius:8px;background:var(--background,#fff);cursor:pointer;transition:background-color .12s,border-color .12s}
 .cgdi-feedback-number{display:grid;place-items:center;width:42px;height:42px;flex:none;border-radius:4px;background:var(--blue-warm-vivid-10,#e8f0fe);color:var(--interactive,#1351b4);font-size:24px;font-weight:600;line-height:1}
+.cgdi-feedback-rating-label{display:none;color:var(--color,#333);font-size:14px;font-weight:500;line-height:1.35}
 .cgdi-feedback-radio[type=radio]{appearance:auto!important;-webkit-appearance:radio!important;display:block!important;position:static!important;flex:none;width:20px!important;height:20px!important;min-width:20px;margin:0!important;opacity:1!important;accent-color:var(--interactive,#1351b4)!important;box-shadow:none!important;transform:none!important}
 .cgdi-feedback-tile.is-selected{border-color:var(--interactive,#1351b4);background:var(--blue-warm-vivid-10,#e8f0fe)}
 .cgdi-feedback-tile.is-selected .cgdi-feedback-number{background:var(--interactive,#1351b4);color:#fff}
@@ -565,4 +566,56 @@ cgdi-page-feedback,cgdi-card-pesquisa{display:block;box-sizing:border-box;width:
     flex:none;
     min-height:48px;
   }
+}
+
+/* V24 | Escala de avaliação móvel: cada nota é uma opção clara e confortável. */
+@media(max-width:640px){
+  .cgdi-feedback-dialog .cgdi-feedback-choices{
+    grid-template-columns:minmax(0,1fr);
+    gap:8px;
+    padding:2px;
+  }
+  .cgdi-feedback-dialog .cgdi-feedback-tile{
+    display:grid;
+    grid-template-columns:44px minmax(0,1fr);
+    align-items:center;
+    justify-content:stretch;
+    gap:12px;
+    min-height:52px;
+    padding:6px 12px!important;
+    text-align:left;
+  }
+  .cgdi-feedback-dialog .cgdi-feedback-number{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:var(--blue-warm-vivid-10,#e8f0fe);
+    font-size:20px;
+  }
+  .cgdi-feedback-dialog .cgdi-feedback-rating-label{
+    display:block;
+    min-width:0;
+    font-size:15px;
+  }
+  .cgdi-feedback-dialog .cgdi-feedback-tile.is-selected{
+    border-color:var(--interactive,#1351b4);
+    background:var(--blue-warm-vivid-5,#edf5ff);
+  }
+  .cgdi-feedback-dialog .cgdi-feedback-tile.is-selected .cgdi-feedback-number{
+    background:var(--interactive,#1351b4);
+    color:#fff;
+  }
+  .cgdi-feedback-dialog .cgdi-feedback-tile.is-selected .cgdi-feedback-rating-label{
+    color:var(--interactive,#1351b4);
+    font-weight:600;
+  }
+  .cgdi-feedback-dialog .cgdi-feedback-scale-labels{display:none}
+}
+
+@media(max-width:390px){
+  .cgdi-feedback-dialog .cgdi-feedback-dialog-body{padding-top:14px}
+  .cgdi-feedback-dialog .cgdi-feedback-stepper{margin-bottom:14px}
+  .cgdi-feedback-dialog .cgdi-feedback-question{margin-bottom:12px}
+  .cgdi-feedback-dialog .cgdi-feedback-tile{min-height:50px;padding:5px 10px!important}
+  .cgdi-feedback-dialog .cgdi-feedback-number{width:38px;height:38px}
 }

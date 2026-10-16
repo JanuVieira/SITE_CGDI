@@ -70,7 +70,9 @@
         input.setAttribute('aria-label', `${index + 1} de 5, ${name}`);
         const numeral = element('span', 'cgdi-feedback-number', String(index + 1));
         numeral.setAttribute('aria-hidden', 'true');
-        label.append(numeral, input);
+        const meaning = element('span', 'cgdi-feedback-rating-label', name);
+        meaning.setAttribute('aria-hidden', 'true');
+        label.append(numeral, meaning, input);
         scale.append(label);
         radios.push(input);
       });

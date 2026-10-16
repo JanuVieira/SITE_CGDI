@@ -1173,6 +1173,10 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     border:0;
   }
   .home-v2-pdf .cgdi-calendar__event {
+    grid-template-columns:64px minmax(0,1fr);
+    grid-template-areas:"date info" "link link";
+    gap:14px 16px;
+    align-items:start;
     min-height:0;
     padding:16px;
     border:1px solid var(--gray-20,#d9d9d9);
@@ -1205,7 +1209,11 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     line-height:1.45;
   }
   .home-v2-pdf .cgdi-calendar__link {
+    grid-area:link;
     justify-content:center;
+    width:100%;
+    min-height:48px;
+    justify-self:stretch;
     padding:10px 14px;
     border:1px solid var(--interactive,#1351b4);
     border-radius:999px;
@@ -1225,8 +1233,11 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
 @media(max-width:420px){
   .home-v2-pdf .cgdi-calendar__toolbar {padding:14px}
   .home-v2-pdf .cgdi-calendar__event {
-    grid-template-columns:54px minmax(0,1fr);
+    grid-template-columns:58px minmax(0,1fr);
+    grid-template-areas:"date info" "link link";
+    gap:12px;
     padding:14px;
   }
-  .home-v2-pdf .cgdi-calendar__date {min-height:58px;padding-inline:4px}
+  .home-v2-pdf .cgdi-calendar__date {min-height:58px;padding:8px 4px}
+  .home-v2-pdf .cgdi-calendar__link {margin-top:2px}
 }
