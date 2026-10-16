@@ -42,6 +42,8 @@ const record = (name, width, data, ok) => results.push({ name, width, ok, ...dat
 
 await send('Page.enable');
 await send('Runtime.enable');
+await send('Network.enable');
+await send('Network.setCacheDisabled', { cacheDisabled: true });
 
 for (const width of [320, 360, 390, 412]) {
   await open('index.html', width);
@@ -64,8 +66,18 @@ for (const width of [320, 360, 390, 412]) {
   record('Calendário: detalhes do evento', width, eventDialog, eventDialog.open === true && eventDialog.rect && eventDialog.rect.left >= -1 && eventDialog.rect.right <= width + 1 && eventDialog.rect.top >= -1 && eventDialog.rect.bottom <= 845 && eventDialog.overflow <= 1);
 
   await open('prototipos/estrutura-atual-revisada/materiais-e-dados/cartilhas/index.html', width);
-  const predownload = await evaluate(`(async()=>{const button=document.querySelector('[data-pd-toggle]');button?.click();await new Promise(r=>setTimeout(r,100));const card=button?.closest('cgdi-pre-download');const r=card?.getBoundingClientRect();return {viewport:innerWidth,expanded:button?.getAttribute('aria-expanded'),rect:r&&{left:r.left,right:r.right,width:r.width},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
-  record('Pré-download: expandido', width, predownload, predownload.expanded === 'true' && predownload.rect && predownload.rect.left >= -1 && predownload.rect.right <= width + 1 && predownload.overflow <= 1);
+  const predownload = await evaluate(`(async()=>{const button=document.querySelector('[data-pd-toggle]');button?.click();await new Promise(r=>setTimeout(r,100));const card=button?.closest('cgdi-pre-download');const r=card?.getBoundingClientRect();const actions=[...document.querySelectorAll('.pd-action')].map(action=>{const box=action.getBoundingClientRect();return {href:action.getAttribute('href'),official:action.dataset.cgdiLinkOficial,ariaDisabled:action.getAttribute('aria-disabled'),unavailable:action.dataset.cgdiUnavailable||action.dataset.cgdiExternalDisabled||null,tabIndex:action.tabIndex,height:box.height,left:box.left,right:box.right};});return {viewport:innerWidth,expanded:button?.getAttribute('aria-expanded'),rect:r&&{left:r.left,right:r.right,width:r.width},actions,overflow:document.documentElement.scrollWidth-innerWidth};})()`);
+  const actionsEnabled = predownload.actions.length === 4 && predownload.actions.every(action =>
+    action.href?.startsWith('https://www.gov.br/inpi/') &&
+    action.official === 'true' &&
+    action.ariaDisabled === null &&
+    action.unavailable === null &&
+    action.tabIndex >= 0 &&
+    action.height >= 44 &&
+    action.left >= -1 &&
+    action.right <= width + 1
+  );
+  record('Pré-download: ações e expansão', width, predownload, predownload.expanded === 'true' && predownload.rect && predownload.rect.left >= -1 && predownload.rect.right <= width + 1 && actionsEnabled && predownload.overflow <= 1);
 
   await open('prototipos/orientado-a-acao/index.html', width);
   const carousel = await evaluate(`(async()=>{const next=document.querySelector('#v2-noticia-next');next?.click();await new Promise(r=>setTimeout(r,100));const active=[...document.querySelectorAll('.v2-feature-card')].findIndex(el=>!el.hidden);const dot=document.querySelector('.v2-dot[aria-current="true"]');const r=dot?.getBoundingClientRect();return {viewport:innerWidth,active,dot:r&&{width:r.width,height:r.height},overflow:document.documentElement.scrollWidth-innerWidth};})()`);

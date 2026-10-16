@@ -206,6 +206,7 @@ try {
     send('Runtime.enable'),
     send('Network.enable')
   ]);
+  await send('Network.setCacheDisabled', { cacheDisabled: true });
 
   for (const viewport of viewports) {
     for (const path of pages) {

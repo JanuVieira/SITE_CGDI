@@ -260,6 +260,27 @@ for (const requiredHref of [
   assert.ok(home.includes(requiredHref), 'A home deve preservar o acesso a ' + requiredHref);
 }
 
+const bookletPage = await readFile(
+  join(root, 'prototipos', 'estrutura-atual-revisada', 'materiais-e-dados', 'cartilhas', 'index.html'),
+  'utf8'
+);
+const preDownloadActions = bookletPage.match(/<a\b[^>]*\bpd-action\b[^>]*>/gi) || [];
+assert.equal(preDownloadActions.length, 4, 'A página de cartilhas deve apresentar quatro ações de arquivo.');
+assert.equal((bookletPage.match(/class=["']pd-file-size["']/gi) || []).length, 2, 'Cada cartilha deve informar o tamanho do PDF.');
+for (const action of preDownloadActions) {
+  const href = attributeFromTag(action, 'href') || '';
+  assert.match(href, /^https:\/\/www\.gov\.br\/inpi\/.*\.pdf$/i, 'Ação de cartilha sem PDF oficial do INPI.');
+  assert.equal(attributeFromTag(action, 'data-cgdi-link-oficial'), 'true', 'PDF oficial deve permanecer habilitado pelo carregador.');
+  assert.equal(attributeFromTag(action, 'aria-disabled'), null, 'Ação de cartilha publicada não pode nascer desabilitada.');
+  assert.doesNotMatch(action, /\bdata-cgdi-(?:unavailable|external-disabled)\b/i, 'Ação de cartilha publicada não pode carregar estado indisponível.');
+  if (/\bpd-open\b/i.test(action)) {
+    assert.equal(attributeFromTag(action, 'target'), '_blank', 'A visualização do PDF deve abrir em nova aba.');
+  }
+  if (/\bpd-download\b/i.test(action)) {
+    assert.match(action, /\bdownload=["'][^"']+["']/i, 'A ação de download deve sugerir um nome de arquivo.');
+  }
+}
+
 const componentCatalogPath = join(root, 'prototipos', 'componentes', 'catalogo-componentes.json');
 const componentCatalogText = await readFile(componentCatalogPath, 'utf8');
 const componentCatalog = JSON.parse(componentCatalogText);

@@ -21,3 +21,8 @@ A lista fechada de templates-fonte está em
 Os HTML dos protótipos mantêm o conteúdo editorial e os hosts dos componentes.
 O portal não deve ser copiado para cada página. Ações sem destino publicado
 nascem sem `href` e são marcadas como indisponíveis pelo carregador.
+
+No pré-download, um arquivo publicado usa uma URL HTTPS verificada. Links
+oficiais externos recebem `data-cgdi-link-oficial="true"`; a ação de visualização
+abre em nova aba com `rel="noopener noreferrer"`. Fragmentos que apontam para o
+próprio painel de detalhes continuam reservados ao estado indisponível.

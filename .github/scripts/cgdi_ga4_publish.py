@@ -40,30 +40,41 @@ IMAGE_DOMAINS = ("https://www.google-analytics.com", "https://region1.google-ana
 
 JS = r'''(() => {
   'use strict';
+
   const ID = 'G-RYCRDYSL5G';
   const CHOICE_KEY = 'cgdi.ga4.consent.v1';
   let loaded = false;
   let banner;
-  let preferencesButton;
+  let footerLink;
+  let footerWrapper;
+  let reopenedFromFooter = false;
 
   function storedChoice() {
     try {
       const value = localStorage.getItem(CHOICE_KEY);
       return value === 'accepted' || value === 'rejected' ? value : null;
-    } catch (_) { return null; }
+    } catch (_) {
+      return null;
+    }
   }
+
   function storeChoice(value) {
-    try { localStorage.setItem(CHOICE_KEY, value); } catch (_) { /* Sem persistência. */ }
+    try {
+      localStorage.setItem(CHOICE_KEY, value);
+    } catch (_) {
+      // Sem armazenamento disponível, o consentimento será pedido novamente.
+    }
   }
+
   function gtag() {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push(arguments);
   }
+
   function startAnalytics() {
     if (loaded) return;
     loaded = true;
     window['ga-disable-' + ID] = false;
-    // Outros tipos de armazenamento e personalização permanecem desativados.
     gtag('consent', 'default', {
       analytics_storage: 'denied',
       ad_storage: 'denied',
@@ -76,91 +87,164 @@ JS = r'''(() => {
       allow_google_signals: false,
       allow_ad_personalization_signals: false
     });
-    const tag = document.createElement('script');
-    tag.async = true;
-    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ID);
-    document.head.appendChild(tag);
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ID);
+    document.head.appendChild(script);
   }
+
   function forgetAnalyticsCookies() {
-    document.cookie.split(';').forEach(function (part) {
+    const paths = new Set(['/']);
+    let prefix = '';
+    for (const segment of location.pathname.split('/').filter(Boolean)) {
+      prefix += '/' + segment;
+      paths.add(prefix);
+      paths.add(prefix + '/');
+    }
+    document.cookie.split(';').forEach((part) => {
       const name = part.split('=')[0].trim();
       if (!/^_ga($|_)/.test(name)) return;
-      document.cookie = name + '=; Max-Age=0; Path=/; SameSite=Lax';
+      for (const path of paths) {
+        document.cookie = name + '=; Max-Age=0; Path=' + path + '; SameSite=Lax';
+      }
     });
   }
+
+  function restoreFocus() {
+    if (reopenedFromFooter && footerLink) {
+      footerLink.focus({ preventScroll: true });
+    } else {
+      const main = document.querySelector('main');
+      if (main) {
+        if (!main.hasAttribute('tabindex')) main.setAttribute('tabindex', '-1');
+        main.focus({ preventScroll: true });
+      }
+    }
+    reopenedFromFooter = false;
+  }
+
   function choose(value) {
     storeChoice(value);
     banner.hidden = true;
-    preferencesButton.hidden = false;
+    footerWrapper.hidden = false;
+    restoreFocus();
     if (value === 'accepted') {
       startAnalytics();
     } else if (loaded) {
       gtag('consent', 'update', { analytics_storage: 'denied' });
       window['ga-disable-' + ID] = true;
       forgetAnalyticsCookies();
-      window.location.reload();
+      location.reload();
     }
   }
-  function makeButton(label, className, onClick) {
+
+  function actionButton(label, className, value) {
     const button = document.createElement('button');
     button.type = 'button';
-    button.textContent = label;
     button.className = className;
-    button.addEventListener('click', onClick);
+    button.textContent = label;
+    button.addEventListener('click', () => choose(value));
     return button;
   }
+
   function init() {
     if (!document.body) return;
+
     banner = document.createElement('section');
     banner.id = 'cgdi-ga4-consent';
-    banner.setAttribute('aria-label', 'Preferências de privacidade');
-    const title = document.createElement('strong');
-    title.textContent = 'Análise de visitas';
-    const paragraph = document.createElement('p');
-    paragraph.textContent = 'Com sua autorização, usamos o Google Analytics para entender as visitas ao protótipo. Você pode recusar sem perder acesso ao conteúdo.';
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-labelledby', 'cgdi-ga4-title');
+    banner.setAttribute('aria-describedby', 'cgdi-ga4-description cgdi-ga4-reassurance');
+
+    const heading = document.createElement('h2');
+    heading.id = 'cgdi-ga4-title';
+    heading.textContent = 'Sua privacidade';
+
+    const description = document.createElement('p');
+    description.id = 'cgdi-ga4-description';
+    description.textContent = 'Usamos cookies opcionais para entender quais páginas são visitadas e melhorar este site. Eles só serão ativados com sua autorização.';
+
+    const reassurance = document.createElement('p');
+    reassurance.id = 'cgdi-ga4-reassurance';
+    reassurance.className = 'cgdi-ga4-reassurance';
+    reassurance.textContent = 'Você pode recusar sem prejudicar sua navegação.';
+
     const actions = document.createElement('div');
     actions.className = 'cgdi-ga4-actions';
-    actions.appendChild(makeButton('Recusar', 'cgdi-ga4-reject', () => choose('rejected')));
-    actions.appendChild(makeButton('Aceitar análise', 'cgdi-ga4-accept', () => choose('accepted')));
-    const more = document.createElement('a');
-    more.href = 'https://policies.google.com/technologies/partner-sites?hl=pt-BR';
-    more.target = '_blank';
-    more.rel = 'noopener noreferrer';
-    more.textContent = 'Como o Google utiliza dados';
-    banner.append(title, paragraph, actions, more);
-    preferencesButton = makeButton('Privacidade', 'cgdi-ga4-settings', () => {
+    const rejectButton = actionButton('Recusar', 'cgdi-ga4-reject', 'rejected');
+    const acceptButton = actionButton('Permitir análise', 'cgdi-ga4-accept', 'accepted');
+    actions.append(rejectButton, acceptButton);
+
+    const details = document.createElement('details');
+    details.className = 'cgdi-ga4-details';
+    const summary = document.createElement('summary');
+    summary.textContent = 'Saiba como usamos seus dados';
+    const explanation = document.createElement('p');
+    explanation.textContent = 'Se você permitir, um serviço externo de análise será usado para contar visitas, identificar páginas acessadas e conhecer a origem dos acessos. Esse serviço pode usar cookies e receber informações sobre o navegador e o dispositivo. Não ativamos recursos de anúncios personalizados.';
+    const changes = document.createElement('p');
+    changes.textContent = 'Sua escolha fica salva neste navegador e pode ser alterada pelo link Preferências de privacidade no rodapé.';
+    const googleLink = document.createElement('a');
+    googleLink.href = 'https://policies.google.com/technologies/partner-sites?hl=pt-BR';
+    googleLink.target = '_blank';
+    googleLink.rel = 'noopener noreferrer';
+    googleLink.textContent = 'Como o serviço de análise trata seus dados';
+    googleLink.className = 'cgdi-ga4-learn';
+    details.append(summary, explanation, changes, googleLink);
+
+    banner.append(heading, description, reassurance, actions, details);
+
+    // A preferência permanece editável no rodapé, sem botão flutuante.
+    footerWrapper = document.createElement('div');
+    footerWrapper.className = 'cgdi-ga4-footer';
+    footerLink = document.createElement('a');
+    footerLink.href = '#';
+    footerLink.textContent = 'Preferências de privacidade';
+    footerLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      reopenedFromFooter = true;
       banner.hidden = false;
-      preferencesButton.hidden = true;
-      banner.querySelector('button')?.focus();
+      rejectButton.focus({ preventScroll: true });
     });
-    document.body.append(banner, preferencesButton);
+    footerWrapper.appendChild(footerLink);
+    const footers = document.querySelectorAll('footer, [role="contentinfo"]');
+    const footer = footers.length ? footers[footers.length - 1] : document.body;
+    footer.appendChild(footerWrapper);
+    document.body.appendChild(banner);
+
     const choice = storedChoice();
-    banner.hidden = Boolean(choice);
-    preferencesButton.hidden = !choice;
+    banner.hidden = choice !== null;
+    footerWrapper.hidden = choice === null;
     if (choice === 'accepted') startAnalytics();
   }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init, { once: true });
   } else {
     init();
   }
-})();
-'''
+})();'''
 
-CSS = r'''#cgdi-ga4-consent,#cgdi-ga4-consent *, .cgdi-ga4-settings { box-sizing: border-box; }
-#cgdi-ga4-consent { position: fixed; z-index: 2147483000; bottom: 16px; right: 16px; left: 16px; max-width: 560px; margin-left: auto; padding: 20px; border: 1px solid #bfc8d6; background: #fff; color: #1b1b1b; border-radius: 6px; box-shadow: 0 8px 32px #0003; font-family: Rawline, Arial, sans-serif; font-size: 15px; line-height: 1.5; }
-#cgdi-ga4-consent strong { display: block; font-size: 18px; font-weight: 700; margin-bottom: 8px; }
-#cgdi-ga4-consent p { margin: 0 0 12px; }
-#cgdi-ga4-consent a { display: inline-block; margin-top: 12px; color: #1351b4; text-decoration: underline; }
-.cgdi-ga4-actions { display: flex; gap: 8px; flex-wrap: wrap; }
-#cgdi-ga4-consent button, .cgdi-ga4-settings { min-height: 44px; padding: 8px 16px; border-radius: 20px; border: 1px solid #1351b4; font: 700 15px/1.5 Rawline, Arial, sans-serif; cursor: pointer; }
-.cgdi-ga4-reject { background: #fff; color: #1351b4; }
-.cgdi-ga4-accept { background: #1351b4; color: #fff; }
-.cgdi-ga4-settings { position: fixed; z-index: 2147483000; bottom: 12px; right: 12px; background: #fff; color: #1351b4; border-color: #bfc8d6; box-shadow: 0 2px 8px #0002; }
-#cgdi-ga4-consent button:focus-visible, #cgdi-ga4-consent a:focus-visible, .cgdi-ga4-settings:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
-#cgdi-ga4-consent[hidden], .cgdi-ga4-settings[hidden] { display: none !important; }
-@media(max-width:420px) { #cgdi-ga4-consent { padding: 14px; bottom: 8px; right: 8px; left: 8px; } }
-'''
+CSS = r'''#cgdi-ga4-consent, #cgdi-ga4-consent *, .cgdi-ga4-footer, .cgdi-ga4-footer * { box-sizing: border-box; }
+#cgdi-ga4-consent { position: fixed; z-index: 2147483000; bottom: 20px; right: 20px; left: 20px; max-width: 480px; max-height: min(90vh, 680px); overflow-y: auto; margin-left: auto; padding: 24px; border: 1px solid #d5dbe5; border-top: 4px solid #1351b4; background: #fff; color: #252525; border-radius: 4px; box-shadow: 0 8px 28px rgba(0,0,0,.18); font: 400 15px/1.55 Rawline, Arial, sans-serif; }
+#cgdi-ga4-consent h2 { margin: 0 0 10px; color: #1b1b1b; font: 700 19px/1.35 Rawline, Arial, sans-serif; }
+#cgdi-ga4-consent p { margin: 0 0 10px; }
+#cgdi-ga4-consent .cgdi-ga4-reassurance { margin-bottom: 20px; }
+.cgdi-ga4-actions { display: flex; justify-content: flex-end; align-items: center; gap: 10px; flex-wrap: wrap; }
+#cgdi-ga4-consent button { min-height: 44px; padding: 9px 18px; border: 1px solid #1351b4; border-radius: 20px; font: 700 15px/1.45 Rawline, Arial, sans-serif; cursor: pointer; }
+#cgdi-ga4-consent .cgdi-ga4-reject { background: #fff; color: #1351b4; }
+#cgdi-ga4-consent .cgdi-ga4-accept { background: #1351b4; color: #fff; }
+#cgdi-ga4-consent .cgdi-ga4-reject:hover { background: #edf3ff; }
+#cgdi-ga4-consent .cgdi-ga4-accept:hover { background: #0c326f; }
+.cgdi-ga4-details { margin-top: 12px; padding-top: 8px; border-top: 1px solid #e2e6ed; font-size: 14px; }
+#cgdi-ga4-consent .cgdi-ga4-details summary { min-height: 44px; display: list-item; padding: 10px 2px; color: #1351b4; font-weight: 700; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+#cgdi-ga4-consent .cgdi-ga4-details p { margin: 8px 0 12px; }
+#cgdi-ga4-consent .cgdi-ga4-learn { display: inline-block; margin: 0 0 4px; color: #1351b4; text-decoration: underline; text-underline-offset: 3px; }
+.cgdi-ga4-footer { padding: 12px 16px; text-align: center; font: 400 14px/1.5 Rawline, Arial, sans-serif; }
+.cgdi-ga4-footer a { color: #1351b4; text-decoration: underline; text-underline-offset: 3px; }
+#cgdi-ga4-consent button:focus-visible, #cgdi-ga4-consent summary:focus-visible, #cgdi-ga4-consent a:focus-visible, .cgdi-ga4-footer a:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
+#cgdi-ga4-consent[hidden], .cgdi-ga4-footer[hidden] { display: none !important; }
+@media (max-width: 520px) { #cgdi-ga4-consent { right: 8px; left: 8px; bottom: 8px; padding: 18px; max-width: none; } .cgdi-ga4-actions { flex-direction: column; align-items: stretch; } #cgdi-ga4-consent button { width: 100%; } }
+@media (prefers-contrast: more) { #cgdi-ga4-consent { border: 2px solid currentColor; } }'''
 
 
 def page_prefix(site: Path, path: Path, content: str) -> str:
