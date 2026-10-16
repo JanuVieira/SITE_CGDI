@@ -45,9 +45,6 @@ JS = r'''(() => {
   const CHOICE_KEY = 'cgdi.ga4.consent.v1';
   let loaded = false;
   let banner;
-  let footerLink;
-  let footerWrapper;
-  let reopenedFromFooter = false;
 
   function storedChoice() {
     try {
@@ -111,30 +108,32 @@ JS = r'''(() => {
   }
 
   function restoreFocus() {
-    if (reopenedFromFooter && footerLink) {
-      footerLink.focus({ preventScroll: true });
-    } else {
-      const main = document.querySelector('main');
-      if (main) {
-        if (!main.hasAttribute('tabindex')) main.setAttribute('tabindex', '-1');
-        main.focus({ preventScroll: true });
-      }
+    const main = document.querySelector('main');
+    if (main) {
+      if (!main.hasAttribute('tabindex')) main.setAttribute('tabindex', '-1');
+      main.focus({ preventScroll: true });
     }
-    reopenedFromFooter = false;
   }
 
   function choose(value) {
     storeChoice(value);
     banner.hidden = true;
-    footerWrapper.hidden = false;
+    // URL reservada a revisao da escolha; a barra de enderecos volta ao normal.
+    if (new URLSearchParams(location.search).get('privacidade') === 'alterar') {
+      const cleanUrl = new URL(location.href);
+      cleanUrl.searchParams.delete('privacidade');
+      history.replaceState(null, '', cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
+    }
     restoreFocus();
     if (value === 'accepted') {
       startAnalytics();
-    } else if (loaded) {
-      gtag('consent', 'update', { analytics_storage: 'denied' });
+    } else {
       window['ga-disable-' + ID] = true;
       forgetAnalyticsCookies();
-      location.reload();
+      if (loaded) {
+        gtag('consent', 'update', { analytics_storage: 'denied' });
+        location.reload();
+      }
     }
   }
 
@@ -172,28 +171,14 @@ JS = r'''(() => {
 
     banner.append(heading, description, actions);
 
-    // A preferência permanece editável no rodapé, sem botão flutuante.
-    footerWrapper = document.createElement('div');
-    footerWrapper.className = 'cgdi-ga4-footer';
-    footerLink = document.createElement('a');
-    footerLink.href = '#';
-    footerLink.textContent = 'Preferências de privacidade';
-    footerLink.addEventListener('click', (event) => {
-      event.preventDefault();
-      reopenedFromFooter = true;
-      banner.hidden = false;
-      rejectButton.focus({ preventScroll: true });
-    });
-    footerWrapper.appendChild(footerLink);
-    const footers = document.querySelectorAll('footer, [role="contentinfo"]');
-    const footer = footers.length ? footers[footers.length - 1] : document.body;
-    footer.appendChild(footerWrapper);
     document.body.appendChild(banner);
 
     const choice = storedChoice();
-    banner.hidden = choice !== null;
-    footerWrapper.hidden = choice === null;
-    if (choice === 'accepted') startAnalytics();
+    // Visita inicial: mostrar. Escolha salva: nao mostrar nada.
+    // A revisao pode ser aberta pelo endereco ?privacidade=alterar.
+    const reviewMode = new URLSearchParams(location.search).get('privacidade') === 'alterar';
+    banner.hidden = choice !== null && !reviewMode;
+    if (choice === 'accepted' && !reviewMode) startAnalytics();
   }
 
   if (document.readyState === 'loading') {
@@ -203,7 +188,7 @@ JS = r'''(() => {
   }
 })();'''
 
-CSS = r'''#cgdi-ga4-consent, #cgdi-ga4-consent *, .cgdi-ga4-footer, .cgdi-ga4-footer * { box-sizing: border-box; }
+CSS = r'''#cgdi-ga4-consent, #cgdi-ga4-consent * { box-sizing: border-box; }
 #cgdi-ga4-consent { position: fixed; z-index: 2147483000; bottom: 20px; right: 20px; left: 20px; max-width: 440px; max-height: min(90vh, 680px); overflow-y: auto; margin-left: auto; padding: 18px; border: 1px solid #d5dbe5; border-top: 4px solid #1351b4; background: #fff; color: #252525; border-radius: 4px; box-shadow: 0 8px 28px rgba(0,0,0,.18); font: 400 15px/1.55 Rawline, Arial, sans-serif; }
 #cgdi-ga4-consent h2 { margin: 0 0 10px; color: #1b1b1b; font: 700 18px/1.35 Rawline, Arial, sans-serif; }
 #cgdi-ga4-consent p { margin: 0 0 10px; }
@@ -213,10 +198,8 @@ CSS = r'''#cgdi-ga4-consent, #cgdi-ga4-consent *, .cgdi-ga4-footer, .cgdi-ga4-fo
 #cgdi-ga4-consent .cgdi-ga4-accept { background: #1351b4; color: #fff; }
 #cgdi-ga4-consent .cgdi-ga4-reject:hover { background: #edf3ff; }
 #cgdi-ga4-consent .cgdi-ga4-accept:hover { background: #0c326f; }
-.cgdi-ga4-footer { padding: 12px 16px; text-align: center; font: 400 14px/1.5 Rawline, Arial, sans-serif; }
-.cgdi-ga4-footer a { color: #1351b4; text-decoration: underline; text-underline-offset: 3px; }
-#cgdi-ga4-consent button:focus-visible, .cgdi-ga4-footer a:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
-#cgdi-ga4-consent[hidden], .cgdi-ga4-footer[hidden] { display: none !important; }
+#cgdi-ga4-consent button:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
+#cgdi-ga4-consent[hidden] { display: none !important; }
 @media (max-width: 520px) { #cgdi-ga4-consent { right: 8px; left: 8px; bottom: 8px; padding: 16px; max-width: none; } .cgdi-ga4-actions { flex-direction: column; align-items: stretch; } #cgdi-ga4-consent button { width: 100%; } }
 @media (prefers-contrast: more) { #cgdi-ga4-consent { border: 2px solid currentColor; } }'''
 
