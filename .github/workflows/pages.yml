@@ -1,0 +1,66 @@
+name: Publicar SITE_CGDI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Obter arquivos do projeto
+        uses: actions/checkout@v4
+
+      - name: Preparar apenas o site VIGENTE
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE='Paginas CGDI/VIGENTE'
+          test -f "$SOURCE/index.html"
+          mkdir -p _site
+          rsync -a \
+            --exclude '.cgdi-backups/' \
+            --exclude '*.bak' \
+            --exclude '.DS_Store' \
+            --exclude '/scripts/' \
+            --exclude '/projetos/v1/recursos/' \
+            --exclude 'README*' \
+            --exclude '/package.json' \
+            "$SOURCE/" _site/
+
+          # Preservar apenas as duas capas locais usadas na pagina P14.
+          CAPAS='projetos/v1/recursos/Cartilhas_files'
+          mkdir -p "_site/$CAPAS"
+          cp "$SOURCE/$CAPAS/379afb53-ada8-4885-ba0f-e72ff31afd4e.jpeg" "_site/$CAPAS/"
+          cp "$SOURCE/$CAPAS/4615256c-1db3-404b-92ec-a720d205607a.jpeg" "_site/$CAPAS/"
+
+          touch _site/.nojekyll
+          test -f _site/index.html
+          test -f _site/projetos/v1/p00.html
+          test -f _site/projetos/v2/p00.html
+          test -f _site/diagnosticos/index.html
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar arquivos para publicacao
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publicar site
+        id: deploy
+        uses: actions/deploy-pages@v4
