@@ -169,6 +169,64 @@
  .home-v2-pdf .v2-contact {padding:27px 24px;}
  .home-v2-pdf .v2-contact h3 {font-size:18px;}
 }
+
+/* V43 | Alinhamento editorial único e contraste final para a versão mobile. */
+body.cgdi-page[data-version="V2"] main#conteudo.home-v2-pdf cgdi-card[variant="inverse"] {
+  background:var(--blue-warm-vivid-80,#071d41)!important;
+  border-color:var(--blue-warm-vivid-80,#071d41)!important;
+  color:#fff!important;
+}
+body.cgdi-page[data-version="V2"] main#conteudo.home-v2-pdf cgdi-card[variant="inverse"] :is(h2,h3,p,svg) {
+  color:#fff!important;
+  fill:currentColor;
+}
+body.cgdi-page[data-version="V2"] main#conteudo.home-v2-pdf cgdi-card[variant="inverse"] .v2-pill {
+  border-color:#fff!important;
+  background:transparent!important;
+  color:#fff!important;
+}
+
+@media(max-width:740px){
+  .home-v2-pdf > .v2-container > cgdi-page-intro.v2-opening-intro,
+  .home-v2-pdf .v2-section-title,
+  .home-v2-pdf .v2-demo-intro {
+    margin-inline:auto;
+    text-align:center;
+  }
+  .home-v2-pdf .v2-section-title {
+    max-width:28ch;
+    text-wrap:balance;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]),
+  .home-v2-pdf cgdi-card[variant="media"] > [data-card-body] {
+    align-items:flex-start;
+    text-align:left;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > :is(h3,p,span),
+  .home-v2-pdf cgdi-card[variant="media"] :is(h3,p) {
+    width:100%;
+    text-align:left;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > [data-card-icon] {
+    margin-inline:0;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > .v2-pill,
+  .home-v2-pdf cgdi-card[variant="media"] .v2-pill {
+    align-self:stretch;
+    width:100%;
+  }
+  .home-v2-pdf cgdi-card[variant="metric"] {
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .home-v2-pdf cgdi-card[variant="metric"] > :is(strong,span) {
+    text-align:center;
+  }
+  .home-v2-pdf .v2-reports-contact cgdi-card[variant="inverse"] {
+    min-height:0;
+  }
+}
 @media(prefers-reduced-motion:reduce){.home-v2-pdf *, .home-v2-pdf *::before,.home-v2-pdf *::after {scroll-behavior:auto!important;transition:none!important;}}
 /* Explicit [hidden] is required because grid declarations otherwise win over UA CSS. */
 .home-v2-pdf [hidden] { display:none !important; }
@@ -1276,28 +1334,44 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     margin-inline:auto;
     text-align:center;
   }
-  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="metric"],[variant="inverse"]) {
-    align-items:center;
-    text-align:center;
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) {
+    align-items:flex-start;
+    text-align:left;
   }
-  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="metric"],[variant="inverse"]) > :is(h3,p,span,strong) {
-    text-align:center;
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > :is(h3,p,span,strong) {
+    width:100%;
+    text-align:left;
   }
-  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="metric"],[variant="inverse"]) > [data-card-icon] {
-    margin-inline:auto;
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > [data-card-icon] {
+    margin-inline:0;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > .v2-pill {
+    align-self:stretch;
+    width:100%;
   }
   .home-v2-pdf .v2-story-inner > div,
   .home-v2-pdf cgdi-card[variant="media"] > [data-card-body] {
-    align-items:center;
-    text-align:center;
+    align-items:flex-start;
+    text-align:left;
   }
   .home-v2-pdf .v2-story-inner :is(h3,p),
   .home-v2-pdf cgdi-card[variant="media"] :is(h3,p) {
     width:100%;
-    text-align:center;
+    text-align:left;
+  }
+  .home-v2-pdf .v2-story-inner .v2-pill,
+  .home-v2-pdf cgdi-card[variant="media"] .v2-pill {
+    align-self:stretch;
+    width:100%;
   }
   .home-v2-pdf cgdi-card[variant="metric"] {
+    align-items:center!important;
     justify-content:center;
+    text-align:center!important;
+  }
+  .home-v2-pdf cgdi-card[variant="metric"] > :is(strong,span) {
+    width:100%;
+    text-align:center!important;
   }
   .home-v2-pdf cgdi-card[variant="metric"] > .v2-icon {
     margin-inline:auto;
@@ -1309,5 +1383,29 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
   .home-v2-pdf .cgdi-calendar__field,
   .home-v2-pdf .cgdi-calendar__info {
     text-align:left;
+  }
+}
+
+/* Área de toque ampla, preservando a aparência compacta dos indicadores. */
+@media(max-width:740px){
+  .home-v2-pdf .v2-dots {gap:0}
+  .home-v2-pdf .v2-dots .v2-dot {
+    position:relative;
+    width:44px;
+    height:44px;
+    border:0!important;
+    background:transparent!important;
+  }
+  .home-v2-pdf .v2-dots .v2-dot::before {
+    content:"";
+    position:absolute;
+    inset:17px;
+    border:1px solid var(--v2-blue);
+    border-radius:50%;
+    background:#fff;
+  }
+  .home-v2-pdf .v2-dots .v2-dot[aria-current="true"]::before {
+    inset:15px;
+    background:var(--v2-blue);
   }
 }

@@ -7,8 +7,9 @@
 .section-nav a { padding:8px 14px;border:1px solid #d2d2d7;border-radius:999px;color:#1d1d1f;font-size:.875rem;font-weight:600;text-decoration:none }
 .section-nav a:hover { border-color:#1351b4;color:#1351b4 }
 .flow-section { margin-top:52px;scroll-margin-top:24px }
-.diagram-wrap { max-width:100%;padding:20px 0;border-block:1px solid #e5e5e5;overflow:auto }
+.diagram-wrap { max-width:100%;padding:20px 0;border-block:1px solid #e5e5e5;overflow:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch }
 .diagram-wrap .mermaid { min-width:900px;text-align:center }
+.diagram-wrap:focus-visible,.data-table:focus-visible { outline:3px solid #ffcd07;outline-offset:3px }
 .diagram-fallback { margin:12px 0 0;color:#6e6e73;font-size:.8125rem }
 .data-table { max-width:100%;overflow-x:auto }
 .data-table table { width:100%;border-collapse:collapse }
@@ -28,6 +29,8 @@
 @media(max-width:620px) {
   .flow-index { padding-top:32px }
   .flow-section { margin-top:44px }
+  .flow-index .back-link,.section-nav a,.source-link a { display:inline-flex;align-items:center;min-height:44px }
+  .section-nav a { justify-content:center;flex:1 1 auto }
   .journey-list a { grid-template-columns:38px 1fr;gap:10px }
   .journey-list small { grid-column:2 }
 }

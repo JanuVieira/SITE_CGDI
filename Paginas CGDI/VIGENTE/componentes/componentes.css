@@ -210,6 +210,11 @@ body.cgdi-page #conteudo .states-info > p { color:#fff!important; }
     min-width: 0;
     overflow-wrap: anywhere;
   }
+  cgdi-breadcrumb.cgdi-breadcrumb a,
+  cgdi-breadcrumb.br-breadcrumb a {
+    min-height: 44px;
+    padding-block: 8px;
+  }
   .cgdi-prototype-notice.br-modal[open] {
     inset: 0;
     width: 100%;

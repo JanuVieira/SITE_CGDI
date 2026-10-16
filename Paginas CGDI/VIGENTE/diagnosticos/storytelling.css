@@ -170,7 +170,9 @@ footer { padding: 28px 0 56px; border-top: 1px solid var(--line-soft); color: va
   .challenge-number { margin-bottom: 28px; }
   .finding-number strong { font-size: 2.75rem; }
   .priority-list li { min-height: 0; }
-  .table-wrap { max-width: 100%; }
+  .table-wrap { max-width: 100%; overscroll-behavior-inline: contain; -webkit-overflow-scrolling: touch; }
+  .back-link { display: inline-flex; align-items: center; min-height: 44px; }
+  .chapter-nav a { min-height: 44px; }
   table { min-width: 520px; }
 }
 

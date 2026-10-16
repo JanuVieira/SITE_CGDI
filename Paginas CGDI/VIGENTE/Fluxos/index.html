@@ -36,7 +36,7 @@
 
     <section class="flow-section" id="mapa" aria-labelledby="mapa-titulo">
       <div class="section-heading"><h2 id="mapa-titulo">Mapa de navegação</h2></div>
-      <div class="diagram-wrap" aria-label="Diagrama das jornadas mapeadas">
+      <div class="diagram-wrap" role="region" aria-label="Diagrama das jornadas mapeadas; deslize horizontalmente para ver todo o conteúdo" tabindex="0">
         <pre class="mermaid">
 flowchart LR
   H["HOME"] --> C["Consulta"]
@@ -74,7 +74,7 @@ flowchart LR
 
     <section class="flow-section" id="urls" aria-labelledby="urls-titulo">
       <div class="section-heading"><h2 id="urls-titulo">URLs</h2></div>
-      <div class="data-table"><table>
+      <div class="data-table" role="region" aria-label="Quantidades por tipo de recurso" tabindex="0"><table>
         <caption class="sr-only">Quantidades por tipo de recurso</caption>
         <thead><tr><th scope="col">Tipo</th><th scope="col">Quantidade</th></tr></thead>
         <tbody>
