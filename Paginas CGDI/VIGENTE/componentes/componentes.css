@@ -186,6 +186,11 @@ body.cgdi-page #conteudo .states-info > p { color:#fff!important; }
     overflow:visible;
     width:100%;
   }
+  body.cgdi-page #conteudo cgdi-map .states-map svg a text {
+    font-size:15px!important;
+    font-weight:600!important;
+    letter-spacing:0;
+  }
 }
 @media(prefers-reduced-motion:reduce){body.cgdi-page #conteudo cgdi-map .states-map svg a path{transition:none}}
 

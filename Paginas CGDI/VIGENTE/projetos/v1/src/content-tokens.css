@@ -184,6 +184,11 @@
     height:auto;
     overflow:visible;
   }
+  #conteudo .states-map svg a text {
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:0;
+  }
 }
 
 /* MCO-CHANGE-018 | escala tipográfica e leitura do conteúdo.

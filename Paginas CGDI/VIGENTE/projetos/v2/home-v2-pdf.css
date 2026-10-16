@@ -1145,17 +1145,25 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
 @media(max-width:740px){
   .home-v2-pdf cgdi-calendar.v2-section {margin-top:48px}
   .home-v2-pdf .cgdi-calendar__header {
+    align-items:stretch;
     margin-bottom:20px;
   }
+  .home-v2-pdf .cgdi-calendar__header > div:first-child {
+    width:100%;
+    text-align:center;
+  }
   .home-v2-pdf .cgdi-calendar__title {
-    margin-bottom:8px;
+    margin:0 auto 8px;
     font-size:1.5rem;
     line-height:1.25;
+    text-align:center;
   }
   .home-v2-pdf .cgdi-calendar__intro {
     max-width:56ch;
+    margin-inline:auto;
     font-size:.9375rem;
     line-height:1.5;
+    text-align:center;
   }
   .home-v2-pdf .cgdi-calendar__toolbar {
     width:100%;
@@ -1173,9 +1181,9 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     border:0;
   }
   .home-v2-pdf .cgdi-calendar__event {
-    grid-template-columns:64px minmax(0,1fr);
-    grid-template-areas:"date info" "link link";
-    gap:14px 16px;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"date" "info" "link";
+    gap:14px;
     align-items:start;
     min-height:0;
     padding:16px;
@@ -1190,19 +1198,36 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     background:#fff0ed;
   }
   .home-v2-pdf .cgdi-calendar__date {
-    min-height:62px;
+    align-self:center;
+    flex-direction:row;
+    align-items:center;
+    gap:8px;
+    width:fit-content;
+    min-height:40px;
+    padding:8px 12px;
+    border-radius:999px;
     justify-content:center;
+    white-space:nowrap;
   }
   .home-v2-pdf .cgdi-calendar__date strong {
     font-size:1.125rem;
     line-height:1.2;
   }
-  .home-v2-pdf .cgdi-calendar__date span {font-size:.75rem}
+  .home-v2-pdf .cgdi-calendar__date span {
+    padding-left:8px;
+    border-left:1px solid var(--gray-30,#b3b3b3);
+    font-size:.8125rem;
+    line-height:1.2;
+  }
   .home-v2-pdf .cgdi-calendar__info h3 {
     margin-bottom:6px;
     font-size:1rem;
     line-height:1.4;
     overflow-wrap:anywhere;
+  }
+  .home-v2-pdf .cgdi-calendar__info {
+    width:100%;
+    text-align:left;
   }
   .home-v2-pdf .cgdi-calendar__info p {
     font-size:.9375rem;
@@ -1226,18 +1251,63 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     border-radius:8px;
   }
   .home-v2-pdf .cgdi-calendar__footer {
+    justify-content:center;
+    align-items:center;
     padding:14px 0 0;
     font-size:.8125rem;
+    text-align:center;
   }
 }
 @media(max-width:420px){
   .home-v2-pdf .cgdi-calendar__toolbar {padding:14px}
   .home-v2-pdf .cgdi-calendar__event {
-    grid-template-columns:58px minmax(0,1fr);
-    grid-template-areas:"date info" "link link";
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"date" "info" "link";
     gap:12px;
     padding:14px;
   }
-  .home-v2-pdf .cgdi-calendar__date {min-height:58px;padding:8px 4px}
+  .home-v2-pdf .cgdi-calendar__date {min-height:40px;padding:8px 12px}
   .home-v2-pdf .cgdi-calendar__link {margin-top:2px}
+}
+
+/* V42 | Centralização criteriosa dos componentes compactos no mobile. */
+@media(max-width:740px){
+  .home-v2-pdf .v2-section-title {
+    margin-inline:auto;
+    text-align:center;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="metric"],[variant="inverse"]) {
+    align-items:center;
+    text-align:center;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="metric"],[variant="inverse"]) > :is(h3,p,span,strong) {
+    text-align:center;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="metric"],[variant="inverse"]) > [data-card-icon] {
+    margin-inline:auto;
+  }
+  .home-v2-pdf .v2-story-inner > div,
+  .home-v2-pdf cgdi-card[variant="media"] > [data-card-body] {
+    align-items:center;
+    text-align:center;
+  }
+  .home-v2-pdf .v2-story-inner :is(h3,p),
+  .home-v2-pdf cgdi-card[variant="media"] :is(h3,p) {
+    width:100%;
+    text-align:center;
+  }
+  .home-v2-pdf cgdi-card[variant="metric"] {
+    justify-content:center;
+  }
+  .home-v2-pdf cgdi-card[variant="metric"] > .v2-icon {
+    margin-inline:auto;
+  }
+  /* Conteúdo editorial e controles continuam alinhados para leitura. */
+  .home-v2-pdf .v2-feature-copy,
+  .home-v2-pdf cgdi-card[variant="report"] > div,
+  .home-v2-pdf .v2-format,
+  .home-v2-pdf .cgdi-calendar__field,
+  .home-v2-pdf .cgdi-calendar__info {
+    text-align:left;
+  }
 }
