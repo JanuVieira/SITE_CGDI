@@ -154,20 +154,15 @@ JS = r'''(() => {
     banner.id = 'cgdi-ga4-consent';
     banner.setAttribute('role', 'region');
     banner.setAttribute('aria-labelledby', 'cgdi-ga4-title');
-    banner.setAttribute('aria-describedby', 'cgdi-ga4-description cgdi-ga4-reassurance');
+    banner.setAttribute('aria-describedby', 'cgdi-ga4-description');
 
     const heading = document.createElement('h2');
     heading.id = 'cgdi-ga4-title';
-    heading.textContent = 'Sua privacidade';
+    heading.textContent = 'Cookies opcionais';
 
     const description = document.createElement('p');
     description.id = 'cgdi-ga4-description';
-    description.textContent = 'Usamos cookies opcionais para entender quais páginas são visitadas e melhorar este site. Eles só serão ativados com sua autorização.';
-
-    const reassurance = document.createElement('p');
-    reassurance.id = 'cgdi-ga4-reassurance';
-    reassurance.className = 'cgdi-ga4-reassurance';
-    reassurance.textContent = 'Você pode recusar sem prejudicar sua navegação.';
+    description.textContent = 'Com sua permissão, usamos cookies para medir visitas e melhorar este site. Recusar não afeta sua navegação.';
 
     const actions = document.createElement('div');
     actions.className = 'cgdi-ga4-actions';
@@ -175,23 +170,7 @@ JS = r'''(() => {
     const acceptButton = actionButton('Permitir análise', 'cgdi-ga4-accept', 'accepted');
     actions.append(rejectButton, acceptButton);
 
-    const details = document.createElement('details');
-    details.className = 'cgdi-ga4-details';
-    const summary = document.createElement('summary');
-    summary.textContent = 'Saiba como usamos seus dados';
-    const explanation = document.createElement('p');
-    explanation.textContent = 'Se você permitir, um serviço externo de análise será usado para contar visitas, identificar páginas acessadas e conhecer a origem dos acessos. Esse serviço pode usar cookies e receber informações sobre o navegador e o dispositivo. Não ativamos recursos de anúncios personalizados.';
-    const changes = document.createElement('p');
-    changes.textContent = 'Sua escolha fica salva neste navegador e pode ser alterada pelo link Preferências de privacidade no rodapé.';
-    const googleLink = document.createElement('a');
-    googleLink.href = 'https://policies.google.com/technologies/partner-sites?hl=pt-BR';
-    googleLink.target = '_blank';
-    googleLink.rel = 'noopener noreferrer';
-    googleLink.textContent = 'Como o serviço de análise trata seus dados';
-    googleLink.className = 'cgdi-ga4-learn';
-    details.append(summary, explanation, changes, googleLink);
-
-    banner.append(heading, description, reassurance, actions, details);
+    banner.append(heading, description, actions);
 
     // A preferência permanece editável no rodapé, sem botão flutuante.
     footerWrapper = document.createElement('div');
@@ -225,25 +204,20 @@ JS = r'''(() => {
 })();'''
 
 CSS = r'''#cgdi-ga4-consent, #cgdi-ga4-consent *, .cgdi-ga4-footer, .cgdi-ga4-footer * { box-sizing: border-box; }
-#cgdi-ga4-consent { position: fixed; z-index: 2147483000; bottom: 20px; right: 20px; left: 20px; max-width: 480px; max-height: min(90vh, 680px); overflow-y: auto; margin-left: auto; padding: 24px; border: 1px solid #d5dbe5; border-top: 4px solid #1351b4; background: #fff; color: #252525; border-radius: 4px; box-shadow: 0 8px 28px rgba(0,0,0,.18); font: 400 15px/1.55 Rawline, Arial, sans-serif; }
-#cgdi-ga4-consent h2 { margin: 0 0 10px; color: #1b1b1b; font: 700 19px/1.35 Rawline, Arial, sans-serif; }
+#cgdi-ga4-consent { position: fixed; z-index: 2147483000; bottom: 20px; right: 20px; left: 20px; max-width: 440px; max-height: min(90vh, 680px); overflow-y: auto; margin-left: auto; padding: 18px; border: 1px solid #d5dbe5; border-top: 4px solid #1351b4; background: #fff; color: #252525; border-radius: 4px; box-shadow: 0 8px 28px rgba(0,0,0,.18); font: 400 15px/1.55 Rawline, Arial, sans-serif; }
+#cgdi-ga4-consent h2 { margin: 0 0 10px; color: #1b1b1b; font: 700 18px/1.35 Rawline, Arial, sans-serif; }
 #cgdi-ga4-consent p { margin: 0 0 10px; }
-#cgdi-ga4-consent .cgdi-ga4-reassurance { margin-bottom: 20px; }
 .cgdi-ga4-actions { display: flex; justify-content: flex-end; align-items: center; gap: 10px; flex-wrap: wrap; }
 #cgdi-ga4-consent button { min-height: 44px; padding: 9px 18px; border: 1px solid #1351b4; border-radius: 20px; font: 700 15px/1.45 Rawline, Arial, sans-serif; cursor: pointer; }
 #cgdi-ga4-consent .cgdi-ga4-reject { background: #fff; color: #1351b4; }
 #cgdi-ga4-consent .cgdi-ga4-accept { background: #1351b4; color: #fff; }
 #cgdi-ga4-consent .cgdi-ga4-reject:hover { background: #edf3ff; }
 #cgdi-ga4-consent .cgdi-ga4-accept:hover { background: #0c326f; }
-.cgdi-ga4-details { margin-top: 12px; padding-top: 8px; border-top: 1px solid #e2e6ed; font-size: 14px; }
-#cgdi-ga4-consent .cgdi-ga4-details summary { min-height: 44px; display: list-item; padding: 10px 2px; color: #1351b4; font-weight: 700; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
-#cgdi-ga4-consent .cgdi-ga4-details p { margin: 8px 0 12px; }
-#cgdi-ga4-consent .cgdi-ga4-learn { display: inline-block; margin: 0 0 4px; color: #1351b4; text-decoration: underline; text-underline-offset: 3px; }
 .cgdi-ga4-footer { padding: 12px 16px; text-align: center; font: 400 14px/1.5 Rawline, Arial, sans-serif; }
 .cgdi-ga4-footer a { color: #1351b4; text-decoration: underline; text-underline-offset: 3px; }
-#cgdi-ga4-consent button:focus-visible, #cgdi-ga4-consent summary:focus-visible, #cgdi-ga4-consent a:focus-visible, .cgdi-ga4-footer a:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
+#cgdi-ga4-consent button:focus-visible, .cgdi-ga4-footer a:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
 #cgdi-ga4-consent[hidden], .cgdi-ga4-footer[hidden] { display: none !important; }
-@media (max-width: 520px) { #cgdi-ga4-consent { right: 8px; left: 8px; bottom: 8px; padding: 18px; max-width: none; } .cgdi-ga4-actions { flex-direction: column; align-items: stretch; } #cgdi-ga4-consent button { width: 100%; } }
+@media (max-width: 520px) { #cgdi-ga4-consent { right: 8px; left: 8px; bottom: 8px; padding: 16px; max-width: none; } .cgdi-ga4-actions { flex-direction: column; align-items: stretch; } #cgdi-ga4-consent button { width: 100%; } }
 @media (prefers-contrast: more) { #cgdi-ga4-consent { border: 2px solid currentColor; } }'''
 
 
