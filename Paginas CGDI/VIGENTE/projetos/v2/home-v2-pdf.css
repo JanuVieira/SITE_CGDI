@@ -698,3 +698,79 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     min-height:0;
   }
 }
+
+/* V36 | Grade editorial consolidada com tokens e ritmo do GovBR-DS. */
+.home-v2-pdf {
+  --v2-content-width:1200px;
+  --v2-gutter:var(--spacing-scale-3x, 24px);
+}
+.home-v2-pdf .v2-breadcrumb-container,
+.home-v2-pdf .v2-container {
+  width:min(calc(100% - (2 * var(--v2-gutter))), var(--v2-content-width));
+  max-width:none;
+  margin-inline:auto;
+  padding-inline:0;
+}
+.home-v2-pdf .v2-breadcrumb-container .cgdi-breadcrumb {
+  margin-block:var(--spacing-scale-3x, 24px) var(--spacing-scale-4x, 32px);
+}
+.home-v2-pdf > .v2-container > cgdi-page-intro.v2-opening-intro {
+  max-width:52rem;
+  margin:0 0 var(--spacing-scale-6x, 48px);
+}
+.home-v2-pdf > .v2-container > cgdi-page-intro.v2-opening-intro .v2-opening-title {
+  max-width:22ch;
+  font-size:var(--font-size-scale-up-06, 2.625rem);
+  font-weight:var(--font-weight-semi-bold, 600);
+  line-height:1.16;
+  letter-spacing:-.014em;
+}
+.home-v2-pdf .v2-section {
+  margin-top:var(--spacing-scale-8x, 64px);
+}
+.home-v2-pdf .v2-section-title {
+  max-width:30ch;
+  margin:0 0 var(--spacing-scale-4x, 32px);
+  font-size:var(--font-size-scale-up-04, 1.75rem);
+  font-weight:var(--font-weight-semi-bold, 600);
+  line-height:1.22;
+  letter-spacing:-.008em;
+  text-align:left;
+}
+.home-v2-pdf .v2-grid {
+  gap:var(--spacing-scale-3x, 24px);
+  align-items:stretch;
+}
+.home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"]) {
+  padding:var(--spacing-scale-4x, 32px);
+  border:1px solid var(--gray-10, #e6e6e6);
+  border-radius:var(--surface-rounder-md, 8px);
+  box-shadow:none;
+}
+.home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"]) > h3 {
+  color:var(--gray-90, #1b1b1b);
+  font-weight:var(--font-weight-semi-bold, 600);
+}
+.home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"]) > p {
+  color:var(--gray-70, #555);
+}
+@media(max-width:740px) {
+  .home-v2-pdf { --v2-gutter:var(--spacing-scale-2x, 16px); }
+  .home-v2-pdf .v2-breadcrumb-container .cgdi-breadcrumb {
+    margin-block:var(--spacing-scale-2x, 16px) var(--spacing-scale-3x, 24px);
+  }
+  .home-v2-pdf > .v2-container > cgdi-page-intro.v2-opening-intro {
+    margin-bottom:var(--spacing-scale-5x, 40px);
+  }
+  .home-v2-pdf > .v2-container > cgdi-page-intro.v2-opening-intro .v2-opening-title {
+    font-size:var(--font-size-scale-up-04, 1.75rem);
+  }
+  .home-v2-pdf .v2-section { margin-top:var(--spacing-scale-6x, 48px); }
+  .home-v2-pdf .v2-section-title {
+    margin-bottom:var(--spacing-scale-3x, 24px);
+    font-size:var(--font-size-scale-up-03, 1.5rem);
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"]) {
+    padding:var(--spacing-scale-3x, 24px);
+  }
+}
