@@ -13,8 +13,9 @@
     if (!search || !mode || !count || !empty || !dialog) return;
     const normalize = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     const entries = items.map(item => {
-      const label = item.querySelector('[data-p03-state]');
-      if (label) label.textContent = 'Programado';
+      item.querySelectorAll('[data-p03-state]').forEach(label => {
+        label.textContent = 'Programado';
+      });
       return {item};
     });
     const refresh = () => {
