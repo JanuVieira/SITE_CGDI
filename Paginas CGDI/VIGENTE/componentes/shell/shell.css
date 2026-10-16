@@ -168,3 +168,78 @@
   #portal-footer {padding-inline:16px}
   .cgdi-footer-heading {min-height:56px;gap:12px}
 }
+
+/* Header mobile | Eixo único, identidade centralizada e sem estouro lateral. */
+@media(max-width:740px){
+  .shell-govbar,
+  #site-header {max-width:100%;overflow-x:clip}
+  .shell-govbar__utilities {
+    height:auto;
+    min-height:32px;
+    justify-content:center;
+    padding-block:4px;
+    text-align:center;
+  }
+  .shell-govbar__inner {
+    display:grid;
+    grid-template-columns:auto 1px minmax(0,1fr);
+    gap:10px 12px;
+    padding-block:10px;
+  }
+  .shell-govbar__logo,
+  .shell-govbar__divider,
+  .shell-govbar__ministry {min-width:0}
+  .shell-govbar__ministry {
+    max-width:none;
+    overflow-wrap:anywhere;
+  }
+  .shell-govbar__links {
+    grid-column:1 / -1;
+    justify-content:center;
+    margin:0;
+    max-width:100%;
+    text-align:center;
+  }
+  .shell-govbar__links a,
+  .shell-govbar__links summary {
+    align-items:center;
+    display:inline-flex;
+    justify-content:center;
+    min-height:44px;
+    white-space:normal;
+  }
+  .shell-govbar__links details>div {
+    left:50%;
+    max-width:calc(100vw - 32px);
+    transform:translateX(-50%);
+  }
+  #site-header .site-name-wrapper {
+    display:grid;
+    grid-template-columns:44px minmax(0,1fr) 44px;
+    gap:8px;
+  }
+  #site-header .site-name-wrapper::after {
+    content:"";
+    display:block;
+    height:44px;
+    width:44px;
+  }
+  #site-header .site-name {
+    align-self:center;
+    min-width:0;
+    text-align:center;
+  }
+  #site-header .site-name a {
+    display:block;
+    overflow-wrap:anywhere;
+  }
+  #site-header .govbr-busca-header,
+  #site-header .govbr-busca-header .aa-Form {max-width:100%;min-width:0}
+}
+
+@media(max-width:480px){
+  .shell-govbar__outline,
+  .shell-govbar__login {min-height:44px}
+  #site-header .main {padding-block:12px 16px}
+  #site-header .main>.header-wrapper {gap:10px}
+}
