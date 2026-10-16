@@ -50,6 +50,13 @@ jobs:
             --site _site \
             --version "$GITHUB_SHA"
 
+      - name: Preparar Google Analytics com consentimento
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 .github/scripts/cgdi_ga4_publish.py \
+            --site _site
+
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
