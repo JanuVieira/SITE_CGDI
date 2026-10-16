@@ -117,3 +117,31 @@ cgdi-accordion .conteudo[hidden] { display: none !important; }
   cgdi-content-grid table:has(.image-inline) :is(tbody, tr) { display: block; }
   cgdi-content-grid table:has(.image-inline) td { display: block; padding-block: 1rem; width: 100% !important; }
 }
+
+@media (max-width: 480px) {
+  cgdi-page-intro {margin-bottom:2rem}
+  cgdi-page-intro h1 {
+    font-size:clamp(1.75rem,9vw,2rem);
+    line-height:1.2;
+    overflow-wrap:anywhere;
+  }
+  cgdi-page-intro .lead {font-size:1rem;line-height:1.55}
+  cgdi-metadata {
+    align-items:flex-start;
+    flex-direction:column;
+    gap:.5rem;
+  }
+  cgdi-callout,
+  cgdi-status-message:not(:empty),
+  cgdi-event-details {padding:1rem}
+  cgdi-embedded-content {aspect-ratio:auto;min-height:18rem}
+  cgdi-embedded-content .cgdi-embedded-placeholder {padding:1.25rem}
+  cgdi-data-table,
+  cgdi-content-grid {
+    margin-inline:-16px;
+    padding-inline:16px;
+    scrollbar-width:thin;
+  }
+  cgdi-data-table table {min-width:36rem}
+  cgdi-data-table :is(th,td) {padding:.75rem}
+}

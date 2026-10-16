@@ -92,3 +92,31 @@ body.cgdi-page main .cgdi-card[variant="inverse"] :is(h2,h3),
   .cgdi-card[variant="report"] {padding:20px}
   .cgdi-card[variant="inverse"] {min-height:0;padding:24px}
 }
+
+@media(max-width:480px) {
+  .cgdi-card[variant="feature"] > [data-card-body],
+  .cgdi-card[variant="media"] > [data-card-body],
+  .cgdi-card[variant="standard"],
+  .cgdi-card[variant="support"],
+  .cgdi-card[variant="large"],
+  .cgdi-card[variant="topic"],
+  .cgdi-card[variant="compact"],
+  .cgdi-card[variant="inverse"] {padding:20px}
+  .cgdi-card :is(.br-button,[role="button"]) {
+    max-width:100%;
+    min-height:48px;
+    white-space:normal;
+  }
+  .cgdi-card[variant="standard"] > .br-button,
+  .cgdi-card[variant="support"] > .br-button,
+  .cgdi-card[variant="large"] > .br-button,
+  .cgdi-card[variant="inverse"] > .br-button {width:100%}
+  .cgdi-card[variant="report"] {
+    align-items:flex-start;
+    min-height:0;
+    padding:16px;
+  }
+  .cgdi-card[variant="report"] > :first-child {min-width:0}
+  .cgdi-card[variant="report"] :is(h2,h3,p) {overflow-wrap:anywhere}
+  .cgdi-card[variant="metric"] {padding:16px}
+}

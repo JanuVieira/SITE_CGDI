@@ -28,3 +28,22 @@ body {overflow-wrap:anywhere}
 .v1-doc-dialog details {border-top:1px solid #ddd;padding-top:10px;}
 .v1-doc-dialog summary {cursor:pointer;color:#1351b4;font-weight:700;}
 .v1-doc-dialog a:focus-visible,.v1-doc-dialog button:focus-visible,.v1-doc-dialog summary:focus-visible {outline:3px solid #000;outline-offset:3px;}
+
+@media(max-width:620px){
+  .cgdi-v1-p02 .card-v1 {min-height:0;padding:20px}
+  .v1-doc-dialog {
+    inset:0;
+    width:100%;
+    max-width:none;
+    height:100dvh;
+    max-height:none;
+    margin:0;
+    border-radius:0;
+  }
+  .v1-doc-inner {
+    min-height:100%;
+    padding:max(20px,env(safe-area-inset-top)) 16px max(20px,env(safe-area-inset-bottom));
+  }
+  .v1-doc-actions {align-items:stretch;flex-direction:column}
+  .v1-doc-actions a {width:100%;min-height:48px}
+}

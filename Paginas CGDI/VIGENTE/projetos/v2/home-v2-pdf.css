@@ -774,3 +774,459 @@ body.cgdi-page[data-version="V2"] main.home-v2-pdf cgdi-card[variant="inverse"] 
     padding:var(--spacing-scale-3x, 24px);
   }
 }
+
+/* V37 | Revisão mobile integral: notícia fluida, ações e cartões adaptáveis. */
+@media(max-width:740px){
+  .home-v2-pdf{
+    overflow-x:hidden;
+    padding-bottom:48px;
+  }
+  .home-v2-pdf #v2-feature-slides,
+  .home-v2-pdf .v2-feature-card{
+    height:auto;
+    min-height:0;
+  }
+  .home-v2-pdf .v2-feature-card{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:auto auto;
+    overflow:visible;
+  }
+  .home-v2-pdf .v2-feature-image{
+    grid-row:1;
+    width:100%;
+    height:auto;
+    min-height:0;
+    aspect-ratio:16/9;
+    object-fit:cover;
+  }
+  .home-v2-pdf .v2-feature-copy{
+    grid-row:2;
+    height:auto;
+    min-height:0;
+    overflow:visible;
+    padding:24px 20px;
+  }
+  .home-v2-pdf .v2-feature-copy .v2-date{
+    min-height:0;
+    margin-bottom:16px;
+  }
+  .home-v2-pdf .v2-feature-copy h2{
+    min-height:0;
+    margin-bottom:12px;
+    font-size:1.25rem;
+    overflow-wrap:anywhere;
+  }
+  .home-v2-pdf .v2-feature-copy > p:not(.v2-date):not(.v2-demo-label){
+    margin-bottom:20px;
+    line-height:1.55;
+  }
+  .home-v2-pdf .v2-feature-copy .v2-pill{
+    width:100%;
+    min-height:48px;
+    margin-top:0;
+  }
+  .home-v2-pdf .v2-feature-controls{
+    display:grid;
+    grid-template-columns:44px minmax(0,1fr) 44px;
+    gap:12px;
+    margin-top:16px;
+  }
+  .home-v2-pdf .v2-feature-nav.br-button{
+    width:44px;
+    min-width:44px;
+    height:44px;
+    min-height:44px;
+    padding:0;
+    font-size:0;
+  }
+  .home-v2-pdf .v2-feature-nav.br-button .v2-icon{
+    width:24px;
+    height:24px;
+    margin:0;
+  }
+  .home-v2-pdf .v2-feature-controls .v2-dots{
+    order:initial;
+    min-width:0;
+    justify-content:center;
+  }
+  .home-v2-pdf .v2-dots .v2-dot{
+    width:14px;
+    height:14px;
+  }
+  .home-v2-pdf .v2-cols-2,
+  .home-v2-pdf .v2-cols-3{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .home-v2-pdf .v2-cols-4{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .home-v2-pdf cgdi-card{
+    min-width:0;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > .v2-pill,
+  .home-v2-pdf cgdi-card[variant="media"] .v2-pill{
+    width:100%;
+    min-height:48px;
+  }
+  .home-v2-pdf cgdi-card[variant="media"]{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .home-v2-pdf cgdi-card[variant="media"] > div{
+    padding:24px 20px;
+    order:1;
+  }
+  .home-v2-pdf cgdi-card[variant="media"] > img{
+    width:100%;
+    height:auto;
+    max-height:220px;
+    order:2;
+  }
+  .home-v2-pdf .v2-story-inner{
+    display:block;
+    min-height:0;
+    padding-block:0;
+  }
+  .home-v2-pdf .v2-story-inner > div{
+    padding:32px 20px;
+  }
+  .home-v2-pdf .v2-story-inner .v2-pill{
+    width:100%;
+    min-height:48px;
+  }
+  .home-v2-pdf cgdi-card[variant="report"]{
+    min-height:0;
+    padding:18px 16px;
+  }
+  .home-v2-pdf cgdi-card[variant="report"] > div{
+    min-width:0;
+  }
+  .home-v2-pdf cgdi-card[variant="report"] h3{
+    overflow-wrap:anywhere;
+  }
+  .home-v2-pdf .v2-survey-wrap{
+    margin-top:40px;
+  }
+}
+@media(max-width:420px){
+  .home-v2-pdf .v2-cols-4{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .home-v2-pdf cgdi-card[variant="metric"]{
+    min-height:0;
+  }
+  .home-v2-pdf .v2-feature-copy{
+    padding:20px 16px;
+  }
+}
+
+/* V38 | Acabamento de todos os componentes móveis da Home V2. */
+@media(max-width:740px){
+  .home-v2-pdf .v2-container,
+  .home-v2-pdf .v2-breadcrumb-container {min-width:0}
+  .home-v2-pdf .v2-section-title {max-width:none;overflow-wrap:anywhere}
+  .home-v2-pdf .v2-grid {min-width:0}
+  .home-v2-pdf .v2-format {
+    min-height:112px;
+    padding:16px 12px;
+    font-size:1rem;
+    text-transform:none;
+  }
+  .home-v2-pdf .v2-format .v2-icon {width:30px;height:30px}
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) {
+    min-height:0;
+  }
+  .home-v2-pdf cgdi-card:is([variant="standard"],[variant="support"],[variant="large"],[variant="inverse"]) > p {
+    margin-bottom:20px;
+  }
+  .home-v2-pdf .v2-story-inner h3 {font-size:1.5rem;overflow-wrap:anywhere}
+  .home-v2-pdf .v2-story-inner p {line-height:1.55}
+  .home-v2-pdf cgdi-card[variant="media"] > img {
+    max-width:320px;
+    margin-inline:auto;
+  }
+  .home-v2-pdf .v2-reports-contact {gap:16px}
+  .home-v2-pdf cgdi-card[variant="inverse"] {justify-content:flex-start}
+  .home-v2-pdf cgdi-card[variant="inverse"] .v2-pill {margin-top:4px}
+}
+@media(max-width:420px){
+  .home-v2-pdf {--v2-gutter:12px}
+  .home-v2-pdf > .v2-container > cgdi-page-intro.v2-opening-intro .v2-opening-title {
+    font-size:1.625rem;
+    line-height:1.2;
+  }
+  .home-v2-pdf .v2-cols-4 {grid-template-columns:minmax(0,1fr)}
+  .home-v2-pdf .v2-format {min-height:88px;flex-direction:row;justify-content:flex-start;text-align:left}
+  .home-v2-pdf .v2-feature-controls {grid-template-columns:48px minmax(0,1fr) 48px}
+  .home-v2-pdf .v2-feature-nav.br-button {width:48px;height:48px;min-width:48px;min-height:48px}
+  .home-v2-pdf cgdi-card[variant="report"] > .v2-icon {flex:0 0 24px}
+}
+
+/* V39 | Formatos em lista, notícias estáveis e agenda móvel. */
+.home-v2-pdf #v2-feature-slides,
+.home-v2-pdf .v2-feature-card {height:420px}
+.home-v2-pdf .v2-feature-card {overflow:hidden}
+@media(max-width:740px){
+  .home-v2-pdf .v2-formats {
+    grid-template-columns:minmax(0,1fr);
+    gap:12px;
+  }
+  .home-v2-pdf .v2-format {
+    min-height:72px;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:16px;
+    padding:16px 20px;
+    text-align:left;
+  }
+  .home-v2-pdf .v2-format .v2-icon {
+    flex:0 0 32px;
+    width:32px;
+    height:32px;
+  }
+  .home-v2-pdf #v2-feature-slides,
+  .home-v2-pdf .v2-feature-card {
+    height:clamp(570px,105vw,680px);
+  }
+  .home-v2-pdf .v2-feature-card {
+    grid-template-rows:clamp(190px,48vw,320px) minmax(0,1fr);
+  }
+  .home-v2-pdf .v2-feature-image {
+    height:100%;
+    aspect-ratio:auto;
+  }
+  .home-v2-pdf .v2-feature-copy {
+    min-height:0;
+  }
+  .home-v2-pdf .cgdi-calendar__header {gap:20px}
+  .home-v2-pdf .cgdi-calendar__toolbar {gap:12px}
+  .home-v2-pdf .cgdi-calendar__event {
+    grid-template-columns:64px minmax(0,1fr);
+    grid-template-areas:"date info" "date link";
+    gap:12px 16px;
+    padding:18px 0;
+  }
+  .home-v2-pdf .cgdi-calendar__icon {display:none}
+  .home-v2-pdf .cgdi-calendar__date {
+    grid-area:date;
+    align-items:center;
+    padding:10px 6px;
+    border-radius:8px;
+    background:var(--blue-warm-vivid-5,#edf5ff);
+    text-align:center;
+  }
+  .home-v2-pdf .cgdi-calendar__info {grid-area:info}
+  .home-v2-pdf .cgdi-calendar__link {
+    grid-area:link;
+    width:100%;
+    min-height:48px;
+    justify-self:stretch;
+  }
+}
+@media(max-width:420px){
+  .home-v2-pdf #v2-feature-slides,
+  .home-v2-pdf .v2-feature-card {height:590px}
+  .home-v2-pdf .v2-feature-card {grid-template-rows:190px minmax(0,1fr)}
+  .home-v2-pdf .v2-format {min-height:68px;padding:14px 16px}
+  .home-v2-pdf .cgdi-calendar__event {grid-template-columns:56px minmax(0,1fr);column-gap:12px}
+}
+
+/* V41 | Notícias V2: cartão móvel estável, legível e sem controles comprimidos. */
+@media(max-width:740px){
+  .home-v2-pdf .v2-feature {
+    display:block;
+    min-width:0;
+    width:100%;
+  }
+  .home-v2-pdf #v2-feature-slides,
+  .home-v2-pdf .v2-feature-card {
+    height:590px;
+    min-height:590px;
+    width:100%;
+  }
+  .home-v2-pdf .v2-feature-card {
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:200px minmax(0,390px);
+    border:1px solid var(--gray-20,#ccc);
+    border-radius:8px;
+    background:#fff;
+    overflow:hidden;
+  }
+  .home-v2-pdf .v2-feature-image {
+    grid-row:1;
+    height:200px;
+    min-height:200px;
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+  .home-v2-pdf .v2-feature-copy {
+    grid-row:2;
+    display:flex;
+    height:390px;
+    min-height:390px;
+    padding:20px;
+    overflow:hidden;
+  }
+  .home-v2-pdf .v2-feature-copy .v2-date {
+    min-height:20px;
+    margin:0 0 12px;
+    font-size:.875rem;
+    line-height:1.4;
+  }
+  .home-v2-pdf .v2-feature-copy h2 {
+    min-height:0;
+    margin:0 0 12px;
+    font-size:1.25rem;
+    line-height:1.3;
+    text-transform:none;
+  }
+  .home-v2-pdf .v2-feature-copy > p:not(.v2-date):not(.v2-demo-label) {
+    margin:0 0 16px;
+    font-size:1rem;
+    line-height:1.5;
+  }
+  .home-v2-pdf .v2-feature-copy .v2-pill {
+    width:100%;
+    min-height:48px;
+    margin-top:auto;
+  }
+  .home-v2-pdf .v2-feature-controls {
+    display:grid;
+    grid-template-columns:48px minmax(0,1fr) 48px;
+    align-items:center;
+    gap:12px;
+    margin-top:16px;
+  }
+  .home-v2-pdf .v2-feature-nav.br-button {
+    width:48px;
+    min-width:48px;
+    height:48px;
+    min-height:48px;
+    margin:0;
+    padding:0;
+    font-size:0;
+    border-radius:50%;
+    justify-content:center;
+  }
+  .home-v2-pdf .v2-feature-nav.br-button .v2-icon {
+    width:24px;
+    height:24px;
+  }
+  .home-v2-pdf .v2-dots {
+    min-height:48px;
+    justify-content:center;
+  }
+  .home-v2-pdf .v2-dots .v2-dot {
+    width:16px;
+    height:16px;
+  }
+}
+
+@media(max-width:360px){
+  .home-v2-pdf .v2-feature-card {
+    grid-template-rows:180px minmax(0,410px);
+  }
+  .home-v2-pdf .v2-feature-image {
+    height:180px;
+    min-height:180px;
+  }
+  .home-v2-pdf .v2-feature-copy {
+    height:410px;
+    min-height:410px;
+    padding:18px 16px;
+  }
+  .home-v2-pdf .v2-feature-copy h2 {
+    font-size:1.125rem;
+  }
+}
+
+/* V40 | Calendário V2: leitura e interação próprias para celular. */
+@media(max-width:740px){
+  .home-v2-pdf cgdi-calendar.v2-section {margin-top:48px}
+  .home-v2-pdf .cgdi-calendar__header {
+    margin-bottom:20px;
+  }
+  .home-v2-pdf .cgdi-calendar__title {
+    margin-bottom:8px;
+    font-size:1.5rem;
+    line-height:1.25;
+  }
+  .home-v2-pdf .cgdi-calendar__intro {
+    max-width:56ch;
+    font-size:.9375rem;
+    line-height:1.5;
+  }
+  .home-v2-pdf .cgdi-calendar__toolbar {
+    width:100%;
+    padding:16px;
+    border:1px solid var(--gray-20,#d9d9d9);
+    border-radius:8px;
+    background:var(--gray-2,#f8f8f8);
+  }
+  .home-v2-pdf .cgdi-calendar__field {gap:6px}
+  .home-v2-pdf .cgdi-calendar__control,
+  .home-v2-pdf .cgdi-calendar :is(input,select) {width:100%}
+  .home-v2-pdf .cgdi-calendar__list {
+    display:grid;
+    gap:12px;
+    border:0;
+  }
+  .home-v2-pdf .cgdi-calendar__event {
+    min-height:0;
+    padding:16px;
+    border:1px solid var(--gray-20,#d9d9d9);
+    border-radius:8px;
+    background:#fff;
+  }
+  .home-v2-pdf .cgdi-calendar__event[data-status="cancelado"] {
+    background:var(--gray-2,#f8f8f8);
+  }
+  .home-v2-pdf .cgdi-calendar__event[data-status="cancelado"] .cgdi-calendar__date {
+    background:#fff0ed;
+  }
+  .home-v2-pdf .cgdi-calendar__date {
+    min-height:62px;
+    justify-content:center;
+  }
+  .home-v2-pdf .cgdi-calendar__date strong {
+    font-size:1.125rem;
+    line-height:1.2;
+  }
+  .home-v2-pdf .cgdi-calendar__date span {font-size:.75rem}
+  .home-v2-pdf .cgdi-calendar__info h3 {
+    margin-bottom:6px;
+    font-size:1rem;
+    line-height:1.4;
+    overflow-wrap:anywhere;
+  }
+  .home-v2-pdf .cgdi-calendar__info p {
+    font-size:.9375rem;
+    line-height:1.45;
+  }
+  .home-v2-pdf .cgdi-calendar__link {
+    justify-content:center;
+    padding:10px 14px;
+    border:1px solid var(--interactive,#1351b4);
+    border-radius:999px;
+    text-align:center;
+    text-decoration:none;
+  }
+  .home-v2-pdf .cgdi-calendar__empty {
+    padding:24px 16px;
+    border:1px solid var(--gray-20,#d9d9d9);
+    border-radius:8px;
+  }
+  .home-v2-pdf .cgdi-calendar__footer {
+    padding:14px 0 0;
+    font-size:.8125rem;
+  }
+}
+@media(max-width:420px){
+  .home-v2-pdf .cgdi-calendar__toolbar {padding:14px}
+  .home-v2-pdf .cgdi-calendar__event {
+    grid-template-columns:54px minmax(0,1fr);
+    padding:14px;
+  }
+  .home-v2-pdf .cgdi-calendar__date {min-height:58px;padding-inline:4px}
+}

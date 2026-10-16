@@ -171,6 +171,45 @@ body.cgdi-page #conteudo .states-info > p { color:#fff!important; }
   body.cgdi-page #conteudo cgdi-map .states-map svg { min-width:560px; }
 }
 @media(prefers-reduced-motion:reduce){body.cgdi-page #conteudo cgdi-map .states-map svg a path{transition:none}}
+
+/* Mobile | Navegação contextual e aviso compartilhado. */
+@media (max-width: 575px) {
+  main > cgdi-breadcrumb {
+    margin-bottom: 24px !important;
+    padding-top: 16px !important;
+  }
+  cgdi-breadcrumb.cgdi-breadcrumb ol,
+  cgdi-breadcrumb.br-breadcrumb ol {
+    align-items: flex-start;
+    row-gap: 6px;
+  }
+  cgdi-breadcrumb.cgdi-breadcrumb li,
+  cgdi-breadcrumb.br-breadcrumb li {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .cgdi-prototype-notice.br-modal[open] {
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: 100dvh;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+  .cgdi-prototype-notice__header {
+    padding-top: max(16px, env(safe-area-inset-top));
+    padding-inline: max(16px, env(safe-area-inset-left));
+  }
+  .cgdi-prototype-notice__footer {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  body.cgdi-page #conteudo cgdi-map .states-map {
+    margin-inline: -16px;
+    padding-inline: 16px;
+  }
+}
 /* Referências externas permanecem visíveis para contexto, mas não navegam no protótipo. */
 a[data-cgdi-external-disabled="true"] {
   color:var(--gray-70,#555)!important;

@@ -1,0 +1,51 @@
+/* Ajustes responsivos finais das páginas V1 com composição própria. */
+@media(max-width:600px){
+  #conteudo:is(.p01-v7,.p03-page,.p04-mentorias,.p05,.p06-v1,.p07-page) > .container-lg {padding-inline:16px}
+  #conteudo.p01-v7 .p01-v7-intro h1,
+  #conteudo.p03-page .p03-intro h1,
+  #conteudo.p04-mentorias .p04-intro h1,
+  #conteudo.p05 .intro h1,
+  #conteudo.p06-v1 .p06-intro h1,
+  #conteudo.p07-page .p07-intro h1 {font-size:clamp(1.75rem,9vw,2rem);line-height:1.2;overflow-wrap:anywhere}
+  #conteudo.p01-v7 .p01-v7-embed iframe,
+  #conteudo.p06-v1 .p06-bi iframe {height:clamp(420px,72dvh,560px);min-height:420px}
+  #conteudo.p01-v7 .p01-v7-resource-link,
+  #conteudo.p06-v1 a.p06-resource-link {align-items:flex-start;min-height:0;padding:16px}
+  #conteudo.p01-v7 .p01-v7-resource-title,
+  #conteudo.p06-v1 .p06-resource-link strong {overflow-wrap:anywhere}
+  #conteudo.p03-page .cgdi-calendar__toolbar {gap:12px;padding:16px;margin-bottom:20px}
+  #conteudo.p03-page .p03-search-field input,
+  #conteudo.p03-page .p03-mode-field select {min-height:48px;font-size:16px}
+  #conteudo.p03-page .p03-event {grid-template-columns:56px minmax(0,1fr);grid-template-areas:"date info" "date action"!important;gap:12px 14px;padding:16px 0}
+  #conteudo.p03-page .p03-date {width:56px;height:68px}
+  #conteudo.p03-page .p03-event-title-row {align-items:flex-start;flex-direction:column;gap:8px}
+  #conteudo.p03-page .p03-facts {align-items:flex-start;flex-direction:column;gap:8px}
+  #conteudo.p03-page .p03-action {width:100%;min-height:48px;justify-self:stretch}
+  #conteudo.p03-page .p03-dialog {width:100%;max-width:none;height:100dvh;max-height:none;margin:0;border-radius:0}
+  #conteudo.p03-page .p03-dialog-body {max-height:none;padding-bottom:20px}
+  #conteudo.p03-page .p03-dialog-footer {flex-direction:column;align-items:stretch}
+  #conteudo.p03-page .p03-dialog-footer .br-button {width:100%;min-height:48px}
+  #conteudo.p04-mentorias .p04-section,
+  #conteudo.p05 .block,
+  #conteudo.p06-v1 .p06-section,
+  #conteudo.p07-page .p07-section {margin-bottom:40px}
+  #conteudo.p05 .intro {margin-bottom:32px}
+  #conteudo.p05 .block {margin-bottom:40px}
+  #conteudo.p06-v1 .p06-context {margin-bottom:36px}
+  #conteudo.p07-page.p07-page-v4 .p07-highlight,
+  #conteudo.p07-page.p07-page-v4 .p07-help,
+  #conteudo.p07-page.p07-page-v4 .p07-unit-link {padding:16px}
+}
+@media(max-width:390px){
+  #conteudo.p01-v7 .p01-v7-resource-icon,
+  #conteudo.p06-v1 .p06-icon {flex-basis:40px;width:40px;height:40px}
+  #conteudo.p03-page .p03-dialog-head,
+  #conteudo.p03-page .p03-dialog-body {padding-inline:16px}
+  #conteudo.p04-mentorias ol.p04-flow > li,
+  #conteudo.p05 .flow > li {column-gap:10px}
+  #conteudo.p07-page.p07-page-v4 .p07-steps li {grid-template-columns:32px minmax(0,1fr);gap:10px}
+  #conteudo.p07-page.p07-page-v4 .p07-step-icon {display:none}
+  #conteudo.p07-page.p07-page-v4 .p07-step-copy {grid-column:2}
+  #conteudo.p07-page.p07-page-v4 .p07-unit-icon,
+  #conteudo.p07-page.p07-page-v4 .p07-help-icon {width:44px;height:44px;flex-basis:44px}
+}
