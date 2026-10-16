@@ -1,0 +1,239 @@
+/* CGDI pre-download V13 | regras consolidadas, sem sobrescritas em cascata por versão */
+cgdi-pre-download {
+  --pd-blue: var(--interactive, #1351b4);
+  --pd-blue-hover: #0c326f;
+  --pd-border: #d9d9d9;
+  display: block; box-sizing: border-box;
+  width: 100%; max-width: none;
+  margin: 24px 0; padding-inline: 0;
+  container: pd-card / inline-size;
+  color: #333; font-family: var(--font-family-base, Rawline, Arial, sans-serif);
+}
+cgdi-pre-download *, cgdi-pre-download *::before, cgdi-pre-download *::after { box-sizing: border-box; }
+cgdi-pre-download .pd-card.br-card {
+  display: block; width: 100%; margin: 0; padding: 0;
+  overflow: hidden; border: 1px solid var(--pd-border); border-radius: 10px;
+  background: #fff; box-shadow: none;
+}
+cgdi-pre-download .pd-card-body {
+  display: grid; grid-template-columns: 200px minmax(0, 1fr);
+  align-items: start; gap: 28px; padding: 28px;
+}
+/* A máscara pertence ao componente, não ao arquivo de imagem. */
+cgdi-pre-download .pd-cover-mask {
+  display: block;
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f2f2f2;
+  align-self: start;
+}
+cgdi-pre-download .pd-cover-mask > img.pd-cover {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  object-fit: fill !important;
+  object-position: center center !important;
+  aspect-ratio: auto !important;
+}
+/* A segunda capa possui faixas brancas incorporadas ao JPEG; o recorte evita
+   que elas sejam confundidas com espaço vazio do contêiner. */
+cgdi-pre-download .pd-cover-mask > img.pd-cover--software {
+  transform: scale(1.06);
+  transform-origin: center center;
+}
+cgdi-pre-download .pd-content { display: flex; flex-direction: column; min-width: 0; min-height: 300px; }
+cgdi-pre-download .pd-file {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  min-height: 28px; margin: 0 0 12px; padding: 0;
+}
+cgdi-pre-download .pd-file-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 43px; min-height: 28px; padding: 2px 7px;
+  border: 1px solid #d52b1e; border-radius: 4px;
+  color: #d52b1e; font-size: 12px; font-weight: 600; line-height: 1.2;
+}
+cgdi-pre-download .pd-file-icon::before, cgdi-pre-download .pd-file-icon::after { content: none !important; }
+cgdi-pre-download .pd-file-size { font-size: 13px; line-height: 1.4; color: #555; font-variant-numeric: tabular-nums; }
+cgdi-pre-download .pd-title {
+  margin: 0 0 12px; padding: 0; color: #333;
+  font-size: 23px; font-weight: 700; line-height: 1.32; overflow-wrap: break-word;
+}
+cgdi-pre-download .pd-description {
+  margin: 0 0 16px; padding: 0; max-width: 70ch;
+  font-size: 16px; font-weight: 400; line-height: 1.5; color: #444;
+}
+cgdi-pre-download ul.pd-subjects {
+  display: flex !important; flex-flow: row wrap !important; align-items: center;
+  gap: 6px !important; width: 100%; margin: 0 0 20px !important;
+  padding: 0 !important; list-style: none !important;
+}
+cgdi-pre-download ul.pd-subjects > li {
+  display: inline-flex !important; width: auto !important; min-width: 0;
+  margin: 0 !important; padding: 0 !important; list-style: none !important;
+}
+cgdi-pre-download ul.pd-subjects > li::before,
+cgdi-pre-download ul.pd-subjects > li::after { display: none !important; content: none !important; }
+cgdi-pre-download ul.pd-subjects > li::marker { content: '' !important; }
+cgdi-pre-download ul.pd-subjects .pd-subject.br-tag,
+cgdi-pre-download ul.pd-subjects .pd-subject.br-tag:hover {
+  display: inline-flex !important; align-items: center; width: auto !important;
+  min-height: 24px; padding: 3px 8px !important; margin: 0 !important;
+  border: 0; border-radius: 4px; background: #f2f2f2 !important;
+  color: #555 !important; font-size: 13px; font-weight: 400 !important;
+  line-height: 1.4; white-space: normal; overflow-wrap: anywhere; opacity: 1 !important;
+}
+cgdi-pre-download .pd-details[hidden] { display: none !important; }
+cgdi-pre-download .pd-details:not([hidden]) { display: block !important; width: 100%; }
+cgdi-pre-download .pd-details { margin: 0 0 16px; }
+cgdi-pre-download .pd-metadata { margin: 0; padding: 0; }
+cgdi-pre-download .pd-meta-row {
+  display: grid; grid-template-columns: minmax(110px,145px) minmax(0,1fr);
+  gap: 12px; padding: 9px 0; border-top: 1px solid var(--pd-border); font-size: 14px;
+}
+cgdi-pre-download .pd-meta-row dt, cgdi-pre-download .pd-meta-row dd { margin: 0; line-height: 1.5; }
+cgdi-pre-download .pd-meta-row dt { font-weight: 600; }
+/* Rodapé em duas regiões, preserva expansão mesmo quando as ações quebram. */
+cgdi-pre-download .pd-footer {
+  display: grid !important; grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end; gap: 12px 20px; width: 100%; min-width: 0;
+  margin: auto 0 0; padding: 16px 0 0;
+}
+cgdi-pre-download .pd-primary-actions {
+  display: flex !important; flex-wrap: wrap; align-items: center;
+  gap: 10px; min-width: 0;
+}
+cgdi-pre-download .pd-action.br-button {
+  display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center;
+  gap: 8px; width: auto; max-width: 100%; min-width: 148px; min-height: 44px;
+  height: auto; margin: 0; padding: 9px 16px;
+  border: 1px solid var(--pd-blue); border-radius: 999px;
+  font-size: 14px; font-weight: 600; line-height: 1.35;
+  text-decoration: none; white-space: normal; text-align: center;
+}
+cgdi-pre-download .pd-action.br-button.pd-download,
+cgdi-pre-download .pd-action.br-button.pd-download:link,
+cgdi-pre-download .pd-action.br-button.pd-download:visited,
+cgdi-pre-download .pd-action.br-button.pd-download:focus,
+cgdi-pre-download .pd-action.br-button.pd-download:active {
+  color: #fff !important; background: #1351b4 !important;
+  border-color: #1351b4 !important; opacity: 1 !important; box-shadow: none !important;
+}
+cgdi-pre-download .pd-action.br-button.pd-download:hover { color: #fff !important; background: #0c326f !important; border-color: #0c326f !important; }
+cgdi-pre-download .pd-action.br-button.pd-open,
+cgdi-pre-download .pd-action.br-button.pd-open:link,
+cgdi-pre-download .pd-action.br-button.pd-open:visited,
+cgdi-pre-download .pd-action.br-button.pd-open:focus,
+cgdi-pre-download .pd-action.br-button.pd-open:active {
+  color: #1351b4 !important; background: #fff !important;
+  border-color: #1351b4 !important; opacity: 1 !important; box-shadow: none !important;
+}
+cgdi-pre-download .pd-action.br-button.pd-open:hover { background: #f2f5fa !important; }
+cgdi-pre-download .pd-action.br-button[aria-disabled="true"] {
+  background: #f2f2f2 !important;
+  border-color: #888 !important;
+  color: #555 !important;
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+  pointer-events: none;
+}
+cgdi-pre-download .pd-action.br-button[aria-disabled="true"]:hover {
+  background: #f2f2f2 !important;
+  border-color: #888 !important;
+  color: #555 !important;
+}
+cgdi-pre-download .pd-action.br-button::before,
+cgdi-pre-download .pd-action.br-button::after { content: none !important; display: none !important; }
+cgdi-pre-download .pd-action.br-button span, cgdi-pre-download .pd-action.br-button svg { color: inherit !important; opacity: 1 !important; }
+cgdi-pre-download .pd-action-icon { display: block; position: static !important; width: 18px !important; height: 18px !important; flex: 0 0 18px; }
+cgdi-pre-download button.pd-toggle[data-pd-toggle] {
+  display: inline-flex !important; position: static !important; visibility: visible !important;
+  flex-wrap: nowrap !important; align-items: center !important; justify-content: flex-end !important;
+  justify-self: end; align-self: end; gap: 10px; min-width: 0 !important;
+  width: auto !important; max-width: 100% !important; min-height: 44px !important;
+  margin: 0; padding: 2px 0 !important; overflow: visible !important;
+  border: 0 !important; background: transparent !important; color: #1351b4 !important;
+  font: inherit; font-size: 14px; font-weight: 600; line-height: 1.4;
+  text-align: left; white-space: normal !important; cursor: pointer; opacity: 1 !important;
+  box-shadow: none !important;
+}
+cgdi-pre-download button.pd-toggle [data-pd-toggle-label] { min-width: 0; overflow-wrap: anywhere; }
+cgdi-pre-download button.pd-toggle .pd-toggle-circle {
+  display: inline-flex !important; align-items: center; justify-content: center;
+  flex: 0 0 40px !important; width: 40px !important; height: 40px !important;
+  border: 1.5px solid #1351b4; border-radius: 50%;
+}
+cgdi-pre-download .pd-toggle-svg { display: block; width: 18px; height: 18px; }
+cgdi-pre-download .pd-card.is-expanded .pd-toggle-svg [data-plus-v] { display: none !important; }
+cgdi-pre-download button.pd-toggle:hover [data-pd-toggle-label] { text-decoration: underline; text-underline-offset: 3px; }
+cgdi-pre-download button.pd-toggle:focus-visible,
+cgdi-pre-download .pd-action.br-button:focus-visible {
+  outline: 3px solid #ffcd07 !important; outline-offset: 3px !important;
+}
+/* Faixa intermediária baseada no espaço que o componente realmente recebe. */
+@container pd-card (max-width: 900px) {
+  cgdi-pre-download .pd-card-body { grid-template-columns: minmax(0,1fr); gap: 0; padding: 24px; }
+  cgdi-pre-download .pd-cover-mask { display: none !important; }
+  cgdi-pre-download .pd-content { min-height: 0; }
+  cgdi-pre-download .pd-title { font-size: 21px; font-weight: 600; line-height: 1.35; margin-bottom: 12px; }
+  cgdi-pre-download .pd-description { font-size: 15px; line-height: 1.55; margin-bottom: 14px; }
+  cgdi-pre-download .pd-file-size { font-size: 14px; }
+  cgdi-pre-download ul.pd-subjects { margin-bottom: 16px !important; }
+  cgdi-pre-download ul.pd-subjects .pd-subject.br-tag { font-size: 12px; }
+  cgdi-pre-download .pd-footer { grid-template-columns: minmax(0,1fr); padding-top: 16px; row-gap: 12px; }
+  cgdi-pre-download button.pd-toggle[data-pd-toggle] { justify-self: end; padding: 4px 0 !important; }
+  cgdi-pre-download .pd-card.is-expanded button.pd-toggle[data-pd-toggle] { margin-top: 28px; }
+}
+@container pd-card (max-width: 540px) {
+  cgdi-pre-download .pd-card-body { padding: 20px 16px; }
+  cgdi-pre-download .pd-title { font-size: 20px; line-height: 1.35; }
+  cgdi-pre-download .pd-description { font-size: 15px; line-height: 1.5; }
+  cgdi-pre-download ul.pd-subjects { margin-bottom: 12px !important; }
+  cgdi-pre-download .pd-primary-actions { flex-direction: column; align-items: stretch; gap: 12px; width: 100%; }
+  cgdi-pre-download .pd-action.br-button { width: 100%; min-width: 0; min-height: 48px; padding: 10px 14px; }
+  cgdi-pre-download .pd-open { order: 0; }
+  cgdi-pre-download .pd-download { order: 1; }
+  cgdi-pre-download .pd-footer { row-gap: 12px; }
+  cgdi-pre-download button.pd-toggle[data-pd-toggle] {
+    justify-self: stretch; justify-content: space-between !important;
+    width: 100% !important; padding: 16px 0 0 !important;
+  }
+  cgdi-pre-download .pd-card.is-expanded button.pd-toggle[data-pd-toggle] { margin-top: 32px; }
+  cgdi-pre-download .pd-meta-row { grid-template-columns: minmax(0,1fr); gap: 3px; }
+}
+/* Fallback se o navegador não oferecer container queries. */
+@supports not (container-type: inline-size) {
+  @media (max-width: 900px) {
+    cgdi-pre-download .pd-card-body { grid-template-columns: minmax(0,1fr); padding: 24px; }
+    cgdi-pre-download .pd-cover-mask { display: none !important; }
+    cgdi-pre-download .pd-content { min-height: 0; }
+    cgdi-pre-download .pd-footer { grid-template-columns: minmax(0,1fr); }
+    cgdi-pre-download button.pd-toggle[data-pd-toggle] { justify-self: end; }
+    cgdi-pre-download .pd-card.is-expanded button.pd-toggle[data-pd-toggle] { margin-top: 28px; }
+  }
+  @media (max-width: 600px) {
+    cgdi-pre-download .pd-card-body { padding: 20px 16px; }
+    cgdi-pre-download .pd-title { font-size: 20px; font-weight: 600; }
+    cgdi-pre-download .pd-description { font-size: 15px; }
+    cgdi-pre-download .pd-primary-actions { flex-direction: column; align-items: stretch; }
+    cgdi-pre-download .pd-action.br-button { width: 100%; min-height: 48px; }
+    cgdi-pre-download button.pd-toggle[data-pd-toggle] { width: 100% !important; justify-content: space-between !important; padding-top: 16px !important; }
+    cgdi-pre-download .pd-card.is-expanded button.pd-toggle[data-pd-toggle] { margin-top: 32px; }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  cgdi-pre-download *, cgdi-pre-download *::before, cgdi-pre-download *::after {
+    animation-duration: .01ms !important; transition-duration: .01ms !important;
+  }
+}

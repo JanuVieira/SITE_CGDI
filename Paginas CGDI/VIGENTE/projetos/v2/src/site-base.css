@@ -1,0 +1,6 @@
+/* Base global isolada da v20, aprovada somente para migração sem redesign. */
+:root {--cgdi-container:1200px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body.cgdi-page{margin:0;background:var(--pure-0,#fff);color:var(--pure-100,#1b1b1b);font-family:var(--font-family-base,Rawline,Arial,sans-serif);font-size:var(--font-size-scale-base,16px);line-height:1.5}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

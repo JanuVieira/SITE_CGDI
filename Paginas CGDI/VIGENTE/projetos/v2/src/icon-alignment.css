@@ -1,0 +1,15 @@
+/* CGDI v15 — exceção MCO autorizada: correção exclusiva de alinhamento de ÍCONES.
+   Este arquivo não muda cores, textos, estrutura, links ou identidade do cabeçalho e rodapé.
+   Mantido separado para reversão independente. */
+.shell-govbar__links summary{display:inline-flex;align-items:center;gap:6px;min-height:32px}
+.shell-govbar__links summary::after{content:"";display:block;flex:none;width:14px;height:14px;margin:0;background:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%231351b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="m6 9 6 6 6-6"/%3E%3C/svg%3E') center/14px 14px no-repeat;vertical-align:middle}
+.shell-govbar__links details[open] summary::after{transform:rotate(180deg)}
+#site-header .ico-navegacao{width:44px;height:44px;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+#site-header .ico-navegacao svg{display:block;width:24px;height:24px;flex:none;transform:none;shape-rendering:geometricPrecision}
+#site-header .govbr-busca-header .aa-SubmitButton{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;min-height:44px;line-height:1}
+#site-header .govbr-busca-header .aa-SubmitButton svg{display:block;width:22px;height:22px;flex:none;transform:none;shape-rendering:geometricPrecision}
+#portal-footer .shell-footer-expand{float:right;display:inline-flex;align-items:center;justify-content:center;line-height:1;font-size:0;width:36px;height:36px;min-height:36px;padding:0}
+#portal-footer .shell-footer-expand::before{content:"";display:block;width:16px;height:16px;flex:none;background:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round"%3E%3Cpath d="M12 5v14M5 12h14"/%3E%3C/svg%3E') center/16px 16px no-repeat}
+#portal-footer .shell-footer-expand[aria-expanded="true"]::before{background-image:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round"%3E%3Cpath d="M5 12h14"/%3E%3C/svg%3E')}
+#portal-footer #footer-govbr svg{display:block;max-width:100%;height:auto}
+@media(max-width:740px){#site-header .site-name-wrapper{gap:8px}#site-header .ico-navegacao{width:44px;min-width:44px}#site-header .govbr-busca-header .aa-SubmitButton{width:44px;min-width:44px}}

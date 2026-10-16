@@ -1,0 +1,33 @@
+.flow-index { padding-top:48px }
+.flow-index .introducao { max-width:920px }
+.flow-index .back-link { display:inline-block;margin-bottom:30px;color:#1351b4;font-size:.875rem;font-weight:600;text-decoration:none }
+.flow-index .back-link:hover { text-decoration:underline }
+.flow-index .institutional-heading { margin-bottom:18px }
+.section-nav { display:flex;flex-wrap:wrap;gap:8px;margin-top:32px }
+.section-nav a { padding:8px 14px;border:1px solid #d2d2d7;border-radius:999px;color:#1d1d1f;font-size:.875rem;font-weight:600;text-decoration:none }
+.section-nav a:hover { border-color:#1351b4;color:#1351b4 }
+.flow-section { margin-top:52px;scroll-margin-top:24px }
+.diagram-wrap { max-width:100%;padding:20px 0;border-block:1px solid #e5e5e5;overflow:auto }
+.diagram-wrap .mermaid { min-width:900px;text-align:center }
+.diagram-fallback { margin:12px 0 0;color:#6e6e73;font-size:.8125rem }
+.data-table { max-width:100%;overflow-x:auto }
+.data-table table { width:100%;border-collapse:collapse }
+.data-table th,.data-table td { padding:14px 12px;border-bottom:1px solid #e5e5e5;text-align:left }
+.data-table thead th { color:#6e6e73;font-size:.75rem;letter-spacing:.04em;text-transform:uppercase }
+.data-table tbody th { color:#1d1d1f;font-weight:600 }
+.journey-list { border-top:1px solid #e5e5e5 }
+.journey-list a { display:grid;grid-template-columns:48px minmax(0,1fr) max-content;gap:16px;align-items:center;padding:15px 4px;border-bottom:1px solid #e5e5e5;color:#1d1d1f;text-decoration:none }
+.journey-list a:hover strong { color:#1351b4;text-decoration:underline }
+.journey-list span { color:#86868b;font-size:.75rem;font-weight:700;letter-spacing:.05em }
+.journey-list strong { font-size:.9375rem;font-weight:600 }
+.journey-list small { color:#6e6e73;font-size:.8125rem }
+.source-link { margin:18px 0 0 }
+.source-link a { color:#1351b4;font-size:.875rem;font-weight:600;text-underline-offset:3px }
+.occurrence-list { max-width:820px;margin:0;padding:0;list-style:none;border-top:1px solid #e5e5e5 }
+.occurrence-list li { padding:14px 4px;border-bottom:1px solid #e5e5e5;color:#3a3a3c;line-height:1.5 }
+@media(max-width:620px) {
+  .flow-index { padding-top:32px }
+  .flow-section { margin-top:44px }
+  .journey-list a { grid-template-columns:38px 1fr;gap:10px }
+  .journey-list small { grid-column:2 }
+}

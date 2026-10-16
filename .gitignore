@@ -1,0 +1,41 @@
+
+# Backups
+.cgdi-backups/
+*.bak
+
+# Dependências
+node_modules/
+.venv/
+__pycache__/
+
+# Arquivos temporários
+.DS_Store
+*.pyc
+*.log
+
+# Dados sensíveis
+.env
+.env.*
+!.env.example
+
+# Backups
+.cgdi-backups/
+*.bak
+
+# Dependências
+node_modules/
+.venv/
+__pycache__/
+
+# Arquivos temporários
+.DS_Store
+*.pyc
+*.log
+
+# Dados sensíveis
+.env
+.env.*
+!.env.example
+
+# Backups históricos
+/Paginas CGDI/LEGADO/componentes/backups-pre-download/

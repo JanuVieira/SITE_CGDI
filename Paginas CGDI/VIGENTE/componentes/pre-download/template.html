@@ -1,0 +1,49 @@
+<!--
+  Estrutura canônica do componente de pré-download.
+  Preencha título, descrição, capa, assuntos e metadados no conteúdo da página.
+  Os controles de arquivo usam destinos internos até que o documento final
+  seja associado ao componente.
+-->
+<template id="cgdi-pre-download-template">
+  <article class="br-card pd-card">
+    <div class="pd-card-body">
+      <div class="pd-cover-mask">
+        <img class="pd-cover" src="" alt="">
+      </div>
+      <div class="pd-content">
+        <div class="pd-file" aria-label="Formato do arquivo">
+          <span class="pd-file-icon">PDF</span>
+        </div>
+        <h3 class="pd-title">Título do documento</h3>
+        <p class="pd-description">Descrição do documento.</p>
+        <ul class="pd-subjects" aria-label="Assuntos"></ul>
+        <div class="pd-details" hidden>
+          <p class="cgdi-indisponivel" role="note">Arquivo não disponível nesta demonstração.</p>
+          <dl class="pd-metadata"></dl>
+        </div>
+        <div class="pd-footer">
+          <div class="pd-primary-actions">
+            <a class="br-button primary pd-action pd-download" href="#"><svg class="pd-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v11m-4-4 4 4 4-4M4 17v3h16v-3"/></svg><span>Baixar arquivo</span></a>
+            <a class="br-button secondary pd-action pd-open" href="#"><svg class="pd-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M20 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5"/></svg><span>Abrir arquivo</span></a>
+          </div>
+          <button class="pd-toggle" type="button" data-pd-toggle aria-expanded="false">
+            <span data-pd-toggle-label>Expandir informações</span>
+            <span class="pd-toggle-circle" aria-hidden="true">
+              <svg class="pd-toggle-svg" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" data-plus-v></path></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
+</template>
+
+<!-- Estado seguro para uma instância criada sem conteúdo. -->
+<template id="cgdi-pre-download-empty-template">
+  <article class="br-card cgdi-pre-download">
+    <div class="card-content">
+      <p class="cgdi-indisponivel" role="note">Arquivo não disponível nesta demonstração.</p>
+    </div>
+  </article>
+</template>
+

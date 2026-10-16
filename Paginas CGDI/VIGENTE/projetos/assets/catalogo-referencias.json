@@ -1,0 +1,6886 @@
+[
+  {
+    "id": "167f16699815e37",
+    "destino_original": "https://www.gov.br/governodigital/pt-br/acessibilidade-digital",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessibilidade"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "270759d959138f7",
+    "destino_original": "https://www.gov.br/pt-br",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Página inicial gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e9afb3fc776235f",
+    "destino_original": "https://www.gov.br/mdic/pt-br",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ministério do Desenvolvimento, Indústria, Comércio e Serviços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "204883d2114ec9d",
+    "destino_original": "https://www.gov.br/pt-br/orgaos-do-governo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Órgãos do Governo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f74bac32964f7d0",
+    "destino_original": "https://www.gov.br/acessoainformacao/pt-br",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acesso à Informação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9642f37d3b0b9e3",
+    "destino_original": "http://www4.planalto.gov.br/legislacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "60a4e8e7d5d48b3",
+    "destino_original": "https://www.gov.br/pt-br/participacao-social",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Participe"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8920c8c4c1e38b8",
+    "destino_original": "https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Atalhos gov.br",
+      "Galeria de Aplicativos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7f19b9ecc18dfba",
+    "destino_original": "https://sso.acesso.gov.br/",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Entrar com gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "74b50bcfdc8a785",
+    "destino_original": "https://www.gov.br/inpi/pt-br",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Instituto Nacional da Propriedade Industrial"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "29854d843612145",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Serviços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d2619c922ec14fb",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Marcas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "53ac0a59d21a7e3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/guia-basico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Básico",
+      "Consultar o Guia Básico de Marcas ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "2c3995b1cd2d471",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/sistema-internacional-de-madri",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema Internacional de Madri"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a31a119123d6b57",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/consultas-publicas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultas Públicas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "95723d9e3a6e921",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/classificacao-marcas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Classificação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "0f2f137e1f0ebf5",
+    "destino_original": "https://busca.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Busca"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f613cb460b3843a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/custos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Custos e Pagamento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "99d169f980dc9f5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/e-marcas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema e-Marcas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "007ee66060599ac",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/perguntas-frequentes/marcas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5e2f8c905cafddc",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/legislacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação de marcas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8aec0c1d8104514",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/copia-de-documentos-de-marcas-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cópia de Documentos de Marcas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "481d94f79291cc5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/normativos-revogados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Normativos revogados"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b9cb6454f69bd53",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/inpi-explica-tudo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "INPI Explica Tudo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f901ca3dba0f03c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/tramite-prioritario-de-marcas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Trâmite Prioritário de Marcas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1710ee1af04ad9a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/alto-renome",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Alto renome"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c2c87bb23286941",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3ca44c080b1a00b",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/guia-basico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Básico",
+      "Consultar o Guia Básico de Patentes ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "02a8de9163ef001",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/tutorial-de-deposito",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Tutorial de depósito",
+      "Abrir tutorial de depósito de pedido de patente ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "060bdc43a6d75e8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/tramite-prioritario",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Trâmite Prioritário"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "63f4a749757301d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/legislacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f2925fcb24d7acc",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/Como-proteger-patente-no-exterior",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Proteção da Patente no Exterior"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b76d9c87bd29e65",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/copia-de-documentos-de-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cópia de Documentos de Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "40486ac51797cb4",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/consultas-publicas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultas Públicas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3e8f0b92d2d2fcf",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/plano-de-combate-ao-backlog",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Plano de Combate ao Backlog",
+      "Combate ao Backlog de Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "0ced593e8f5f733",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/tecnologias-para-covid-19",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Observatório de Tecnologias Relacionadas à COVID-19"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "343c740bd3862bf",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/relatorios-gerenciais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relatórios Gerenciais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "0acbf93aa5879cf",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/materiais-de-consulta-e-apoio",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Materiais de Consulta e Apoio"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "54e7530d6e9daec",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/informacoes-relacionadas-a-adi-ndeg-5-529-df",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Informações relacionadas à ADI n° 5.529/DF"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "6210afaeb27d129",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/classificacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Classificação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3ab353679695606",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/cpapd-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "CPAPD Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f7680b634f2e0f2",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/restauracao-de-autos-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Restauração de autos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "cbef799d7da9652",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/novos-guias-rapidos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Novos Guias Rápidos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "066fc10e398adf1",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/midias-pag-de-web",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Mídias - pag de web"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4901ca3ea5a913c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/memorandos-em-vigencia-pph",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Memorandos em vigencia - PPH"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "2b3b77501dee702",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/perguntas-frequentes/patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "adcf3b8d2ce7c1b",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/custos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Custos e Pagamento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "17fc115f332f670",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/e-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema e-Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "fb7ae3310222712",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/dialogo-permanente-com-as-partes-interessadas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Diálogo Permanente com as Partes Interessadas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "66597da7924b68e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/modulo-de-servicos-de-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Módulo de Serviços de Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a1098d69670d9f9",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/perguntas-e-respostas-modulo-de-servicos-de-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Perguntas e Respostas - Módulo de Serviços de Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "044c14cf437e75f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/manual-do-deposito-eletronico-epct-filing",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Manual do Depósito Eletrônico (ePCT-Filing)"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ea9264ce78b2bf7",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/modulo-dos-servicos-de-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Módulo de Serviços de Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "aa18abb6bf972e0",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Desenhos Industriais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c7b5fc31455c2a2",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/guia-basico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Básico",
+      "Consultar o Guia Básico de Desenho Industrial ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b5c20701744b586",
+    "destino_original": "https://busca.inpi.gov.br/pePI/jsp/desenhos/DesenhoSearchBasico.jsp",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Busca"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "edda5501a90ad74",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/custos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Custos e Pagamento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f9f8fe2882b3b7e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/e-di",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema e-DI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ada7633c709b385",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/perguntas-frequentes/desenhos-industriais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ddb8b56627d6488",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/classificacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Classificação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a336eed3e2e7941",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/materiais-de-consulta-e-apoio",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Materiais de Consulta e Apoio"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "fa222b85ea60461",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/legislacao-desenho-industrial-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação de desenhos industriais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c02887b34aac02e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/normativos-revogados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Normativos revogados"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7a8f2f9dec0f96e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/copia-de-documentos-de-desenho-industrial-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cópia de documentos de desenho industrial"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d5e1d4306768504",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/consultas-publicas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultas Públicas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "6c162c3b0aecf0a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/desenhos-industriais/acordo-de-haia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acordo de Haia"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9413b94a266c228",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Indicações Geográficas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "eb4fb4c6e8e0609",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/guia-basico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Básico"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "23224f2841e5978",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/pedidos-de-indicacao-geografica-no-brasil",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Busca"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9b49f95d8e1d12d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/custos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Custos e Pagamento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "65e9e3a6d4123cc",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/e-ig",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema e-IG"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "20b4b3ea1e3aa1f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/perguntas-frequentes/indicacoes-geograficas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "80c80be661be842",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/materiais-de-consulta-e-apoio",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Materiais de Consulta e Apoio"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7dc3c9d867a69af",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/legislacao-indicacao-geografica-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação de indicações geográficas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4638f72e6077849",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/consultas-publicas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultas Públicas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8db67a176a7df6d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/certificados-de-registros-concedidos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Certificados de registros de Indicações Geográficas concedidos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5cfa2da5c1d3d13",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/fichas-tecnicas-de-indicacoes-geograficas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Fichas Técnicas de Indicações Geográficas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5f5ef4f68e3287c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/indicacoes-geograficas/normativos-revogados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Normativos revogados"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "777f8cc905468cf",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/jogos-eletronicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Jogos Eletrônicos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c6a0fe73c699e98",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/jogos-eletronicos/consulta-publica",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consulta Pública"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "828192c7e3c7837",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Programas de Computador"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "26c819cc66f9507",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador/guia-basico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Básico",
+      "Consultar o Guia Básico de Programa de Computador ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8298b8623bcab1e",
+    "destino_original": "https://busca.inpi.gov.br/pePI/jsp/programas/ProgramaSearchBasico.jsp",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Busca"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4eee4b2596f597a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador/custos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Custos e Pagamento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a81bcbcf02176ad",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador/e-software",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema e-Software"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "56db904079660da",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/perguntas-frequentes/programas-de-computador",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "07151f7eb4b514f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador/legislacao-programa-de-computador",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e00fd8104f52c07",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador/consulta-publica",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultas Públicas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "41a7f4dc6b2e997",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador/relatorios-gerenciais-programas-de-computador",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relatórios Gerenciais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f6473848bcafd6e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/topografias-de-circuitos-integrados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Topografias de Circuitos Integrados"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4f7daa0980aac1a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/topografias-de-circuitos-integrados/guia-basico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Básico"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a124149359589a2",
+    "destino_original": "https://gru.inpi.gov.br/pePI/jsp/circuitos/CircuitosBancoError.jsp",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Busca"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "aea382f3892c8e6",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/topografias-de-circuitos-integrados/custos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Custos e Pagamento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "50e1f55ef620a1d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/topografias-de-circuitos-integrados/e-chip",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema e-Chip"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7b010e3b6dad3ed",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/perguntas-frequentes/topografias-de-circuitos-integrados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "05d06787fe87fba",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/topografias-de-circuitos-integrados/legislacao-topografia-de-circuitos-integrados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "79c8231a84fdbf7",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/contratos-de-tecnologia-e-de-franquia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Contratos de Tecnologia e de Franquia"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d3e9b20e10cf39b",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/contratos-de-tecnologia-e-de-franquia/guia-basico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Básico"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "2166b42cdece248",
+    "destino_original": "https://busca.inpi.gov.br/pePI/jsp/contratos/ContratoSearchBasico.jsp",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Busca"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8655a9cf48ec54f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/contratos-de-tecnologia-e-de-franquia/custos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Custos e Pagamento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d54f8a775448b4d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/contratos-de-tecnologia-e-de-franquia/e-contratos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema e-Contratos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f235588da229c6f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/perguntas-frequentes/transferencia-de-tecnologia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1c31dda07cb1e09",
+    "destino_original": "http:",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Materiais de Consulta e Apoio"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "af74dd5e3c2f7c6",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/contratos-de-tecnologia-e-de-franquia/legislacao-transferencia-de-tecnologia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4f226250caf7497",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Academia do INPI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "fd111a941e59ad8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/institucional",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Institucional"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "adddb25dcbc8033",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/solucoes-de-ensino",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Soluções de Ensino"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5850a71c7630821",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/cursos-de-pos-graduacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cursos de Pós-Graduação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9904ac20af0bfdd",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/cursos-de-extensao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cursos de Extensão"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "89d514b09460dc3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/biblioteca",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Biblioteca"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "2be83738c30e9a3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/eventos-academicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Eventos Acadêmicos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "94f9cc934504fcc",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/processo-seletivo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Processo Seletivo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "6ce5d872ee61458",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/publicacoes-academicas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Publicações Acadêmicas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f3ec46e90d7873e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/calendario-academico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Calendário Acadêmico"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3bbc7516a6cac84",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/area-do-aluno-da-pos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Área do Aluno da Pós"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c68c73813b5df0f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/noticias-da-academia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Notícias da Academia"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "6dfbfd0cb75beaa",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/alinhamento-estrategico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Alinhamento Estratégico"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "cb9d02571b58ed1",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/educacao-corporativa",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Educação Corporativa"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "2291073966d2ddc",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/acad-news",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "ACAD News"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "67c61e81829bdc2",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/a-academia/instalacoes-educacionais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Instalações Educacionais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "602e6646bc9b939",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/precificacao-dos-servicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Precificação dos Serviços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "bbe8c644ab1b859",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/precificacao-dos-servicos/PerguntaseRespostas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Perguntas e Respostas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "2aff97e0785b9a3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acesso à Informação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "91dd980af2c9e6b",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/institucional",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Institucional"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ff19f2110360141",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/acoes-e-programas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ações e Programas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "409a5041a11ab61",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/participacao-social",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Participação Social"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b396cfaa6af649c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/auditorias",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Auditorias"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "fe0615ec46ea541",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/convenios-e-transferencias",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Convênios e Transferências"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "12ad81fc45c664c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/receitas-e-despesas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Receitas e Despesas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1937c4953006faa",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/licitacoes-e-contratos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Licitações e Contratos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4d07f612bad3283",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/servidores",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Servidores"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "0e391820b930f69",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/programa-de-gestao-e-desempenho",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Programa de Gestão e Desempenho"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7794ece13840bb3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/informacoes-classificadas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Informações Classificadas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b510fe02166314e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Serviço de Informação ao Cidadão"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "df2b358cb2abbb4",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/dados-abertos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dados Abertos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9b7df7dec936ea7",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/sancoes-administrativas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sanções Administrativas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "99d644ff5575116",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/ferramentas-e-aspectos-tecnologicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ferramentas e Aspectos Tecnológicos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d5c01f18a7ba187",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/simplificacao-administrativa",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Simplificação Administrativa"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c67e8177d3dac08",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/sustentabilidade",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sustentabilidade"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "214cea930221b93",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/tecnologia-da-informacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Tecnologia da Informação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "eac946f850e71b8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/glossario-de-verbetes-de-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Glossário de Verbetes de PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7a14cc4be37e54f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/manifestacoes-juridicas-de-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Manifestações Jurídicas de PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "86d7a2c159c327c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/manifestacoes-juridicas-de-pi/arquivos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Arquivos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "41bcd23e95d16d2",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/patrimonio",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Patrimônio"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "48e32ccd39989f2",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/patrimonio/bens_doados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Bens Doados"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4a8aab54ca6ca9c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/patrimonio/doacoes-recebidas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Doações Recebidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "310c107b967550f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/patrimonio/bens-imoveis",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Bens Imóveis"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a144f7cedc340ea",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/patrimonio/bens-moveis",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Bens Móveis"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e808d296906b3f3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/canais_atendimento",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Canais de Atendimento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c4709a48cf66ab4",
+    "destino_original": "https://www.gov.br/inpi/pt-br/canais_atendimento/nivel-1-pre-atendimento",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "(1) Pré-Atendimento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "12b8c62ccbefa7e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/canais_atendimento/nivel-2-atendimento-em-campo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "(2) Atendimento em Campo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "fa8be37e80c3374",
+    "destino_original": "https://www.gov.br/inpi/pt-br/canais_atendimento/nivel-3-atendimento-na-solucao-de-problemas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "(3) Atendimento na Solução de Problemas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5b5809eb45a0702",
+    "destino_original": "https://www.gov.br/inpi/pt-br/canais_atendimento/nivel-4-atendimento-em-novas-solucoes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "(4) Atendimento em Novas Soluções"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9de13216c44dfe5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/plataforma-integrada-de-atendimento/termo-de-uso",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Termo de Uso"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b384436f7786884",
+    "destino_original": "https://www.gov.br/inpi/pt-br/plataforma-integrada-de-atendimento/politica-de-privacidade",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Política de Privacidade"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a58c20c32514861",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/institucional/enderecos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Endereços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9a1ec54ceca090f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Governança"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e2fa2700da8e771",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/planejamento-estrategico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Planejamento Estratégico"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f02f522cb779aa9",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/planejamento-estrategico/plano-estrategico",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Plano Estratégico"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "6b8b231c631e234",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/planejamento-estrategico/plano-de-acao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Plano de Ação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ff751567871d3e0",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/planejamento-estrategico/central-de-monitoramento",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Central de Monitoramento"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ac69554a8004093",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/planejamento-estrategico/plano-plurianual",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Plano Plurianual"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c505ca34ea618ca",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/planejamento-estrategico/estrategia-nacional-de-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Estratégia Nacional de Propriedade Intelectual"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9d7d6ee6936e748",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/planejamento-estrategico/perfil-do-inpi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Perfil do INPI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5da3152f58fa8a0",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Transparência e Prestação de Contas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "76780a013ee0b14",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/modelo-de-negocios",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Modelo de Negócios"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "407b7883e196567",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/continuidade-de-negocios",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Continuidade de Negócios"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "0b5a71eb62c31f2",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/supervisao-controle-e-correicao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Supervisão, Controle e Correição"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d1d99a527a8f738",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/remuneracao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Remuneração"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e7e255915922774",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/relatorios-dos-orgaos-de-controle",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relatórios dos Órgãos do Sistema de Controle Interno e do Controle Externo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1461df28bbb2e92",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/rol-de-responsaveis",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Rol de Responsáveis"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e56f3cd6432eb3f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/relatorios-de-gestao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relatórios de Gestão"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "13d54b81fc3ecda",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/pareceres-de-auditoria-interna-sobre-processos-de-contas-anuais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Pareceres de Auditoria Interna sobre Processos de Contas Anuais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "88f00096dfd65eb",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/transparencia-e-prestacao-de-contas/arquivos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Arquivos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ff6be70d6a102f3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/tratamento-de-dados-pessoais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Tratamento de Dados Pessoais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7d30c1b28dfc137",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/tratamento-de-dados-pessoais/guia-pratico-de-protecao-de-dados-pessoais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia Prático de Proteção de Dados Pessoais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c7229221bcf752f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/tratamento-de-dados-pessoais/inventario-de-dados-pessoais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Inventário de Dados Pessoais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8f5e34243bd13d6",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/tratamento-de-dados-pessoais/arquivos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Arquivos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3e9a6b66c68c1f0",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/tratamento-de-dados-pessoais/portal-da-privacidade-e-da-protecao-de-dados-pessoais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Portal da Privacidade e da Proteção de Dados Pessoais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "73a5b22b30f8142",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/agenda-das-autoridades",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Agenda das Autoridades"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3a10c17f5131a83",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/excelencia-da-gestao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Excelência da Gestão"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "466954fa80abc26",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/ouvidoria",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ouvidoria"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3dc88df34aeceb0",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/ouvidoria/relatorios-de-gestao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relatórios de Gestão"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1dab39e8e3b2ccf",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/comites",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Comitês"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ac9127cb6b8ff7d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Gestão da Integridade"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "95f5520f1062344",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/agenda-oficial",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Agenda de Autoridades"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "266b55b2ee5398a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/programa-de-integridade",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Programa de Integridade"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "87be55a809e8446",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/etica",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ética"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "795b52efd8aaed7",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/transparencia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Transparência"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d4f7bdc2f4092f6",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/interacao-publico-privada",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Interação Público-Privada"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b7430a4dd414f94",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/canal-de-denuncias",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Canal de Denúncias"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "250d32a53ac5e27",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/atividade-correicional",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Atividade Correicional"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "df2054a7f9b409d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/conflito-de-interesses",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Conflito de Interesses"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "62968c63ab1d6e1",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/combate-ao-nepotismo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Combate ao Nepotismo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b2e7ca2daf4afd1",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/gestao-de-riscos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Gestão de Riscos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "fa23ce24eed2fb1",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/conformidade",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Conformidade"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "2f06803823bc33d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-integridade/protecao-de-dados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Proteção de Dados"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d0bd680d86693b0",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-qualidade",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Gestão da Qualidade"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "52b2e98abf76b67",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-qualidade/gestao-de-riscos-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Gestão de Riscos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b085bd1e1743ff8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-qualidade/avaliacao-da-satisfacao-dos-usuarios",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Avaliação da Satisfação dos Usuários"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e3ba9ef35f6ec56",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-qualidade/Sistema-de-Padronizacao-de-documentos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Sistema de Padronização de Documentos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ba9e04ccdb9d916",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-qualidade/imagens",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagens"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7e8cd9eab4ae787",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/gestao-da-qualidade/pesquisa-qualitativa-e-quantitativa",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Pesquisa Qualitativa e Quantitativa"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1fbe8d442a66877",
+    "destino_original": "https://www.gov.br/inpi/pt-br/governanca/seguranca-da-informacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Segurança da Informação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "69c6702b417e79a",
+    "destino_original": "https://disponibilidade.inpi.gov.br/",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Disponibilidade Técnica de Sistemas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e5385069d419383",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Uso Estratégico da PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4cf6ba624d62848",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/observatorio-de-tecnologias-verdes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Observatório de Tecnologias Verdes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3a74ad7222bb019",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/deposito-internacional-de-marcas-madri",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Depósito Internacional de Marcas (Madri)"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "fbcf2f98a45e575",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/deposito-internacional-de-patentes-pct-cup",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Depósito Internacional de Patentes (PCT/CUP)"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b51b43207743798",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/relacoes-e-parcerias-nacionais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relações e Parcerias Nacionais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c1ae736ac5a2203",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/relacoes-e-parcerias-nacionais/documentos-act",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Documentos ACT"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "019b6535af8f083",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/relacoes-e-parcerias-nacionais/acts",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "ACTs"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "615cac07b549f51",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/relacoes-e-parcerias-internacionais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relações e Parcerias Internacionais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a72a1a24de59f0c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/estudos-e-informacao-tecnologica",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Estudos e Informação Tecnológica"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "21016a2326ce85c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/tramites-prioritarios-de-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Trâmites Prioritários de Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f78190325f43a5e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Projetos Estratégicos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "89ea2b198e0451e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/contato-direto-com-o-usuario",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Contato Direto com o Usuário"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d7aa698186432a5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/combate-a-falsificacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Combate à Falsificação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ed594c529025451",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/combate-a-falsificacao/dncf-marcas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Diretório Nacional de Combate à Falsificação de Marcas CNCP–INPI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "c4c97e70a92dfac",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/combate-a-falsificacao/dncf-igs",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Diretório Nacional de Combate à Falsificação de Indicações Geográficas CNCP–INPI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ef16bf8a7a087e7",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/combate-a-falsificacao/plataforma-bebidas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Plataforma Bebidas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7b064b158bae7a3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/combate-a-falsificacao/diretorio-medicamentos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Diretório Medicamentos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1ae6362802a6d84",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/memoria-da-propriedade-industrial",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Memória da Propriedade Industrial"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1de61ca8792a2bb",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/combate-ao-backlog-de-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Combate ao Backlog de Patentes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9cdf907f90f1295",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/webinario-o-acordo-de-haia-no-brasil-lancamento-e-implementacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Webinário Acordo de Haia"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "0e632639c0ec898",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/inova-simples",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Inova Simples"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d5e99b7e037f530",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/modernizacao-tecnologica",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Roadmap de Modernização Tecnológica"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "adf8e13e760f7fd",
+    "destino_original": "https://www.gov.br/inpi/pt-br/projetos-estrategicos/portal-de-servicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Portal de Serviços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "08fdcc5936ca552",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "INPI Data"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9e51e2239642f15",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/indice-brasil-de-inovacao-e-desenvolvimento-ibid",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Índice Brasil de Inovação e Desenvolvimento (IBID)"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8f2be31cbcffe48",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/dados-e-series-temporais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dados e Séries Temporais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "821abec0d1a0368",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/paineis-e-infograficos-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Painéis e Infográficos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "cfc3e29c56f9ec8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/relatorios",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Relatórios"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9c7edf5e0209f22",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/relatorios/cenario-economico-da-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cenario Economico da PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "91df847b46877de",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/estudos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Estudos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "606973a9ddf9b81",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/valor-economico-e-gestao-estrategica-da-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Valor Econômico e Gestão Estratégica da PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1439587ea5bd99e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/valor-economico-e-gestao-estrategica-da-pi/negociando-a-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Negociando a PI",
+      "Entender como negociar ativos de propriedade intelectual ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e207eea5fbe14c9",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/valor-economico-e-gestao-estrategica-da-pi/valorando-a-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Valorando a PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ab3740ee4e296a5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/valor-economico-e-gestao-estrategica-da-pi/financiando-a-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Financiando a PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5b2eea3cab57312",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/valor-economico-e-gestao-estrategica-da-pi/auditando-a-pi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Auditando a PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3c09d4d6a44573a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/inpi-data/valor-economico-e-gestao-estrategica-da-pi/divulgacoes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Divulgações"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f865896d99991f4",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Central de Conteúdo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "8577018286faad3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/casosdesucessoempi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Casos de Sucesso em PI"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "bab45261b5b672c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/casosdesucessoempi/anexos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Anexos do Edital de Chamamento Público nº 01/2026"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f6d553b1f9f325f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/casosdesucessoempi/cronograma",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cronograma do Chamamento Público nº 01/2026"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b3c5c8aae7c0964",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/casosdesucessoempi/perguntas-frequentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Perguntas frequentes do Chamamento Público nº 01/2026"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f8e717e079eaa71",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/casosdesucessoempi/resultados",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Resultados do Chamamento Público nº 01/2026"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9a631d3159297bf",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/legislacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Legislação e Atos Normativos Internos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7f4cc54951f7775",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/publicacoes-de-propriedade-industrial",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Publicações de Propriedade Industrial"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d3322f9cc966d1b",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/alerta-contra-fraudes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Alerta contra Fraudes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a4de509dbf0823f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/carta-de-servicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Carta de Serviços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4766e23f181c35f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/acoes-e-programas/carta-de-servicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Carta de Serviços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e0342f3566f769c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/comunicacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Comunicação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d295c92eec23284",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/noticias",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Notícias"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "0b72fa1762e7b77",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/webmail",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Webmail"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "524cc029bb3a573",
+    "destino_original": "https://www.gov.br/pt-br/servicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Serviços"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "43c49217639615b",
+    "destino_original": "https://www.gov.br/pt-br/servicos/buscar-servicos-por",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Buscar serviços por"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "34139b14f543641",
+    "destino_original": "https://www.gov.br/pt-br/categorias",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Categorias"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3364bb5c2e5b549",
+    "destino_original": "https://www.gov.br/pt-br/servicos/listar_orgaos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Órgãos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7809228c0d7a7c6",
+    "destino_original": "https://www.gov.br/pt-br/servicos-estaduais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Estados"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d54ac06f77bc46b",
+    "destino_original": "https://www.gov.br/pt-br/servicos/servicos-por-publico-alvo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Serviços por público alvo"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "db9e102b0421226",
+    "destino_original": "https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_cidadaos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cidadãos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d1be5c13746ec3c",
+    "destino_original": "https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_empresas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Empresas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d1a9cea59663695",
+    "destino_original": "https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_orgaos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Órgãos e Entidades Públicas"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "45c23f3ec00d3dd",
+    "destino_original": "https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_outros",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Demais segmentos (ONGs, organizações sociais, etc)"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f695ec31c5a1745",
+    "destino_original": "https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_servidor",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Servidor Público"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9b9f8e3209d3e86",
+    "destino_original": "https://www.gov.br/pt-br/temas-em-destaque",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Temas em Destaque"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "b9194631f0cfc7a",
+    "destino_original": "https://www.gov.br/pt-br/temas/transparencia-fiscal-orcamento-nacional",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Orçamento Nacional"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "333ecf0649ed305",
+    "destino_original": "https://www.gov.br/pt-br/temas/redes-civis-de-unidades-de-atendimento-do-governo-federal",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Redes de Atendimento da Administração Pública Federal"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ba2ecda20187d13",
+    "destino_original": "https://www.gov.br/pt-br/temas/protecao-de-dados-pessoais",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Proteção de Dados Pessoais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7b49a950efa6b80",
+    "destino_original": "https://www.gov.br/pt-br/temas/servicos-para-imigrantes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Serviços para Imigrantes"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "d6a6c19756ad04d",
+    "destino_original": "https://www.gov.br/pt-br/temas/politica-e-orcamento-educacional",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Política e Orçamento Educacionais"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "92dcffcc2fe387c",
+    "destino_original": "https://www.gov.br/pt-br/temas/educacao-profissional-e-tecnologica-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Educação Profissional e Tecnológica"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1e261e0b393f037",
+    "destino_original": "https://www.gov.br/pt-br/temas/habilidades-online-para-jovens-e-adultos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Educação Profissional para Jovens e Adultos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "dc0bb9b0099d53d",
+    "destino_original": "https://www.gov.br/pt-br/temas/trabalho-emprego",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Trabalho e Emprego"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "638ee1accd809cc",
+    "destino_original": "https://www.gov.br/pt-br/temas/acesso-a-educacao-para-pessoas-com-deficiencia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Serviços para Pessoas com Deficiência"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "43697c0e7a7b480",
+    "destino_original": "https://www.gov.br/pt-br/temas/politica-e-legislacao-contra-a-discriminacao-racial",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Combate à Discriminação Racial"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "700a15ad50338a6",
+    "destino_original": "https://www.gov.br/pt-br/temas/politica-e-orcamento-de-protecao-social",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Política de Proteção Social"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "db1ddcc123807c9",
+    "destino_original": "https://www.gov.br/pt-br/temas/politica-para-mulheres",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Política para Mulheres"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "3129c52542411f6",
+    "destino_original": "https://www.gov.br/pt-br/temas/saude-reprodutiva-da-mulher",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Saúde Reprodutiva da Mulher"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "4f8010c21c938ce",
+    "destino_original": "https://www.gov.br/pt-br/temas/desenvolvimento-cuidados-e-educacao-pre-escolar",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Cuidados na Primeira Infância"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "892735be726516f",
+    "destino_original": "https://www.gov.br/pt-br/temas/habitacao-popular",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Habitação Popular"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5cec4898bbbf473",
+    "destino_original": "https://www.gov.br/pt-br/temas/controle-da-poluicao-e-outras-medidas-de-precaucao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Controle de Poluição e Resíduos Sólidos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "82afe1e966252d3",
+    "destino_original": "https://www.gov.br/pt-br/noticias",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Notícias"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a9a0e3529951836",
+    "destino_original": "https://www.gov.br/planalto",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acompanhe o Planalto"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "678022e63e8e22b",
+    "destino_original": "https://www.gov.br/pt-br/navegacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Navegação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "35f7db1d6db76c3",
+    "destino_original": "https://www.gov.br/pt-br/sitemap",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Mapa do Site"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "079c79e80ca6e8a",
+    "destino_original": "https://www.gov.br/pt-br/termos-de-uso",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Termo de Uso e Aviso de Privacidade",
+      "Termos de Uso"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "373736fef54ed78",
+    "destino_original": "https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/atendimento-gov.br/duvidas-na-plataforma-de-automacao/cidadao/consultar-as-minhas-solicitacoes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultar minhas solicitações"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "a5340962a8bb944",
+    "destino_original": "https://www.gov.br/pt-br/por-dentro-do-govbr",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Por dentro do Gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "7f92abb4228657a",
+    "destino_original": "https://www.gov.br/pt-br/por-dentro-do-govbr/perguntas-frequentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas Frequentes em relação ao Portal gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "31e0eb1499eec8e",
+    "destino_original": "http://faq-login-unico.servicos.gov.br/en/latest/",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dúvidas Frequentes da conta gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "ed57aa71d0144f9",
+    "destino_original": "https://www.gov.br/pt-br/por-dentro-do-govbr/ajuda-para-navegar-o-portal",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ajuda para Navegar o Portal"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "94d17fe0a01891c",
+    "destino_original": "https://www.gov.br/pt-br/por-dentro-do-govbr/conheca-os-elementos-do-portal",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Conheça os elementos do Portal"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f812c67a0ff7d49",
+    "destino_original": "https://www.gov.br/participamaisbrasil/sobre",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Política de e-participação"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "37b69e0e7a981c8",
+    "destino_original": "https://www.gov.br/governodigital/pt-br",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Governo Digital"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "99b1eba3497eea6",
+    "destino_original": "https://www.gov.br/pt-br/guia-de-edicao-de-servicos-do-gov.br/bem-vindo-editor",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Guia de Edição de Serviços do Portal Gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "65d26357c4bcf3f",
+    "destino_original": "https://www.gov.br/pt-br/canais-do-executivo-federal",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Canais do Executivo Federal"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "1b43c2a7b66b46f",
+    "destino_original": "https://www.gov.br/pt-br/dados-da-administracao-publica-federal",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dados da Administração Pública Federal"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "08b02e885bbc824",
+    "destino_original": "https://www.gov.br/governodigital/pt-br/dados-abertos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Dados Abertos"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "53b7fbd0a22b7d0",
+    "destino_original": "https://www.gov.br/gestao/pt-br/acesso-a-informacao/servidores/servidores-publicos/painel-estatistico-de-pessoal",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Painel Estatístico de Pessoal"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "cfaf7724d9247fc",
+    "destino_original": "http://paineldecompras.economia.gov.br/",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Painel de Compras da Administração Pública Federal"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "f2ed98bff448165",
+    "destino_original": "https://www.gov.br/empresas-e-negocios/pt-br",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Empresas e Negócios"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "575edc4d0a3ff90",
+    "destino_original": "https://www.facebook.com/inpibrasil",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Facebook"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "835e06d31760648",
+    "destino_original": "https://www.instagram.com/inpibrasil",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Instagram"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "e3acb4047602450",
+    "destino_original": "https://www.youtube.com/@institutonacionaldaproprie2128",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "YouTube"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "96ee85965d63b35",
+    "destino_original": "https://www.twitter.com/inpibrasil",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Twitter"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "36cb67df13204ed",
+    "destino_original": "https://linkedin.com/company/inpibrasil",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Linkedin"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "9b7c33f9cc763f4",
+    "destino_original": "https://app.powerbi.com/view?r=eyJrIjoiY2I2NjRhYmMtY2MwZS00MzBjLWE4NjMtMGMyZjNhM2E4YjRkIiwidCI6IjU4MTVmODA4LTYwOTEtNDdiZC1hY2FiLTMwYzA4ZmU3YjlmMiJ9",
+    "tipo": "Painel sem integração offline",
+    "rotulos": [
+      "Abrir painel em outra janela"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V2/P01.html",
+      "V3/P01.html",
+      "V4/P01.html"
+    ]
+  },
+  {
+    "id": "c1a7130d119f5f9",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/irradiar-com-as-duas-portarias.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V2/P01.html",
+      "V3/P01.html",
+      "V4/P01.html"
+    ]
+  },
+  {
+    "id": "bc57b2d306c3f48",
+    "destino_original": "https://app.powerbi.com/view?r=eyJrIjoiMmJjOWEyZjctYmMxYS00ODQ4LThhYjQtYjZmOWI4ZjE2MGVhIiwidCI6IjU4MTVmODA4LTYwOTEtNDdiZC1hY2FiLTMwYzA4ZmU3YjlmMiJ9",
+    "tipo": "Painel sem integração offline",
+    "rotulos": [
+      "Consultar o painel INPI IMPACT DASH 2025 ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V2/P01.html",
+      "V3/P01.html",
+      "V4/P01.html"
+    ]
+  },
+  {
+    "id": "7eb5ebba9920035",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/irradiar-2025.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V2/P01.html",
+      "V3/P01.html",
+      "V4/P01.html"
+    ]
+  },
+  {
+    "id": "3ed290a641f9428",
+    "destino_original": "https://inpidrive.inpi.gov.br/index.php/s/4lfAr7gnqXyhCSv",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar os arquivos no INPIDRIVE ↗"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V2/P01.html",
+      "V3/P01.html",
+      "V4/P01.html"
+    ]
+  },
+  {
+    "id": "a824289f5f5688c",
+    "destino_original": "https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada"
+    ],
+    "referencias": [
+      "V1/P01.html",
+      "V1/P02.html",
+      "V1/P03.html",
+      "V1/P04.html",
+      "V1/P05.html",
+      "V1/P06.html",
+      "V1/P07.html"
+    ]
+  },
+  {
+    "id": "5e04dd5ada0fa43",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy84_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: Propriedade intelectual e negócios (.ics) ↗",
+      "Baixar calendário do evento: Propriedade intelectual e negócios (.ics)"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V1/P33.html",
+      "V2/P03.html",
+      "V2/P33.html",
+      "V3/P03.html",
+      "V3/P33.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "afc908f50c6e318",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy93_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: Quando a pesquisa vira inovação (.ics) ↗",
+      "Baixar calendário do evento: Quando a pesquisa vira inovação (.ics)"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V1/P38.html",
+      "V2/P03.html",
+      "V2/P38.html",
+      "V3/P03.html",
+      "V3/P38.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "e66c6dd5aa9385c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy91_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: Software e patentes (.ics) ↗",
+      "Baixar calendário do evento: Software e patentes (.ics)"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V1/P36.html",
+      "V2/P03.html",
+      "V2/P36.html",
+      "V3/P03.html",
+      "V3/P36.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "52802f9d8168e72",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy86_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: Sua inovação está protegida? (.ics) ↗",
+      "Baixar calendário do evento: Sua inovação está protegida? (.ics)"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V1/P34.html",
+      "V2/P03.html",
+      "V2/P34.html",
+      "V3/P03.html",
+      "V3/P34.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "c15563b21135597",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy94_of_evento-1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Informações do evento: Patentes de alimentos: da ideia à proteção ↗"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V2/P03.html",
+      "V3/P03.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "27a5269056352ec",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy94_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: Patentes de alimentos: da ideia à proteção (.ics) ↗"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V2/P03.html",
+      "V3/P03.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "1c872476009dd25",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy90_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: Marcas e patentes para empresas (.ics) ↗",
+      "Baixar calendário do evento: Marcas e patentes para empresas (.ics)"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V1/P35.html",
+      "V2/P03.html",
+      "V2/P35.html",
+      "V3/P03.html",
+      "V3/P35.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "9e0c22e7416c209",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy83_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: II Seminário Inova CCB — 50 anos (.ics) ↗",
+      "Baixar calendário do evento: II Seminário Inova CCB — 50 anos (.ics)"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V1/P32.html",
+      "V2/P03.html",
+      "V2/P32.html",
+      "V3/P03.html",
+      "V3/P32.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "54b3a641c716f3d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy92_of_evento-1/ics_view",
+    "tipo": "Arquivo de calendário não incluído",
+    "rotulos": [
+      "Baixar calendário do evento: Transformar: inovação e IA (.ics) ↗",
+      "Baixar calendário do evento: Transformar: inovação e IA (.ics)"
+    ],
+    "referencias": [
+      "V1/P03.html",
+      "V1/P37.html",
+      "V2/P03.html",
+      "V2/P37.html",
+      "V3/P03.html",
+      "V3/P37.html",
+      "V4/P03.html"
+    ]
+  },
+  {
+    "id": "ed2ed652c7b114f",
+    "destino_original": "https://academiavirtual.inpi.gov.br/moodle/course/index.php?categoryid=9",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "cadastro no ambiente de aprendizagem Moodle ↗"
+    ],
+    "referencias": [
+      "V1/P04.html",
+      "V2/P04.html",
+      "V3/P04.html",
+      "V4/P04.html"
+    ]
+  },
+  {
+    "id": "840d3fde6c5b531",
+    "destino_original": "https://www.youtube.com/watch?v=Hey0edBXfag",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "Acessar o vídeo sobre o Programa de Mentoria ↗"
+    ],
+    "referencias": [
+      "V1/P04.html",
+      "V2/P04.html",
+      "V3/P04.html",
+      "V4/P04.html"
+    ]
+  },
+  {
+    "id": "0e8771cc918dc64",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/marcas/tramite-prioritario-de-marcas/tramite-prioritario-de-marcas",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultar trâmite prioritário de marcas ↗",
+      "trâmite prioritário de marcas ↗"
+    ],
+    "referencias": [
+      "V1/P04.html",
+      "V1/P26.html",
+      "V2/P04.html",
+      "V2/P26.html",
+      "V3/P04.html",
+      "V3/P26.html",
+      "V4/P04.html"
+    ]
+  },
+  {
+    "id": "61f1fdbfe114821",
+    "destino_original": "https://epesquisa.inpi.gov.br/index.php/753547?lang=pt-BR",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar formulário de solicitação de palestra ↗"
+    ],
+    "referencias": [
+      "V1/P05.html",
+      "V2/P05.html",
+      "V3/P05.html",
+      "V4/P05.html"
+    ]
+  },
+  {
+    "id": "50b2b883ed776f4",
+    "destino_original": "mailto:diadd@inpi.gov.br",
+    "tipo": "Contato por e-mail",
+    "rotulos": [
+      "diadd@inpi.gov.br"
+    ],
+    "referencias": [
+      "V1/P05.html",
+      "V2/P05.html",
+      "V3/P05.html",
+      "V4/P05.html"
+    ]
+  },
+  {
+    "id": "8a662e3f1b1e80f",
+    "destino_original": "https://app.powerbi.com/view?r=eyJrIjoiMDU0ZjIzYmUtMmI0NS00M2VjLWE2ZWUtMDA5MzExYTU3MWNmIiwidCI6IjU4MTVmODA4LTYwOTEtNDdiZC1hY2FiLTMwYzA4ZmU3YjlmMiJ9&pageName=0c2c1c38d0962c017803",
+    "tipo": "Painel sem integração offline",
+    "rotulos": [
+      "Abrir painel em outra janela"
+    ],
+    "referencias": [
+      "V1/P06.html",
+      "V2/P06.html",
+      "V3/P06.html",
+      "V4/P06.html"
+    ]
+  },
+  {
+    "id": "5f0736fd4e218bd",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/relacoes-e-parcerias-nacionais/acordos-de-cooperacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultar acordos de cooperação vigentes ↗"
+    ],
+    "referencias": [
+      "V1/P06.html",
+      "V2/P06.html",
+      "V3/P06.html",
+      "V4/P06.html"
+    ]
+  },
+  {
+    "id": "23c485ab2314ca1",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/relacoes-e-parcerias-nacionais/acordos-de-cooperacao-nao-vigentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultar acordos de cooperação encerrados ↗"
+    ],
+    "referencias": [
+      "V1/P06.html",
+      "V2/P06.html",
+      "V3/P06.html",
+      "V4/P06.html"
+    ]
+  },
+  {
+    "id": "3a851943277183e",
+    "destino_original": "mailto:dicop@inpi.gov.br",
+    "tipo": "Contato por e-mail",
+    "rotulos": [
+      "dicop@inpi.gov.br"
+    ],
+    "referencias": [
+      "V1/P06.html",
+      "V2/P06.html",
+      "V3/P06.html",
+      "V4/P06.html"
+    ]
+  },
+  {
+    "id": "d5c9db9a5e151d3",
+    "destino_original": "https://www.gov.br/inpi/pt-br/plataforma-integrada-de-atendimento",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar a Plataforma Integrada de Atendimento ↗"
+    ],
+    "referencias": [
+      "V1/P07.html",
+      "V2/P07.html",
+      "V3/P07.html",
+      "V4/P07.html"
+    ]
+  },
+  {
+    "id": "0d7b93bda965e1c",
+    "destino_original": "https://calendly.com/srpi-norte-dff3/30min?month=2026-06",
+    "tipo": "Inscrição ou agendamento não simulado",
+    "rotulos": [
+      "Agendar atendimento em Manaus ↗"
+    ],
+    "referencias": [
+      "V1/P07.html",
+      "V2/P07.html",
+      "V3/P07.html",
+      "V4/P07.html"
+    ]
+  },
+  {
+    "id": "6079cb8ffde4b03",
+    "destino_original": "https://calendly.com/srpi-nordeste",
+    "tipo": "Inscrição ou agendamento não simulado",
+    "rotulos": [
+      "Consultar informações de agendamento no Nordeste ↗"
+    ],
+    "referencias": [
+      "V1/P07.html",
+      "V2/P07.html",
+      "V3/P07.html",
+      "V4/P07.html"
+    ]
+  },
+  {
+    "id": "72ef4cbb5061de7",
+    "destino_original": "https://calendly.com/srpi-centro-oeste",
+    "tipo": "Inscrição ou agendamento não simulado",
+    "rotulos": [
+      "Agendar atendimento em Brasília ↗"
+    ],
+    "referencias": [
+      "V1/P07.html",
+      "V2/P07.html",
+      "V3/P07.html",
+      "V4/P07.html"
+    ]
+  },
+  {
+    "id": "6bde002d744c496",
+    "destino_original": "https://calendly.com/srpi-sudeste",
+    "tipo": "Inscrição ou agendamento não simulado",
+    "rotulos": [
+      "Agendar atendimento em São Paulo ↗"
+    ],
+    "referencias": [
+      "V1/P07.html",
+      "V2/P07.html",
+      "V3/P07.html",
+      "V4/P07.html"
+    ]
+  },
+  {
+    "id": "7d9d4bc89a197af",
+    "destino_original": "https://calendly.com/srpi-sul",
+    "tipo": "Inscrição ou agendamento não simulado",
+    "rotulos": [
+      "Agendar atendimento em Florianópolis ↗"
+    ],
+    "referencias": [
+      "V1/P07.html",
+      "V2/P07.html",
+      "V3/P07.html",
+      "V4/P07.html"
+    ]
+  },
+  {
+    "id": "ecf94aeb53817fc",
+    "destino_original": "mailto:cgdi@inpi.gov.br",
+    "tipo": "Contato por e-mail",
+    "rotulos": [
+      "cgdi@inpi.gov.br"
+    ],
+    "referencias": [
+      "V1/P08.html",
+      "V2/P08.html",
+      "V3/P08.html",
+      "V4/P08.html"
+    ]
+  },
+  {
+    "id": "c939e3cb91f7fb6",
+    "destino_original": "https://app.powerbi.com/view?r=eyJrIjoiOTQyYTQzNjYtNmM1NS00OTcyLWEwMTgtOTlhZTVlNjY2MTk1IiwidCI6IjU4MTVmODA4LTYwOTEtNDdiZC1hY2FiLTMwYzA4ZmU3YjlmMiJ9&pageName=69871dfc22e357b3f7c9",
+    "tipo": "Painel sem integração offline",
+    "rotulos": [
+      "Abrir painel em outra janela"
+    ],
+    "referencias": [
+      "V1/P08.html",
+      "V2/P08.html",
+      "V3/P08.html",
+      "V4/P08.html"
+    ]
+  },
+  {
+    "id": "5db90fe0eefe442",
+    "destino_original": "https://www.gov.br/inpi/pt-br/assuntos/noticias/conheca-o-meus-pedidos-a-forma-mais-facil-de-acompanhar-processos-no-inpi",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Conheça a ferramenta Meus Pedidos ↗"
+    ],
+    "referencias": [
+      "V1/P10.html",
+      "V2/P10.html",
+      "V3/P10.html",
+      "V4/P10.html"
+    ]
+  },
+  {
+    "id": "b364ce07a10aa84",
+    "destino_original": "https://inpidrive.inpi.gov.br/index.php/s/MAgX1CtcAER43fu",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar vídeos da série INPI na Prática ↗"
+    ],
+    "referencias": [
+      "V1/P11.html",
+      "V2/P11.html",
+      "V3/P11.html",
+      "V4/P11.html"
+    ]
+  },
+  {
+    "id": "8efe6eb0ea1c7ec",
+    "destino_original": "https://online.fliphtml5.com/pagina_cgdi/yect/#p=1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ler o quadrinho “PI no Campus” (site externo) ↗"
+    ],
+    "referencias": [
+      "V1/P12.html",
+      "V2/P12.html",
+      "V3/P12.html",
+      "V4/P12.html"
+    ]
+  },
+  {
+    "id": "32379d1ba76742b",
+    "destino_original": "https://online.fliphtml5.com/pagina_cgdi/dcsr/#p=1",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ler o quadrinho “IG UFSC” (site externo) ↗"
+    ],
+    "referencias": [
+      "V1/P12.html",
+      "V2/P12.html",
+      "V3/P12.html",
+      "V4/P12.html"
+    ]
+  },
+  {
+    "id": "18ecd4f076d94d7",
+    "destino_original": "https://app.powerbi.com/view?r=eyJrIjoiOWQzZDlmMjQtOWE1Zi00MmE5LWJjY2MtYmU5NDY5MDljOWVhIiwidCI6IjU4MTVmODA4LTYwOTEtNDdiZC1hY2FiLTMwYzA4ZmU3YjlmMiJ9",
+    "tipo": "Painel sem integração offline",
+    "rotulos": [
+      "Abrir painel em outra janela"
+    ],
+    "referencias": [
+      "V1/P13.html",
+      "V2/P13.html",
+      "V3/P13.html",
+      "V4/P13.html"
+    ]
+  },
+  {
+    "id": "2ac23a3e30f8938",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/copy_of_NovoFolhetoSoftware.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P13.html",
+      "V2/P13.html",
+      "V3/P13.html",
+      "V4/P13.html"
+    ]
+  },
+  {
+    "id": "2c6d200924e8220",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/pgesp-inpi-cartilha-de-propriedade-intelectual.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P14.html",
+      "V2/P14.html",
+      "V3/P14.html",
+      "V4/P14.html"
+    ]
+  },
+  {
+    "id": "fa2c6e085558709",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/cartilha-inpi-abes-vf.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P14.html",
+      "V2/P14.html",
+      "V3/P14.html",
+      "V4/P14.html"
+    ]
+  },
+  {
+    "id": "1fdf5cebe43db8c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/relatorio-3-trimestre-2025-tarjado.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "c6d94975ee41e80",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/relatorio-semestre-1-2025-da-cgdi-para-publico-externo-e-interno.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "ccf531beb91cd39",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/relatorio-anual-2025-tarjado.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "a39b45ce48d8898",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/relatorio_dicop_2025_versao_final_entregue.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "c2d0ca32fc06cb6",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/relatorio-1-trimestre_compressed.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "d44280b9461cee4",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/2__trimestre__relatorio_.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "d28a4df06e3da26",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/cosbio-embrapa-1.pptx",
+    "tipo": "Documento sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "84f1614f31dd231",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/cgdi-cosbio-3-de-junho-2026-vf.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P17.html",
+      "V2/P17.html",
+      "V3/P17.html",
+      "V4/P17.html"
+    ]
+  },
+  {
+    "id": "846ffc577aa24c7",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-amazonas-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Amazonas (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "e5221ea8348b1e4",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-goias-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Goiás (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "8e2f8529c0ce826",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-maranhao-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Maranhão (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "46aa30d3a306514",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/mato-grosso-do-sul",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Página da secretaria estadual — Mato Grosso do Sul ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "178dd51d86e6508",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-minas-gerais-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Minas Gerais (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "cc8f93e7d82d54e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-parana-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Paraná (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "04b2582319632b6",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-pernambuco-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Pernambuco (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "9b1cf8aa729101b",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-piaui-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Piauí (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "0184d4a94592088",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-rio-grande-do-sul-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Rio Grande do Sul (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "197c29a363c86eb",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-rondonia-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Rondônia (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "3cdf4e303eb59da",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-roraima-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Roraima (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "7d022797e5e1058",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-sao-paulo-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — São Paulo (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "ac8f5c18786ee7f",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-tocantins-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da secretaria estadual — Tocantins (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "6bd850ff0513d10",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-espirito-santo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Página da secretaria estadual — Espírito Santo ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "ff508ccc55df17c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-distrito-federal",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Página da secretaria estadual — Distrito Federal ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "3cd74f4983acf70",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-bahia",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Página da secretaria estadual — Bahia ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "b1164960e33a9be",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy2_of_programas-de-pi-secretarias/secretaria-mato-grosso",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Página da secretaria estadual — Mato Grosso ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "7f85b9c8c315737",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-acre-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Acre (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "bdcba3f93cd6e4a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-amazonas-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Amazonas (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "99bc84fb7ec5e28",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-bahia-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Bahia (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "ef8d7ad8f3219bb",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-ceara-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Ceará (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "da88f9521cb971b",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-distrito-federal-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Distrito Federal (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "580371f965b657c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-espirito-santo-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Espírito Santo (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "d13a982e322d4a5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-goias-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Goiás (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "75bf4fb601ad2a8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-mato-grosso-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Mato Grosso (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "cab1d344a0ed22d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-minas-gerais-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Minas Gerais (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "e29fb8ce3de8a22",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-para-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Pará (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "1a19fba9a3c899a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-parana-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Paraná (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "d6f7e556923dbb8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-pernambuco-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Pernambuco (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "b65abebb504a209",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-rio-de-janeiro-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Rio De Janeiro (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "e1f41a53fbd851a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-roraima-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Roraima (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "c26f0956fe31f28",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-sao-paulo-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — São Paulo (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "7d4a3fef66c2821",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-sergipe-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Sergipe (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "b9263f00a523d65",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-tocantins-tarjado-1.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Tocantins (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "19e6f4b0a300187",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy3_of_programas-de-pi-secretarias/federacao-mato-grosso-do-sul.png",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Imagem da federação das indústrias — Mato Grosso do Sul (PNG) ↗"
+    ],
+    "referencias": [
+      "V1/P18.html",
+      "V2/P18.html",
+      "V3/P18.html",
+      "V4/P18.html"
+    ]
+  },
+  {
+    "id": "74a3f007e30998c",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/noticias/inpi-amplia-programa-de-pi-junto-as-secretarias-de-inovacao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "INPI amplia Programa de PI junto às Secretarias de Inovação ↗"
+    ],
+    "referencias": [
+      "V1/P19.html",
+      "V2/P19.html",
+      "V3/P19.html",
+      "V4/P19.html"
+    ]
+  },
+  {
+    "id": "8cac3a5356a619a",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/noticias/inpi-amplia-parcerias-com-federacoes-das-industrias-para-acoes-em-propriedade-industrial",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "INPI amplia parcerias com federações das indústrias para ações em propriedade industrial ↗"
+    ],
+    "referencias": [
+      "V1/P19.html",
+      "V2/P19.html",
+      "V3/P19.html",
+      "V4/P19.html"
+    ]
+  },
+  {
+    "id": "e190e02f13facb8",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/noticias/inpi-lanca-programa-de-pi-para-o-desenvolvimento-do-maranhao",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "INPI lança Programa de PI para o desenvolvimento do Maranhão ↗"
+    ],
+    "referencias": [
+      "V1/P19.html",
+      "V2/P19.html",
+      "V3/P19.html",
+      "V4/P19.html"
+    ]
+  },
+  {
+    "id": "7d7b41b8beda51a",
+    "destino_original": "https://www.youtube.com/watch?v=AteY_dWbhuw&t=6s",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "INPI na Prática ↗"
+    ],
+    "referencias": [
+      "V1/P20.html",
+      "V2/P20.html",
+      "V3/P20.html",
+      "V4/P20.html"
+    ]
+  },
+  {
+    "id": "aa5d59a144591fc",
+    "destino_original": "https://www.youtube.com/watch?v=4M6Xws4gbFo",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "O que é propriedade intelectual? ↗"
+    ],
+    "referencias": [
+      "V1/P20.html",
+      "V2/P20.html",
+      "V3/P20.html",
+      "V4/P20.html"
+    ]
+  },
+  {
+    "id": "191866e502d5c77",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/copy_of_guia1protegendo_sua_vantagem_competitiva.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P20.html",
+      "V2/P20.html",
+      "V3/P20.html",
+      "V4/P20.html"
+    ]
+  },
+  {
+    "id": "4798c9e283b6a23",
+    "destino_original": "https://www.gov.br/inpi/pt-br/plataforma-integrada-de-atendimento/painel-interativo",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar o painel do sistema de propriedade intelectual ↗"
+    ],
+    "referencias": [
+      "V1/P20.html",
+      "V2/P20.html",
+      "V3/P20.html",
+      "V4/P20.html"
+    ]
+  },
+  {
+    "id": "16a766b32049bc6",
+    "destino_original": "https://www.gov.br/propriedade-intelectual/pt-br/publicacoes/cartilhas/propriedade-intelectual-aplicada-a-micro-e-pequenas-empresas-mpes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Ler cartilha para micro e pequenas empresas ↗"
+    ],
+    "referencias": [
+      "V1/P20.html",
+      "V2/P20.html",
+      "V3/P20.html",
+      "V4/P20.html"
+    ]
+  },
+  {
+    "id": "01c3922516477eb",
+    "destino_original": "https://www.gov.br/inpi/pt-br/plataforma-integrada-de-atendimento/marca-x-nome-empresarial-x-dominio",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Entender a diferença entre marca, nome empresarial e domínio na internet ↗"
+    ],
+    "referencias": [
+      "V1/P21.html",
+      "V2/P21.html",
+      "V3/P21.html",
+      "V4/P21.html"
+    ]
+  },
+  {
+    "id": "92ef98cd8ced814",
+    "destino_original": "https://www.youtube.com/watch?v=HFyEh8FwShE&list=PLH6pvmqw30sX717nX7XkcEtImE784aUfD&index=5",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "Assistir ao vídeo de orientação da jornada ↗"
+    ],
+    "referencias": [
+      "V1/P21.html",
+      "V1/P22.html",
+      "V2/P21.html",
+      "V2/P22.html",
+      "V3/P21.html",
+      "V3/P22.html",
+      "V4/P21.html"
+    ]
+  },
+  {
+    "id": "8ab6f71621e8972",
+    "destino_original": "https://www.gov.br/inpi/pt-br/plataforma-integrada-de-atendimento/logica-dos-servicos",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Entender como funcionam os serviços do INPI ↗",
+      "Conhecer o funcionamento dos serviços do INPI ↗",
+      "Entenda como funcionam os serviços do INPI ↗"
+    ],
+    "referencias": [
+      "V1/P21.html",
+      "V1/P22.html",
+      "V1/P23.html",
+      "V1/P24.html",
+      "V2/P21.html",
+      "V2/P22.html",
+      "V2/P23.html"
+    ]
+  },
+  {
+    "id": "7d1c2cd172e3de8",
+    "destino_original": "https://www.youtube.com/watch?v=8NbaaSKB9vQ&list=PLH6pvmqw30sX717nX7XkcEtImE784aUfD&index=10",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "Acessar vídeo sobre proteção de invenções ↗"
+    ],
+    "referencias": [
+      "V1/P23.html",
+      "V2/P23.html",
+      "V3/P23.html",
+      "V4/P23.html"
+    ]
+  },
+  {
+    "id": "912793a53204d23",
+    "destino_original": "https://academiavirtual.inpi.gov.br/moodle/course/view.php?id=325",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar o curso de patentes na Academia do INPI ↗"
+    ],
+    "referencias": [
+      "V1/P23.html",
+      "V2/P23.html",
+      "V3/P23.html",
+      "V4/P23.html"
+    ]
+  },
+  {
+    "id": "19dfe148487c1ab",
+    "destino_original": "https://www.youtube.com/watch?v=rabKR1e7exo",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "Acessar vídeo sobre proteção do desenho industrial ↗"
+    ],
+    "referencias": [
+      "V1/P24.html",
+      "V2/P24.html",
+      "V3/P24.html",
+      "V4/P24.html"
+    ]
+  },
+  {
+    "id": "b27a82856155a3d",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/valoracao-de-ativos-de-propriedade-intelectual_pt-br-tarjado-reduzido.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P25.html",
+      "V2/P25.html",
+      "V3/P25.html",
+      "V4/P25.html"
+    ]
+  },
+  {
+    "id": "c905262a1539854",
+    "destino_original": "https://www.youtube.com/watch?v=TY3ANLKkIF8&list=PLH6pvmqw30sX717nX7XkcEtImE784aUfD&index=4",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "Assistir ao vídeo indicado para atuação internacional ↗"
+    ],
+    "referencias": [
+      "V1/P25.html",
+      "V2/P25.html",
+      "V3/P25.html",
+      "V4/P25.html"
+    ]
+  },
+  {
+    "id": "3232d115a8f1601",
+    "destino_original": "https://www.youtube.com/watch?v=TY3ANLKkIF8",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "Assistir ao vídeo indicado para atuação internacional ↗"
+    ],
+    "referencias": [
+      "V1/P25.html",
+      "V2/P25.html",
+      "V3/P25.html",
+      "V4/P25.html"
+    ]
+  },
+  {
+    "id": "8b321b82b471f36",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/publicacoes-de-propriedade-industrial/guias-de-propriedade-industrial-para-exportadores",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultar guias de propriedade industrial para exportadores ↗"
+    ],
+    "referencias": [
+      "V1/P25.html",
+      "V2/P25.html",
+      "V3/P25.html",
+      "V4/P25.html"
+    ]
+  },
+  {
+    "id": "f75dfe230d2ec2e",
+    "destino_original": "https://www.gov.br/inpi/pt-br/central-de-conteudo/publicacoes-de-propriedade-industrial/guias-de-propriedade-industrial-para-negocios",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Consultar guias de propriedade intelectual para negócios ↗"
+    ],
+    "referencias": [
+      "V1/P26.html",
+      "V2/P26.html",
+      "V3/P26.html",
+      "V4/P26.html"
+    ]
+  },
+  {
+    "id": "ec07aaf511ed2e5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/informacao-tecnologica",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Pesquisar informações tecnológicas e estudos de patentes ↗"
+    ],
+    "referencias": [
+      "V1/P26.html",
+      "V2/P26.html",
+      "V3/P26.html",
+      "V4/P26.html"
+    ]
+  },
+  {
+    "id": "a26962fe97877e9",
+    "destino_original": "https://www.gov.br/inpi/pt-br/servicos/patentes/tramite-prioritario/modalidades-de-tramite-prioritario-de-patentes",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "trâmite prioritário de patentes ↗"
+    ],
+    "referencias": [
+      "V1/P26.html",
+      "V2/P26.html",
+      "V3/P26.html",
+      "V4/P26.html"
+    ]
+  },
+  {
+    "id": "3abd0aabbaf55e7",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/card-mentoria-diadd.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P27.html",
+      "V2/P27.html",
+      "V3/P27.html",
+      "V4/P27.html"
+    ]
+  },
+  {
+    "id": "7be3c0c060e28c2",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/card-como-acompanhar-o-seu-pedido-no-inpi.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P28.html",
+      "V2/P28.html",
+      "V3/P28.html",
+      "V4/P28.html"
+    ]
+  },
+  {
+    "id": "3134e800e2d7eca",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/card-nova-tabela-de-retribuicoes-diadd.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P29.html",
+      "V2/P29.html",
+      "V3/P29.html",
+      "V4/P29.html"
+    ]
+  },
+  {
+    "id": "7444bd56bc7f465",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/NovoFolhetoSoftware.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P30.html",
+      "V2/P30.html",
+      "V3/P30.html",
+      "V4/P30.html"
+    ]
+  },
+  {
+    "id": "82023528df093c5",
+    "destino_original": "https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/pdfs-pi-em-novos-formatos/card-patentes-verdes-diadd.pdf",
+    "tipo": "Documento PDF sem arquivo local",
+    "rotulos": [
+      "Abrir arquivo no gov.br"
+    ],
+    "referencias": [
+      "V1/P31.html",
+      "V2/P31.html",
+      "V3/P31.html",
+      "V4/P31.html"
+    ]
+  },
+  {
+    "id": "77ca22367082850",
+    "destino_original": "https://docs.google.com/forms/d/e/1FAIpQLScbspKNEwJ-cWG3mxEIYncEqL-5j9N9Zz-iEByrZ2tJ4jkJHw/viewform",
+    "tipo": "Inscrição ou agendamento não simulado",
+    "rotulos": [
+      "Acessar formulário de inscrição ↗"
+    ],
+    "referencias": [
+      "V1/P32.html",
+      "V2/P32.html",
+      "V3/P32.html",
+      "V4/P32.html"
+    ]
+  },
+  {
+    "id": "a01f82544b98757",
+    "destino_original": "https://www.sympla.com.br/evento-online/sua-inovacao-esta-protegida-patentes-marcas-e-propriedade-intelectual/3599773",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar inscrição no Sympla ↗"
+    ],
+    "referencias": [
+      "V1/P34.html",
+      "V2/P34.html",
+      "V3/P34.html",
+      "V4/P34.html"
+    ]
+  },
+  {
+    "id": "7f863694275d3f6",
+    "destino_original": "https://docs.google.com/forms/d/e/1FAIpQLSdMlgt0-m-MI6f-cq_G0pyiVlPM1lKeov1w_kT4krY0IAr9RA/viewform",
+    "tipo": "Inscrição ou agendamento não simulado",
+    "rotulos": [
+      "Acessar formulário de inscrição ↗"
+    ],
+    "referencias": [
+      "V1/P35.html",
+      "V2/P35.html",
+      "V3/P35.html",
+      "V4/P35.html"
+    ]
+  },
+  {
+    "id": "e0e9c7d1494ad8e",
+    "destino_original": "https://www.youtube.com/@MTIMatoGrosso/streams",
+    "tipo": "Vídeo não incorporado",
+    "rotulos": [
+      "Consultar transmissões do MTI no YouTube ↗"
+    ],
+    "referencias": [
+      "V1/P36.html",
+      "V2/P36.html",
+      "V3/P36.html",
+      "V4/P36.html"
+    ]
+  },
+  {
+    "id": "abd4039d892e8d1",
+    "destino_original": "https://meuevento.unemat.br/softpatente/",
+    "tipo": "Página ou serviço não reproduzido",
+    "rotulos": [
+      "Acessar inscrição na UNEMAT ↗"
+    ],
+    "referencias": [
+      "V1/P36.html",
+      "V2/P36.html",
+      "V3/P36.html",
+      "V4/P36.html"
+    ]
+  }
+]

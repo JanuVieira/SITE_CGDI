@@ -1,0 +1,87 @@
+/* MCO PROTEGIDO: shell institucional. Não editar sem autorização explícita.
+   Fonte dos textos e hierarquia: HTML Gov.br/INPI salvo pelo usuário. */
+.shell-skip{position:fixed;top:-200px;left:16px;padding:12px 20px;z-index:9999;background:#fff;color:#1351b4}
+.shell-skip:focus{top:8px}
+.shell-govbar,#site-header,#portal-footer{font-family:Rawline,Arial,sans-serif}
+.shell-govbar * ,#site-header *,#portal-footer *{box-sizing:border-box}
+.shell-govbar a,#site-header a{color:#1351b4}
+.shell-govbar{background:#fff;color:#1b1b1b}
+.shell-govbar__utilities{height:32px;max-width:1290px;margin:auto;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:flex-end;padding-inline:0;font-size:12px}
+.shell-govbar__inner{min-height:72px;max-width:1290px;padding:8px 0;margin:auto;display:flex;align-items:center;gap:24px}
+.shell-govbar__logo{flex-shrink:0;display:flex;align-items:center}
+.shell-govbar__logo img{width:95px;height:auto;max-height:40px;object-fit:contain}
+.shell-govbar__divider{height:44px;width:1px;background:#d4d4d4}
+.shell-govbar__ministry{font-size:16px;color:#303030!important;line-height:1.4;text-decoration:none;max-width:375px}
+.shell-govbar__links{display:flex;align-items:center;gap:22px;margin-left:auto;font-size:15px;font-weight:600}
+.shell-govbar__links a{text-decoration:none;white-space:nowrap}
+.shell-govbar__links a:hover{text-decoration:underline}
+.shell-govbar__links details{position:relative}
+.shell-govbar__links summary{list-style:none;color:#1351b4;cursor:pointer;white-space:nowrap}
+.shell-govbar__links summary::-webkit-details-marker{display:none}
+.shell-govbar__links summary:after{content:'⌄';margin-left:8px;font-size:18px}
+.shell-govbar__links details>div{position:absolute;z-index:41;top:calc(100% + 12px);left:0;background:#fff;border:1px solid #ddd;box-shadow:0 2px 12px #0002;min-width:200px;display:flex;flex-direction:column;gap:0;padding:6px}
+.shell-govbar__links details>div a{padding:9px 12px}
+.shell-govbar__outline{border:1.5px solid #1351b4;border-radius:22px;padding:7px 12px}
+.shell-govbar__login{background:#1351b4;color:#fff!important;border-radius:22px;padding:8px 16px}
+#site-header{position:relative;z-index:30;max-width:1290px;margin:0 auto;background:#fff;color:#1b1b1b}
+#site-header .header-wrapper.secondary{display:none}/* replaced above by static govt snapshot */
+#site-header .main{padding-block:24px 16px}
+#site-header .main>.header-wrapper{display:flex;align-items:center;justify-content:space-between;gap:28px}
+#site-header .site-name-wrapper{display:flex;align-items:center;gap:10px;min-width:0}
+#site-header .site-name{font-size:26px;line-height:1.3;font-weight:400;letter-spacing:-.01em}
+#site-header .site-name a{color:#343434;text-decoration:none}
+#site-header .ico-navegacao{appearance:none;padding:0;margin:0;border:0;background:none;color:#1351b4;min-width:28px;display:inline-flex;cursor:pointer;align-items:center;justify-content:center}
+#site-header .ico-navegacao svg{display:block}
+#site-header .termos-mais-buscados{display:none}
+#site-header .govbr-busca-header{flex:0 0 min(420px,38%)}
+#site-header .govbr-busca-header .aa-Form{display:flex;align-items:center;min-height:62px;width:100%;background:#eee;border-radius:6px;gap:2px;padding-inline:24px 16px}
+#site-header .govbr-busca-header .aa-Input{order:0;background:transparent;border:0;outline-offset:2px;min-width:0;width:100%;font:italic 500 17px Rawline,Arial,sans-serif;color:#333}
+#site-header .govbr-busca-header .aa-Input::placeholder{color:#333;opacity:1}
+#site-header .govbr-busca-header .aa-SubmitButton{order:1;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:0;border:0;background:transparent;color:#1351b4;cursor:pointer}
+#site-header .navigation-wrapper{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid #e6e6e6;box-shadow:0 10px 20px #0003;z-index:55;max-height:min(75vh,680px);overflow:auto;padding:20px}
+#site-header .navigation-wrapper.is-open{display:block}
+#site-header .navigation-wrapper :is(ul,li){list-style:none;margin:0}
+#site-header .navigation-wrapper ul{padding:0 0 0 14px}
+#site-header .navigation-wrapper .list-navigation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:0}
+#site-header .navigation-wrapper a{display:block;padding:4px 0;font-size:14px;line-height:1.45;text-decoration:none}
+#site-header .navigation-wrapper .list-navigation>li>a{font-size:17px;font-weight:700;margin-bottom:12px}
+#site-header .navigation-wrapper a:hover{text-decoration:underline}
+#site-header .navigation-content-extra{border-top:1px solid #ddd;margin-top:24px;padding-top:12px}
+#site-header .links-redes-wrap{display:flex;gap:32px;flex-wrap:wrap}
+#site-header .links-redes-wrap .titulo{font-weight:700}
+#site-header .links-redes-wrap ul{padding:0}
+#site-header .navigation-wrapper :is(.sr-only){position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+#site-header .navigation-wrapper a:focus-visible,#site-header button:focus-visible,.shell-govbar a:focus-visible,.shell-govbar summary:focus-visible,#portal-footer a:focus-visible,#portal-footer button:focus-visible{outline:3px solid #ffcd07;outline-offset:2px}
+#portal-footer{background:#071d41;color:#fff;padding:40px max(24px,calc((100% - 1290px)/2)) 24px;margin:0}
+#portal-footer a,#portal-footer summary{color:#fff}
+#portal-footer .govbr-logo{height:56px;margin-bottom:20px;position:relative}
+#portal-footer .govbr-logo::after{content:'gov.br';font-weight:800;font-size:30px;letter-spacing:-.04em;color:white}
+#portal-footer .footer-wrapper{margin:0;max-width:none}
+#portal-footer .list-navigation{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px;row-gap:8px;margin:0;padding:0;list-style:none}
+#portal-footer .list-navigation li{list-style:none;margin:0}
+#portal-footer .list-navigation>li{border-top:1px solid #ffffff44;padding-top:12px}
+#portal-footer .list-navigation>li>a{font-size:17px;line-height:1.45;font-weight:700;text-decoration:none;display:inline-block;padding:6px 0}
+#portal-footer .list-navigation>li>ul{display:none;padding-left:0;margin:10px 0 18px;max-height:320px;overflow:auto}
+#portal-footer .list-navigation>li.is-open>ul{display:block}
+#portal-footer .list-navigation>li ul ul{padding-left:14px}
+#portal-footer .list-navigation>li ul li a{display:block;padding:4px 0;font-size:14px;font-weight:400;line-height:1.45;text-decoration:none}
+#portal-footer a:hover{text-decoration:underline}
+#portal-footer .shell-footer-expand{float:right;background:transparent;border:1px solid #ffffff99;border-radius:50%;color:#fff;cursor:pointer;width:32px;height:32px;font-size:20px;line-height:1}
+#portal-footer .redes-e-logos{border-top:1px solid #ffffff55;margin-top:28px;padding-top:22px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
+#portal-footer .redes-sociais>.titulo{font-weight:700;margin-bottom:12px}
+#portal-footer .portal-redes{display:flex;gap:16px;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+#portal-footer .portal-redes li{list-style:none}
+#portal-footer #footer-govbr{background:white;border-radius:3px;padding:6px}
+#portal-footer #footer-govbr a{display:block}
+#portal-footer #footer-govbr svg{display:block}
+#portal-footer .texto-copyright{font-size:12px;line-height:1.5;border-top:1px solid #ffffff55;margin-top:24px;padding-top:20px}
+#portal-footer .texto-copyright a{text-decoration:underline}
+@media(max-width:1300px){.shell-govbar__inner,.shell-govbar__utilities,#site-header{margin-inline:24px}}
+@media(max-width:1100px){.shell-govbar__inner{gap:14px;flex-wrap:wrap}.shell-govbar__links{gap:14px;flex-wrap:wrap}.shell-govbar__ministry{font-size:14px;max-width:300px}#site-header .navigation-wrapper .list-navigation{grid-template-columns:repeat(2,minmax(0,1fr))}#portal-footer .list-navigation{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:740px){.shell-govbar__inner{margin-inline:16px}.shell-govbar__utilities{margin-inline:16px}.shell-govbar__logo img{width:78px}.shell-govbar__ministry{font-size:12px;flex:1}.shell-govbar__links{width:100%;margin:0;gap:12px 16px;font-size:13px}.shell-govbar__outline,.shell-govbar__login{padding:7px 10px}#site-header{margin-inline:16px}#site-header .main>.header-wrapper{flex-direction:column;align-items:stretch;gap:16px}#site-header .site-name{font-size:19px}#site-header .govbr-busca-header{flex:0 0 auto;width:100%}#site-header .govbr-busca-header .aa-Form{min-height:48px}#site-header .navigation-wrapper .list-navigation{grid-template-columns:1fr}#portal-footer{padding:32px 16px}#portal-footer .list-navigation{grid-template-columns:1fr}}
+
+/* Correções de fidelidade visual e acessibilidade do shell congelado. */
+#site-header .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.shell-govbar__logo img{width:105px;max-height:43px;object-fit:contain}
+@media(min-width:1301px){.shell-govbar__utilities,.shell-govbar__inner{max-width:1152px}#site-header{max-width:1152px}}
+@media(min-width:1301px){#portal-footer{padding-inline:max(24px,calc((100% - 1152px)/2))}}

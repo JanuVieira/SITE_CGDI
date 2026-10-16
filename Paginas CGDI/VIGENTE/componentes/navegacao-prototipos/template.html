@@ -1,0 +1,75 @@
+<template id="cgdi-prototype-nav-template">
+  <style>
+    :host {
+      all: initial !important;
+      display: block !important;
+      position: relative !important;
+      z-index: 1001 !important;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    .cgdi-prototype-nav {
+      background: #ffcd07;
+      color: #1b1b1b;
+      font-family: Rawline, Raleway, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 16px 0;
+      width: 100%;
+    }
+
+    .cgdi-prototype-nav__inner {
+      align-items: center;
+      column-gap: 16px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    .cgdi-prototype-nav__home {
+      align-items: center;
+      color: #1b1b1b;
+      display: inline-flex;
+      font-weight: 700;
+      gap: 8px;
+      justify-self: start;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .cgdi-prototype-nav__home:hover { text-decoration-thickness: 2px; }
+    .cgdi-prototype-nav__home:focus-visible {
+      outline: 3px solid #1351b4;
+      outline-offset: 3px;
+    }
+
+    .cgdi-prototype-nav__icon { font-size: 24px; line-height: 1; }
+    .cgdi-prototype-nav__status { color: #333; text-align: right; }
+
+    @media (max-width: 575px) {
+      .cgdi-prototype-nav__inner {
+        align-items: start;
+        gap: 8px;
+        grid-template-columns: 1fr;
+        padding-inline: 16px;
+      }
+      .cgdi-prototype-nav__status { text-align: left; }
+    }
+  </style>
+  <nav class="cgdi-prototype-nav" aria-label="Navegação dos protótipos">
+    <div class="cgdi-prototype-nav__inner">
+      <a class="cgdi-prototype-nav__home" data-cgdi-prototype-home href="#">
+        <span class="cgdi-prototype-nav__icon" aria-hidden="true">←</span>
+        Retornar à página inicial
+      </a>
+      <span class="cgdi-prototype-nav__status">Protótipo vigente · navegação interna</span>
+    </div>
+  </nav>
+</template>
+

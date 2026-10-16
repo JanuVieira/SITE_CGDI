@@ -1,0 +1,30 @@
+
+/* Camada estritamente local da V1, sem modificar os estilos institucionais. */
+html {scroll-behavior:auto}
+body {overflow-wrap:anywhere}
+.cgdi-v1-p02 {max-width:1200px;margin:0 auto;padding:32px 20px 64px;}
+.cgdi-v1-p02 h1 {font-size:clamp(1.65rem,3vw,2.3rem);line-height:1.25;margin:0 0 24px;color:#252b32;}
+.cgdi-v1-p02 .grade-v1 {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:0;padding:0;list-style:none;}
+.cgdi-v1-p02 .grade-v1 li {min-width:0;}
+.cgdi-v1-p02 .card-v1 {background:#fff;border:1px solid #d6dce3;border-radius:8px;padding:24px;display:flex;flex-direction:column;height:100%;gap:12px;min-height:235px;box-shadow:none;}
+.cgdi-v1-p02 .icone-v1 {width:44px;height:44px;color:#1351b4;display:block;flex:0 0 auto;}
+.cgdi-v1-p02 .card-v1 h2 {font-size:1.25rem;line-height:1.3;margin:0;}
+.cgdi-v1-p02 .card-v1 p {margin:0;line-height:1.55;flex-grow:1;}
+.cgdi-v1-p02 .card-v1 a {color:#1351b4;font-weight:700;text-decoration:underline;}
+.cgdi-v1-p02 .card-v1 a:focus-visible,.v1-doc-link:focus-visible {outline:3px solid #000;outline-offset:4px}
+@media(max-width:900px){.cgdi-v1-p02 .grade-v1{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.cgdi-v1-p02 .grade-v1{grid-template-columns:1fr}.cgdi-v1-p02{padding:24px 16px}}
+.v1-doc-dialog {border:0;border-radius:10px;box-shadow:0 12px 46px #0005;width:min(92vw,620px);padding:0;color:#252b32;background:white;}
+.v1-doc-dialog::backdrop {background:#0009}
+.v1-doc-inner {padding:28px;display:flex;flex-direction:column;gap:14px;}
+.v1-doc-inner h2 {font-size:1.5rem;margin:0;line-height:1.3;color:#252b32;}
+.v1-doc-inner p {margin:0;line-height:1.5;}
+.v1-doc-meta {display:flex;gap:12px;flex-wrap:wrap;color:#515b65;font-size:.94rem;}
+.v1-doc-actions {display:flex;flex-wrap:wrap;gap:12px;}
+.v1-doc-actions a {min-height:44px;border-radius:999px;padding:11px 18px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;}
+.v1-doc-actions a:first-child {color:#fff;background:#1351b4;border:1px solid #1351b4;}
+.v1-doc-actions a:last-child {color:#1351b4;background:#fff;border:1px solid #1351b4;}
+.v1-doc-close {align-self:flex-end;border:0;background:transparent;color:#1351b4;text-decoration:underline;cursor:pointer;font-size:1rem;padding:8px;}
+.v1-doc-dialog details {border-top:1px solid #ddd;padding-top:10px;}
+.v1-doc-dialog summary {cursor:pointer;color:#1351b4;font-weight:700;}
+.v1-doc-dialog a:focus-visible,.v1-doc-dialog button:focus-visible,.v1-doc-dialog summary:focus-visible {outline:3px solid #000;outline-offset:3px;}

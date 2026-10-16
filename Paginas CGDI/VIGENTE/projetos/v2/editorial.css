@@ -1,0 +1,41 @@
+/* CGDI — estilos de conteúdo: delimitados ao main; não modificam govbar, header ou footer. */
+main.cgdi-editorial-shell { min-width:0; }
+main.cgdi-editorial-shell .cgdi-editorial {max-width:1120px;margin-inline:auto;padding:var(--spacing-scale-4x,32px) var(--spacing-scale-2x,16px) var(--spacing-scale-5x,40px);color:var(--color,#333)}
+main.cgdi-editorial-shell .cgdi-editorial h1 {font-size:var(--font-size-scale-up-06,2rem);font-weight:var(--font-weight-semi-bold,600);line-height:1.25;margin:0 0 var(--spacing-scale-3x,24px)}
+main.cgdi-editorial-shell .cgdi-editorial h2{font-size:var(--font-size-scale-up-03,1.5rem);font-weight:var(--font-weight-semi-bold,600);line-height:1.35;margin:var(--spacing-scale-5x,40px) 0 var(--spacing-scale-2x,16px)}
+main.cgdi-editorial-shell .cgdi-editorial h3{font-size:var(--font-size-scale-up-01,1.125rem);font-weight:var(--font-weight-semi-bold,600);margin:0 0 var(--spacing-scale-base,8px)}
+main.cgdi-editorial-shell .cgdi-editorial p,main.cgdi-editorial-shell .cgdi-editorial li{line-height:1.55;max-width:100%}
+main.cgdi-editorial-shell .cgdi-editorial p{margin:0 0 var(--spacing-scale-2x,16px)}
+main.cgdi-editorial-shell .cgdi-editorial a:not(.br-button){color:var(--interactive,#1351b4);text-underline-offset:.2em;text-decoration:underline}
+main.cgdi-editorial-shell .cgdi-editorial a:focus-visible,main.cgdi-editorial-shell .cgdi-editorial button:focus-visible{outline:3px solid var(--focus,#f2930d);outline-offset:3px}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-lead{font-size:var(--font-size-scale-up-01,1.125rem);max-width:72ch}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-secao{margin-block:var(--spacing-scale-4x,32px);border-bottom:1px solid var(--gray-20,#e5e5e5);padding-bottom:var(--spacing-scale-3x,24px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-grid-cards{list-style:none;padding:0;margin:var(--spacing-scale-2x,16px) 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--spacing-scale-3x,24px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-grid-cards>li{margin:0;min-width:0;}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-card,main.cgdi-editorial-shell .cgdi-editorial .cgdi-pre-download{border:1px solid var(--gray-20,#ddd);border-radius:var(--surface-rounder-sm,4px);box-shadow:none!important;height:100%;margin:0;padding:var(--spacing-scale-3x,24px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-card .card-content,main.cgdi-editorial-shell .cgdi-editorial .cgdi-pre-download .card-content{padding:0;display:flex;flex-direction:column;gap:var(--spacing-scale-base,8px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-card p{margin:0}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-grid-cards .br-button{align-self:start;margin-top:var(--spacing-scale-2x,16px);white-space:normal;text-align:center}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-lista-links{padding-left:var(--spacing-scale-2x,16px);list-style:none;margin:var(--spacing-scale-2x,16px) 0}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-lista-links>li{border-bottom:1px solid var(--gray-20,#eee);padding:var(--spacing-scale-2x,16px) 0}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-lista-links>li:last-child{border-bottom:0}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-lista-links>li>a{font-weight:var(--font-weight-semi-bold,600)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-lista-links p{margin:var(--spacing-scale-base,8px) 0 0}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-seven-themes{counter-reset:cgdi-theme;list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--spacing-scale-2x,16px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-seven-themes li{border:1px solid var(--gray-20,#ddd);padding:var(--spacing-scale-2x,16px);min-width:0}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-seven-themes li::before{counter-increment:cgdi-theme;content:counter(cgdi-theme) '. ';font-weight:var(--font-weight-bold,700)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-table-scroll{max-width:100%;overflow-x:auto;margin:var(--spacing-scale-2x,16px) 0}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-tabela{border-collapse:collapse;width:100%;min-width:450px}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-tabela th,main.cgdi-editorial-shell .cgdi-editorial .cgdi-tabela td{border-bottom:1px solid var(--gray-20,#ddd);padding:var(--spacing-scale-base,8px) var(--spacing-scale-2x,16px);text-align:left;vertical-align:top}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-tabela th{font-weight:var(--font-weight-semi-bold,600)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-pre-download{height:auto;margin-block:var(--spacing-scale-2x,16px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-assuntos{display:flex;gap:var(--spacing-scale-base,8px);flex-wrap:wrap}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-assunto{border:1px solid var(--gray-20,#ddd);padding:0 var(--spacing-scale-base,8px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-tipo,main.cgdi-editorial-shell .cgdi-editorial .cgdi-indisponivel,main.cgdi-editorial-shell .cgdi-editorial .cgdi-link-pendente{color:var(--gray-80,#555)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-recurso-pendente{border-left:4px solid var(--gray-40,#999);padding:var(--spacing-scale-2x,16px);background:var(--gray-2,#fafafa);margin-block:var(--spacing-scale-2x,16px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-recurso-pendente h3{font-size:1rem}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-link-pendente{font-style:italic}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-crumb{margin-bottom:var(--spacing-scale-3x,24px)}
+main.cgdi-editorial-shell .cgdi-editorial .cgdi-crumb a{font-size:var(--font-size-scale-down-01,.875rem)}
+@media(max-width:900px){main.cgdi-editorial-shell .cgdi-editorial .cgdi-grid-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){main.cgdi-editorial-shell .cgdi-editorial{padding:var(--spacing-scale-3x,24px) var(--spacing-scale-2x,16px)}main.cgdi-editorial-shell .cgdi-editorial .cgdi-grid-cards,main.cgdi-editorial-shell .cgdi-editorial .cgdi-seven-themes{grid-template-columns:minmax(0,1fr)}}

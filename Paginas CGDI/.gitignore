@@ -1,0 +1,7 @@
+.DS_Store
+dist/
+node_modules/
+.cgdi-backups/
+__MACOSX/
+._*
+*.log

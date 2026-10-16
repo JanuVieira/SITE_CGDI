@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Resultados da auditoria do ambiente digital do INPI apresentados em linguagem simples.">
+  <title>Encontrar, entender e acessar informações do INPI</title>
+  <link rel="stylesheet" href="../projetos/v1/assets/govbr-ds-core.css">
+  <link rel="stylesheet" href="./storytelling.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="report-header">
+    <a class="back-link" href="../index.html">← Voltar ao projeto</a>
+    <p class="eyebrow">INPI | CGDI · Diagnóstico</p>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-labelledby="titulo">
+      <h1 id="titulo">Encontrar, entender e acessar informações do INPI</h1>
+      <p class="hero-lead">Disponibilizar informação é o primeiro passo. Para ser útil, ela também precisa ser localizada, compreendida e acessada por diferentes pessoas, tecnologias e contextos.</p>
+      <nav class="chapter-nav" aria-label="Capítulos do diagnóstico">
+        <a href="#acervo">Acervo</a><a href="#encontrar">Encontrar</a><a href="#entender">Entender</a><a href="#acessar">Acessar</a><a href="#pdfs">PDFs</a><a href="#metodo">Método</a>
+      </nav>
+    </section>
+
+    <section class="chapter collection" id="acervo" aria-labelledby="acervo-title">
+      <div class="chapter-intro"><p class="chapter-number">01</p><div><h2 id="acervo-title">Qual é o tamanho do acervo?</h2><p>A auditoria encontrou páginas HTML e documentos PDF em escalas diferentes. Cada número representa uma unidade específica.</p></div></div>
+      <div class="collection-grid">
+        <article><strong>5.194</strong><span>URLs HTML</span></article>
+        <article><strong>7.065</strong><span>URLs PDF</span></article>
+        <article><strong>4.236</strong><span>arquivos PDF únicos</span></article>
+      </div>
+      <p class="method-note">URLs PDF e arquivos PDF únicos não são equivalentes: um mesmo arquivo pode ser referenciado por mais de uma URL.</p>
+    </section>
+
+    <section class="chapter" id="encontrar" aria-labelledby="encontrar-title">
+      <div class="chapter-intro"><p class="chapter-number">02</p><div><h2 id="encontrar-title">Os links deixam claro para onde levam?</h2><p>Os sinais abaixo indicam páginas que precisam de revisão contextual. As categorias podem se sobrepor e não devem ser somadas.</p></div></div>
+      <div class="finding-grid">
+        <article class="finding"><p class="metric"><strong>105</strong><span>URLs de origem sinalizadas</span></p><h3>Links genéricos</h3><p>Rótulos pouco específicos podem dificultar a escolha do destino.</p><details><summary>Acessar evidência e critério</summary><div><h4>O que foi mapeado</h4><p>URLs com ocorrências de links genéricos.</p><h4>Por que merece revisão</h4><p>WCAG 2.4.4: o propósito do link deve ser compreendido pelo texto ou pelo contexto programático.</p><h4>Limite da evidência</h4><p>É um sinal automático e requer revisão no contexto da página.</p></div></details></article>
+        <article class="finding"><p class="metric"><strong>136</strong><span>URLs de origem sinalizadas</span></p><h3>Links sem texto estático identificável</h3><p>Se não houver outro nome acessível, o destino pode não ser comunicado a tecnologias assistivas.</p><details><summary>Acessar evidência e critério</summary><div><h4>O que foi mapeado</h4><p>Links sem texto estático identificado pela análise.</p><h4>Por que merece revisão</h4><p>WCAG 2.4.4 exige propósito identificável.</p><h4>Limite da evidência</h4><p>“Sem texto estático” não significa “sem nome acessível comprovado”.</p></div></details></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="entender" aria-labelledby="entender-title">
+      <div class="chapter-intro"><p class="chapter-number">03</p><div><h2 id="entender-title">O conteúdo antecipa o que será aberto e explica seus termos?</h2><p>Formato, tamanho, siglas e organização dos parágrafos ajudam a pessoa a decidir e compreender.</p></div></div>
+      <div class="bar-list" role="list" aria-label="Sinais relacionados à compreensão">
+        <article role="listitem" style="--value:52"><div><h3>Siglas sem explicação próxima</h3><p><strong>1.103</strong> URLs sinalizadas</p></div><span class="bar" aria-hidden="true"></span></article>
+        <article role="listitem" style="--value:31"><div><h3>Rótulo de link não indica PDF</h3><p><strong>568</strong> URLs de origem sinalizadas</p></div><span class="bar" aria-hidden="true"></span></article>
+        <article role="listitem" style="--value:32"><div><h3>Rótulo não informa o tamanho</h3><p><strong>578</strong> URLs de origem sinalizadas</p></div><span class="bar" aria-hidden="true"></span></article>
+        <article role="listitem" style="--value:16"><div><h3>Parágrafos extensos</h3><p><strong>183</strong> URLs sinalizadas</p></div><span class="bar" aria-hidden="true"></span></article>
+      </div>
+      <p class="method-note">As barras comparam quantidades absolutas dentro deste capítulo; não representam percentuais e as categorias podem se sobrepor.</p>
+      <details class="chapter-details"><summary>Entender critérios e impactos possíveis</summary><div class="details-grid"><p><strong>Documentos:</strong> indicar formato e tamanho ajuda a antecipar o recurso e o consumo de dados.</p><p><strong>Siglas:</strong> a detecção não comprova que a página é incompreensível; aponta conteúdo para revisão conforme WCAG 3.1.4.</p><p><strong>Parágrafos:</strong> blocos extensos podem elevar o esforço para localizar a informação principal.</p></div></details>
+    </section>
+
+    <section class="chapter" id="acessar" aria-labelledby="acessar-title">
+      <div class="chapter-intro"><p class="chapter-number">04</p><div><h2 id="acessar-title">Imagens e listas comunicam sua estrutura?</h2><p>Alternativas textuais e marcação semântica tornam relações visuais disponíveis a mais formas de navegação.</p></div></div>
+      <div class="signal-list">
+        <article><strong>155</strong><div><h3>Texto alternativo semelhante a nome de arquivo</h3><p>Precisa ser revisto conforme a finalidade da imagem.</p></div></article>
+        <article><strong>125</strong><div><h3>Imagens sem atributo alt</h3><p>A finalidade define se a alternativa deve descrever a imagem ou ser vazia.</p></div></article>
+        <article><strong>10</strong><div><h3>Texto alternativo genérico</h3><p>Pode não oferecer informação equivalente ao conteúdo visual.</p></div></article>
+        <article><strong>119</strong><div><h3>Listas simuladas visualmente</h3><p>A relação entre itens precisa existir também na estrutura do código.</p></div></article>
+      </div>
+      <details class="chapter-details"><summary>Acessar fundamentação técnica</summary><div class="details-grid"><p><strong>WCAG 1.1.1:</strong> conteúdo não textual precisa de alternativa adequada à sua finalidade.</p><p><strong>WCAG 1.3.1:</strong> informações e relações comunicadas visualmente também precisam ser determinadas programaticamente.</p></div></details>
+    </section>
+
+    <section class="chapter pdf-chapter" id="pdfs" aria-labelledby="pdfs-title">
+      <div class="chapter-intro"><p class="chapter-number">05</p><div><h2 id="pdfs-title">Os PDFs carregam informações estruturais básicas?</h2><p>Os percentuais usam o mesmo denominador: 4.236 arquivos PDF únicos. As características podem ocorrer no mesmo documento e não formam partes de um todo.</p></div></div>
+      <div class="percentage-list">
+        <article><div class="percentage-heading"><h3>Sem idioma no catálogo</h3><p><strong>64,5%</strong> · 2.733 PDFs</p></div><div class="track" role="img" aria-label="2.733 de 4.236 PDFs únicos, 64,5%, sem idioma no catálogo"><span style="width:64.5%"></span></div><p>A ausência de <code>/Lang</code> pode prejudicar a pronúncia por leitores de tela.</p></article>
+        <article><div class="percentage-heading"><h3>Sem marcador de estrutura</h3><p><strong>62,6%</strong> · 2.652 PDFs</p></div><div class="track" role="img" aria-label="2.652 de 4.236 PDFs únicos, 62,6%, sem marcador de estrutura"><span style="width:62.6%"></span></div><p>A ausência de <code>/StructTreeRoot</code> não comprova, isoladamente, que o PDF seja totalmente inacessível.</p></article>
+        <article><div class="percentage-heading"><h3>Sem título nos metadados</h3><p><strong>54,7%</strong> · 2.315 PDFs</p></div><div class="track" role="img" aria-label="2.315 de 4.236 PDFs únicos, 54,7%, sem título nos metadados"><span style="width:54.7%"></span></div><p>Sem um título descritivo, identificar e alternar entre documentos pode ser mais difícil.</p></article>
+      </div>
+      <table><caption>Características técnicas dos arquivos PDF únicos</caption><thead><tr><th scope="col">Característica</th><th scope="col">Arquivos</th><th scope="col">Percentual</th><th scope="col">Denominador</th></tr></thead><tbody><tr><th scope="row">Sem idioma no catálogo</th><td>2.733</td><td>64,5%</td><td>4.236</td></tr><tr><th scope="row">Sem marcador de estrutura</th><td>2.652</td><td>62,6%</td><td>4.236</td></tr><tr><th scope="row">Sem título nos metadados</th><td>2.315</td><td>54,7%</td><td>4.236</td></tr></tbody></table>
+      <details class="chapter-details"><summary>Texto nativo nos registros PDF</summary><div><p>Este é um bloco complementar com outro denominador: <strong>7.135 registros</strong>, não 4.236 arquivos únicos.</p><ul><li>5.123 registros inteiramente com texto nativo</li><li>1.474 sem texto nativo</li><li>538 com texto nativo parcial</li></ul></div></details>
+    </section>
+
+    <section class="chapter conclusion" aria-labelledby="conclusion-title">
+      <p class="chapter-number">06</p><h2 id="conclusion-title">Três prioridades para melhorar o acesso</h2>
+      <div class="priority-grid"><article><h3>Encontrar</h3><p>Usar rótulos de link que comuniquem destino e finalidade.</p></article><article><h3>Entender</h3><p>Explicar siglas, organizar textos e antecipar formato e tamanho de documentos.</p></article><article><h3>Acessar</h3><p>Oferecer estrutura, alternativas textuais e metadados que apoiem diferentes tecnologias.</p></article></div>
+    </section>
+
+    <section class="chapter methodology" id="metodo" aria-labelledby="metodo-title">
+      <h2 id="metodo-title">Metodologia e limites</h2>
+      <div class="method-grid"><div><h3>Unidades diferentes</h3><p>URLs HTML, URLs PDF, arquivos PDF únicos, registros e ocorrências não são intercambiáveis. O total de 3.200.373 referências não representa links exclusivos nem pessoas usuárias.</p></div><div><h3>Categorias sobrepostas</h3><p>Uma URL ou um PDF pode aparecer em mais de uma categoria. Os valores não devem ser somados.</p></div><div><h3>Automação e revisão</h3><p>Os sinais automáticos orientam a revisão humana e não comprovam, isoladamente, uma violação.</p></div></div>
+    </section>
+  </main>
+  <footer><p>Auditoria do ambiente digital · INPI | CGDI</p></footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "cgdi-vigente",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate:templates": "node scripts/generate-component-bundle.mjs",
+    "secure:prototype": "node scripts/apply-prototype-security.mjs",
+    "disable:unavailable": "node scripts/disable-unavailable-pages.mjs",
+    "check": "node scripts/generate-component-bundle.mjs && node scripts/audit-vigente.mjs && node scripts/check-storytelling.mjs",
+    "dev": "node scripts/dev.mjs"
+  },
+  "engines": {
+    "node": ">=22 <26"
+  }
+}

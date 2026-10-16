@@ -1,0 +1,1239 @@
+{
+  "fonte": "/Users/januvieira/Desktop/SITE_CGDI/Paginas CGDI",
+  "arquivos_fonte": 1004,
+  "arquivos_dist": 996,
+  "tamanho_fonte_mb": 140.25,
+  "tamanho_dist_mb": 140.23,
+  "duplicados_identicos_em_dist": 993,
+  "versoes_paginas_html": {
+    "v1": 41,
+    "v2": 39,
+    "v3": 43,
+    "v4": 43
+  },
+  "extensoes_fonte": {
+    ".html": 171,
+    "<sem extensão>": 24,
+    ".md": 4,
+    ".json": 5,
+    ".css": 543,
+    ".js": 8,
+    ".pdf": 1,
+    ".xlsx": 1,
+    ".mjs": 3,
+    ".jpeg": 43,
+    ".png": 89,
+    ".jpg": 31,
+    ".svg": 3,
+    ".gif": 39,
+    ".txt": 39
+  },
+  "arquivos_macos": [
+    ".DS_Store",
+    "projetos/.DS_Store"
+  ],
+  "referencias_locais_nao_resolvidas": [
+    {
+      "pagina": "projetos/v1/p18.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p18.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p18.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p18.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p34.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p34.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p34.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p34.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p22.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p22.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p22.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p22.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p02.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p02.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p02.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p02.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p14.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p14.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p14.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p14.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p38.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p38.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p38.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p38.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p15.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p15.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p15.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p15.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p03.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p03.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p03.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p03.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p23.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p23.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p23.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p23.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p35.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p35.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p35.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p35.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p19.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p19.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p19.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p19.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p04.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p04.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p04.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p04.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p12.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p12.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p12.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p12.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p28.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p28.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p28.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p28.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p08.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p08.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p08.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p08.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p32.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p32.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p32.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p32.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p24.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p24.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p24.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p24.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p25.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p25.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p25.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p25.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p33.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p33.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p33.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p33.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p09.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p09.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p09.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p09.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p29.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p29.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p29.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p29.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p13.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p13.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p13.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p13.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p05.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p05.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p05.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p05.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p10.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p10.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p10.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p10.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p06.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p06.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p06.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p06.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p26.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p26.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p26.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p26.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p30.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p30.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p30.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p30.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p31.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p31.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p31.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p31.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p27.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p27.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p27.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p27.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p07.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p07.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p07.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p07.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p11.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p11.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p11.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p11.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p20.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p20.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p20.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p20.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p36.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p36.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p36.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p36.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p16.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p16.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p16.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p16.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p01.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p01.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p01.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p01.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p17.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p17.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p17.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p17.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p37.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p37.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p37.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p37.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p21.html",
+      "referencia": "/govbrportal/inicializacao-autenticacao-openid.html"
+    },
+    {
+      "pagina": "projetos/v1/p21.html",
+      "referencia": "/govbrportal/logout.html"
+    },
+    {
+      "pagina": "projetos/v1/p21.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/p21.html",
+      "referencia": "http:"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "./assets/govbr-ds-core.css"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "./src/site-base.css"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "./src/content-tokens.css"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "./src/shell-original.css"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "./src/icon-alignment.css"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "./src/main.js"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "v1-depuracao.css"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "v1.css"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=167f16699815e3&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=270759d959138f&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "./images/govbr-logo-referencia.png"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=e9afb3fc776235&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=204883d2114ec9&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f74bac32964f7d&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=9642f37d3b0b9e&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=167f16699815e3&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=60a4e8e7d5d48b&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=8920c8c4c1e38b&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=7f19b9ecc18dfb&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=8a5edab2826324&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=74b50bcfdc8a78&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=4f914296eb7cb8&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=ab9066ff8598a3&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f518bfa54b0c91&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=b406ed4fcfb484&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=1e679a6d16a7a3&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=29854d84361214&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=d2619c922ec14f&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=53ac0a59d21a7e&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=2c3995b1cd2d47&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=a31a119123d6b5&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=95723d9e3a6e92&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=0f2f137e1f0ebf&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f613cb460b3843&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=99d169f980dc9f&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=007ee66060599a&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=5e2f8c905cafdd&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=8aec0c1d810451&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=481d94f79291cc&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=b9cb6454f69bd5&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f901ca3dba0f03&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=1710ee1af04ad9&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=c2c87bb2328694&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=3ca44c080b1a00&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=02a8de9163ef00&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=060bdc43a6d75e&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=63f4a749757301&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f2925fcb24d7ac&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=b76d9c87bd29e6&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=40486ac51797cb&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=3e8f0b92d2d2fc&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=0ced593e8f5f73&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=343c740bd3862b&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=0acbf93aa5879c&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=54e7530d6e9dae&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=6210afaeb27d12&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=3ab35367969560&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f7680b634f2e0f&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=cbef799d7da965&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=066fc10e398adf&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=4901ca3ea5a913&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=2b3b77501dee70&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=adcf3b8d2ce7c1&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=17fc115f332f67&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=fb7ae331022271&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=66597da7924b68&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=a1098d69670d9f&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=044c14cf437e75&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=ea9264ce78b2bf&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=aa18abb6bf972e&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=c7b5fc31455c2a&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=b5c20701744b58&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=edda5501a90ad7&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f9f8fe2882b3b7&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=ada7633c709b38&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=ddb8b56627d648&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=a336eed3e2e794&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=fa222b85ea6046&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=c02887b34aac02&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=7a8f2f9dec0f96&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=d5e1d430676850&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=6c162c3b0aecf0&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=9413b94a266c22&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=eb4fb4c6e8e060&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=23224f2841e597&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=9b49f95d8e1d12&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=65e9e3a6d4123c&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=20b4b3ea1e3aa1&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=80c80be661be84&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=7dc3c9d867a69a&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=4638f72e607784&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=8db67a176a7df6&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=5cfa2da5c1d3d1&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=5f5ef4f68e3287&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=777f8cc905468c&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=c6a0fe73c699e9&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=828192c7e3c783&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=26c819cc66f950&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=8298b8623bcab1&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=4eee4b2596f597&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=a81bcbcf02176a&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=56db904079660d&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=07151f7eb4b514&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=e00fd8104f52c0&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=41a7f4dc6b2e99&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f6473848bcafd6&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=4f7daa0980aac1&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=a124149359589a&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=aea382f3892c8e&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=50e1f55ef620a1&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=7b010e3b6dad3e&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=05d06787fe87fb&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=79c8231a84fdbf&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=d3e9b20e10cf39&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=2166b42cdece24&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=8655a9cf48ec54&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=d54f8a775448b4&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f235588da229c6&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=1c31dda07cb1e0&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=af74dd5e3c2f7c&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=4f226250caf749&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=fd111a941e59ad&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=adddb25dcbc803&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=5850a71c763082&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=9904ac20af0bfd&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=89d514b09460dc&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=2be83738c30e9a&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=94f9cc934504fc&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=6ce5d872ee6145&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=f3ec46e90d7873&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=3bbc7516a6cac8&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=c68c73813b5df0&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=6dfbfd0cb75bea&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=cb9d02571b58ed&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=2291073966d2dd&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=67c61e81829bdc&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=602e6646bc9b93&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=bbe8c644ab1b85&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=2aff97e0785b9a&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=91dd980af2c9e6&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=ff19f211036014&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=409a5041a11ab6&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=b396cfaa6af649&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=fe0615ec46ea54&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=12ad81fc45c664&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=1937c4953006fa&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=4d07f612bad328&amp;de=P00"
+    },
+    {
+      "pagina": "projetos/v1/destinos/noticias.html",
+      "referencia": "destinos/limite.html?ref=0e391820b930f6&amp;de=P00"
+    }
+  ],
+  "total_referencias_locais_nao_resolvidas": 1345,
+  "observacao_referencias": "Análise estática. Algumas referências podem ser resolvidas dinamicamente ou exigir servidor."
+}
