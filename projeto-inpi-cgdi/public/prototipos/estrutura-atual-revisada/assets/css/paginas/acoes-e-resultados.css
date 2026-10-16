@@ -1,0 +1,29 @@
+/* Somente a página P01. Alinhamento editorial da V2 e família de cards GovBR-DS. */
+#conteudo.p01-v7 {--p01-blue:var(--interactive,#1351b4);--p01-ink:var(--cgdi-color-text,#404040);--p01-heading:var(--cgdi-color-heading,#333);--p01-line:var(--gray-20,#dfe1e2);color:var(--p01-ink);font-family:var(--font-family-base,"Rawline",Arial,sans-serif);padding-bottom:clamp(40px,5vw,70px);line-height:1.55}
+#conteudo.p01-v7 *,#conteudo.p01-v7 *::before,#conteudo.p01-v7 *::after {box-sizing:border-box}
+#conteudo.p01-v7>.container-lg {max-width:1200px;width:100%;margin-inline:auto;padding-inline:clamp(16px,3vw,32px)}
+#conteudo.p01-v7 .p01-v7-intro {max-width:780px;margin:0 0 16px}
+#conteudo.p01-v7 .p01-v7-intro h1 {font-size:clamp(2rem,3vw,2.5rem);font-weight:700;line-height:1.18;letter-spacing:0;color:var(--p01-heading)!important;margin:0}
+#conteudo.p01-v7 .p01-v7-intro .lead {font-size:1.125rem;line-height:1.5;max-width:64ch;margin:12px 0 0;color:var(--p01-ink);font-weight:400}
+#conteudo.p01-v7 cgdi-metadata.p01-v7-meta {display:flex;flex-wrap:wrap;gap:6px 24px;padding:0 0 20px;margin:0 0 clamp(28px,4vw,44px);border-bottom:1px solid var(--p01-line);color:#555;font-size:.875rem}
+#conteudo.p01-v7 .p01-v7-meta .value {color:var(--p01-ink);font-weight:600}
+#conteudo.p01-v7 .p01-v7-section {margin:0 0 clamp(36px,4vw,52px)}
+#conteudo.p01-v7 .p01-v7-section>h2 {margin:0 0 14px;color:var(--p01-heading)!important;font-size:clamp(1.5rem,2vw,1.75rem);font-weight:600;line-height:1.3;letter-spacing:0}
+#conteudo.p01-v7 cgdi-embedded-content.p01-v7-embed {display:block;width:100%;border:1px solid var(--p01-line);border-radius:8px;overflow:hidden;background:#fff}
+#conteudo.p01-v7 .p01-v7-embed iframe {display:block;width:100%;height:clamp(500px,57vw,720px);min-height:500px;border:0;background:#fff}
+#conteudo.p01-v7 cgdi-card-grid.p01-v7-resources {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0;width:100%}
+#conteudo.p01-v7 .p01-v7-resources>cgdi-card {min-height:100px;display:block;padding:0;border:1px solid var(--p01-line);border-radius:8px;background:#fff;box-shadow:none;overflow:hidden}
+#conteudo.p01-v7 .p01-v7-resource-link {display:flex;align-items:center;gap:16px;min-height:100px;width:100%;padding:20px 22px;text-decoration:none;color:inherit}
+#conteudo.p01-v7 .p01-v7-resource-link:hover {background:var(--blue-warm-vivid-5,#edf5ff);text-decoration:none}
+#conteudo.p01-v7 .p01-v7-resource-link:focus-visible {outline:3px solid var(--focus-color,#ffcd07);outline-offset:-4px}
+#conteudo.p01-v7 .p01-v7-resource-icon {flex:0 0 44px;display:grid;place-items:center;width:44px;height:44px;border-radius:8px;background:var(--blue-warm-vivid-5,#edf5ff);color:var(--p01-blue)}
+#conteudo.p01-v7 .p01-v7-resource-icon svg {display:block;width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#conteudo.p01-v7 .p01-v7-resource-text {flex:1;min-width:0;display:block}
+#conteudo.p01-v7 .p01-v7-resource-text h3 {display:block;color:var(--p01-heading)!important;font-size:1rem;font-weight:600;line-height:1.35;margin:0 0 4px}
+#conteudo.p01-v7 .p01-v7-resource-text small {display:block;color:#555;font-size:.875rem;line-height:1.4}
+#conteudo.p01-v7 .p01-v7-arrow {width:20px;height:20px;flex:0 0 20px;display:block;color:var(--p01-blue)}
+#conteudo.p01-v7 .p01-v7-arrow svg {display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+#conteudo.p01-v7 .p01-v7-sr {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#conteudo.p01-v7 cgdi-page-feedback {display:block;margin-top:clamp(36px,4vw,54px)}
+@media(max-width:760px){#conteudo.p01-v7 cgdi-card-grid.p01-v7-resources {grid-template-columns:1fr}#conteudo.p01-v7 .p01-v7-embed iframe {height:560px;min-height:560px}}
+@media(max-width:420px){#conteudo.p01-v7>.container-lg {padding-inline:16px}#conteudo.p01-v7 .p01-v7-resource-link {padding:18px 16px;gap:12px}#conteudo.p01-v7 .p01-v7-embed iframe {height:520px;min-height:520px}}

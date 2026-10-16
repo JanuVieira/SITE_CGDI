@@ -1,0 +1,132 @@
+/* P07: ajuste fino da trilha para alinhar melhor numero, texto e icone.
+   Mantem a referencia visual de Steps do GovBR-DS sem parecer card. */
+#conteudo.p07-page.p07-page-v4 .p07-steps {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  width: 100%;
+  max-width: 860px;
+  margin: 18px 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps > li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  column-gap: 18px;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 14px 0 20px;
+  list-style: none !important;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps > li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 58px;
+  bottom: -6px;
+  width: 2px;
+  border-radius: 999px;
+  background: var(--gray-20, #dfe1e2);
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-number {
+  grid-column: 1;
+  display: grid;
+  place-items: center;
+  align-self: start;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  border: 1.5px solid var(--blue-warm-vivid-70, #1351b4);
+  border-radius: 50%;
+  background: var(--blue-warm-vivid-5, #edf5ff);
+  color: var(--blue-warm-vivid-70, #1351b4);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-copy {
+  grid-column: 2;
+  min-width: 0;
+  align-self: center;
+  padding: 2px 0;
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-copy strong {
+  display: block;
+  max-width: 60ch;
+  color: var(--gray-80, #333333);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-copy > span {
+  display: block;
+  margin: 4px 0 0;
+  max-width: 62ch;
+  color: var(--gray-70, #555555);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-icon {
+  grid-column: 3;
+  justify-self: end;
+  align-self: start;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  border: 1px solid var(--gray-10, #f0f0f0);
+  border-radius: 12px;
+  background: var(--blue-warm-vivid-5, #edf5ff);
+  color: var(--blue-warm-vivid-70, #1351b4);
+}
+#conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+}
+#conteudo.p07-page.p07-page-v4 .p07-section > .p07-section-intro {
+  margin-bottom: 12px;
+}
+@media (max-width: 600px) {
+  #conteudo.p07-page.p07-page-v4 .p07-steps > li {
+    grid-template-columns: 40px minmax(0, 1fr) 40px;
+    column-gap: 12px;
+    padding: 12px 0 18px;
+  }
+  #conteudo.p07-page.p07-page-v4 .p07-steps > li:not(:last-child)::before {
+    left: 19px;
+    top: 50px;
+    bottom: -6px;
+  }
+  #conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  #conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  #conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  #conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-copy strong {
+    font-size: 1rem;
+  }
+  #conteudo.p07-page.p07-page-v4 .p07-steps .p07-step-copy > span {
+    font-size: .9375rem;
+  }
+}

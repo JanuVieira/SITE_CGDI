@@ -1,0 +1,29 @@
+{
+  "versao": 1,
+  "redirecionamentos": {
+    "diagnosticos/index.html": "projeto/auditoria-acessibilidade/index.html",
+    "diagnosticos/criterios/index.html": "prototipos/estrutura-atual-revisada/federacoes-e-secretarias/index.html",
+    "projetos/v1/p00.html": "prototipos/estrutura-atual-revisada/index.html",
+    "projetos/v1/p01.html": "prototipos/estrutura-atual-revisada/acoes-e-resultados/index.html",
+    "projetos/v1/p02.html": "prototipos/estrutura-atual-revisada/materiais-e-dados/index.html",
+    "projetos/v1/p03.html": "prototipos/estrutura-atual-revisada/eventos/index.html",
+    "projetos/v1/p04.html": "prototipos/estrutura-atual-revisada/mentorias/index.html",
+    "projetos/v1/p05.html": "prototipos/estrutura-atual-revisada/palestras/index.html",
+    "projetos/v1/p06.html": "prototipos/estrutura-atual-revisada/cooperacao-tecnica/index.html",
+    "projetos/v1/p07.html": "prototipos/estrutura-atual-revisada/atendimento-presencial/index.html",
+    "projetos/v1/p14.html": "prototipos/estrutura-atual-revisada/materiais-e-dados/cartilhas/index.html",
+    "projetos/v2/p00.html": "prototipos/orientado-a-acao/index.html",
+    "analises/acessibilidade/index.html": "projeto/auditoria-acessibilidade/index.html",
+    "analises/fluxos/index.html": "projeto/fluxos-dos-prototipos/index.html",
+    "prototipos/estrutura-atual/index.html": "prototipos/estrutura-atual-revisada/index.html",
+    "prototipos/estrutura-atual/acoes-e-resultados/index.html": "prototipos/estrutura-atual-revisada/acoes-e-resultados/index.html",
+    "prototipos/estrutura-atual/materiais-e-dados/index.html": "prototipos/estrutura-atual-revisada/materiais-e-dados/index.html",
+    "prototipos/estrutura-atual/materiais-e-dados/cartilhas/index.html": "prototipos/estrutura-atual-revisada/materiais-e-dados/cartilhas/index.html",
+    "prototipos/estrutura-atual/eventos/index.html": "prototipos/estrutura-atual-revisada/eventos/index.html",
+    "prototipos/estrutura-atual/mentorias/index.html": "prototipos/estrutura-atual-revisada/mentorias/index.html",
+    "prototipos/estrutura-atual/palestras/index.html": "prototipos/estrutura-atual-revisada/palestras/index.html",
+    "prototipos/estrutura-atual/cooperacao-tecnica/index.html": "prototipos/estrutura-atual-revisada/cooperacao-tecnica/index.html",
+    "prototipos/estrutura-atual/atendimento-presencial/index.html": "prototipos/estrutura-atual-revisada/atendimento-presencial/index.html",
+    "prototipos/estrutura-atual/federacoes-e-secretarias/index.html": "prototipos/estrutura-atual-revisada/federacoes-e-secretarias/index.html"
+  }
+}

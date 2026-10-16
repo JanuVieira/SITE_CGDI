@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; base-uri 'self'; connect-src 'self'; font-src 'self' data:; frame-src 'self' https://app.powerbi.com; img-src 'self' data: blob:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="cgdi-prototype-version" content="V1">
+  <title>Calendário de eventos | Protótipo V1</title>
+  <link rel="stylesheet" href="../../../vendor/govbr-ds-core.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/conteudo.css">
+  <link rel="stylesheet" href="../../componentes/componentes.css">
+  <link rel="stylesheet" href="../../componentes/portal/portal.css">
+  <link rel="stylesheet" href="../../componentes/cards/cards.css" data-cgdi-card-style>
+  <link rel="stylesheet" href="../../componentes/fundamentos-visuais.css">
+  <script defer src="../../componentes/templates-gerados.js"></script>
+  <script defer src="../../componentes/componentes.js"></script>
+<link rel="stylesheet" href="../../componentes/calendario/calendario.css" data-cgdi-calendar-style>
+<link rel="stylesheet" href="../assets/css/paginas/eventos.css">
+<link rel="stylesheet" href="../assets/css/responsivo.css">
+</head>
+<body class="cgdi-page" data-version="V1">
+  <a class="shell-skip" href="#conteudo">Ir para o conteúdo</a>
+  <cgdi-prototype-nav data-cgdi-component="prototype-nav"></cgdi-prototype-nav>
+  <cgdi-portal-top data-cgdi-component="portal-top"></cgdi-portal-top>
+  <main id="conteudo" class="p03-page" tabindex="-1">
+  <div class="container-lg">
+    <cgdi-breadcrumb class="br-breadcrumb cgdi-breadcrumb" aria-label="Você está aqui">
+      <ol><li><a href="../../../index.html">Protótipos CGDI</a></li><li><a href="../index.html">INPI para empreender e inovar</a></li><li aria-current="page">Calendário de eventos</li></ol>
+    </cgdi-breadcrumb>
+    <cgdi-page-intro class="page-intro p03-intro" data-cgdi-component="page-intro">
+      <h1>Calendário de eventos</h1>
+    </cgdi-page-intro>
+    <cgdi-calendar data-calendar-mode="legacy" data-cgdi-component="calendar">
+      <section class="cgdi-calendar" aria-label="Agenda de eventos">
+        <div class="cgdi-calendar__toolbar" role="search" aria-label="Buscar e filtrar eventos">
+          <div class="br-input cgdi-calendar__field p03-search-field"><label for="p03-search" class="p03-form-label">Buscar na agenda</label><div class="input-group"><span class="input-icon" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></span><input id="p03-search" type="search" autocomplete="off" placeholder="Digite um tema ou local" aria-controls="p03-event-list" /></div></div>
+          <div class="br-input cgdi-calendar__field p03-mode-field"><label for="p03-mode" class="p03-form-label">Modalidade</label><select id="p03-mode" aria-controls="p03-event-list"><option value="todos">Todas as modalidades</option><option value="presencial">Presencial</option><option value="online">Online</option></select></div>
+        </div>
+        <div class="cgdi-calendar__list" id="p03-event-list" data-calendar-list>
+<article class="cgdi-calendar__event p03-event" data-calendar-event data-end="17:30" data-time-label="08h45 às 17h30" data-status="programado" data-source="https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy83_of_evento-1" data-p03-effective="proximo" data-date="2026-10-16" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-16"><strong>16</strong><span>out 2026</span></time></div>
+              <span class="br-tag small p03-state p03-state--mobile" data-p03-state aria-hidden="true">Programado</span>
+              <div class="p03-event-body">
+                <div class="p03-event-title-row"><h3>II Seminário Inova CCB - 50 anos</h3><span class="br-tag small p03-state" data-p03-state>Programado</span></div>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>08h45 às 17h30</span></div>
+                <p class="p03-place">Centro de Ciências Biológicas da UFSC, Florianópolis (SC)</p>
+              </div>
+            <button type="button" class="br-button secondary p03-action" data-p03-open aria-haspopup="dialog" aria-controls="p03-dialog">Acessar detalhes do evento</button>
+            </article>
+<article class="cgdi-calendar__event p03-event" data-calendar-event data-end="20:00" data-time-label="10h00 às 20h00" data-status="programado" data-source="https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy98_of_evento-1" data-p03-effective="proximo" data-date="2026-10-20" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-20"><strong>20</strong><span>out 2026</span></time></div>
+              <span class="br-tag small p03-state p03-state--mobile" data-p03-state aria-hidden="true">Programado</span>
+              <div class="p03-event-body">
+                <div class="p03-event-title-row"><h3>Feira do Empreendedor Sebrae 2026</h3><span class="br-tag small p03-state" data-p03-state>Programado</span></div>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>10h00 às 20h00</span></div>
+                <p class="p03-place">São Paulo Expo, São Paulo (SP)</p>
+              </div>
+            <button type="button" class="br-button secondary p03-action" data-p03-open aria-haspopup="dialog" aria-controls="p03-dialog">Acessar detalhes do evento</button>
+            </article>
+<article class="cgdi-calendar__event p03-event" data-calendar-event data-end="18:00" data-time-label="14h00 às 18h00" data-status="programado" data-source="https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy97_of_evento-1" data-p03-effective="proximo" data-date="2026-10-20" data-mode="online">
+              <div class="p03-date"><time datetime="2026-10-20"><strong>20</strong><span>out 2026</span></time></div>
+              <span class="br-tag small p03-state p03-state--mobile" data-p03-state aria-hidden="true">Programado</span>
+              <div class="p03-event-body">
+                <div class="p03-event-title-row"><h3>Oficina do INPI na Jornada Hard</h3><span class="br-tag small p03-state" data-p03-state>Programado</span></div>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>Online</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>14h00 às 18h00</span></div>
+                <p class="p03-place">Encontro virtual</p>
+              </div>
+            <button type="button" class="br-button secondary p03-action" data-p03-open aria-haspopup="dialog" aria-controls="p03-dialog">Acessar detalhes do evento</button>
+            </article>
+<article class="cgdi-calendar__event p03-event" data-calendar-event data-end="22:00" data-time-label="08h00 às 22h00" data-status="programado" data-source="https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy96_of_evento-1" data-p03-effective="proximo" data-date="2026-10-21" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-21"><strong>21</strong><span>out 2026</span></time></div>
+              <span class="br-tag small p03-state p03-state--mobile" data-p03-state aria-hidden="true">Programado</span>
+              <div class="p03-event-body">
+                <div class="p03-event-title-row"><h3>23ª Semana Nacional de Ciência e Tecnologia</h3><span class="br-tag small p03-state" data-p03-state>Programado</span></div>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>08h00 às 22h00</span></div>
+                <p class="p03-place">Centro de Eventos Pantanal, Cuiabá (MT)</p>
+              </div>
+            <button type="button" class="br-button secondary p03-action" data-p03-open aria-haspopup="dialog" aria-controls="p03-dialog">Acessar detalhes do evento</button>
+            </article>
+<article class="cgdi-calendar__event p03-event" data-calendar-event data-end="12:30" data-time-label="08h30 às 12h30" data-status="programado" data-source="https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy92_of_evento-1" data-p03-effective="proximo" data-date="2026-10-22" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-22"><strong>22</strong><span>out 2026</span></time></div>
+              <span class="br-tag small p03-state p03-state--mobile" data-p03-state aria-hidden="true">Programado</span>
+              <div class="p03-event-body">
+                <div class="p03-event-title-row"><h3>Transformar: inovação, transformação digital e IA</h3><span class="br-tag small p03-state" data-p03-state>Programado</span></div>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>08h30 às 12h30</span></div>
+                <p class="p03-place">Casa da Indústria / IEL, Goiânia (GO)</p>
+              </div>
+            <button type="button" class="br-button secondary p03-action" data-p03-open aria-haspopup="dialog" aria-controls="p03-dialog">Acessar detalhes do evento</button>
+            </article>
+        </div>
+        <p class="cgdi-calendar__empty" id="p03-empty" data-calendar-empty hidden>Nenhum evento corresponde aos filtros.</p>
+        <footer class="cgdi-calendar__footer" aria-live="polite" aria-atomic="true"><span id="p03-results">Eventos encontrados.</span><span class="p03-source">Agenda consultada em 15/10/2026.</span></footer>
+      </section>
+    </cgdi-calendar>
+    <dialog class="br-modal p03-dialog" id="p03-dialog" aria-labelledby="p03-dialog-title">
+      <div class="br-modal-header p03-dialog-head"><h2 id="p03-dialog-title" class="br-modal-title">Evento</h2><button type="button" class="br-button circle p03-dialog-close" data-p03-close aria-label="Fechar detalhes"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="br-modal-body p03-dialog-body"><dl>
+        <dt>Data</dt><dd data-p03-detail-date></dd>
+        <dt>Situação</dt><dd data-p03-detail-status></dd>
+        <dt>Horário</dt><dd data-p03-detail-time></dd>
+        <dt>Modalidade</dt><dd data-p03-detail-mode></dd>
+        <dt>Local</dt><dd data-p03-detail-place></dd>
+      </dl>
+      <div class="p03-source-tools" data-p03-source-tools hidden>
+        <div class="br-input"><label for="p03-source-url">Página oficial do evento</label><input id="p03-source-url" type="text" readonly aria-label="Endereço oficial do evento" /></div>
+        <button class="br-button secondary p03-copy" type="button" data-p03-copy>Copiar link</button>
+        <span class="p03-copy-status" role="status" data-p03-copy-status></span>
+      </div></div>
+      <div class="br-modal-footer p03-dialog-footer"><button type="button" class="br-button primary" data-p03-close-footer>Fechar</button></div>
+    </dialog>
+    <cgdi-page-feedback data-cgdi-component="page-feedback"></cgdi-page-feedback>
+  </div>
+</main>
+  <cgdi-portal-footer data-cgdi-component="portal-footer"></cgdi-portal-footer>
+<script defer src="../assets/js/eventos.js"></script>
+</body>
+</html>

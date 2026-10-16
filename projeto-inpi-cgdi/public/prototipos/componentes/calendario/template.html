@@ -1,0 +1,67 @@
+<template id="cgdi-calendar-template">
+  <section class="cgdi-calendar" aria-labelledby="cgdi-calendar-title">
+    <header class="cgdi-calendar__header">
+      <div>
+        <h2 class="cgdi-calendar__title" id="cgdi-calendar-title">Próximos eventos e capacitações</h2>
+        <p class="cgdi-calendar__intro">Eventos de exemplo do PDF (15 de abril de 2026), não representam a agenda atual.</p>
+      </div>
+      <div class="cgdi-calendar__toolbar" aria-label="Ferramentas do calendário">
+        <label class="cgdi-calendar__field">
+          <span>Buscar eventos</span>
+          <span class="cgdi-calendar__control">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            <input data-calendar-search type="search" placeholder="Digite um termo" autocomplete="off">
+          </span>
+        </label>
+        <label class="cgdi-calendar__field">
+          <span>Status</span>
+          <span class="cgdi-calendar__control">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10m-7 6h4"/></svg>
+            <select data-calendar-filter>
+              <option value="todos">Todos os eventos</option>
+              <option value="previsto">Eventos previstos</option>
+              <option value="cancelado">Eventos cancelados</option>
+            </select>
+          </span>
+        </label>
+      </div>
+    </header>
+
+    <div class="cgdi-calendar__list" data-calendar-list>
+      <article class="cgdi-calendar__event" data-calendar-event data-status="previsto">
+        <svg class="cgdi-calendar__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+        <time class="cgdi-calendar__date" datetime="2026-04-15"><strong>15/04</strong><span>2026</span></time>
+        <div class="cgdi-calendar__info"><h3>Inovação e propriedade intelectual em Mato Grosso do Sul</h3><p>Presencial em Campo Grande, Mato Grosso do Sul</p></div>
+        <a class="cgdi-calendar__link" data-cgdi-prototype-resource="pending">Acessar detalhes do evento</a>
+      </article>
+      <article class="cgdi-calendar__event" data-calendar-event data-status="previsto">
+        <svg class="cgdi-calendar__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+        <time class="cgdi-calendar__date" datetime="2026-04-15"><strong>15/04</strong><span>2026</span></time>
+        <div class="cgdi-calendar__info"><h3>Propriedade intelectual para biotecnologia</h3><p>Presencial em Goiânia, Goiás</p></div>
+        <a class="cgdi-calendar__link" data-cgdi-prototype-resource="pending">Acessar detalhes do evento</a>
+      </article>
+      <article class="cgdi-calendar__event" data-calendar-event data-status="previsto">
+        <svg class="cgdi-calendar__icon cgdi-calendar__icon--success" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18m4 5 2 2 4-4"/></svg>
+        <time class="cgdi-calendar__date" datetime="2026-04-15"><strong>15/04</strong><span>2026</span></time>
+        <div class="cgdi-calendar__info"><h3>Patentes na área de cosméticos</h3><p>Presencial em São Paulo, São Paulo</p></div>
+        <a class="cgdi-calendar__link" data-cgdi-prototype-resource="pending">Acessar detalhes do evento</a>
+      </article>
+      <article class="cgdi-calendar__event" data-calendar-event data-status="previsto">
+        <svg class="cgdi-calendar__icon cgdi-calendar__icon--success" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18m4 5 2 2 4-4"/></svg>
+        <time class="cgdi-calendar__date" datetime="2026-04-15"><strong>15/04</strong><span>2026</span></time>
+        <div class="cgdi-calendar__info"><h3>Marcas e indicações geográficas para o café</h3><p>Evento online</p></div>
+        <a class="cgdi-calendar__link" data-cgdi-prototype-resource="pending">Acessar detalhes do evento</a>
+      </article>
+      <article class="cgdi-calendar__event" data-calendar-event data-status="cancelado">
+        <svg class="cgdi-calendar__icon cgdi-calendar__icon--danger" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18m3 4 4 4m0-4-4 4"/></svg>
+        <time class="cgdi-calendar__date" datetime="2026-04-15"><strong><del>15/04</del></strong><span>2026</span></time>
+        <div class="cgdi-calendar__info"><h3>Patentes e inteligência artificial</h3><p>Online / <strong class="cgdi-calendar__cancel">Evento cancelado</strong></p></div>
+        <a class="cgdi-calendar__link" data-cgdi-prototype-resource="pending">Acessar detalhes do evento</a>
+      </article>
+    </div>
+    <p class="cgdi-calendar__empty" data-calendar-empty hidden>Nenhum evento corresponde à busca.</p>
+    <footer class="cgdi-calendar__footer" aria-live="polite" aria-atomic="true">
+      <span data-calendar-count>Exibindo 5 de 5 eventos do exemplo</span>
+    </footer>
+  </section>
+</template>

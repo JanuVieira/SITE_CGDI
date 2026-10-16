@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; base-uri 'self'; connect-src 'self'; font-src 'self' data:; frame-src 'self'; img-src 'self' data: blob:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="cgdi-prototype-version" content="V1">
+  <title>Calendário de eventos | Protótipo V1</title>
+  <link rel="stylesheet" href="./assets/govbr-ds-core.css">
+  <link rel="stylesheet" href="./src/site-base.css">
+  <link rel="stylesheet" href="./src/content-tokens.css">
+  <link rel="stylesheet" href="./src/shell-original.css">
+  <link rel="stylesheet" href="./src/icon-alignment.css">
+  <link rel="stylesheet" href="../../componentes/componentes.css">
+  <link rel="stylesheet" href="../../componentes/shell/shell.css">
+  <link rel="stylesheet" href="../../componentes/cards/cards.css" data-cgdi-card-style>
+  <link rel="stylesheet" href="../../componentes/fundamentos.css">
+  <script defer src="./src/main.js"></script>
+  <script defer src="../../componentes/templates.js"></script>
+  <script defer src="../../componentes/componentes.js"></script>
+<link rel="stylesheet" href="../../componentes/calendario/calendario.css" data-cgdi-calendar-style>
+<style id="cgdi-p03-calendar-page-v1">
+#conteudo.p03-page {--p03-blue:var(--interactive,#1351b4);--p03-muted:var(--gray-70,#555);--p03-border:var(--gray-20,#dfe1e2);--p03-blue-light:var(--blue-warm-vivid-5,#edf5ff);padding-bottom:clamp(44px,6vw,76px);color:var(--gray-80,#333);font-family:var(--font-family-base,"Rawline",Arial,sans-serif)}
+#conteudo.p03-page *,#conteudo.p03-page *::before,#conteudo.p03-page *::after {box-sizing:border-box}
+#conteudo.p03-page > .container-lg {width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(16px,3vw,32px)}
+#conteudo.p03-page .p03-intro {max-width:780px;margin:0 0 18px}
+#conteudo.p03-page .p03-intro h1 {margin:0;font-size:clamp(2rem,3vw,2.6rem);font-weight:700;line-height:1.2;color:var(--gray-80,#333)!important}
+#conteudo.p03-page .p03-intro .lead {max-width:66ch;font-size:1.125rem;line-height:1.6;margin:12px 0 0}
+#conteudo.p03-page .p03-meta {font-size:.875rem;color:var(--p03-muted);border-bottom:1px solid var(--p03-border);padding:0 0 22px;margin:0 0 38px}
+#conteudo.p03-page .p03-meta strong {font-weight:600}
+#conteudo.p03-page cgdi-calendar {display:block}
+#conteudo.p03-page .cgdi-calendar {width:100%;max-width:100%}
+#conteudo.p03-page .cgdi-calendar__header {display:block;margin:0 0 22px}
+#conteudo.p03-page .cgdi-calendar__title {font-size:clamp(1.5rem,2vw,1.9rem);font-weight:600;margin:0 0 8px}
+#conteudo.p03-page .cgdi-calendar__intro {font-size:1rem;line-height:1.6;max-width:75ch;margin:0}
+#conteudo.p03-page .cgdi-calendar__toolbar {display:grid;grid-template-columns:minmax(230px,2fr) minmax(175px,1fr) minmax(175px,1fr);gap:16px;align-items:end;margin:24px 0 18px}
+#conteudo.p03-page .cgdi-calendar__field {display:grid;gap:8px;min-width:0;font-size:.9375rem;font-weight:600}
+#conteudo.p03-page .cgdi-calendar__control {display:block;position:relative}
+#conteudo.p03-page .cgdi-calendar__control svg {width:20px;height:20px;position:absolute;left:14px;top:50%;transform:translateY(-50%);stroke:var(--p03-blue);fill:none;pointer-events:none}
+#conteudo.p03-page .cgdi-calendar__field :is(input,select) {width:100%;height:48px;min-width:0;border:1px solid var(--gray-40,#888)!important;border-radius:6px;padding:10px 14px;color:#333;background:#fff;font-size:1rem}
+#conteudo.p03-page .cgdi-calendar__field input {padding-left:44px}
+#conteudo.p03-page .cgdi-calendar__field :is(input,select):focus-visible {outline:3px solid var(--focus,#ffcd07);outline-offset:2px}
+#conteudo.p03-page .cgdi-calendar__list {border-top:1px solid var(--p03-border);border-bottom:1px solid var(--p03-border)}
+#conteudo.p03-page .p03-event {display:grid;grid-template-columns:84px minmax(0,1fr);gap:22px;padding:22px 10px;align-items:start;grid-template-areas:none!important;min-height:0;border-top:1px solid var(--p03-border)}
+#conteudo.p03-page .p03-event:first-child {border-top:0}
+#conteudo.p03-page .p03-event[hidden] {display:none!important}
+#conteudo.p03-page .p03-date {width:78px;height:84px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:var(--p03-blue-light);color:var(--p03-blue);text-align:center}
+#conteudo.p03-page .p03-date time {display:flex;flex-direction:column;gap:3px}
+#conteudo.p03-page .p03-date strong {font-size:2rem;font-weight:700;line-height:1}
+#conteudo.p03-page .p03-date span {font-size:.875rem;font-weight:600;color:var(--p03-blue)}
+#conteudo.p03-page .p03-event-body {min-width:0;max-width:86ch}
+#conteudo.p03-page .p03-event-body h3 {margin:0 0 10px;font-size:1.125rem;font-weight:600;line-height:1.35;color:var(--gray-80,#333)!important}
+#conteudo.p03-page .p03-facts {display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:8px}
+#conteudo.p03-page .p03-fact {display:inline-flex;align-items:center;gap:7px;min-width:0;color:var(--gray-70,#555);font-size:.9375rem;line-height:1.5}
+#conteudo.p03-page .p03-fact svg {display:block;width:18px;height:18px;flex:0 0 18px;color:var(--p03-blue)}
+#conteudo.p03-page .p03-place {margin:0;color:var(--p03-muted);font-size:.9375rem;line-height:1.55}
+#conteudo.p03-page .cgdi-calendar__empty {margin:0;border:0;padding:34px 8px;text-align:left;font-size:1rem}
+#conteudo.p03-page .cgdi-calendar__footer {display:flex;gap:16px;align-items:center;justify-content:space-between;padding:18px 0 0;margin:0;color:var(--p03-muted);font-size:.9375rem}
+#conteudo.p03-page .p03-source {font-size:.875rem;color:var(--p03-muted);line-height:1.55;margin:0}
+#conteudo.p03-page cgdi-page-feedback {display:block;margin-top:56px}
+@media(max-width:760px){#conteudo.p03-page .cgdi-calendar__toolbar {grid-template-columns:repeat(2,minmax(0,1fr))}#conteudo.p03-page .cgdi-calendar__field:first-child {grid-column:1/-1}}
+@media(max-width:520px){#conteudo.p03-page .cgdi-calendar__toolbar {grid-template-columns:1fr}#conteudo.p03-page .cgdi-calendar__field:first-child {grid-column:auto}#conteudo.p03-page .p03-event {grid-template-columns:64px minmax(0,1fr);gap:14px;padding-inline:0}#conteudo.p03-page .p03-date {width:64px;height:76px}#conteudo.p03-page .p03-date strong {font-size:1.65rem}#conteudo.p03-page .p03-date span {font-size:.75rem}#conteudo.p03-page .p03-facts {gap:6px 14px}#conteudo.p03-page .cgdi-calendar__footer {align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body class="cgdi-page" data-version="V1">
+  <a class="shell-skip" href="#conteudo">Ir para o conteúdo</a>
+  <cgdi-prototype-nav data-cgdi-component="prototype-nav"></cgdi-prototype-nav>
+  <cgdi-portal-top data-cgdi-component="portal-top"></cgdi-portal-top>
+  <main id="conteudo" class="p03-page" tabindex="-1">
+  <div class="container-lg">
+    <cgdi-breadcrumb class="br-breadcrumb cgdi-breadcrumb" aria-label="Você está aqui">
+      <ol><li><a href="../../index.html">Protótipos CGDI</a></li><li><a href="p00.html">INPI para empreender e inovar</a></li><li aria-current="page">Calendário de eventos</li></ol>
+    </cgdi-breadcrumb>
+    <cgdi-page-intro class="page-intro p03-intro" data-cgdi-component="page-intro">
+      <h1>Calendário de eventos</h1>
+      <p class="lead">Consulte datas, horários e locais de eventos sobre propriedade intelectual.</p>
+    </cgdi-page-intro>
+    <p class="p03-meta">Publicado em <strong>29/10/2025 17h06</strong></p>
+    <cgdi-calendar data-calendar-mode="legacy" data-cgdi-component="calendar">
+      <section class="cgdi-calendar" aria-labelledby="p03-agenda-title">
+        <header class="cgdi-calendar__header"><h2 class="cgdi-calendar__title" id="p03-agenda-title">Agenda de eventos</h2><p class="cgdi-calendar__intro">Encontre eventos por período, modalidade ou assunto.</p></header>
+        <div class="cgdi-calendar__toolbar" aria-label="Filtrar eventos">
+          <label class="cgdi-calendar__field" for="p03-search"><span>Buscar evento</span><span class="cgdi-calendar__control"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="p03-search" type="search" autocomplete="off" placeholder="Digite um assunto" /></span></label>
+          <label class="cgdi-calendar__field" for="p03-period"><span>Período</span><span class="cgdi-calendar__control"><select id="p03-period"><option value="proximos">Próximos</option><option value="anteriores">Anteriores</option><option value="todos">Todos</option></select></span></label>
+          <label class="cgdi-calendar__field" for="p03-mode"><span>Modalidade</span><span class="cgdi-calendar__control"><select id="p03-mode"><option value="todos">Todas</option><option value="presencial">Presencial</option><option value="online">Online</option></select></span></label>
+        </div>
+        <div class="cgdi-calendar__list" id="p03-event-list" data-calendar-list>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-14" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-14"><strong>14</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Propriedade intelectual como estratégia de negócios</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>09h30 às 12h30</span></div>
+                <p class="p03-place">Casa Firjan, Botafogo, Rio de Janeiro (RJ)</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-14" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-14"><strong>14</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Quando a pesquisa vira inovação</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>10h30 às 12h30</span></div>
+                <p class="p03-place">Unitins, Campus Palmas, Palmas (TO)</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-14" data-mode="online">
+              <div class="p03-date"><time datetime="2026-10-14"><strong>14</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Software e patente</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>Online</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>14h30 às 16h30</span></div>
+                <p class="p03-place">Transmissão online</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-14" data-mode="online">
+              <div class="p03-date"><time datetime="2026-10-14"><strong>14</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Sua inovação está protegida?</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>Online</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>18h00 às 22h00</span></div>
+                <p class="p03-place">Evento online</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-15" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-15"><strong>15</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Patente de alimentos</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>09h00 às 12h00</span></div>
+                <p class="p03-place">Universidade Federal do Tocantins, Palmas (TO)</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-15" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-15"><strong>15</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Marcas e patentes para empresas</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>14h00 às 17h00</span></div>
+                <p class="p03-place">FAPTO, Palmas (TO)</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-16" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-16"><strong>16</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>II Seminário Inova CCB - 50 anos</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>08h45 às 17h30</span></div>
+                <p class="p03-place">Centro de Ciências Biológicas da UFSC, Florianópolis (SC)</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-20" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-20"><strong>20</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Feira do Empreendedor Sebrae 2026</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>10h00 às 20h00</span></div>
+                <p class="p03-place">São Paulo Expo, São Paulo (SP)</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-20" data-mode="online">
+              <div class="p03-date"><time datetime="2026-10-20"><strong>20</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Oficina do INPI na Jornada Hard</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>Online</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>14h00 às 18h00</span></div>
+                <p class="p03-place">Encontro virtual</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-21" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-21"><strong>21</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>23ª Semana Nacional de Ciência e Tecnologia</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>08h00 às 22h00</span></div>
+                <p class="p03-place">Centro de Eventos Pantanal, Cuiabá (MT)</p>
+              </div>
+            </article>
+            <article class="cgdi-calendar__event p03-event" data-calendar-event data-date="2026-10-22" data-mode="presencial">
+              <div class="p03-date"><time datetime="2026-10-22"><strong>22</strong><span>out 2026</span></time></div>
+              <div class="p03-event-body">
+                <h3>Transformar: inovação, transformação digital e IA</h3>
+                <div class="p03-facts"><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Presencial</span><span class="p03-fact"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg>08h30 às 12h30</span></div>
+                <p class="p03-place">Casa da Indústria / IEL, Goiânia (GO)</p>
+              </div>
+            </article>
+        </div>
+        <p class="cgdi-calendar__empty" id="p03-empty" data-calendar-empty hidden>Nenhum evento encontrado. Altere os filtros para ampliar os resultados.</p>
+        <footer class="cgdi-calendar__footer" aria-live="polite" aria-atomic="true"><span id="p03-results">Eventos encontrados.</span><span class="p03-source">Agenda do INPI consultada em 15/10/2026.</span></footer>
+      </section>
+    </cgdi-calendar>
+    <cgdi-page-feedback data-cgdi-component="page-feedback"></cgdi-page-feedback>
+  </div>
+</main>
+  <cgdi-portal-footer data-cgdi-component="portal-footer"></cgdi-portal-footer>
+<script defer src="./src/p03-calendar.js"></script>
+</body>
+</html>

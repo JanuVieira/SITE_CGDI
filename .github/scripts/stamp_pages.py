@@ -131,7 +131,13 @@ def stamp(site: Path, version: str) -> dict[str, int]:
             raise ValueError(f'Falha ao inserir verificação: {file}')
         targets.append((file, replaced))
 
-    required = {'index.html', 'projetos/v1/p00.html', 'projetos/v2/p00.html', 'diagnosticos/index.html'}
+    required = {
+        'index.html',
+        'projeto/auditoria-acessibilidade/index.html',
+        'projeto/fluxos-dos-prototipos/index.html',
+        'prototipos/estrutura-atual-revisada/index.html',
+        'prototipos/orientado-a-acao/index.html',
+    }
     found = {f.relative_to(site).as_posix() for f, _ in targets}
     missing = required - found
     if missing:

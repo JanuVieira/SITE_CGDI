@@ -1,0 +1,42 @@
+/* Base global dos protótipos. Os aliases CGDI sempre apontam para tokens do GOV.BR DS. */
+:root {
+  --cgdi-container: 75rem;
+  --cgdi-touch-target: var(--spacing-scale-5xh, 44px);
+  --cgdi-page-gutter: var(--spacing-scale-3x, 24px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body.cgdi-page {
+  margin: 0;
+  background: var(--background-light, var(--pure-0, #fff));
+  color: var(--color-light, var(--gray-80, #333));
+  font-family: var(--font-family-base, Rawline, Arial, sans-serif);
+  font-size: var(--font-size-scale-up-01, 1rem);
+  line-height: var(--font-line-height-medium, 1.45);
+}
+
+.shell-skip {
+  position: fixed;
+  top: -200px;
+  left: var(--spacing-scale-2x, 16px);
+  z-index: 9999;
+  padding: var(--spacing-scale-baseh, 12px) var(--spacing-scale-2xh, 20px);
+  border-radius: var(--surface-rounder-sm, 4px);
+  background: var(--background-light, var(--pure-0, #fff));
+  color: var(--interactive, var(--blue-warm-vivid-70, #1351b4));
+  font-weight: var(--font-weight-semi-bold, 600);
+}
+.shell-skip:focus {
+  top: var(--spacing-scale-base, 8px);
+  outline: var(--focus-width, 4px) var(--focus-style, dashed) var(--focus-color, #ffcd07);
+  outline-offset: var(--focus-offset, 4px);
+}
+
+@media (max-width: 575px) {
+  :root { --cgdi-page-gutter: var(--spacing-scale-2x, 16px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
