@@ -11,7 +11,7 @@
   --surface: #f5f5f7;
   --surface-hover: #f8f8fa;
   --focus: #8e8e93;
-  --page: 1120px;
+  --page: 1200px;
   --content: 960px;
   --measure: 760px;
   --radius: 18px;
@@ -26,13 +26,13 @@ button { font: inherit; }
 
 .skip-link { position: absolute; left: -9999px; top: 12px; z-index: 10; }
 .skip-link:focus { left: 16px; padding: 10px 14px; border-radius: 8px; background: #fff; }
-.report-header, main, footer { width: min(var(--page), calc(100% - 64px)); margin-inline: auto; }
+.report-header, main, footer { width: min(var(--page), calc(100% - 48px)); margin-inline: auto; }
 .report-header { display: flex; align-items: center; justify-content: space-between; min-height: 72px; border-bottom: 1px solid var(--line-soft); }
 .report-header p, .back-link { margin: 0; color: var(--muted); font-size: .8125rem; font-weight: 600; letter-spacing: -.005em; }
 
 .hero { max-width: 1020px; padding: 92px 0 76px; }
 .eyebrow, .chapter-label, .metric-kicker { margin: 0 0 16px; color: var(--quiet); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.hero h1 { max-width: 980px; margin: 0; font-size: clamp(3rem, 6vw, 5.25rem); font-weight: 720; letter-spacing: -.057em; line-height: .98; text-wrap: balance; }
+.hero h1 { max-width: 1100px; margin: 0; font-size: clamp(3.5rem, 6.4vw, 5.75rem); font-weight: 720; letter-spacing: -.057em; line-height: .96; text-wrap: balance; }
 .hero-lead { max-width: 820px; margin: 32px 0 0; color: var(--secondary); font-size: clamp(1.125rem, 2vw, 1.45rem); line-height: 1.58; }
 .chapter-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 42px; }
 .chapter-nav a { display: inline-flex; align-items: center; min-height: 40px; padding: 7px 15px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .875rem; font-weight: 600; letter-spacing: -.01em; text-decoration: none; transition: background-color .18s ease, border-color .18s ease, transform .18s ease; }
@@ -187,4 +187,13 @@ footer { padding: 28px 0 56px; border-top: 1px solid var(--line-soft); color: va
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+/* O relatório preserva a escala editorial própria, inclusive no desktop. */
+.hero h1 { overflow-wrap: normal; word-break: normal; hyphens: none; }
+@media (min-width: 1024px) {
+  .hero h1 { max-width: 1100px; white-space: normal; }
+}
+@media (max-width: 1023px) {
+  .hero h1 { text-wrap: balance; white-space: normal; }
 }

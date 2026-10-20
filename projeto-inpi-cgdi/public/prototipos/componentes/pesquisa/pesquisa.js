@@ -35,14 +35,19 @@
 
       const dialog = element('dialog', 'br-modal cgdi-feedback-dialog');
       dialog.setAttribute('aria-labelledby', `${uid}-heading`);
+      dialog.setAttribute('aria-describedby', `${uid}-context`);
 
       const panel = element('div', 'cgdi-feedback-dialog-panel');
-      const heading = element('h2', 'cgdi-feedback-dialog-title', 'Avalie esta página');
+      const heading = element('h2', 'cgdi-feedback-dialog-title', this.dataset.dialogTitle || 'Avalie esta página');
       heading.id = `${uid}-heading`;
-      const context = element('p', 'cgdi-feedback-dialog-description', '');
+      const context = element(
+        'p',
+        'cgdi-feedback-dialog-description',
+        this.dataset.dialogDescription || 'Avaliação demonstrativa: a resposta não será enviada nem armazenada.'
+      );
       context.id = `${uid}-context`;
       const header = element('header', 'cgdi-feedback-dialog-header');
-      header.append(heading);
+      header.append(heading, context);
       const form = element('form', 'cgdi-feedback-form');
       form.noValidate = true;
       const body = element('div', 'cgdi-feedback-dialog-body');
@@ -89,6 +94,9 @@
       commentStep.hidden = true;
       const selected = element('p', 'cgdi-feedback-selected');
       const commentHeading = element('h3', 'cgdi-feedback-question', 'Quer comentar?');
+      commentHeading.id = `${uid}-comment-heading`;
+      commentStep.setAttribute('role', 'group');
+      commentStep.setAttribute('aria-labelledby', commentHeading.id);
 
       const textareaWrap = element('div', 'br-textarea cgdi-feedback-textarea');
       const textareaLabel = element('label', '', 'Comentário (opcional)');
@@ -100,7 +108,7 @@
       textarea.placeholder = 'Escreva seu comentário';
       textareaWrap.append(textareaLabel, textarea);
       const notice = element('p', 'cgdi-feedback-notice', 'Demonstração. Não envie dados pessoais.');
-      commentStep.append(selected, textareaWrap, notice);
+      commentStep.append(selected, commentHeading, textareaWrap, notice);
       body.append(stepper, stepIndicator, ratingStep, commentStep);
       const footer = element('footer', 'cgdi-feedback-actions');
       const cancel = element('button', 'br-button secondary', 'Cancelar');

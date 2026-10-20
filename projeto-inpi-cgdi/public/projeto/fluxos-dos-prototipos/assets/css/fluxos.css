@@ -24,7 +24,7 @@ body { margin: 0; background: #fff; }
 
 .report-header,
 main {
-  width: min(100% - 32px, 1080px);
+  width: min(100% - 48px, 1200px);
   margin-inline: auto;
 }
 
@@ -49,6 +49,11 @@ h1 { max-width: 760px; margin: 0; color: #1b1b1b; font-size: clamp(2.25rem, 5vw,
 .section-heading { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 20px; }
 .section-heading h2,
 .flow-section--support h2 { margin: 0 0 10px; color: #222; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; }
+.section-heading h2 > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
 .section-heading p:not(.eyebrow),
 .flow-section--support p { max-width: 72ch; margin: 0; color: #555; line-height: 1.6; }
 .step-number { margin: 4px 0 0; color: #777; font-size: .875rem; font-weight: 700; letter-spacing: .08em; }
@@ -64,6 +69,8 @@ a { color: #1351b4; text-underline-offset: 3px; }
 :is(a, button):focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
 
 @media (max-width: 700px) {
+  .report-header,
+  main { width: min(100% - 32px, 1200px); }
   .report-header { align-items: flex-start; flex-direction: column; gap: 8px; }
   main { padding-block: 48px 64px; }
   .hero { margin-bottom: 40px; }
@@ -71,4 +78,13 @@ a { color: #1351b4; text-underline-offset: 3px; }
   .route-grid { grid-template-columns: 1fr; margin-left: 0; }
   .nested-route { margin-left: 0; }
   .flow-section--support { padding: 24px; }
+}
+
+/* Título em uma linha no desktop, sem quebra interna de palavras no móvel. */
+h1 { overflow-wrap: normal; word-break: normal; hyphens: none; }
+@media (min-width: 900px) {
+  h1 { max-width: none; font-size: clamp(2rem, 3.4vw, 2.65rem); text-wrap: nowrap; white-space: nowrap; }
+}
+@media (max-width: 899px) {
+  h1 { text-wrap: balance; white-space: normal; }
 }

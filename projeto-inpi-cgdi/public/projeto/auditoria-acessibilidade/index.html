@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; base-uri 'self'; connect-src 'self'; font-src 'self' data:; frame-src 'self'; img-src 'self' data: blob:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
@@ -21,7 +22,7 @@
       <p class="eyebrow">Auditoria de acessibilidade</p>
       <h1>Uma auditoria de acessibilidade em 5.194 páginas e 4.236 PDFs</h1>
       <nav class="chapter-nav" aria-label="Navegação do diagnóstico">
-        <a href="#desafios">Desafios</a><a href="#documentos">Documentos</a><a href="#interacao">Interação</a><a href="#conteudo-visual">Imagens</a><a href="#navegacao">Navegação</a><a href="#areas">Áreas</a><a href="#melhorias">Melhorias</a><a href="#metodo">Método</a>
+        <a href="#desafios">Desafios</a><a href="#documentos">Documentos</a><a href="#estrutura-pdf">Estrutura dos PDFs</a><a href="#interacao">Interação</a><a href="#conteudo-visual">Imagens</a><a href="#paginas">Páginas</a><a href="#navegacao">Navegação</a><a href="#links">Links</a><a href="#conteudo-dificil">Conteúdo</a><a href="#areas">Áreas</a><a href="#melhorias">Melhorias</a><a href="#metodo">Método</a>
       </nav>
     </header>
 
@@ -52,7 +53,7 @@
       <div class="impact-grid"><p><strong>Experiência de uso.</strong> Não é possível copiar um trecho ou usar a busca comum do PDF para encontrar uma palavra.</p><p><strong>Acessibilidade.</strong> Leitores de tela precisam reconhecer o texto para apresentá-lo em voz ou braile. Quando o documento é apenas uma imagem, a leitura depende de outros recursos de reconhecimento de texto.</p><p><strong>Busca na internet.</strong> Um texto reconhecível facilita a interpretação do conteúdo por ferramentas de pesquisa. Documentos feitos apenas de imagens podem exigir processamento adicional para que seu conteúdo seja identificado.</p></div>
     </section>
 
-    <section class="chapter" aria-labelledby="estrutura-pdf-title">
+    <section class="chapter" id="estrutura-pdf" aria-labelledby="estrutura-pdf-title">
       <p class="chapter-label">02 · Documentos</p>
       <h2 id="estrutura-pdf-title">Quando o PDF não explica como seu conteúdo está organizado</h2>
       <p class="section-lead">Examinamos as informações internas de 4.236 PDFs. Essas informações ajudam os programas a entender o idioma, os títulos e a organização do documento. Encontramos três problemas.</p>
@@ -86,7 +87,7 @@
       </div>
     </section>
 
-    <section class="chapter" id="navegacao" aria-labelledby="paginas-title">
+    <section class="chapter" id="paginas" aria-labelledby="paginas-title">
       <p class="chapter-label">05 · Páginas</p>
       <h2 id="paginas-title">Quando a página não deixa claro onde a pessoa está</h2>
       <div class="finding-list">
@@ -95,13 +96,13 @@
       </div>
     </section>
 
-    <section class="chapter" aria-labelledby="caminhos-title">
+    <section class="chapter" id="navegacao" aria-labelledby="caminhos-title">
       <p class="chapter-label">06 · Navegação</p>
       <h2 id="caminhos-title">Quando os caminhos para encontrar informações são longos</h2>
       <div class="finding-list single-finding"><article class="finding"><div class="finding-number"><strong>7.357</strong><span>conteúdos a mais de três passos</span></div><div><h3>O caminho mais longo identificado tem 27 passos</h3><p>Contamos os links que precisam ser seguidos para chegar às páginas e aos documentos do portal.</p><p>Encontramos 7.357 conteúdos que estão a quatro passos ou mais da página inicial.</p><h4>O que isso significa?</h4><p>Imagine uma pessoa que precisa encontrar uma orientação. Ela abre uma página, escolhe um link, chega a outra página e continua procurando.</p><p>Quanto maior o caminho, mais etapas ela precisa percorrer.</p><p class="impact"><strong>Experiência de uso.</strong> Caminhos longos aumentam a quantidade de escolhas necessárias para encontrar uma informação.</p><p class="impact"><strong>Acessibilidade.</strong> Cada nova página exige reconhecer sua organização e localizar o próximo link. Isso pode exigir mais esforço de quem navega pelo teclado ou utiliza tecnologias assistivas.</p><p class="impact"><strong>Busca na internet.</strong> A organização dos links internos ajuda os buscadores a descobrir páginas e compreender as relações entre os conteúdos.</p><p>Ter mais de três passos não significa, sozinho, que a navegação seja ruim. O resultado mostra quais conteúdos estão mais distantes da página inicial e precisam de atenção na revisão da estrutura.</p></div></article></div>
     </section>
 
-    <section class="chapter" aria-labelledby="links-title">
+    <section class="chapter" id="links" aria-labelledby="links-title">
       <p class="chapter-label">07 · Links</p>
       <h2 id="links-title">Quando os links não explicam o destino</h2>
       <div class="finding-list">
@@ -110,7 +111,7 @@
       </div>
     </section>
 
-    <section class="chapter" aria-labelledby="percorrer-title">
+    <section class="chapter" id="conteudo-dificil" aria-labelledby="percorrer-title">
       <p class="chapter-label">08 · Conteúdo</p>
       <h2 id="percorrer-title">Quando o conteúdo é difícil de percorrer</h2>
       <div class="finding-list">

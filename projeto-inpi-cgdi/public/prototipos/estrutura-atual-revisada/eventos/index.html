@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Protótipo do calendário de eventos do INPI com filtros, modalidades e detalhes para participação.">
   <meta name="cgdi-prototype-version" content="V1">
   <title>Calendário de eventos | Protótipo V1</title>
   <link rel="stylesheet" href="../../../vendor/govbr-ds-core.css">
@@ -19,6 +20,7 @@
 <link rel="stylesheet" href="../../componentes/calendario/calendario.css" data-cgdi-calendar-style>
 <link rel="stylesheet" href="../assets/css/paginas/eventos.css">
 <link rel="stylesheet" href="../assets/css/responsivo.css">
+<link rel="stylesheet" href="../assets/css/sistema-v1.css">
 </head>
 <body class="cgdi-page" data-version="V1">
   <a class="shell-skip" href="#conteudo">Ir para o conteúdo</a>
@@ -79,7 +81,7 @@
               </div>
             <button type="button" class="br-button secondary p03-action" data-p03-open aria-haspopup="dialog" aria-controls="p03-dialog">Acessar detalhes do evento</button>
             </article>
-<article class="cgdi-calendar__event p03-event" data-calendar-event data-end="12:30" data-time-label="08h30 às 12h30" data-status="programado" data-source="https://www.gov.br/inpi/pt-br/uso-estrategico-da-pi/inpi-para-empreender-e-inovar/eventos/copy92_of_evento-1" data-p03-effective="proximo" data-date="2026-10-22" data-mode="presencial">
+<article class="cgdi-calendar__event p03-event" data-calendar-event data-end="12:30" data-time-label="08h30 às 12h30" data-status="programado" data-source-status="indisponivel" data-p03-effective="proximo" data-date="2026-10-22" data-mode="presencial">
               <div class="p03-date"><time datetime="2026-10-22"><strong>22</strong><span>out 2026</span></time></div>
               <span class="br-tag small p03-state p03-state--mobile" data-p03-state aria-hidden="true">Programado</span>
               <div class="p03-event-body">
@@ -105,9 +107,11 @@
       </dl>
       <div class="p03-source-tools" data-p03-source-tools hidden>
         <div class="br-input"><label for="p03-source-url">Página oficial do evento</label><input id="p03-source-url" type="text" readonly aria-label="Endereço oficial do evento" /></div>
+        <a class="br-button primary p03-source-open" data-p03-source-open target="_blank" rel="noopener noreferrer" aria-label="Abrir página oficial do evento em uma nova aba" hidden>Abrir página oficial</a>
         <button class="br-button secondary p03-copy" type="button" data-p03-copy>Copiar link</button>
         <span class="p03-copy-status" role="status" data-p03-copy-status></span>
-      </div></div>
+      </div>
+      <p data-p03-source-unavailable role="status" hidden>A página oficial informada na fonte deste protótipo não está disponível.</p></div>
       <div class="br-modal-footer p03-dialog-footer"><button type="button" class="br-button primary" data-p03-close-footer>Fechar</button></div>
     </dialog>
     <cgdi-page-feedback data-cgdi-component="page-feedback"></cgdi-page-feedback>

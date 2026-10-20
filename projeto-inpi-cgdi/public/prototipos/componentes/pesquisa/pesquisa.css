@@ -50,6 +50,22 @@ cgdi-page-feedback,cgdi-card-pesquisa{display:block;box-sizing:border-box;width:
 .cgdi-feedback-dialog .cgdi-feedback-dialog-description,.cgdi-feedback-dialog .cgdi-feedback-muted,.cgdi-feedback-dialog .cgdi-feedback-notice{font-weight:400}
 .cgdi-feedback-dialog .cgdi-feedback-dialog-body,.cgdi-feedback-dialog .cgdi-feedback-choices,.cgdi-feedback-dialog .cgdi-feedback-tile{max-width:100%}
 .cgdi-feedback-dialog .cgdi-feedback-actions .br-button{white-space:normal;text-align:center}
+.cgdi-feedback-dialog .cgdi-feedback-actions .br-button:disabled{
+  border:2px solid var(--gray-30,#b3b3b3)!important;
+  background:var(--gray-5,#f2f2f2)!important;
+  background-image:none!important;
+  color:var(--gray-60,#777)!important;
+  box-shadow:none!important;
+  cursor:not-allowed!important;
+  filter:grayscale(1);
+  opacity:.72!important;
+}
+.cgdi-feedback-dialog .cgdi-feedback-actions .br-button:disabled:hover{
+  border-color:var(--gray-30,#b3b3b3)!important;
+  background:var(--gray-5,#f2f2f2)!important;
+  background-image:none!important;
+  color:var(--gray-60,#777)!important;
+}
 .cgdi-feedback-dialog .cgdi-feedback-textarea textarea{max-width:100%}
 @media(max-width:640px){cgdi-page-feedback,cgdi-card-pesquisa{padding-inline:16px}.cgdi-feedback.br-card{flex-direction:column;align-items:center;gap:20px;padding:28px 20px;text-align:center}.cgdi-feedback-call-content{flex-direction:column;align-items:center;gap:14px}.cgdi-feedback-open{min-width:176px}.cgdi-feedback-dialog.br-modal{width:calc(100vw - 24px);height:min(600px,calc(100dvh - 24px))}.cgdi-feedback-dialog-panel{padding:24px 20px}.cgdi-feedback-dialog-title{font-size:20px}.cgdi-feedback-question{font-size:18px}.cgdi-feedback-choices{gap:6px}.cgdi-feedback-tile{min-height:92px;gap:10px;padding:8px 2px!important}.cgdi-feedback-number{width:36px;height:36px;font-size:20px}.cgdi-feedback-actions{gap:8px}.cgdi-feedback-actions .br-button{flex:1;min-width:0}}
 @media(max-width:360px){.cgdi-feedback-dialog.br-modal{width:calc(100vw - 16px);height:calc(100dvh - 16px)}.cgdi-feedback-dialog-panel{padding:16px 12px}.cgdi-feedback-choices{gap:4px}.cgdi-feedback-number{width:32px;height:32px}}

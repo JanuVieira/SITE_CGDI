@@ -7,7 +7,7 @@
 body { margin:0;background:#fff }
 .skip-link { position:absolute;left:-9999px;top:12px;z-index:10 }
 .skip-link:focus { left:16px;padding:10px 14px;border-radius:8px;background:#fff;color:#1d1d1f;outline:3px solid #8e8e93 }
-.cgdi-index { width:100%;max-width:1080px;margin:0 auto;padding:80px 24px 96px }
+.cgdi-index { width:100%;max-width:1200px;margin:0 auto;padding:64px 24px 80px }
 .introducao { max-width:920px }
 .institutional-heading { margin-bottom:24px }
 .brand-line { display:flex;align-items:center;gap:10px;margin:0 0 8px;color:#1d1d1f;line-height:1 }
@@ -20,7 +20,7 @@ h1 { max-width:820px;margin:0;color:#1d1d1f;font-size:clamp(2.25rem,4.4vw,3.75re
 .project-meta dt { margin:0 0 6px;color:#86868b;font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase }
 .project-meta dd { margin:0;color:#3a3a3c;font-size:.875rem;font-weight:450;line-height:1.5 }
 .project-meta a { color:#1d1d1f;text-decoration-line:underline;text-decoration-color:#6e6e73;text-decoration-thickness:1px;text-underline-offset:3px }
-.delivery-section { margin-top:56px }
+.delivery-section { margin-top:64px }
 .section-heading { margin-bottom:18px }
 .section-heading h2 { margin:0;color:#1d1d1f;font-size:1.375rem;font-weight:600;letter-spacing:-.02em }
 .delivery-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px }
@@ -43,7 +43,7 @@ h1 { max-width:820px;margin:0;color:#1d1d1f;font-size:clamp(2.25rem,4.4vw,3.75re
   .delivery-grid--three { grid-template-columns:1fr }
 }
 @media(max-width:620px) {
-  .cgdi-index { padding:56px 16px 64px }
+  .cgdi-index { padding:48px 16px 64px }
   h1 { font-size:clamp(2rem,10vw,2.75rem) }
   .project-meta { grid-template-columns:1fr;gap:18px;margin-top:36px;padding-block:20px }
   .delivery-section { margin-top:48px }
@@ -57,4 +57,23 @@ h1 { max-width:820px;margin:0;color:#1d1d1f;font-size:clamp(2.25rem,4.4vw,3.75re
 }
 @media(prefers-reduced-motion:reduce) {
   .delivery-card.br-card { transition:none }
+}
+
+/* Somente o H1 da home recebe limite de caracteres por linha. */
+.cgdi-index > .introducao > h1 {
+  max-width:32ch;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+  text-wrap:balance;
+  white-space:normal;
+}
+@media(min-width:1024px) {
+  .introducao { max-width:none }
+  .cgdi-index > .introducao > h1 {
+    max-width:18ch;
+    font-size:clamp(4rem,6vw,5.5rem);
+    line-height:.98;
+    letter-spacing:-.055em;
+  }
 }

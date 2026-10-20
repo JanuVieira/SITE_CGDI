@@ -14,7 +14,24 @@ a[data-cgdi-external-disabled="true"] {
   pointer-events: none;
   text-decoration: none !important;
 }
-
+/* Controles de formulários pendentes recebem estado visual inequívoco.
+   O componente de pré-download não utiliza este escopo. */
+form[aria-disabled="true"] button:disabled {
+  border: 2px solid var(--gray-30, #b3b3b3) !important;
+  background: var(--gray-5, #f2f2f2) !important;
+  background-image: none !important;
+  color: var(--gray-60, #777) !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+  filter: grayscale(1);
+  opacity: .72 !important;
+}
+form[aria-disabled="true"] button:disabled:hover {
+  border-color: var(--gray-30, #b3b3b3) !important;
+  background: var(--gray-5, #f2f2f2) !important;
+  background-image: none !important;
+  color: var(--gray-60, #777) !important;
+}
 cgdi-breadcrumb.cgdi-breadcrumb,
 cgdi-breadcrumb.br-breadcrumb {
   box-sizing: border-box !important;
@@ -98,8 +115,6 @@ a[data-cgdi-external-disabled="true"] {
   text-decoration:underline dashed!important;
   text-underline-offset:3px;
 }
-a[data-cgdi-external-disabled="true"]::after {content:" — indisponível";font-size:.875em;font-weight:400}
-
 /* Base responsiva comum: protege todos os componentes contra estouro lateral. */
 @media (max-width: 740px) {
   :is(

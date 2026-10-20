@@ -33,6 +33,63 @@ jobs:
         working-directory: projeto-inpi-cgdi
         run: npm run check
 
+      - name: Validar layouts e interações no Chrome
+        timeout-minutes: 10
+        shell: bash
+        run: |
+          set -euo pipefail
+          server_pid=""
+          chrome_pid=""
+          cleanup() {
+            status=$?
+            trap - EXIT
+            if [ "$status" -ne 0 ]; then
+              echo "Log do servidor local:"
+              cat "$RUNNER_TEMP/cgdi-http.log" || true
+              echo "Log do Chrome headless:"
+              cat "$RUNNER_TEMP/cgdi-chrome.log" || true
+            fi
+            [ -z "$server_pid" ] || kill "$server_pid" 2>/dev/null || true
+            [ -z "$chrome_pid" ] || kill "$chrome_pid" 2>/dev/null || true
+            [ -z "$server_pid" ] || wait "$server_pid" 2>/dev/null || true
+            [ -z "$chrome_pid" ] || wait "$chrome_pid" 2>/dev/null || true
+            exit "$status"
+          }
+          trap cleanup EXIT
+
+          python3 -m http.server 4173 \
+            --bind 127.0.0.1 \
+            --directory projeto-inpi-cgdi/public \
+            >"$RUNNER_TEMP/cgdi-http.log" 2>&1 &
+          server_pid=$!
+
+          chrome_bin="$(command -v google-chrome || command -v chromium || true)"
+          test -n "$chrome_bin"
+          "$chrome_bin" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --no-first-run \
+            --remote-debugging-address=127.0.0.1 \
+            --remote-debugging-port=9225 \
+            --user-data-dir="$RUNNER_TEMP/cgdi-chrome-profile" \
+            about:blank \
+            >"$RUNNER_TEMP/cgdi-chrome.log" 2>&1 &
+          chrome_pid=$!
+
+          ready=0
+          for attempt in {1..30}; do
+            if curl --fail --silent --show-error http://127.0.0.1:4173/index.html >/dev/null \
+              && curl --fail --silent --show-error http://127.0.0.1:9225/json/version >/dev/null; then
+              ready=1
+              break
+            fi
+            sleep 1
+          done
+          test "$ready" -eq 1
+          "$chrome_bin" --version
+          npm --prefix projeto-inpi-cgdi run check:browser
+
       - name: Preparar publicação pela allowlist
         shell: bash
         run: |
@@ -41,6 +98,9 @@ jobs:
           test ! -e _site/quarentena
           test ! -e _site/ferramentas
           test ! -e _site/package.json
+
+      - name: Validar artefato gerado
+        run: npm --prefix projeto-inpi-cgdi run check:artifact
 
       - name: Atualizar cache a cada publicacao
         shell: bash
@@ -56,6 +116,9 @@ jobs:
           set -euo pipefail
           python3 .github/scripts/cgdi_ga4_publish.py \
             --site _site
+
+      - name: Validar artefato final publicado
+        run: npm --prefix projeto-inpi-cgdi run check:published
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5

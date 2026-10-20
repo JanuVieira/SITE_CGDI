@@ -10,6 +10,7 @@
 #conteudo.p06-v1 > .container-lg {width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(16px,3vw,32px)}
 #conteudo.p06-v1 .p06-intro {max-width:880px;margin:0 0 16px}
 #conteudo.p06-v1 .p06-intro h1 {margin:0;color:var(--p06-heading)!important;font-size:clamp(2rem,3vw,2.5rem);font-weight:700;line-height:1.2;letter-spacing:0}
+#conteudo.p06-v1 .p06-panel-fallback {margin:16px 0 0}
 #conteudo.p06-v1 .p06-intro .lead {max-width:65ch;font-size:1.125rem;line-height:1.5;font-weight:400;margin:12px 0 0;color:var(--p06-text)}
 #conteudo.p06-v1 cgdi-metadata.p06-meta {display:flex;flex-wrap:wrap;gap:6px 24px;margin:0 0 32px;padding:0 0 18px;border-bottom:1px solid var(--p06-line);font-size:.875rem;color:var(--p06-muted)}
 #conteudo.p06-v1 .p06-meta .value {color:var(--p06-text);font-weight:600}

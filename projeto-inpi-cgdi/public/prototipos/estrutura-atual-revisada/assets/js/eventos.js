@@ -44,6 +44,8 @@
     };
     const tools=dialog.querySelector('[data-p03-source-tools]');
     const source=dialog.querySelector('#p03-source-url');
+    const sourceOpen=dialog.querySelector('[data-p03-source-open]');
+    const sourceUnavailable=dialog.querySelector('[data-p03-source-unavailable]');
     const copy=dialog.querySelector('[data-p03-copy]');
     const copyStatus=dialog.querySelector('[data-p03-copy-status]');
     let lastTrigger=null;
@@ -59,8 +61,19 @@
       fields.time.textContent=article.dataset.timeLabel || '';
       fields.mode.textContent=article.dataset.mode === 'online' ? 'Online' : 'Presencial';
       fields.place.textContent=article.querySelector('.p03-place')?.textContent.trim() || '';
-      source.value=article.dataset.source || '';
-      tools.hidden=!source.value;
+      const sourceUrl=article.dataset.source || '';
+      source.value=sourceUrl;
+      tools.hidden=!sourceUrl;
+      sourceUnavailable.hidden=Boolean(sourceUrl);
+      if(sourceUrl){
+        sourceOpen.href=sourceUrl;
+        sourceOpen.dataset.cgdiLinkOficial='true';
+        sourceOpen.hidden=false;
+      }else{
+        sourceOpen.removeAttribute('href');
+        delete sourceOpen.dataset.cgdiLinkOficial;
+        sourceOpen.hidden=true;
+      }
       copyStatus.textContent='';
       if (typeof dialog.showModal === 'function') dialog.showModal(); else dialog.setAttribute('open','');
     });

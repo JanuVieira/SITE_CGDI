@@ -68,6 +68,7 @@
   #conteudo.fed .dashboard-head a {min-height:48px}
   #conteudo.fed .embed iframe {height:clamp(480px,72dvh,620px);min-height:480px}
 }
+
 @media(max-width:390px){
   #conteudo.p01-v7 .p01-v7-resource-icon,
   #conteudo.p06-v1 .p06-icon {flex-basis:40px;width:40px;height:40px}
@@ -183,5 +184,39 @@
     flex-direction:column;
     gap:6px;
     padding-top:18px;
+  }
+}
+
+/* Evita títulos partidos no meio das palavras. Em desktop, os títulos das
+   páginas internas permanecem em uma única linha. */
+#conteudo:is(.p01-v7,.p03-page,.p04-mentorias,.p05,.p06-v1,.p07-page,.fed) :is(.page-intro,.intro) h1 {
+  max-width:none;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+}
+
+@media(min-width:900px){
+  #conteudo:is(.p01-v7,.p03-page,.p04-mentorias,.p05,.p06-v1,.p07-page,.fed) :is(.page-intro,.intro) h1 {
+    font-size:clamp(1.75rem,2.6vw,2.25rem);
+    line-height:1.15;
+    text-wrap:nowrap;
+    white-space:nowrap;
+  }
+}
+
+@media(max-width:899px){
+  #conteudo:is(.p01-v7,.p03-page,.p04-mentorias,.p05,.p06-v1,.p07-page,.fed) :is(.page-intro,.intro) h1 {
+    text-wrap:balance;
+    white-space:normal;
+  }
+}
+
+/* O título extenso de Federações cabe em uma linha a partir do layout amplo. */
+@media(min-width:720px) and (max-width:899px){
+  body.cgdi-page #conteudo.fed cgdi-page-intro.intro h1 {
+    font-size:clamp(1.55rem,3.2vw,1.9rem)!important;
+    text-wrap:nowrap!important;
+    white-space:nowrap!important;
   }
 }

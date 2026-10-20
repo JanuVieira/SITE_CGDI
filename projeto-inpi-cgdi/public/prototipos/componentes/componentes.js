@@ -79,11 +79,13 @@
     if (existing) {
       if (document.body?.dataset.version === 'V1') {
         const list = existing.querySelector('ol');
-        const first = list?.firstElementChild;
-        if (list && first?.textContent.trim() !== 'Protótipos CGDI') {
+        const prototypeHomeHref = new URL('index.html', publicRoot).href;
+        const hasPrototypeHome = [...(list?.querySelectorAll('a[href]') || [])]
+          .some(link => link.href === prototypeHomeHref);
+        if (list && !hasPrototypeHome) {
           const item = document.createElement('li');
           const link = document.createElement('a');
-          link.href = new URL('index.html', publicRoot).href;
+          link.href = prototypeHomeHref;
           link.textContent = 'Protótipos CGDI';
           item.append(link);
           list.prepend(item);
@@ -133,6 +135,38 @@
 
   // Destinos ainda não publicados não são links no protótipo. Isso evita
   // saídas da página e elimina a necessidade de abrir um aviso modal.
+  function enablePendingHeaderControls(root) {
+    root.querySelectorAll('a[data-cgdi-prototype-resource="pending"], a[data-prototype-resource="pending"], a[href^="javascript:"]').forEach(link => {
+      link.href = '#';
+      link.removeAttribute('target');
+      link.removeAttribute('data-cgdi-prototype-resource');
+      link.removeAttribute('data-prototype-resource');
+      link.removeAttribute('aria-disabled');
+      link.removeAttribute('role');
+      link.removeAttribute('tabindex');
+      delete link.dataset.cgdiUnavailable;
+      delete link.dataset.cgdiExternalDisabled;
+      if (link.dataset.cgdiNoopBound !== 'true') {
+        link.addEventListener('click', event => event.preventDefault());
+        link.dataset.cgdiNoopBound = 'true';
+      }
+    });
+    root.querySelectorAll('form[data-cgdi-prototype-resource="pending"], form[data-prototype-resource="pending"]').forEach(form => {
+      form.removeAttribute('action');
+      form.removeAttribute('data-cgdi-prototype-resource');
+      form.removeAttribute('data-prototype-resource');
+      form.removeAttribute('aria-disabled');
+      form.querySelectorAll('button, input, select, textarea').forEach(control => {
+        control.disabled = false;
+        control.removeAttribute('aria-disabled');
+      });
+      if (form.dataset.cgdiNoopBound !== 'true') {
+        form.addEventListener('submit', event => event.preventDefault());
+        form.dataset.cgdiNoopBound = 'true';
+      }
+    });
+  }
+
   function disablePendingDestinations(root = document) {
     root.querySelectorAll('a[data-cgdi-prototype-resource="pending"], a[data-prototype-resource="pending"], a[href^="javascript:"]').forEach(link => {
       link.removeAttribute('href');
@@ -149,7 +183,6 @@
       form.removeAttribute('data-cgdi-prototype-resource');
       form.removeAttribute('data-prototype-resource');
       form.setAttribute('aria-disabled', 'true');
-      form.setAttribute('title', 'Busca indisponível neste protótipo.');
       form.querySelectorAll('button, input, select, textarea').forEach(control => control.disabled = true);
       if (form.dataset.cgdiPendingBound !== 'true') {
         form.addEventListener('submit', event => event.preventDefault());
@@ -192,7 +225,8 @@
         if (logo) logo.src = new URL('assets/img/logo-govbr.png', prototypeRoot).href;
       }
       root.replaceChildren(style, fragment);
-      disablePendingDestinations(root);
+      if (id === 'cgdi-portal-top') enablePendingHeaderControls(root);
+      else disablePendingDestinations(root);
       if (id === 'cgdi-portal-top') initMenu(root);
       if (id === 'cgdi-portal-footer') initFooter(root);
       host.dataset.cgdiComponentReady = 'true';
@@ -454,7 +488,6 @@
       if (['feature', 'media'].includes(card.getAttribute('variant'))) {
         directChildren.find(child => child.matches('div'))?.setAttribute('data-card-body', '');
       }
-      card.querySelectorAll('.v2-action-off').forEach(action => action.setAttribute('aria-disabled', 'true'));
       card.dataset.cgdiComponent = 'card';
       card.dataset.cgdiComponentReady = 'true';
     });
@@ -527,18 +560,32 @@
     if (!customElements.get(tagName)) customElements.define(tagName, class extends HTMLElement {});
   }
 
-  upgradeLegacyCards();
-  upgradeLegacyCalendars();
-  mountV1EditorialComponents();
-  ensureFeedbackHost();
-  disableExternalLinks();
-  disablePendingDestinations();
-  mountCards();
-  Promise.all([mountPrototypeNav(), mountShell(), mountCalendars(), loadResearchComponent()])
-    .then(() => {
-      disablePendingDestinations();
-      return enhancePreDownloads();
-    })
-    .catch(error => console.error('[CGDI componentes]', error));
+  const reportInitializationError = (label, error) => {
+    console.error(`[CGDI componentes: ${label}]`, error);
+  };
+  const runInitializer = (label, initializer) => {
+    try {
+      return Promise.resolve(initializer()).catch(error => reportInitializationError(label, error));
+    } catch (error) {
+      reportInitializationError(label, error);
+      return Promise.resolve();
+    }
+  };
+
+  runInitializer('adaptação de cards legados', upgradeLegacyCards);
+  runInitializer('adaptação de calendários legados', upgradeLegacyCalendars);
+  runInitializer('componentes editoriais', mountV1EditorialComponents);
+  runInitializer('host de avaliação', ensureFeedbackHost);
+  runInitializer('links externos', disableExternalLinks);
+  runInitializer('destinos pendentes', disablePendingDestinations);
+  runInitializer('cards', mountCards);
+  runInitializer('navegação entre protótipos', mountPrototypeNav);
+  runInitializer('shell institucional', async () => {
+    await mountShell();
+    disablePendingDestinations();
+  });
+  runInitializer('calendários', mountCalendars);
+  runInitializer('avaliação de página', loadResearchComponent);
+  runInitializer('pré-download', enhancePreDownloads);
 })();
 

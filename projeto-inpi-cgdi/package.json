@@ -10,6 +10,9 @@
     "check": "node ferramentas/scripts/gerar-bundle-componentes.mjs --check && node ferramentas/testes/validar-estrutura.mjs && node ferramentas/testes/validar-dados-acessibilidade.mjs",
     "check:mobile": "node ferramentas/testes/validar-interacoes-mobile.mjs",
     "check:responsive": "node ferramentas/testes/validar-layouts-responsivos.mjs",
+    "check:browser": "node ferramentas/testes/validar-navegador.mjs",
+    "check:artifact": "node ferramentas/testes/validar-artefato.mjs",
+    "check:published": "node ferramentas/testes/validar-artefato.mjs --final",
     "build": "node ferramentas/scripts/preparar-publicacao.mjs",
     "dev": "node ferramentas/scripts/servidor-local.mjs"
   },

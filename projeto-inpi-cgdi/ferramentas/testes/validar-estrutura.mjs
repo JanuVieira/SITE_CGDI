@@ -21,6 +21,10 @@ const localAttributes = /\b(?:href|src|poster|data-source)\s*=\s*["']([^"']*)["'
 const externalStylesOrScripts = /<(?:link|script)\b[^>]*(?:href|src)=["'](?:https?:)?\/\//i;
 const ignoredSchemes = /^(?:data:|blob:|mailto:|tel:|javascript:|https?:|\/\/)/i;
 const cleanName = /^[a-z0-9]+(?:[.-][a-z0-9]+)*$/;
+const voidElements = new Set([
+  'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta',
+  'param', 'source', 'track', 'wbr'
+]);
 
 async function listFiles(directory, extension = '') {
   try {
@@ -48,13 +52,91 @@ function publicName(path) {
 }
 
 function collectAttributeValues(html, attribute) {
-  const pattern = new RegExp("\\b" + attribute + "\\s*=\\s*[\"']([^\"']+)[\"']", 'gi');
-  return [...html.matchAll(pattern)].map(match => match[1]);
+  const pattern = new RegExp("\\b" + attribute + "\\s*=\\s*([\"'])(.*?)\\1", 'gis');
+  return [...html.matchAll(pattern)].map(match => match[2]);
 }
 
 function attributeFromTag(tag, attribute) {
-  const pattern = new RegExp("\\b" + attribute + "\\s*=\\s*[\"']([^\"']*)[\"']", 'i');
-  return tag.match(pattern)?.[1] ?? null;
+  const pattern = new RegExp("\\b" + attribute + "\\s*=\\s*([\"'])(.*?)\\1", 'is');
+  return tag.match(pattern)?.[2] ?? null;
+}
+
+function hasAttribute(tag, attribute) {
+  const pattern = new RegExp("\\s" + attribute + "(?:\\s*=|\\s|/?>)", 'i');
+  return pattern.test(tag);
+}
+
+function lineAt(source, offset) {
+  return source.slice(0, offset).split('\n').length;
+}
+
+// A validação não precisa construir um DOM completo, mas precisa respeitar a
+// ancestralidade para não considerar links dentro de conteúdo oculto como
+// rotas navegáveis e para conferir a estrutura das listas.
+function inspectMarkup(html) {
+  const stack = [];
+  const navigableHrefs = [];
+  const orphanListItems = [];
+  const tokens = html.matchAll(/<!--[\s\S]*?-->|<![^>]*>|<\/?[a-z][^>]*>/gi);
+
+  for (const match of tokens) {
+    const token = match[0];
+    if (token.startsWith('<!--') || /^<![^-]/.test(token)) continue;
+    const parsed = token.match(/^<\s*(\/?)\s*([a-z][\w:-]*)/i);
+    if (!parsed) continue;
+    const closing = parsed[1] === '/';
+    const tagName = parsed[2].toLowerCase();
+
+    if (closing) {
+      const openIndex = stack.map(entry => entry.tagName).lastIndexOf(tagName);
+      if (openIndex !== -1) stack.length = openIndex;
+      continue;
+    }
+
+    const style = attributeFromTag(token, 'style') || '';
+    const hidden = stack.some(entry => entry.hidden)
+      || tagName === 'template'
+      || hasAttribute(token, 'hidden')
+      || hasAttribute(token, 'inert')
+      || attributeFromTag(token, 'aria-hidden')?.toLowerCase() === 'true'
+      || /(?:^|;)\s*(?:display\s*:\s*none|visibility\s*:\s*hidden)\s*(?:;|$)/i.test(style);
+
+    if (tagName === 'li' && !stack.some(entry => ['ul', 'ol', 'menu'].includes(entry.tagName))) {
+      orphanListItems.push(lineAt(html, match.index));
+    }
+
+    if (tagName === 'a') {
+      const href = attributeFromTag(token, 'href');
+      const disabled = hasAttribute(token, 'disabled')
+        || attributeFromTag(token, 'aria-disabled')?.toLowerCase() === 'true';
+      if (!hidden && !disabled && href) navigableHrefs.push(href);
+    }
+
+    if (!voidElements.has(tagName) && !/\/\s*>$/.test(token)) {
+      stack.push({ tagName, hidden });
+    }
+  }
+
+  return { navigableHrefs, orphanListItems };
+}
+
+function breadcrumbFragments(html) {
+  const customElements = html.match(/<cgdi-breadcrumb\b[^>]*>[\s\S]*?<\/cgdi-breadcrumb>/gi) || [];
+  const navigationElements = html.match(
+    /<nav\b[^>]*(?:class|id)=["'][^"']*(?:breadcrumb|breadcrumbs|cgdi-crumb)[^"']*["'][^>]*>[\s\S]*?<\/nav>/gi
+  ) || [];
+  return [...customElements, ...navigationElements];
+}
+
+function normalizedHref(owner, href) {
+  const value = href.replaceAll('&amp;', '&').trim();
+  try {
+    const url = new URL(value, `https://cgdi.invalid/${publicName(owner)}`);
+    url.pathname = url.pathname.replace(/\/index\.html$/, '/');
+    return url.href;
+  } catch {
+    return value;
+  }
 }
 
 async function resolveLocalReference(owner, rawReference) {
@@ -134,16 +216,38 @@ pages.sort();
 assert.ok(pages.length >= requiredEntries.length, 'Nenhuma coleção de páginas ativas foi encontrada.');
 
 const pageSet = new Set(pages.map(page => resolve(page)));
+const directOnlyPages = new Set([
+  resolve(join(root, 'projeto/fluxos-dos-prototipos/index.html'))
+]);
 const graph = new Map();
 let referenceCount = 0;
 
 for (const page of pages) {
   const html = await readFile(page, 'utf8');
   const name = publicName(page);
+  const markup = inspectMarkup(html);
   assert.match(html, /<!doctype html>/i, name + ' deve declarar HTML5.');
   assert.match(html, /<html\b[^>]*\blang=["']pt-BR["']/i, name + ' deve declarar pt-BR.');
   assert.match(html, /<meta\b[^>]*\bname=["']viewport["']/i, name + ' deve declarar viewport responsivo.');
   assert.match(html, /<title>[^<]+<\/title>/i, name + ' deve apresentar título não vazio.');
+  const metaTags = html.match(/<meta\b[^>]*>/gi) || [];
+  const descriptionTags = metaTags.filter(tag =>
+    attributeFromTag(tag, 'name')?.toLowerCase() === 'description'
+  );
+  assert.equal(descriptionTags.length, 1, name + ' deve apresentar uma única meta description.');
+  const description = attributeFromTag(descriptionTags[0], 'content')?.trim() || '';
+  assert.ok(
+    description.length >= 50 && description.length <= 180,
+    name + ' deve apresentar meta description entre 50 e 180 caracteres.'
+  );
+  const cspTags = metaTags.filter(tag =>
+    attributeFromTag(tag, 'http-equiv')?.toLowerCase() === 'content-security-policy'
+  );
+  assert.equal(cspTags.length, 1, name + ' deve apresentar uma única política CSP.');
+  const csp = attributeFromTag(cspTags[0], 'content') || '';
+  assert.match(csp, /\bbase-uri\s+'self'(?:\s*;|$)/, name + ' deve restringir base-uri na CSP.');
+  assert.match(csp, /\bobject-src\s+'none'(?:\s*;|$)/, name + ' deve bloquear object-src na CSP.');
+  assert.match(csp, /\bscript-src\s+'self'(?:\s*;|$)/, name + ' deve restringir scripts na CSP.');
   assert.match(html, /<main\b/i, name + ' deve apresentar uma região main.');
   assert.match(
     html,
@@ -190,6 +294,48 @@ for (const page of pages) {
     );
   }
 
+  assert.deepEqual(
+    markup.orphanListItems,
+    [],
+    name + ' contém <li> fora de <ul>, <ol> ou <menu> nas linhas ' + markup.orphanListItems.join(', ') + '.'
+  );
+
+  const breadcrumbs = breadcrumbFragments(html);
+  assert.ok(breadcrumbs.length <= 1, name + ' não deve apresentar breadcrumbs duplicados.');
+  for (const breadcrumb of breadcrumbs) {
+    const seenHrefs = new Set();
+    for (const href of collectAttributeValues(breadcrumb, 'href')) {
+      const key = normalizedHref(page, href);
+      assert.ok(!seenHrefs.has(key), name + ' repete o destino ' + href + ' no breadcrumb.');
+      seenHrefs.add(key);
+    }
+  }
+
+  for (const match of html.matchAll(/<[a-z][^>]*\bdata-v2-inert-action\b[^>]*>/gi)) {
+    const tag = match[0];
+    const disabled = hasAttribute(tag, 'disabled')
+      || hasAttribute(tag, 'inert')
+      || attributeFromTag(tag, 'aria-disabled')?.toLowerCase() === 'true';
+    const destination = attributeFromTag(tag, 'href') || attributeFromTag(tag, 'formaction');
+    assert.ok(
+      disabled || (destination && destination !== '#' && !/^javascript:/i.test(destination)),
+      name + ':' + lineAt(html, match.index) + ' contém controle data-v2-inert-action acionável sem destino.'
+    );
+  }
+
+  if (name === 'prototipos/orientado-a-acao/index.html') {
+    assert.doesNotMatch(
+      html,
+      /indispon[ií]vel/i,
+      name + ' não deve acrescentar “indisponível” aos rótulos dos controles.'
+    );
+    const unavailableActions = html.match(/<button\b[^>]*\bv2-action-off\b[^>]*>/gi) || [];
+    assert.ok(unavailableActions.length > 0, name + ' deve preservar os controles sem destino como botões.');
+    for (const action of unavailableActions) {
+      assert.ok(hasAttribute(action, 'disabled'), name + ' deve manter sem ação apenas botões nativamente disabled.');
+    }
+  }
+
   for (const imageTag of html.match(/<img\b[^>]*>/gi) || []) {
     assert.notEqual(attributeFromTag(imageTag, 'alt'), null, name + ' contém imagem sem atributo alt.');
   }
@@ -214,10 +360,13 @@ for (const page of pages) {
     }
   }
 
-  const edges = new Set();
   for (const match of html.matchAll(localAttributes)) {
     referenceCount += 1;
-    const target = await resolveLocalReference(page, match[1]);
+    await resolveLocalReference(page, match[1]);
+  }
+  const edges = new Set();
+  for (const href of markup.navigableHrefs) {
+    const target = await resolveLocalReference(page, href);
     if (target && pageSet.has(resolve(target))) edges.add(resolve(target));
   }
   graph.set(resolve(page), edges);
@@ -242,6 +391,7 @@ while (queue.length) {
   }
 }
 for (const page of pageSet) {
+  if (directOnlyPages.has(page)) continue;
   assert.ok(
     reachable.has(page),
     'Página canônica não alcançável a partir da home: ' + publicName(page)
@@ -253,7 +403,6 @@ for (const requiredHref of [
   'https://docs.google.com/document/',
   'https://drive.google.com/drive/folders/',
   'projeto/auditoria-acessibilidade/index.html',
-  'projeto/fluxos-dos-prototipos/index.html',
   'prototipos/estrutura-atual-revisada/index.html',
   'prototipos/orientado-a-acao/index.html'
 ]) {
@@ -312,6 +461,7 @@ for (const [legacyPath, canonicalPath] of redirects) {
 }
 
 console.log(
-  'public validado: ' + pages.length + ' páginas canônicas alcançáveis, ' +
+  'public validado: ' + (pages.length - directOnlyPages.size) + ' páginas canônicas alcançáveis, ' +
+  directOnlyPages.size + ' página técnica de acesso direto, ' +
   referenceCount + ' referências locais e contratos de publicação íntegros.'
 );

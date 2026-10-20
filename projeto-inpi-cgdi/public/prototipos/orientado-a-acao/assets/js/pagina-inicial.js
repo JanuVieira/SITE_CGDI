@@ -37,25 +37,4 @@ if(carousel){
   dots.forEach((el,i)=>el.addEventListener('click',()=>show(i)));
   show(0);
 }
-// O componente de avaliação é compartilhado com o projeto: só muda sua
-// localização na Home 2, mantendo o mesmo modal, armazenamento e comportamento.
-const slot=document.getElementById('v2-survey-slot');
-const main=document.querySelector('main.home-v2-pdf');
-if(slot && main){
-  function place(){
-    const banner=main.querySelector('.cgdi-research');
-    if(!banner || banner.parentNode===slot)return banner?.parentNode===slot;
-    slot.appendChild(banner);
-    const t=banner.querySelector('.cgdi-research-copy h2');
-    const desc=banner.querySelector('.cgdi-research-copy p');
-    if(t)t.textContent='Esta página ajudou você?';
-    if(desc)desc.textContent='Conte como foi sua experiência nesta página. Sua avaliação fica salva somente neste navegador.';
-    return true;
-  }
-  if(!place()){
-    const observer=new MutationObserver(()=>{if(place())observer.disconnect()});
-    observer.observe(main,{childList:true});
-  }
-}
-
 })();

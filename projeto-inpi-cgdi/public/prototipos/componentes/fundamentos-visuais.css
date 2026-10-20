@@ -344,3 +344,28 @@ body.cgdi-page[data-version="V1"] #content-core iframe {display:block;width:100%
     width:100%;
   }
 }
+
+/* Títulos de página: uma linha em desktop e quebra somente entre palavras
+   quando a largura disponível não comporta o texto com legibilidade. */
+body.cgdi-page :is(main, #main-content) :is(.page-intro, .v2-opening-intro) h1 {
+  max-width: none;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+@media (min-width: 900px) {
+  body.cgdi-page :is(main, #main-content) :is(.page-intro, .v2-opening-intro) h1 {
+    font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+    line-height: 1.15;
+    text-wrap: nowrap;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 899px) {
+  body.cgdi-page :is(main, #main-content) :is(.page-intro, .v2-opening-intro) h1 {
+    text-wrap: balance;
+    white-space: normal;
+  }
+}

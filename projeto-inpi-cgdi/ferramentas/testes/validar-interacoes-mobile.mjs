@@ -32,8 +32,26 @@ const viewport = async width => send('Emulation.setDeviceMetricsOverride', {
 });
 const open = async (path, width) => {
   await viewport(width);
-  await send('Page.navigate', { url: `${base}/${path}` });
-  await wait(1400);
+  const url = `${base}/${path}`;
+  await send('Page.navigate', { url });
+  const started = Date.now();
+  while (Date.now() - started < 5000) {
+    const ready = await evaluate(`(() => {
+      if (location.href !== ${JSON.stringify(url)} || document.readyState === 'loading') return false;
+      const components = [...document.querySelectorAll(
+        'cgdi-prototype-nav, cgdi-portal-top, cgdi-portal-footer'
+      )];
+      const feedback = document.querySelector('cgdi-page-feedback');
+      return components.every(host => host.dataset.cgdiComponentReady === 'true')
+        && (!feedback || feedback.dataset.cgdiFeedbackReady === 'true');
+    })()`);
+    if (ready) {
+      await evaluate('new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))');
+      return;
+    }
+    await wait(50);
+  }
+  throw new Error(`Tempo excedido ao abrir ${path}.`);
 };
 const box = selector => `(() => { const el=document.querySelector(${JSON.stringify(selector)}); if(!el)return null; const r=el.getBoundingClientRect(); return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height}; })()`;
 const fits = rect => rect && rect.left >= -1 && rect.right <= rect.viewport + 1 && rect.width <= rect.viewport + 1;
@@ -44,11 +62,12 @@ await send('Page.enable');
 await send('Runtime.enable');
 await send('Network.enable');
 await send('Network.setCacheDisabled', { cacheDisabled: true });
+await send('Network.setBlockedURLs', { urls: ['https://app.powerbi.com/*'] });
 
 for (const width of [320, 360, 390, 412]) {
   await open('index.html', width);
-  const home = await evaluate(`(()=>{const cards=[...document.querySelectorAll('.delivery-card')];const firstAction=document.querySelector('.delivery-card .br-button');const r=firstAction?.getBoundingClientRect();return {viewport:innerWidth,cards:cards.length,action:r&&{left:r.left,right:r.right,height:r.height},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
-  record('Home: entregas principais', width, home, home.cards === 6 && home.action && home.action.left >= -1 && home.action.right <= width + 1 && home.action.height >= 44 && home.overflow <= 1);
+  const home = await evaluate(`(()=>{const visible=el=>{const style=getComputedStyle(el);const rect=el.getBoundingClientRect();return !el.hidden&&style.display!=='none'&&style.visibility!=='hidden'&&Number(style.opacity)!==0&&rect.width>0&&rect.height>0;};const allCards=[...document.querySelectorAll('.delivery-card')];const cards=allCards.filter(visible);const firstAction=cards[0]?.querySelector('.br-button');const r=firstAction?.getBoundingClientRect();return {viewport:innerWidth,cards:cards.length,hiddenCards:allCards.length-cards.length,action:r&&{left:r.left,right:r.right,height:r.height},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
+  record('Home: entregas principais', width, home, home.cards === 5 && home.action && home.action.left >= -1 && home.action.right <= width + 1 && home.action.height >= 44 && home.overflow <= 1);
 
   await open('projeto/fluxos-dos-prototipos/index.html', width);
   const flows = await evaluate(`(()=>{const routes=document.querySelectorAll('.route-grid > li');const grid=document.querySelector('.route-grid');const r=grid?.getBoundingClientRect();return {viewport:innerWidth,routes:routes.length,rect:r&&{left:r.left,right:r.right,width:r.width},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
