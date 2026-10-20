@@ -109,7 +109,9 @@ body.cgdi-page[data-version="V1"] #conteudo cgdi-page-feedback {
   }
 }
 
-@media(min-width:720px) and (max-width:899px) {
+/* Faixa intermediária com folga para diferenças métricas entre Rawline nos
+   runners Linux e as fontes locais, mantendo o título em uma linha. */
+@media(min-width:720px) and (max-width:1023px) {
   body.cgdi-page[data-version="V1"] #conteudo.fed cgdi-page-intro.intro h1 {
     font-size:clamp(1.55rem,3.2vw,1.9rem)!important;
     white-space:nowrap!important;
