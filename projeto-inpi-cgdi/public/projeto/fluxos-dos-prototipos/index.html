@@ -68,10 +68,7 @@
             <li><span aria-hidden="true">03</span><h3>Protótipo da página da CGDI</h3><p>Mostrar uma nova proposta de organização e acesso aos conteúdos.</p></li>
           </ol>
 
-          <p class="chapter-synthesis">Para conectar essas entregas, o trabalho seguiu um processo de pesquisa, auditoria e design.</p>
-          <ol class="flow-chain flow-chain--six" aria-label="Fluxo geral do projeto">
-            <li>Referências</li><li>Critérios</li><li>Conteúdos</li><li>Evidências</li><li>Organização</li><li>Protótipos</li>
-          </ol>
+          <p class="chapter-synthesis">Para conectar essas entregas, o trabalho seguiu um processo de pesquisa, auditoria e design, apresentado nos capítulos a seguir.</p>
         </article>
 
         <article class="story-step story-step--featured" id="etapa-02" data-story-step>
@@ -84,28 +81,16 @@
           <section class="framework-intro" aria-labelledby="framework-titulo">
             <p class="section-kicker">O framework de auditoria</p>
             <h3 id="framework-titulo">Da regra oficial à recomendação documentada.</h3>
-            <p>O framework organiza o trabalho em três movimentos.</p>
             <ol class="framework-movements">
               <li><span>01</span><strong>Fundamentar</strong><p>Localizar a orientação oficial e escrever um critério verificável.</p></li>
               <li><span>02</span><strong>Examinar</strong><p>Conferir o conteúdo publicado e registrar a evidência encontrada.</p></li>
               <li><span>03</span><strong>Documentar</strong><p>Explicar o problema, a possível consequência e a recomendação.</p></li>
             </ol>
-            <ol class="flow-chain flow-chain--framework" aria-label="Fluxo do framework de auditoria">
-              <li>Fonte oficial</li><li>Critério verificável</li><li>Conteúdo examinado</li><li>Evidência</li><li>Recomendação</li>
-            </ol>
-          </section>
-
-          <section class="criteria-section" aria-labelledby="orientacao-criterio-titulo">
-            <h3 id="orientacao-criterio-titulo">Como uma orientação virou critério</h3>
-            <ol class="flow-chain flow-chain--writing" aria-label="Fluxo de escrita de um critério">
-              <li>Fonte oficial</li><li>Trecho selecionado</li><li>Tema</li><li>Critério escrito</li><li>Forma de verificação</li>
-            </ol>
-            <p>Cada critério mantém o vínculo com a orientação que fundamentou sua elaboração.</p>
           </section>
 
           <section class="criteria-section criteria-model" aria-labelledby="campos-regra-titulo">
-            <p class="section-kicker">Cinco campos para escrever uma regra</p>
-            <h3 id="campos-regra-titulo" class="sr-only">Frase-modelo e campos do framework</h3>
+            <h3 id="campos-regra-titulo">Como uma orientação virou critério</h3>
+            <p>Cada critério segue a mesma frase-modelo, com cinco campos, e mantém o vínculo com a orientação que o fundamentou.</p>
             <p class="framework-formula">O <strong>[objeto]</strong> deve <strong>[condição esperada]</strong> em <strong>[contexto]</strong>, a fim de <strong>[objetivo]</strong>, conforme <strong>[referência normativa]</strong>.</p>
 
             <ol class="framework-fields" aria-label="Os cinco campos do framework">
@@ -117,8 +102,7 @@
             </ol>
 
             <div class="criterion-output">
-              <p>Saída do framework</p>
-              <h3>Exemplo de critério preenchido</h3>
+              <p>Exemplo de critério preenchido</p>
               <blockquote>As imagens informativas devem apresentar texto alternativo que descreva seu conteúdo no código HTML da página, a fim de permitir que pessoas que utilizam leitores de tela compreendam a informação, conforme a cartilha de acessibilidade Gov.br e o checklist eMAG.</blockquote>
             </div>
           </section>
@@ -141,11 +125,10 @@
               <div><dt><strong>21</strong> condicionais</dt><dd>Aplicáveis quando o recurso ou a situação existe.</dd></div>
               <div><dt><strong>7</strong> de gestão</dt><dd>Relacionados à manutenção e ao acompanhamento.</dd></div>
             </dl>
-            <p class="classification-note">As duas classificações organizam os mesmos 55 critérios.</p>
           </section>
 
           <aside class="semantic-summary" aria-labelledby="html-complementar-titulo">
-            <div><p class="section-kicker">Exame complementar</p><h3 id="html-complementar-titulo">Um exame complementar do HTML</h3></div>
+            <h3 id="html-complementar-titulo">Exame complementar do HTML</h3>
             <p><strong>133 verificações</strong> distribuídas em <strong>13 grupos</strong> para examinar a estrutura semântica do HTML.</p>
             <p>Esse catálogo foi organizado depois dos 55 critérios. Seus itens são verificações previstas, não uma contagem de problemas encontrados.</p>
           </aside>
@@ -166,31 +149,20 @@
           </header>
 
           <section class="method-section" aria-labelledby="mapa-crawler-titulo">
-            <h3 id="mapa-crawler-titulo">Do mapa manual ao crawler</h3>
-            <p>O levantamento começou com um mapa de páginas no Figma. Depois criamos um crawler, programa que visita páginas e registra os links encontrados.</p>
-            <ol class="flow-chain" aria-label="Fluxo do crawler">
-              <li>Página inicial</li><li>Links encontrados</li><li>Destinos acessados</li><li>Classificação</li><li>Inventário</li>
+            <h3 id="mapa-crawler-titulo">Do mapa manual ao arquivo preservado</h3>
+            <ol class="flow-chain" aria-label="Fluxo do mapeamento e da coleta">
+              <li>Mapa no Figma</li><li>Crawler</li><li>Inventário de endereços</li><li>Arquivo preservado</li><li>Identificador</li>
             </ol>
+            <ul class="method-notes">
+              <li><strong>Mapear.</strong> O levantamento começou com um mapa de páginas no Figma. Depois, um crawler, programa que visita páginas, registrou os links encontrados.</li>
+              <li><strong>Preservar.</strong> Outros scripts acessaram os endereços, guardaram cópias de HTML e PDF e registraram erros e redirecionamentos.</li>
+              <li><strong>Identificar.</strong> Cada arquivo recebeu um identificador que o liga ao registro correspondente. Quando o acesso falhou, a falha também foi registrada.</li>
+            </ul>
 
             <div class="br-message info project-alert" role="note" aria-labelledby="alerta-enderecos-titulo">
               <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg>
-              <div><p id="alerta-enderecos-titulo"><strong>Dois endereços podem levar ao mesmo arquivo.</strong></p><p>O Plone também usa endereços técnicos, como <code>@@download/file</code>. Por isso, contamos separadamente endereços encontrados e arquivos confirmados. Só consideramos a duplicidade depois de conferir o destino ou o arquivo.</p></div>
+              <div><p id="alerta-enderecos-titulo"><strong>Dois endereços podem levar ao mesmo arquivo.</strong></p><p>O Plone também usa endereços técnicos, como <code>@@download/file</code>. Por isso, contamos separadamente endereços encontrados e arquivos confirmados, e só consideramos a duplicidade depois de conferir o destino.</p></div>
             </div>
-
-            <div class="url-convergence" role="img" aria-label="A URL da página e a URL técnica de download podem convergir para o mesmo arquivo PDF, depois da conferência do destino">
-              <div class="url-route"><span>URL da página</span><span aria-hidden="true">→</span></div>
-              <div class="url-route"><span>URL técnica de download</span><span aria-hidden="true">→</span></div>
-              <div class="verification"><span>Conferência do destino</span><strong>Mesmo arquivo PDF</strong></div>
-            </div>
-          </section>
-
-          <section class="method-section" aria-labelledby="arquivo-preservado-titulo">
-            <h3 id="arquivo-preservado-titulo">Da URL ao arquivo preservado</h3>
-            <p>Outros scripts acessaram os endereços, guardaram cópias de HTML e PDF e registraram erros e redirecionamentos.</p>
-            <ol class="flow-chain" aria-label="Fluxo da coleta">
-              <li>Endereço</li><li>Tentativa de acesso</li><li>Arquivo preservado</li><li>Identificador</li><li>Conferência</li>
-            </ol>
-            <p>Cada arquivo recebeu um identificador para ligar o material examinado ao registro correspondente. Quando o acesso falhou, a falha também foi registrada.</p>
           </section>
 
           <div class="evidence-grid evidence-grid--process" aria-label="Evidências visuais do mapeamento e da coleta">
@@ -241,25 +213,17 @@
             </div>
           </section>
 
-          <section class="inspection-example" aria-labelledby="leitor-tela-titulo">
-            <div><p class="section-kicker">Exemplo em vídeo</p><h3 id="leitor-tela-titulo">Como o leitor de tela anuncia um link</h3><p>A gravação mostra como uma pessoa com deficiência visual acessa a informação. Quando o rótulo é inadequado, a navegação se torna ambígua, incompleta ou pouco útil.</p></div>
-            <figure class="evidence-figure"><video controls playsinline preload="metadata" poster="./assets/img/processo/05-exemplo-navegacao-leitor-tela.webp"><source src="./assets/video/leitor-de-tela.mp4" type="video/mp4"><a href="./assets/video/leitor-de-tela.mp4">Baixar a gravação do leitor de tela</a>.</video><figcaption><strong>Gravação de um leitor de tela.</strong> O texto exibido no vídeo descreve o que é anunciado a cada passo.</figcaption></figure>
+          <section class="audit-section" aria-labelledby="inspecao-real-titulo">
+            <h3 id="inspecao-real-titulo">Da interface à evidência técnica</h3>
+            <p class="section-intro">Dois exemplos reais: como um leitor de tela anuncia um link e como um elemento publicado é relacionado ao seu código.</p>
+            <div class="evidence-grid evidence-grid--media">
+              <figure class="evidence-figure"><video controls playsinline preload="metadata" poster="./assets/img/processo/05-exemplo-navegacao-leitor-tela.webp"><source src="./assets/video/leitor-de-tela.mp4" type="video/mp4"><a href="./assets/video/leitor-de-tela.mp4">Baixar a gravação do leitor de tela</a>.</video><figcaption><strong>Leitor de tela em uso.</strong> Quando o rótulo é inadequado, a navegação fica ambígua ou incompleta. O texto no vídeo descreve o que é anunciado.</figcaption></figure>
+              <figure class="evidence-figure"><a href="./assets/img/processo/codigo-alt-exemplo-2.webp"><img src="./assets/img/processo/codigo-alt-exemplo-2.webp" alt="Captura da interface do portal e do inspetor do navegador, com o atributo alternativo de uma imagem destacado" loading="lazy"></a><figcaption><strong>Interface e código.</strong> O elemento publicado e o trecho de código ficam reunidos para conferência. <span>Selecione para ampliar.</span></figcaption></figure>
+            </div>
           </section>
 
-          <section class="inspection-example" aria-labelledby="inspecao-real-titulo">
-            <div><p class="section-kicker">Exemplo de inspeção real</p><h3 id="inspecao-real-titulo">Da interface à evidência técnica</h3><p>Uma captura da interface e de seu código mostra como um elemento publicado pode ser relacionado à evidência técnica.</p></div>
-            <figure class="evidence-figure"><a href="./assets/img/processo/codigo-alt-exemplo-2.webp"><img src="./assets/img/processo/codigo-alt-exemplo-2.webp" alt="Captura da interface do portal e do inspetor do navegador, com o atributo alternativo de uma imagem destacado" loading="lazy"></a><figcaption>O elemento publicado e o trecho de código correspondente ficam reunidos para conferência. <span>Selecione para ampliar.</span></figcaption></figure>
-          </section>
-
-          <section class="audit-section deliverables" aria-labelledby="documentado-titulo">
-            <h3 id="documentado-titulo">O que ficou documentado</h3>
-            <dl class="delivery-metrics">
-              <div><dt><strong>11</strong> planilhas</dt><dd>Sete verificações temáticas e quatro materiais de apoio reuniram os registros.</dd></div>
-              <div><dt><strong>348</strong> fichas de diagnóstico</dt><dd>Observações e recomendações organizadas para a CGDI.</dd></div>
-            </dl>
-            <ol class="flow-chain flow-chain--register" aria-label="Fluxo de registro da auditoria">
-              <li>Evidência técnica</li><li>Registro na planilha</li><li>Ficha de diagnóstico</li><li>Recomendação</li>
-            </ol>
+          <section class="audit-cta" aria-labelledby="documentado-titulo">
+            <div><h3 id="documentado-titulo">O que ficou documentado</h3><p>Cada evidência foi registrada em planilha e resumida em fichas de diagnóstico com recomendação para a CGDI.</p></div>
             <a class="action-link" href="../auditoria-acessibilidade/index.html">Explorar a auditoria completa <span aria-hidden="true">→</span></a>
           </section>
         </article>
@@ -271,13 +235,12 @@
             <p>O inventário também ajudou a revisar a organização dos conteúdos. Preparamos cartões com assuntos do portal para uma pesquisa de Card Sorting.</p>
           </header>
 
-          <section class="method-section card-sorting-copy" aria-labelledby="card-sorting-titulo">
+          <section class="method-section" aria-labelledby="card-sorting-titulo">
             <h3 id="card-sorting-titulo">O que é Card Sorting</h3>
             <p>As pessoas organizam cartões com assuntos em grupos que fazem sentido para elas. Isso ajuda a investigar como os conteúdos podem ser agrupados e nomeados.</p>
             <ol class="flow-chain flow-chain--short" aria-label="Percurso documentado do Card Sorting">
-              <li>Inventário</li><li>Revisão dos assuntos</li><li>Cartões preparados no UserBit</li>
+              <li>Inventário</li><li>Revisão de nomes e sobreposições</li><li>Cartões no UserBit</li>
             </ol>
-            <p><strong>Material produzido.</strong> O inventário ajudou a revisar os nomes dos assuntos e identificar sobreposições. Os cartões foram organizados no UserBit para a pesquisa.</p>
           </section>
 
           <div class="evidence-grid evidence-grid--two" aria-label="Evidências visuais da organização dos assuntos">
@@ -297,10 +260,6 @@
             <article><p>Proposta 01</p><h3>Revisão da estrutura atual</h3><p>Melhorias de conteúdo, navegação, interface e acessibilidade, mantendo a organização principal da página.</p><a href="../../prototipos/estrutura-atual-revisada/index.html">Conhecer a proposta 01 <span aria-hidden="true">→</span></a></article>
             <article><p>Proposta 02</p><h3>Experiência orientada à ação</h3><p>Organização das informações a partir das necessidades e tarefas de quem usa o portal.</p><a href="../../prototipos/orientado-a-acao/index.html">Conhecer a proposta 02 <span aria-hidden="true">→</span></a></article>
           </div>
-
-          <ol class="flow-chain flow-chain--register" aria-label="Como o diagnóstico orientou a interface">
-            <li>Problema identificado</li><li>Conteúdo organizado</li><li>Padrões Gov.br</li><li>Interface proposta</li>
-          </ol>
 
           <section class="predownload-demo" aria-labelledby="predownload-titulo">
             <div class="predownload-intro">
@@ -393,17 +352,11 @@
               <article><h3>Comparar</h3><p>Formato, tamanho e assuntos aparecem juntos.</p></article>
               <article><h3>Escolher</h3><p>Abrir, baixar e consultar detalhes são ações separadas.</p></article>
             </div>
-          </section>
-
-          <section class="monitoring" aria-labelledby="monitoramento-titulo">
-            <h3 id="monitoramento-titulo">Monitoramento e localização</h3>
-            <p>Ações identificadas podem ser medidas quando o monitoramento está configurado. Informações descritivas publicadas em HTML também podem ajudar mecanismos de busca a encontrar os documentos.</p>
+            <p class="benefits-note"><strong>Monitoramento e busca.</strong> Com o monitoramento configurado, essas ações podem ser medidas. As informações publicadas em HTML também ajudam os buscadores a encontrar os documentos.</p>
           </section>
 
           <section class="project-closing" aria-labelledby="encerramento-projeto-titulo">
-            <p class="section-kicker">Fechamento</p>
-            <h3 id="encerramento-projeto-titulo">Critérios, evidências e propostas conectados</h3>
-            <p>O projeto reuniu orientações oficiais, critérios de auditoria, inventários, arquivos preservados, diagnósticos, pesquisa de organização dos conteúdos e duas propostas de interface para a CGDI.</p>
+            <h3 id="encerramento-projeto-titulo">Continue explorando</h3>
             <div class="closing-actions"><a class="action-link" href="../auditoria-acessibilidade/index.html">Explorar a auditoria <span aria-hidden="true">→</span></a><a class="action-link action-link--secondary" href="../../index.html#prototipos-titulo">Conhecer as propostas <span aria-hidden="true">→</span></a></div>
           </section>
         </article>
