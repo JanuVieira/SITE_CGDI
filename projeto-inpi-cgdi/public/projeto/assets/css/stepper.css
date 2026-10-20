@@ -17,11 +17,11 @@
   min-height: 46px;
   align-items: center;
   gap: 9px;
-  padding: 7px 18px 7px 7px;
+  padding: 7px 16px 7px 7px;
   border: 1px solid transparent;
   border-radius: 9px;
   color: var(--muted, #6e6e73);
-  font-size: .875rem;
+  font-size: .8125rem;
   line-height: 1.25;
   text-decoration: none;
 }

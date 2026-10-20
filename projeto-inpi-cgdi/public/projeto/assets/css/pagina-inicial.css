@@ -7,7 +7,7 @@
 body { margin:0;background:#fff }
 .skip-link { position:absolute;left:-9999px;top:12px;z-index:10 }
 .skip-link:focus { left:16px;padding:10px 14px;border-radius:8px;background:#fff;color:#1d1d1f;outline:3px solid #8e8e93 }
-.cgdi-index { width:100%;max-width:1200px;margin:0 auto;padding:64px 24px 80px }
+.cgdi-index { width:min(1200px,calc(100% - 48px));margin:0 auto;padding:64px 0 80px }
 .introducao { max-width:920px }
 .institutional-heading { margin-bottom:24px }
 .brand-line { display:flex;align-items:center;gap:10px;margin:0 0 8px;color:#1d1d1f;line-height:1 }
@@ -22,7 +22,7 @@ h1 { max-width:820px;margin:0;color:#1d1d1f;font-size:clamp(2.25rem,4.4vw,3.75re
 .project-meta a { color:#1d1d1f;text-decoration-line:underline;text-decoration-color:#6e6e73;text-decoration-thickness:1px;text-underline-offset:3px }
 .delivery-section { margin-top:64px }
 .section-heading { margin-bottom:18px }
-.section-heading h2 { margin:0;color:#1d1d1f;font-size:1.375rem;font-weight:600;letter-spacing:-.02em }
+.section-heading h2 { margin:0;color:#1d1d1f;font-size:1.375rem;font-weight:700;letter-spacing:-.02em }
 .delivery-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px }
 .delivery-grid--three { grid-template-columns:repeat(3,minmax(0,1fr)) }
 .delivery-card.br-card { display:flex;min-height:188px;margin:0;padding:0;flex-direction:column;border:1px solid transparent;border-radius:16px;background:#f5f5f7;box-shadow:none;transition:background-color .15s ease,border-color .15s ease }
@@ -43,7 +43,7 @@ h1 { max-width:820px;margin:0;color:#1d1d1f;font-size:clamp(2.25rem,4.4vw,3.75re
   .delivery-grid--three { grid-template-columns:1fr }
 }
 @media(max-width:620px) {
-  .cgdi-index { padding:48px 16px 64px }
+  .cgdi-index { width:calc(100% - 32px);padding:48px 0 64px }
   h1 { font-size:clamp(2rem,10vw,2.75rem) }
   .project-meta { grid-template-columns:1fr;gap:18px;margin-top:36px;padding-block:20px }
   .delivery-section { margin-top:48px }
@@ -53,7 +53,7 @@ h1 { max-width:820px;margin:0;color:#1d1d1f;font-size:clamp(2.25rem,4.4vw,3.75re
   .delivery-card .card-content { padding:20px 20px 10px }
   .delivery-card .card-footer { padding:8px 20px 20px }
   .delivery-card .br-button { width:100%;min-height:48px;justify-content:center }
-  .project-meta a { display:inline-flex;align-items:center;min-height:44px }
+  .project-meta a { display:inline-flex;align-items:center;min-height:44px;margin-block:-11px }
 }
 @media(prefers-reduced-motion:reduce) {
   .delivery-card.br-card { transition:none }
