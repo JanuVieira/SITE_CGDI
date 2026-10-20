@@ -8,7 +8,7 @@ const sourceRoot = join(projectRoot, 'public');
 const redirectConfigPath = new URL('../configuracao/redirecionamentos.json', import.meta.url);
 const publicEntries = ['index.html', 'projeto', 'prototipos', 'vendor'];
 const publicExtensions = new Set([
-  '.css', '.gif', '.html', '.ico', '.jpeg', '.jpg', '.js', '.json', '.otf',
+  '.css', '.gif', '.html', '.ico', '.jpeg', '.jpg', '.js', '.json', '.mp4', '.otf',
   '.pdf', '.png', '.svg', '.ttf', '.webmanifest', '.webp', '.woff', '.woff2', '.xml'
 ]);
 const finalExtraFiles = [
