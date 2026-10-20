@@ -67,11 +67,11 @@ await send('Network.setBlockedURLs', { urls: ['https://app.powerbi.com/*'] });
 for (const width of [320, 360, 390, 412]) {
   await open('index.html', width);
   const home = await evaluate(`(()=>{const visible=el=>{const style=getComputedStyle(el);const rect=el.getBoundingClientRect();return !el.hidden&&style.display!=='none'&&style.visibility!=='hidden'&&Number(style.opacity)!==0&&rect.width>0&&rect.height>0;};const allCards=[...document.querySelectorAll('.delivery-card')];const cards=allCards.filter(visible);const firstAction=cards[0]?.querySelector('.br-button');const r=firstAction?.getBoundingClientRect();return {viewport:innerWidth,cards:cards.length,hiddenCards:allCards.length-cards.length,action:r&&{left:r.left,right:r.right,height:r.height},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
-  record('Home: entregas principais', width, home, home.cards === 5 && home.action && home.action.left >= -1 && home.action.right <= width + 1 && home.action.height >= 44 && home.overflow <= 1);
+  record('Home: entregas principais', width, home, home.cards === 6 && home.action && home.action.left >= -1 && home.action.right <= width + 1 && home.action.height >= 44 && home.overflow <= 1);
 
   await open('projeto/fluxos-dos-prototipos/index.html', width);
-  const flows = await evaluate(`(()=>{const routes=document.querySelectorAll('.route-grid > li');const grid=document.querySelector('.route-grid');const r=grid?.getBoundingClientRect();return {viewport:innerWidth,routes:routes.length,rect:r&&{left:r.left,right:r.right,width:r.width},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
-  record('Fluxos: mapa de rotas', width, flows, flows.routes === 8 && flows.rect && flows.rect.left >= -1 && flows.rect.right <= width + 1 && flows.overflow <= 1);
+  const flows = await evaluate(`(()=>{const routes=document.querySelectorAll('.commitment-grid > li');const grid=document.querySelector('.commitment-grid');const r=grid?.getBoundingClientRect();return {viewport:innerWidth,routes:routes.length,rect:r&&{left:r.left,right:r.right,width:r.width},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
+  record('Projeto: entregas do edital', width, flows, flows.routes === 3 && flows.rect && flows.rect.left >= -1 && flows.rect.right <= width + 1 && flows.overflow <= 1);
 
   await open('prototipos/estrutura-atual-revisada/index.html', width);
   const header = await evaluate(`(async()=>{await new Promise(r=>setTimeout(r,400));const host=document.querySelector('cgdi-portal-top');const root=host?.shadowRoot;const button=root?.querySelector('#shell-menu-toggle');button?.click();await new Promise(r=>setTimeout(r,100));const panel=root?.querySelector('#shell-nav-panel');const r=panel?.getBoundingClientRect();return {viewport:innerWidth,expanded:button?.getAttribute('aria-expanded'),rect:r&&{left:r.left,right:r.right,width:r.width},overflow:document.documentElement.scrollWidth-innerWidth};})()`);
