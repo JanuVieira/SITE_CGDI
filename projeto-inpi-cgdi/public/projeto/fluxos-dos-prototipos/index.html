@@ -86,7 +86,7 @@
 
           <section class="framework-intro" aria-labelledby="framework-titulo">
             <p class="section-kicker">O framework de auditoria</p>
-            <h3 id="framework-titulo">Da regra oficial à recomendação documentada.</h3>
+            <h3 id="framework-titulo">Da regra oficial à recomendação documentada</h3>
             <ol class="framework-movements">
               <li><span>01</span><strong>Fundamentar</strong><p>Localizar a orientação oficial e escrever um critério verificável.</p></li>
               <li><span>02</span><strong>Examinar</strong><p>Conferir o conteúdo publicado e registrar a evidência encontrada.</p></li>
@@ -136,7 +136,6 @@
           <aside class="semantic-summary" aria-labelledby="html-complementar-titulo">
             <h3 id="html-complementar-titulo">Exame complementar do HTML</h3>
             <p><strong>133 verificações</strong> em <strong>13 grupos</strong> para a estrutura semântica do HTML.</p>
-            <p>São verificações previstas, não problemas encontrados.</p>
           </aside>
 
           <nav class="story-links" aria-label="Referências dos critérios">
@@ -156,7 +155,7 @@
             <h3 id="mapa-crawler-titulo">Do mapa manual aos robôs</h3>
             <ol class="method-steps">
               <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><h4>Mapa manual</h4><p>O levantamento começou à mão, com um mapa de páginas e caminhos no Figma.</p></li>
-              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><h4>Volume maior que o previsto</h4><p>O mapa manual revelou uma quantidade de páginas e arquivos grande demais para seguir à mão.</p></li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><h4>Volume maior que o previsto</h4><p>O mapa manual revelou uma quantidade de páginas e arquivos grande demais para continuar sem automação.</p></li>
               <li><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="2.5"/><path d="M12 5v3M9.5 13h.01M14.5 13h.01M10 16h4M3 12.5v2.5M21 12.5v2.5"/><circle cx="12" cy="4" r="1"/></svg><h4>Robôs e crawler</h4><p>Desenvolvemos programas (scripts) em Python, com apoio de modelos de inteligência artificial (LLMs) na programação, nos testes e na revisão do código. Um crawler passou a visitar as páginas e registrar os links encontrados.</p></li>
               <li><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9M10 13h4"/></svg><h4>Arquivos preservados</h4><p>Scripts guardaram cópias de HTML e PDF e registraram erros e redirecionamentos. Cada arquivo recebeu um identificador ligado ao seu registro.</p></li>
             </ol>
@@ -166,6 +165,14 @@
               <div><p id="alerta-enderecos-titulo"><strong>Dois endereços podem levar ao mesmo arquivo.</strong></p><p>O Plone também usa endereços técnicos, como <code>@@download/file</code>. Por isso, contamos endereços e arquivos separadamente e só marcamos duplicidade após conferir o destino.</p></div>
             </div>
           </section>
+
+          <aside class="method-highlight" aria-labelledby="metodo-importa-titulo">
+            <h3 id="metodo-importa-titulo">Por que esse método importa?</h3>
+            <ul>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg><div><strong>Escala</strong><p>Trabalhar em grande escala permitiu examinar milhares de arquivos, localizar os conteúdos que merecem atenção e reunir evidências para orientar as melhorias.</p></div></li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg><div><strong>Reaproveitamento</strong><p>Os programas podem ser adaptados para auditar outros sites do governo federal.</p></div></li>
+            </ul>
+          </aside>
 
           <div class="evidence-grid evidence-grid--process" aria-label="Evidências visuais do mapeamento e da coleta">
             <figure class="evidence-figure evidence-figure--wide"><a href="./assets/img/processo/mapa-navegacao-figma.webp"><img src="./assets/img/processo/mapa-navegacao-figma.webp" alt="Captura do mapa manual de páginas e caminhos da CGDI no Figma" loading="lazy"></a><figcaption><strong>Mapa de páginas no Figma.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
@@ -181,14 +188,6 @@
             <h2>Da evidência ao diagnóstico</h2>
             <p>Os programas examinaram páginas, links, imagens, formulários e documentos PDF, verificando o que pode impedir quem usa leitor de tela ou teclado de navegar e entender o conteúdo. Cada problema foi registrado com sua evidência.</p>
           </header>
-
-          <aside class="method-highlight" aria-labelledby="metodo-importa-titulo">
-            <h3 id="metodo-importa-titulo">Por que esse método importa?</h3>
-            <ul>
-              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg><div><strong>Escala</strong><p>Trabalhar em grande escala permitiu examinar milhares de arquivos, localizar os conteúdos que merecem atenção e reunir evidências para orientar as melhorias.</p></div></li>
-              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg><div><strong>Reaproveitamento</strong><p>Os programas podem ser adaptados para auditar outros sites do governo federal, desde que os endereços, sistemas e formatos de cada um sejam verificados separadamente.</p></div></li>
-            </ul>
-          </aside>
 
           <section class="traceability" aria-labelledby="rastreabilidade-titulo">
             <h3 id="rastreabilidade-titulo">Como os critérios orientaram a auditoria</h3>
@@ -281,7 +280,7 @@
 
             <div class="br-message info project-alert" role="note" aria-labelledby="problema-observado-titulo">
               <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg>
-              <div><p id="problema-observado-titulo"><strong>Problema observado</strong></p><p>Hoje, descrição, formato e tamanho ficam dispersos, o que dificulta reconhecer e comparar documentos.</p></div>
+              <div><p id="problema-observado-titulo"><strong>Problema observado</strong></p><p>Hoje, descrição, formato e tamanho podem ficar dispersos, o que dificulta reconhecer e comparar documentos.</p></div>
             </div>
 
             <h3 class="demo-subheading">Demonstração funcional</h3>
