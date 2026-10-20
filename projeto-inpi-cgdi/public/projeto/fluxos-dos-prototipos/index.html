@@ -79,6 +79,11 @@
             <p>Leis, manuais e padrões do Governo Federal estavam dispersos. Reunimos essas orientações em regras verificáveis.</p>
           </header>
 
+          <dl class="criteria-origin" aria-label="Da base legal aos critérios">
+            <div><dt>Base legal</dt><dd><strong>46</strong> documentos</dd></div>
+            <div><dt>Resultado</dt><dd><strong>55</strong> critérios verificáveis</dd></div>
+          </dl>
+
           <section class="framework-intro" aria-labelledby="framework-titulo">
             <p class="section-kicker">O framework de auditoria</p>
             <h3 id="framework-titulo">Da regra oficial à recomendação documentada.</h3>
@@ -136,9 +141,7 @@
 
           <nav class="story-links" aria-label="Referências dos critérios">
             <a class="text-link" href="https://drive.google.com/drive/folders/1u791cSxtQ7Y1opNp4ETsPRGPNmP7GCii?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar arquivos da base legal (abre em nova aba)">Consultar arquivos da base legal <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://www.gov.br/ds/downloads/manuais-orientadores" target="_blank" rel="noopener noreferrer" aria-label="Consultar manuais orientadores (abre em nova aba)">Consultar manuais orientadores <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://drive.google.com/file/d/1zS2lJPjQu-rgT3tjtWV-Beyt47jyjLlf/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Consultar os critérios de auditoria (abre em nova aba)">Consultar os critérios de auditoria <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="../auditoria-acessibilidade/index.html">Ver critérios aplicados na auditoria <span aria-hidden="true">→</span></a>
           </nav>
         </article>
 
@@ -150,15 +153,13 @@
           </header>
 
           <section class="method-section" aria-labelledby="mapa-crawler-titulo">
-            <h3 id="mapa-crawler-titulo">Do mapa manual ao arquivo preservado</h3>
-            <ol class="flow-chain" aria-label="Fluxo do mapeamento e da coleta">
-              <li>Mapa no Figma</li><li>Crawler</li><li>Inventário de endereços</li><li>Arquivo preservado</li><li>Identificador</li>
+            <h3 id="mapa-crawler-titulo">Do mapa manual aos robôs</h3>
+            <ol class="method-steps">
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><h4>Mapa manual</h4><p>O levantamento começou à mão, com um mapa de páginas e caminhos no Figma.</p></li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><h4>Volume maior que o previsto</h4><p>O mapa manual revelou uma quantidade de páginas e arquivos grande demais para seguir à mão.</p></li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="2.5"/><path d="M12 5v3M9.5 13h.01M14.5 13h.01M10 16h4M3 12.5v2.5M21 12.5v2.5"/><circle cx="12" cy="4" r="1"/></svg><h4>Robôs e crawler</h4><p>Desenvolvemos programas (scripts) em Python, com apoio de modelos de inteligência artificial (LLMs) na programação, nos testes e na revisão do código. Um crawler passou a visitar as páginas e registrar os links encontrados.</p></li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9M10 13h4"/></svg><h4>Arquivos preservados</h4><p>Scripts guardaram cópias de HTML e PDF e registraram erros e redirecionamentos. Cada arquivo recebeu um identificador ligado ao seu registro.</p></li>
             </ol>
-            <ul class="method-notes">
-              <li><strong>Mapear.</strong> Um mapa de páginas no Figma e, depois, um crawler, programa que visita páginas e registra links.</li>
-              <li><strong>Preservar.</strong> Scripts guardaram cópias de HTML e PDF e registraram erros e redirecionamentos.</li>
-              <li><strong>Identificar.</strong> Cada arquivo recebeu um identificador ligado ao seu registro, inclusive quando o acesso falhou.</li>
-            </ul>
 
             <div class="br-message info project-alert" role="note" aria-labelledby="alerta-enderecos-titulo">
               <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg>
@@ -178,18 +179,15 @@
           <header class="chapter-heading">
             <p class="story-number">Capítulo 04 · Auditoria</p>
             <h2>Da evidência ao diagnóstico</h2>
-            <p>Programas examinaram páginas e arquivos e registraram cada problema com sua evidência.</p>
+            <p>Os programas examinaram páginas, links, imagens, formulários e documentos PDF, verificando o que pode impedir quem usa leitor de tela ou teclado de navegar e entender o conteúdo. Cada problema foi registrado com sua evidência.</p>
           </header>
-
-          <section class="method-section" aria-labelledby="como-fizemos-titulo">
-            <h3 id="como-fizemos-titulo">Como fizemos a auditoria</h3>
-            <p>Para fazer a auditoria, desenvolvemos programas (scripts) em Python. Modelos de inteligência artificial (LLMs) nos auxiliaram na programação, nos testes e na revisão desse código.</p>
-            <p>Esses programas percorreram o portal do INPI para coletar, organizar e examinar páginas, links, imagens, formulários e documentos PDF, verificando o que pode impedir quem usa leitor de tela ou teclado de navegar e entender o conteúdo.</p>
-          </section>
 
           <aside class="method-highlight" aria-labelledby="metodo-importa-titulo">
             <h3 id="metodo-importa-titulo">Por que esse método importa?</h3>
-            <p>Trabalhar em grande escala permitiu examinar milhares de arquivos, localizar os conteúdos que merecem atenção e reunir evidências para orientar as melhorias. <strong>Os programas podem ser adaptados para auditar outros sites do governo federal</strong>, desde que os endereços, sistemas e formatos de cada um sejam verificados separadamente.</p>
+            <ul>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg><div><strong>Escala</strong><p>Trabalhar em grande escala permitiu examinar milhares de arquivos, localizar os conteúdos que merecem atenção e reunir evidências para orientar as melhorias.</p></div></li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg><div><strong>Reaproveitamento</strong><p>Os programas podem ser adaptados para auditar outros sites do governo federal, desde que os endereços, sistemas e formatos de cada um sejam verificados separadamente.</p></div></li>
+            </ul>
           </aside>
 
           <section class="traceability" aria-labelledby="rastreabilidade-titulo">
@@ -236,8 +234,7 @@
           <section class="audit-cta" aria-labelledby="documentado-titulo">
             <div><h3 id="documentado-titulo">O que ficou documentado</h3><p>Evidências registradas em planilhas e resumidas em fichas de diagnóstico com recomendações.</p></div>
             <div class="audit-cta-actions">
-              <a class="action-link" href="../auditoria-acessibilidade/index.html">Explorar a auditoria completa <span aria-hidden="true">→</span></a>
-              <a class="action-link action-link--secondary" href="https://drive.google.com/drive/folders/1OnPS7MlRquGe8Q18eP8Xe65L0jxMgogZ?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar as planilhas da auditoria (abre em nova aba)">Consultar as planilhas <span aria-hidden="true">↗</span></a>
+              <a class="action-link" href="https://drive.google.com/drive/folders/1OnPS7MlRquGe8Q18eP8Xe65L0jxMgogZ?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar as planilhas da auditoria (abre em nova aba)">Consultar as planilhas <span aria-hidden="true">↗</span></a>
             </div>
           </section>
         </article>
@@ -271,8 +268,8 @@
           </header>
 
           <div class="proposal-grid">
-            <article><p>Proposta 01</p><h3>Revisão da estrutura atual</h3><p>Melhora conteúdo, navegação, interface e acessibilidade, mantendo a organização atual.</p><a href="../../prototipos/estrutura-atual-revisada/index.html">Conhecer a proposta 01 <span aria-hidden="true">→</span></a></article>
-            <article><p>Proposta 02</p><h3>Experiência orientada à ação</h3><p>Organiza as informações a partir das tarefas de quem usa o portal.</p><a href="../../prototipos/orientado-a-acao/index.html">Conhecer a proposta 02 <span aria-hidden="true">→</span></a></article>
+            <article><p>Proposta 01</p><h3>Revisão da estrutura atual</h3><p>Melhora conteúdo, navegação, interface e acessibilidade, mantendo a organização atual.</p></article>
+            <article><p>Proposta 02</p><h3>Experiência orientada à ação</h3><p>Organiza as informações a partir das tarefas de quem usa o portal.</p></article>
           </div>
 
           <section class="predownload-demo" aria-labelledby="predownload-titulo">
@@ -367,11 +364,6 @@
               <article><h3>Escolher</h3><p>Abrir, baixar e consultar detalhes são ações separadas.</p></article>
             </div>
             <p class="benefits-note"><strong>Monitoramento e busca.</strong> Com monitoramento configurado, essas ações podem ser medidas. As informações em HTML também ajudam os buscadores.</p>
-          </section>
-
-          <section class="project-closing" aria-labelledby="encerramento-projeto-titulo">
-            <h3 id="encerramento-projeto-titulo">Continue explorando</h3>
-            <div class="closing-actions"><a class="action-link" href="../auditoria-acessibilidade/index.html">Explorar a auditoria <span aria-hidden="true">→</span></a><a class="action-link action-link--secondary" href="../../index.html#prototipos-titulo">Conhecer as propostas <span aria-hidden="true">→</span></a></div>
           </section>
         </article>
       </div>

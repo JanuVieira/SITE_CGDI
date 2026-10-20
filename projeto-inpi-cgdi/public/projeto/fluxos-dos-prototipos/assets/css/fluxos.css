@@ -221,9 +221,6 @@ main { padding-bottom: 112px; }
   line-height: 1;
 }
 
-.method-notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 30px 0 0; padding: 0; list-style: none; }
-.method-notes li { padding-top: 16px; border-top: 1px solid var(--line); color: var(--secondary); font-size: .9375rem; line-height: 1.6; }
-.method-notes strong { display: block; margin-bottom: 6px; color: var(--ink); }
 
 .framework-intro {
   margin: 54px 0 0;
@@ -259,8 +256,7 @@ main { padding-bottom: 112px; }
 .audit-section > h3,
 .benefits > h3,
 .traceability > h3,
-.predownload-intro h3,
-.project-closing h3 {
+.predownload-intro h3 {
   max-width: 760px;
   margin: 0;
   color: var(--ink);
@@ -279,7 +275,6 @@ main { padding-bottom: 112px; }
 .benefits > h3,
 .traceability > h3,
 .predownload-intro h3,
-.project-closing h3,
 .semantic-summary h3,
 .audit-cta h3,
 .commitment-grid h3,
@@ -411,10 +406,28 @@ code { padding: .12em .35em; border-radius: 4px; background: #e8e8ea; color: var
 .traceability-chain strong { color: var(--ink); font-size: .9375rem; line-height: 1.3; }
 .traceability-chain span { margin-top: 20px; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 
-.method-highlight { margin-top: 32px; padding: 28px 30px; border-left: 4px solid var(--ink); border-radius: 4px 20px 20px 4px; background: var(--surface); }
+.method-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 26px 0 0; padding: 0; list-style: none; counter-reset: method; }
+.method-steps li { position: relative; min-width: 0; padding: 24px 22px; border: 1px solid var(--line-soft); border-radius: 18px; background: #fff; counter-increment: method; }
+.method-steps li::before { position: absolute; top: 24px; right: 22px; color: var(--quiet); content: "0" counter(method); font-size: .75rem; font-weight: 700; letter-spacing: .08em; }
+.method-steps svg,
+.method-highlight svg { width: 44px; height: 44px; padding: 10px; border-radius: 12px; background: var(--surface); fill: none; stroke: var(--ink); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.method-steps h4 { margin: 20px 0 0; font-size: 1.05rem; font-weight: 700; letter-spacing: -.015em; }
+.method-steps p { margin: 8px 0 0; color: var(--secondary); font-size: .9375rem; line-height: 1.55; }
+
+.method-highlight { margin-top: 32px; padding: 28px 30px; border-radius: 20px; background: var(--surface); }
 .method-highlight h3 { margin: 0; font-size: 1.2rem; font-weight: 700; letter-spacing: -.02em; }
-.method-highlight p { max-width: 760px; margin: 10px 0 0; color: var(--secondary); line-height: 1.65; }
-.method-highlight strong { color: var(--ink); }
+.method-highlight ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 32px; margin: 20px 0 0; padding: 0; list-style: none; }
+.method-highlight li { display: grid; grid-template-columns: 44px minmax(0, 1fr); align-items: start; gap: 16px; }
+.method-highlight svg { background: #fff; }
+.method-highlight strong { display: block; color: var(--ink); }
+.method-highlight p { margin: 6px 0 0; color: var(--secondary); font-size: .9375rem; line-height: 1.6; }
+
+.criteria-origin { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px; max-width: 640px; margin: 36px 0 0; }
+.criteria-origin div { position: relative; min-width: 0; padding: 20px 22px; border: 1px solid var(--line-soft); border-radius: 18px; }
+.criteria-origin div:first-child::after { position: absolute; top: 50%; right: -42px; display: grid; width: 28px; height: 28px; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: var(--ink); content: "→"; transform: translateY(-50%); }
+.criteria-origin dt { color: var(--quiet); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.criteria-origin dd { margin: 8px 0 0; color: var(--secondary); font-weight: 600; }
+.criteria-origin strong { display: block; color: var(--ink); font-size: clamp(2.4rem, 4vw, 3.2rem); font-variant-numeric: tabular-nums; letter-spacing: -.05em; line-height: 1; }
 
 .audit-modules { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 26px; }
 .audit-modules article { min-width: 0; padding: 22px; border: 1px solid var(--line-soft); border-radius: 18px; background: #fff; }
@@ -461,12 +474,10 @@ code { padding: .12em .35em; border-radius: 4px; background: #e8e8ea; color: var
 
 
 .proposal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 44px; }
-.proposal-grid article { display: flex; min-height: 240px; flex-direction: column; padding: 28px; border: 1px solid var(--line-soft); border-radius: 22px; background: linear-gradient(145deg, #fff, var(--surface)); }
+.proposal-grid article { display: flex; flex-direction: column; padding: 28px; border: 1px solid var(--line-soft); border-radius: 22px; background: linear-gradient(145deg, #fff, var(--surface)); }
 .proposal-grid article > p:first-child { margin: 0 0 32px; color: var(--quiet); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .proposal-grid h3 { margin: 0; font-size: 1.45rem; letter-spacing: -.025em; }
 .proposal-grid h3 + p { margin: 12px 0 0; color: var(--secondary); line-height: 1.55; }
-.proposal-grid a { display: inline-flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 24px; font-size: .875rem; font-weight: 700; text-decoration: none; }
-.proposal-grid a:hover { text-decoration: underline; }
 
 .predownload-demo { margin-top: 76px; padding-top: 52px; border-top: 1px solid var(--line-soft); }
 .predownload-intro .section-kicker { margin-bottom: 14px; }
@@ -528,9 +539,6 @@ cgdi-pre-download .pd-card > .component-alert { width: 100%; margin: 0; padding:
 .benefits-note { max-width: 760px; margin: 22px 0 0; color: var(--muted); font-size: .9375rem; line-height: 1.6; }
 .benefits-note strong { color: var(--secondary); }
 
-.project-closing { margin-top: 76px; padding: 40px 0 0; border-top: 1px solid var(--line); }
-.project-closing h3 { font-size: 1.35rem; }
-.closing-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); border: 0; white-space: nowrap; }
 .has-image-viewer { overflow: hidden; }
@@ -583,7 +591,8 @@ cgdi-pre-download .pd-card > .component-alert { width: 100%; margin: 0; padding:
   .evidence-grid--process,
   .audit-modules,
   .finding-cases,
-  .method-notes,
+  .method-steps,
+  .method-highlight ul,
   .evidence-grid--media,
   .proposal-grid,
   .benefits > div { grid-template-columns: 1fr; }
@@ -618,8 +627,6 @@ cgdi-pre-download .pd-card > .component-alert { width: 100%; margin: 0; padding:
   .component-preview[data-viewport="tablet"] cgdi-pre-download .pd-footer { grid-template-columns: minmax(0, 1fr) !important; }
   .component-preview[data-viewport="tablet"] cgdi-pre-download .pd-primary-actions { grid-template-columns: 1fr; }
   .audit-cta { align-items: flex-start; flex-direction: column; }
-  .closing-actions { align-items: stretch; flex-direction: column; }
-  .closing-actions .action-link { width: 100%; }
 }
 
 @media (max-width: 460px) {
@@ -633,6 +640,9 @@ cgdi-pre-download .pd-card > .component-alert { width: 100%; margin: 0; padding:
   .framework-intro { padding: 24px 18px; }
   .audit-cta { padding: 24px 20px; }
   .method-highlight { padding: 22px 20px; }
+  .criteria-origin { gap: 44px; }
+  .criteria-origin div { padding: 18px; }
+  .criteria-origin div:first-child::after { right: -36px; }
   .criterion-output { padding: 26px 22px; }
   .criteria-themes li { grid-template-columns: 54px minmax(0, 1fr); }
   .project-alert.br-message,
