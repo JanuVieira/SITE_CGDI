@@ -1,0 +1,143 @@
+/* CGDI | V1 — escala compartilhada de tipografia e ritmo editorial. */
+body.cgdi-page[data-version="V1"] #conteudo {
+  --v1-space-1:8px;
+  --v1-space-2:16px;
+  --v1-space-3:24px;
+  --v1-space-4:32px;
+  --v1-space-5:40px;
+  --v1-space-6:48px;
+  --v1-space-8:64px;
+  --v1-text-sm:.875rem;
+  --v1-text-md:1rem;
+  --v1-text-lead:1.125rem;
+  --v1-title-card:1.125rem;
+  --v1-title-section:1.75rem;
+  --v1-title-page:2.25rem;
+  font-size:var(--v1-text-md);
+  line-height:1.6;
+  padding-bottom:var(--v1-space-8);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo > .container-lg {
+  width:100%;
+  max-width:1200px;
+  margin-inline:auto;
+  padding-inline:var(--v1-space-3);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo > .container-lg > cgdi-breadcrumb {
+  margin-bottom:var(--v1-space-4)!important;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo > .container-lg > :is(.page-intro,cgdi-page-intro) {
+  width:100%;
+  max-width:none;
+  margin:0 0 var(--v1-space-4);
+  padding:0;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.page-intro,cgdi-page-intro) h1 {
+  margin:0;
+  font-size:var(--v1-title-page)!important;
+  font-weight:700;
+  line-height:1.15;
+  letter-spacing:-.015em;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.page-intro,cgdi-page-intro) .lead {
+  max-width:68ch;
+  margin:var(--v1-space-2) 0 0;
+  font-size:var(--v1-text-lead);
+  line-height:1.55;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo > .container-lg > :is(cgdi-metadata,.meta,[class$="-meta"]) {
+  margin-top:0;
+  margin-bottom:var(--v1-space-5);
+  padding-bottom:var(--v1-space-2);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo > .container-lg > section,
+body.cgdi-page[data-version="V1"] #conteudo :is(.p01-v7-section,.p04-section,.block,.p06-section,.p07-section,.section) {
+  margin-top:0;
+  margin-bottom:var(--v1-space-6);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.p01-v7-section,.p04-section,.block,.p06-section,.p07-section,.section) > h2,
+body.cgdi-page[data-version="V1"] #conteudo :is(.cgdi-calendar__title,.dashboard-head h2) {
+  margin:0 0 var(--v1-space-2);
+  font-size:var(--v1-title-section)!important;
+  font-weight:600;
+  line-height:1.25;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.p04-step-title h3,.step h3,.p03-event-body h3,.p06-resource-link strong,.p07-steps strong,.p07-unit-copy strong,.resource-text h3) {
+  font-size:var(--v1-title-card)!important;
+  line-height:1.4;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.p04-step-content > p,.step p,.p06-section > p,.p07-section-intro,.dashboard-head p,.section > p) {
+  font-size:var(--v1-text-md);
+  line-height:1.6;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.p04-flow,.flow,.p07-steps,.p06-resource-grid,.resources) {
+  margin-top:var(--v1-space-3);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.p04-flow > li,.flow > li) {
+  padding-bottom:var(--v1-space-3)!important;
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(.p04-step-body,.step) {
+  padding-bottom:var(--v1-space-3);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(cgdi-card-grid,.service-grid,.p06-resource-grid,.p07-grid,.resources) {
+  gap:var(--v1-space-3);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo cgdi-page-feedback {
+  display:block;
+  margin-top:var(--v1-space-6);
+}
+
+@media(min-width:900px) {
+  body.cgdi-page[data-version="V1"] #conteudo :is(.page-intro,cgdi-page-intro) h1 {
+    white-space:nowrap;
+    text-wrap:nowrap;
+  }
+}
+
+@media(min-width:720px) and (max-width:899px) {
+  body.cgdi-page[data-version="V1"] #conteudo.fed cgdi-page-intro.intro h1 {
+    font-size:clamp(1.55rem,3.2vw,1.9rem)!important;
+    white-space:nowrap!important;
+    text-wrap:nowrap!important;
+  }
+}
+
+@media(max-width:719px) {
+  body.cgdi-page[data-version="V1"] #conteudo {
+    --v1-space-6:40px;
+    --v1-title-page:2rem;
+    --v1-title-section:1.5rem;
+    padding-bottom:var(--v1-space-6);
+  }
+  body.cgdi-page[data-version="V1"] #conteudo > .container-lg {padding-inline:var(--v1-space-2)}
+  body.cgdi-page[data-version="V1"] #conteudo > .container-lg > cgdi-breadcrumb {margin-bottom:var(--v1-space-3)!important}
+  body.cgdi-page[data-version="V1"] #conteudo > .container-lg > :is(.page-intro,cgdi-page-intro) {margin-bottom:var(--v1-space-4)}
+  body.cgdi-page[data-version="V1"] #conteudo :is(.page-intro,cgdi-page-intro) {
+    margin-inline:0;
+    text-align:left;
+  }
+  body.cgdi-page[data-version="V1"] #conteudo :is(.page-intro,cgdi-page-intro) h1 {
+    margin-inline:0;
+    overflow-wrap:normal;
+    word-break:normal;
+    hyphens:none;
+    white-space:normal;
+    text-wrap:balance;
+  }
+  body.cgdi-page[data-version="V1"] #conteudo :is(cgdi-card-grid,.service-grid,.p06-resource-grid,.p07-grid,.resources) {gap:var(--v1-space-2)}
+}

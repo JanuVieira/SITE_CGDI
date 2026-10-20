@@ -296,11 +296,12 @@ try {
         const errors = [...browserEvents];
         const failures = [];
         const prototypeOrFlow = path.startsWith('prototipos/') || path === 'projeto/fluxos-dos-prototipos/index.html';
-        const singleLineMinimum = prototypeOrFlow ? 900 : 1024;
         if (metrics.documentOverflow > 1) failures.push(`overflow global de ${metrics.documentOverflow}px`);
         if (!metrics.main) failures.push('região main ausente');
         if (metrics.h1Count !== 1) failures.push(`${metrics.h1Count} elementos h1`);
-        if (path !== 'index.html' && metrics.h1 && viewport.width >= singleLineMinimum && metrics.h1.lineCount > 1) {
+        // A regra de título em uma linha pertence às páginas operacionais dos
+        // protótipos e ao mapa de fluxos. Home e auditoria usam H1 editorial.
+        if (prototypeOrFlow && metrics.h1 && viewport.width >= 900 && metrics.h1.lineCount > 1) {
           failures.push(`h1 ocupa ${metrics.h1.lineCount} linhas em ${viewport.width}px`);
         }
         if (metrics.h1 && (metrics.h1.left < -1 || metrics.h1.right > viewport.width + 1)) {
