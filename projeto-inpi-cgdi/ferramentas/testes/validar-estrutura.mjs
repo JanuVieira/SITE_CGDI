@@ -263,10 +263,14 @@ for (const page of pages) {
   );
 
   if (name.startsWith('projeto/')) {
+    const htmlWithoutSharedPreDownload = html.replace(
+      /<(?:link|script)\b[^>]*(?:href|src)=["'][^"']*prototipos\/componentes\/pre-download\/pre-download\.(?:css|js)["'][^>]*>(?:<\/script>)?/gi,
+      ''
+    );
     assert.doesNotMatch(
-      html,
+      htmlWithoutSharedPreDownload,
       /<(?:link|script)\b[^>]*(?:href|src)=["'][^"']*prototipos\//i,
-      name + ' não deve carregar recursos visuais ou scripts dos protótipos.'
+      name + ' não deve carregar recursos dos protótipos além do componente compartilhado de pré-download.'
     );
   }
 

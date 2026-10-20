@@ -154,7 +154,7 @@ footer { padding: 28px 0 56px; border-top: 1px solid var(--line-soft); color: va
 
 @media (max-width: 760px) {
   .report-header, main, footer { width: min(100% - 32px, var(--page)); }
-  .report-header { align-items: flex-start; gap: 16px; }
+  .report-header { align-items: flex-start; justify-content: flex-start; flex-direction: column; gap: 8px; padding-block: 14px; }
   .hero { padding: 64px 0 52px; }
   .hero h1 { font-size: clamp(2.4rem, 11.5vw, 3.65rem); }
   .hero-lead { margin-top: 24px; font-size: 1.0625rem; }

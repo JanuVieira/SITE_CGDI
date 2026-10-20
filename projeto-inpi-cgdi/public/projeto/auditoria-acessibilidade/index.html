@@ -1,14 +1,149 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; base-uri 'self'; connect-src 'self'; font-src 'self' data:; frame-src 'self'; img-src 'self' data: blob:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Auditoria de acessibilidade do portal do INPI em 5.194 páginas e 4.236 PDFs.">
-  <title>Uma auditoria de acessibilidade em 5.194 páginas e 4.236 PDFs</title>
+  <meta name="description" content="Auditoria de acessibilidade, experiência de uso e conteúdo do portal do INPI.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; base-uri 'self'; font-src 'self' data:; img-src 'self' data: blob:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>Auditoria de acessibilidade | INPI · CGDI</title>
   <link rel="stylesheet" href="../../vendor/govbr-ds-core.css">
-  <link rel="stylesheet" href="./assets/css/auditoria.css">
+  <style>
+    :root {
+      --ink: #1d1d1f;
+      --ink-soft: #3a3a3c;
+      --muted: #6e6e73;
+      --line: #d8d8dc;
+      --line-soft: #e8e8eb;
+      --surface: #f5f5f7;
+      --page: 1200px;
+      color: var(--ink);
+      font-family: Rawline, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-synthesis: none;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fff; color: var(--ink); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    a { color: inherit; text-underline-offset: 3px; }
+    :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+    .skip-link { position: fixed; z-index: 100; top: 12px; left: -9999px; padding: 11px 15px; background: #fff; border: 1px solid var(--ink); border-radius: 8px; }
+    .skip-link:focus { left: 16px; }
+    .report-header, .audit-page, .report-footer { width: min(var(--page), calc(100% - 48px)); margin-inline: auto; }
+    .report-header { display: flex; min-height: 72px; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line-soft); }
+    .report-header p, .back-link { margin: 0; color: var(--muted); font-size: 13px; font-weight: 600; text-decoration-color: var(--line); }
+
+    .audit-hero { max-width: 1020px; padding: clamp(44px, 6vw, 72px) 0 46px; }
+    .audit-hero h1 { max-width: 850px; margin: 0; font-size: clamp(2.9rem, 6vw, 4.75rem); font-weight: 700; letter-spacing: -.058em; line-height: 1; text-wrap: balance; }
+
+    .report-shell { display: grid; grid-template-columns: 190px minmax(0, 1fr); align-items: start; gap: clamp(40px, 6vw, 92px); }
+    .section-nav { position: sticky; top: 16px; max-height: calc(100vh - 32px); padding: 16px 0; overflow-y: auto; scrollbar-width: thin; }
+    .section-nav ol { margin: 0; padding: 0; list-style: none; }
+    .section-nav a { display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: center; gap: 10px; min-height: 46px; padding: 7px 8px; border-radius: 9px; color: var(--muted); font-size: 12px; line-height: 1.35; text-decoration: none; }
+    .section-nav a:hover, .section-nav a:focus-visible { background: var(--surface); color: var(--ink); }
+    .step-number { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: var(--ink); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .report-content { min-width: 0; }
+    .chapter { padding: 82px 0 96px; border-top: 1px solid var(--line-soft); scroll-margin-top: 32px; }
+    .chapter:first-child { padding-top: 16px; border-top: 0; }
+    .chapter-kicker { margin: 0 0 14px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .075em; text-transform: uppercase; }
+    .chapter h2 { max-width: 790px; margin: 0; font-size: clamp(2rem, 3.4vw, 2.5rem); font-weight: 650; letter-spacing: -.042em; line-height: 1.08; text-wrap: balance; }
+    .chapter h3 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 650; letter-spacing: -.022em; line-height: 1.25; }
+    .chapter-lead { max-width: 760px; margin: 24px 0 0; color: var(--ink-soft); font-size: 17px; line-height: 1.7; }
+    .prose { max-width: 760px; margin: 14px 0 0; color: var(--ink-soft); font-size: 16px; line-height: 1.7; text-wrap: pretty; }
+    .prose strong { color: var(--ink); }
+    .subheading { margin-top: 52px !important; }
+
+    .hero-stat { display: grid; grid-template-columns: minmax(150px, 210px) minmax(0, 1fr); align-items: end; gap: 8px 26px; margin: 34px 0 28px; padding: 30px; border: 1px solid var(--line-soft); border-radius: 18px; background: var(--surface); }
+    .hero-stat strong { grid-row: 1 / span 2; align-self: center; font-size: clamp(3rem, 6vw, 4rem); font-weight: 700; letter-spacing: -.055em; line-height: .95; font-variant-numeric: tabular-nums; }
+    .hero-stat span { display: block; max-width: 680px; font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 650; line-height: 1.35; }
+    .hero-stat small { display: block; color: var(--muted); font-size: 14px; }
+    .segmented-bar { display: flex; height: 12px; margin-top: 34px; overflow: hidden; border-radius: 999px; background: var(--surface); }
+    .segmented-bar span:nth-child(1) { width: 71.8%; background: var(--ink); }
+    .segmented-bar span:nth-child(2) { width: 7.5%; background: #8e8e93; }
+    .segmented-bar span:nth-child(3) { width: 20.7%; background: #d2d2d7; }
+    .table-wrap { max-width: 100%; margin: 18px 0 32px; overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 14px; }
+    table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+    th, td { padding: 15px 18px; border-bottom: 1px solid var(--line-soft); text-align: left; }
+    thead th { background: var(--surface); color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+    th:nth-child(n+2), td:nth-child(n+2) { text-align: right; }
+    tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+
+    .impact-list, .finding-list { margin: 28px 0 0; border-top: 1px solid var(--line); }
+    .impact-item { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 32px; padding: 22px 0; border-bottom: 1px solid var(--line-soft); }
+    .impact-item strong { color: var(--ink); }
+    .impact-item p { margin: 0; color: var(--ink-soft); }
+    .finding { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 40px; padding: 32px 0; border-bottom: 1px solid var(--line-soft); }
+    .finding-value strong { display: block; font-size: clamp(2.75rem, 5vw, 4rem); letter-spacing: -.055em; line-height: .95; font-variant-numeric: tabular-nums; }
+    .finding-value span { display: block; margin-top: 9px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+    .finding-copy h3 { font-size: 20px; }
+    .finding-copy p { margin: 10px 0 0; color: var(--ink-soft); line-height: 1.68; }
+    .finding-copy > p:first-child { margin-top: 0; }
+    .number-highlight { color: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+    .impact { padding-top: 13px; border-top: 1px solid var(--line-soft); }
+
+    .metric-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 34px 0 0; }
+    .metric-card { min-width: 0; padding: 26px; border: 1px solid var(--line-soft); border-radius: 18px; }
+    .metric-card > strong { display: inline-block; font-size: clamp(2.65rem, 5vw, 3.8rem); letter-spacing: -.055em; line-height: .95; font-variant-numeric: tabular-nums; }
+    .metric-card .metric-context { display: inline-block; margin-left: 9px; color: var(--muted); font-size: 14px; font-weight: 650; line-height: 1.4; }
+    .metric-card p { margin: 18px 0 0; color: var(--ink-soft); line-height: 1.66; }
+
+    .note { max-width: 830px; margin: 34px 0 0; padding: 24px 26px; border-left: 3px solid var(--ink); border-radius: 3px 14px 14px 3px; background: var(--surface); }
+    .note h3 { margin-bottom: 10px; font-size: 19px; }
+    .note p { margin: 9px 0 0; color: var(--ink-soft); line-height: 1.66; }
+    .note > :last-child { margin-bottom: 0; }
+
+    .map-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 28px 0; }
+    .map-metrics div { padding: 26px; border: 1px solid var(--line-soft); border-radius: 18px; background: var(--surface); }
+    .map-metrics strong { display: block; margin-bottom: 8px; font-size: clamp(2.3rem, 5vw, 3.5rem); letter-spacing: -.05em; line-height: 1; font-variant-numeric: tabular-nums; }
+    .map-metrics span { color: var(--muted); }
+
+    .area-grid { display: grid; grid-template-columns: 1.2fr .9fr .9fr; gap: 16px; margin: 34px 0 0; }
+    .area-card { padding: 26px; border: 1px solid var(--line-soft); border-radius: 18px; background: var(--surface); }
+    .area-card h3 { font-size: 20px; }
+    .area-card p { margin: 12px 0 0; color: var(--ink-soft); }
+    .area-card > p > strong { display: block; margin-bottom: 14px; color: var(--ink); font-size: clamp(1.55rem, 2.6vw, 2.2rem); font-weight: 700; letter-spacing: -.035em; line-height: 1.08; font-variant-numeric: tabular-nums; }
+    .priority-list { margin: 32px 0 0; padding: 0; border-top: 1px solid var(--line); list-style: none; counter-reset: priority; }
+    .priority-list li { display: grid; grid-template-columns: 50px minmax(210px, .65fr) minmax(0, 1.35fr); gap: 26px; padding: 30px 0; border-bottom: 1px solid var(--line-soft); counter-increment: priority; }
+    .priority-list li::before { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 50%; background: var(--ink); color: #fff; content: "0" counter(priority); font-size: 12px; font-weight: 700; }
+    .priority-list h3 { padding-top: 4px; font-size: 20px; }
+    .priority-list p { margin: 0; color: var(--ink-soft); line-height: 1.68; }
+    .priority-list strong { color: var(--ink); }
+
+    .report-footer { padding: 30px 0 54px; border-top: 1px solid var(--line-soft); color: var(--muted); font-size: 13px; }
+    .report-footer p { margin: 0; }
+
+    @media (max-width: 920px) {
+      .report-shell { grid-template-columns: 1fr; gap: 0; }
+      .section-nav { position: relative; top: auto; z-index: 10; max-height: none; margin-inline: -24px; padding: 9px 24px; overflow-x: auto; overflow-y: hidden; border-block: 1px solid var(--line-soft); background: #fff; }
+      .section-nav ol { display: flex; width: max-content; }
+      .section-nav a { width: max-content; }
+      .chapter:first-child { padding-top: 54px; }
+      .area-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      .report-header, .audit-page, .report-footer { width: min(100% - 32px, var(--page)); }
+      .report-header { align-items: flex-start; justify-content: flex-start; flex-direction: column; gap: 7px; padding-block: 14px; }
+      .section-nav { margin-inline: -16px; padding-inline: 16px; }
+      .back-link { display: inline-flex; min-height: 44px; align-items: center; }
+      .audit-hero { padding: 58px 0 50px; }
+      .audit-hero h1 { font-size: clamp(2.75rem, 12vw, 4.2rem); }
+      .chapter { padding: 62px 0 72px; }
+      .finding, .impact-item, .priority-list li { grid-template-columns: 1fr; gap: 18px; }
+      .metric-grid, .map-metrics { grid-template-columns: 1fr; }
+      .priority-list li::before { margin-bottom: -2px; }
+      .hero-stat, .metric-card, .note { padding: 22px; }
+      .hero-stat { grid-template-columns: 1fr; gap: 10px; }
+      .hero-stat strong { grid-row: auto; }
+    }
+
+    @media (max-width: 390px) {
+      .report-header, .audit-page, .report-footer { width: calc(100% - 24px); }
+      .section-nav { margin-inline: -12px; padding-inline: 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -17,135 +152,158 @@
     <p>INPI | CGDI · Auditoria</p>
   </header>
 
-  <main id="conteudo" tabindex="-1">
-    <header class="hero">
-      <p class="eyebrow">Auditoria de acessibilidade</p>
-      <h1>Uma auditoria de acessibilidade em 5.194 páginas e 4.236 PDFs</h1>
-      <nav class="chapter-nav" aria-label="Navegação do diagnóstico">
-        <a href="#desafios">Desafios</a><a href="#documentos">Documentos</a><a href="#estrutura-pdf">Estrutura dos PDFs</a><a href="#interacao">Interação</a><a href="#conteudo-visual">Imagens</a><a href="#paginas">Páginas</a><a href="#navegacao">Navegação</a><a href="#links">Links</a><a href="#conteudo-dificil">Conteúdo</a><a href="#areas">Áreas</a><a href="#melhorias">Melhorias</a><a href="#metodo">Método</a>
-      </nav>
+  <main class="audit-page" id="conteudo" tabindex="-1">
+    <header class="audit-hero">
+      <h1>Auditoria de acessibilidade</h1>
     </header>
 
-    <section class="chapter" id="desafios" aria-labelledby="desafios-title">
-      <p class="chapter-label">Visão geral</p>
-      <h2 id="desafios-title">Os resultados mostram três desafios principais</h2>
-      <div class="challenge-grid">
-        <article><p class="challenge-number">01</p><h3>Encontrar</h3><p>Informações distantes da página inicial, links pouco claros e páginas sem títulos.</p></article>
-        <article><p class="challenge-number">02</p><h3>Entender</h3><p>Documentos sem organização, imagens sem explicação e textos difíceis de percorrer.</p></article>
-        <article><p class="challenge-number">03</p><h3>Usar</h3><p>Arquivos sem texto e elementos de formulários que não identificam corretamente sua função.</p></article>
+    <div class="report-shell">
+      <nav class="section-nav" aria-label="Resultados da auditoria">
+        <ol>
+          <li><a href="#documentos"><span class="step-number">01</span><span>PDFs sem texto</span></a></li>
+          <li><a href="#estrutura"><span class="step-number">02</span><span>Estrutura dos PDFs</span></a></li>
+          <li><a href="#interacoes"><span class="step-number">03</span><span>Campos e controles</span></a></li>
+          <li><a href="#imagens"><span class="step-number">04</span><span>Descrição de imagens</span></a></li>
+          <li><a href="#paginas"><span class="step-number">05</span><span>Títulos das páginas</span></a></li>
+          <li><a href="#navegacao"><span class="step-number">06</span><span>Caminhos</span></a></li>
+          <li><a href="#links"><span class="step-number">07</span><span>Links e downloads</span></a></li>
+          <li><a href="#conteudo-editorial"><span class="step-number">08</span><span>Conteúdo editorial</span></a></li>
+          <li><a href="#areas"><span class="step-number">09</span><span>Áreas do portal</span></a></li>
+          <li><a href="#melhorias"><span class="step-number">10</span><span>Prioridades</span></a></li>
+        </ol>
+      </nav>
+
+      <div class="report-content">
+        <section class="chapter" id="documentos" aria-labelledby="title-documentos">
+          <p class="chapter-kicker">01 · Documentos</p>
+          <h2 id="title-documentos">Quando um documento não pode ser lido como texto</h2>
+          <div class="hero-stat"><strong>1.474</strong><span>registros de PDF aparecem sem texto que o computador consiga ler</span><small>(20,7% de 7.135 registros de PDF examinados)</small></div>
+          <p class="chapter-lead">Em outras palavras, de cada dez registros de PDF, cerca de dois não tinham texto que pudesse ser extraído diretamente.</p>
+          <p class="prose">Abrimos os PDFs e verificamos, página por página, se havia texto que o computador conseguisse ler. O resultado separou os documentos em três situações.</p>
+          <div class="segmented-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="table-wrap" role="region" tabindex="0" aria-label="Distribuição dos registros de PDF por presença de texto">
+            <table><thead><tr><th scope="col">Texto encontrado</th><th scope="col">Registros de PDF</th><th scope="col">Participação</th></tr></thead><tbody><tr><th scope="row">Em todas as páginas</th><td>5.123</td><td>71,8%</td></tr><tr><th scope="row">Em algumas páginas</th><td>538</td><td>7,5%</td></tr><tr><th scope="row">Em nenhuma página</th><td>1.474</td><td>20,7%</td></tr></tbody></table>
+          </div>
+          <p class="prose">Um PDF pode mostrar palavras na tela e, ainda assim, guardá-las apenas como imagem, sem oferecê-las como texto pesquisável. Isso é comum em documentos digitalizados, mas a falta de texto legível, sozinha, não prova que o arquivo passou por um scanner.</p>
+          <h3 class="subheading">Como isso afeta as pessoas?</h3>
+          <div class="impact-list">
+            <div class="impact-item"><strong>Experiência de uso:</strong><p>a pessoa pode não conseguir selecionar uma frase, copiar um trecho ou achar uma palavra usando a busca do leitor de PDF.</p></div>
+            <div class="impact-item"><strong>Acessibilidade:</strong><p>para quem não enxerga, o leitor de tela é o programa que transforma o conteúdo da tela em voz ou braile. Sem texto utilizável, ele pode depender do reconhecimento de caracteres, recurso que tenta converter a imagem das letras em texto, e de outros recursos para apresentar o conteúdo.</p></div>
+            <div class="impact-item"><strong>Busca na internet:</strong><p>quando o arquivo tem texto legível, os sistemas de busca e de leitura recebem mais informação para identificar do que ele trata.</p></div>
+          </div>
+          <aside class="note"><p><strong>O que medimos:</strong> se as páginas de cada registro de PDF tinham texto legível pelo computador. São 1.474 registros, não necessariamente 1.474 arquivos diferentes.</p></aside>
+        </section>
+
+        <section class="chapter" id="estrutura" aria-labelledby="title-estrutura">
+          <p class="chapter-kicker">02 · Documentos</p>
+          <h2 id="title-estrutura">Quando o PDF não explica como seu conteúdo está organizado</h2>
+          <p class="chapter-lead">Depois, olhamos para dentro de 4.236 arquivos PDF diferentes. Um PDF pode guardar uma espécie de ficha interna (os metadados) e marcações invisíveis que dizem aos programas, como o leitor de tela, qual é o idioma, qual é o título e como o conteúdo está organizado.</p>
+          <div class="metric-grid">
+            <article class="metric-card"><strong>64,5%</strong><span class="metric-context">· 2.733 arquivos</span><p><b>Sem idioma declarado:</b> cerca de seis em cada dez arquivos não informam, na ficha interna, em que idioma estão escritos. Sem essa informação, o leitor de tela pode usar regras de pronúncia inadequadas e ler as palavras de forma errada para quem está ouvindo.</p></article>
+            <article class="metric-card"><strong>62,6%</strong><span class="metric-context">· 2.652 arquivos</span><p><b>Sem estrutura interna identificada (árvore de estrutura):</b> cerca de seis em cada dez arquivos não têm as marcações invisíveis que indicam o que é título, lista ou seção. Sem elas, quem usa leitor de tela tem mais dificuldade para navegar pelo documento saltando de um título, de uma lista ou de uma seção para outra.</p></article>
+            <article class="metric-card"><strong>54,7%</strong><span class="metric-context">· 2.315 arquivos</span><p><b>Sem título na ficha interna:</b> mais da metade dos arquivos não registra um título. Nesse caso, o leitor de PDF pode exibir apenas o nome do arquivo, que nem sempre é compreensível.</p></article>
+            <article class="metric-card"><strong>1.409</strong><span class="metric-context">arquivos · 33,3% do acervo PDF</span><p><b>Arquivos acima de 1 MB sem aviso de tamanho:</b> saber o tamanho antes de baixar ajuda quem usa dados móveis ou tem conexão limitada a decidir como e quando acessar o arquivo.</p></article>
+          </div>
+          <aside class="note"><h3>O que esses números mostram?</h3><p>Não basta o PDF parecer organizado para quem enxerga a tela. Por dentro, ele também precisa dizer aos programas o que é título, o que é lista, o que é parágrafo e assim por diante. Como um mesmo arquivo pode ter vários desses problemas ao mesmo tempo, os números não devem ser somados.</p><p>O que medimos: a ficha interna (metadados) e os sinais de estrutura dos 4.236 PDFs diferentes. A falta dessas marcações é um indício técnico importante de que o documento pode ter problemas de acessibilidade.</p></aside>
+        </section>
+
+        <section class="chapter" id="interacoes" aria-labelledby="title-interacoes">
+          <p class="chapter-kicker">03 · Interações</p>
+          <h2 id="title-interacoes">Quando campos, botões e links não têm identificação clara</h2>
+          <p class="chapter-lead">Também verificamos, no código das páginas, se campos de formulário, botões e links dizem para que servem. Quem não enxerga a tela depende dessa informação, porque o leitor de tela anuncia cada elemento à medida que a pessoa avança pelo teclado. A análise automática encontrou elementos que podem dificultar o preenchimento de formulários e a navegação pelo portal. Os números representam ocorrências encontradas nos documentos HTML examinados.</p>
+          <div class="finding-list">
+            <article class="finding"><div class="finding-value"><strong>195</strong><span>campos<br>Em 70 documentos HTML</span></div><div class="finding-copy"><h3>Campos sem nome ligado a eles no código</h3><p>São campos de formulário que não estão ligados, no código, ao texto que explica o que deve ser preenchido (o rótulo).</p><p class="impact"><strong>Impacto.</strong> Ao chegar ao campo, o leitor de tela pode anunciar apenas “campo de edição”, sem dizer o que a pessoa deve digitar ali.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>82</strong><span>botões<br>Em 38 documentos HTML</span></div><div class="finding-copy"><h3>Botões sem nome em texto</h3><p>São botões cuja função não pôde ser identificada a partir do texto presente no código.</p><p class="impact"><strong>Impacto.</strong> A pessoa pode encontrar um botão sem saber o que vai acontecer ao acioná-lo.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>432</strong><span>links<br>Em 136 documentos HTML</span></div><div class="finding-copy"><h3>Links sem texto identificado</h3><p>São links que não apresentam texto reconhecível pela regra automática que utilizamos.</p><p class="impact"><strong>Impacto.</strong> A pessoa pode não saber para onde o link leva antes de acessá-lo.</p></div></article>
+          </div>
+          <aside class="note"><h3>O que esses resultados mostram?</h3><p>Campos, botões e links precisam dizer com clareza para que servem, inclusive para quem usa tecnologias assistivas (programas e equipamentos que ajudam pessoas com deficiência a usar o computador, como o leitor de tela).</p><p>Os números são alertas da análise automática, não falhas de acessibilidade confirmadas. Alguns elementos podem estar identificados de outra forma no código. Por isso, cada caso precisa de uma verificação complementar.</p><p>A quantidade de documentos também não deve ser somada, porque um mesmo documento pode aparecer em mais de um tipo de alerta.</p></aside>
+        </section>
+
+        <section class="chapter" id="imagens" aria-labelledby="title-imagens">
+          <p class="chapter-kicker">04 · Imagens</p>
+          <h2 id="title-imagens">Quando as imagens não explicam o que mostram</h2>
+          <p class="chapter-lead">Imagens podem trazer orientações, exemplos e avisos. Quando transmitem informação, precisam de uma alternativa em texto para quem não consegue vê-las, porque é esse texto que o leitor de tela lê em voz alta no lugar da imagem.</p>
+          <div class="hero-stat"><strong>570</strong><span>sinalizações iniciais · 158 registros HTML</span></div>
+          <p class="prose">Ao ler o código das páginas, encontramos imagens sem texto alternativo, a descrição escondida que o leitor de tela lê no lugar da imagem. Depois da triagem editorial, que retirou repetições e casos filtrados, restaram <strong>284 ocorrências para revisão em 125 páginas</strong>.</p>
+          <p class="prose"><strong>Impacto na acessibilidade.</strong> Se alguma dessas imagens transmite informação, a falta de descrição pode impedir que o leitor de tela comunique o conteúdo a quem não enxerga. Já as imagens apenas decorativas devem ser marcadas como decorativas, sem receber descrições desnecessárias.</p>
+          <div class="finding-list">
+            <article class="finding"><div class="finding-value"><strong>2.588</strong><span>ocorrências · 155 páginas</span></div><div class="finding-copy"><h3>Descrições que parecem nome de arquivo.</h3><p>Em vez de explicar a imagem, a descrição pode trazer algo como “INVENCAO.jpg”, e é isso que o leitor de tela vai ler para a pessoa. Essa descrição dificilmente comunica o que a imagem mostra.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>210</strong><span>ocorrências · 10 páginas</span></div><div class="finding-copy"><h3>Descrições genéricas.</h3><p>Palavras como “imagem” ou “foto” não dizem o que é importante naquele conteúdo.</p></div></article>
+          </div>
+          <aside class="note"><h3>O que esses números mostram?</h3><p>Não basta preencher o campo de descrição. O texto precisa explicar a informação ou a função da imagem. Por isso, a avaliação depende do contexto em que a imagem aparece, e não só de o campo de descrição estar preenchido ou vazio no código.</p></aside>
+        </section>
+
+        <section class="chapter" id="paginas" aria-labelledby="title-paginas">
+          <p class="chapter-kicker">05 · Páginas</p>
+          <h2 id="title-paginas">Quando a página não deixa claro onde a pessoa está</h2>
+          <div class="finding-list">
+            <article class="finding"><div class="finding-value"><strong>49</strong><span>registros HTML</span></div><div class="finding-copy"><h3>Sem título de documento.</h3><p>Esse título aparece na aba do navegador e ajuda a reconhecer uma página entre várias abas abertas. É também a primeira informação que o leitor de tela anuncia ao abrir a página, e diz aos buscadores de que assunto ela trata.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>312</strong><span>registros HTML · 5,2% de 5.952</span></div><div class="finding-copy"><h3>Sem título principal identificado (h1).</h3><p>São cerca de cinco registros em cada cem examinados. O título principal apresenta o assunto da página e organiza os subtítulos que vêm abaixo dele. Quem usa leitor de tela costuma procurar por ele para saber onde o conteúdo começa.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>218</strong><span>registros HTML</span></div><div class="finding-copy"><h3>Com saltos na ordem dos títulos.</h3><p>Os títulos de uma página funcionam em níveis, do principal aos subtítulos. Encontramos <strong class="number-highlight">245 ocorrências</strong> em que essa sequência pula níveis e merece revisão. Uma estrutura pouco clara pode dificultar a navegação por seções, que é como o leitor de tela permite percorrer a página pulando de um título para o próximo.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>47</strong><span>registros HTML</span></div><div class="finding-copy"><h3>Com mais de um título principal (h1).</h3><p>Foram registradas <strong class="number-highlight">336 ocorrências</strong> ligadas a essa regra de análise. Ter mais de um h1 não é, por si só, uma falha de acessibilidade, mas vale verificar se a organização da página faz sentido.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>2</strong><span>registros HTML</span></div><div class="finding-copy"><h3>Sem idioma declarado no código da página.</h3><p>Informar o idioma ajuda o leitor de tela a escolher a pronúncia correta.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>5.607</strong><span>registros HTML · 94,2% de 5.952</span></div><div class="finding-copy"><h3>Sem resumo para buscadores (meta description).</h3><p>É um pequeno texto, que não aparece na página, usado pelos buscadores para apresentar um resumo do conteúdo. Sua ausência não comprova perda de posições no Google, mas mostra uma oportunidade de melhorar como o conteúdo aparece nas buscas.</p></div></article>
+          </div>
+          <aside class="note"><h3>Por que isso importa?</h3><p>Títulos ajudam as pessoas a saber onde estão, reconhecer o assunto e encontrar uma seção. Uma página bem organizada também é interpretada com mais facilidade pelas tecnologias assistivas e pelos buscadores.</p><p>O que medimos. Registros das páginas HTML copiadas. Eles não equivalem necessariamente ao mesmo número de páginas públicas diferentes.</p></aside>
+        </section>
+
+        <section class="chapter" id="navegacao" aria-labelledby="title-navegacao">
+          <p class="chapter-kicker">06 · Navegação</p>
+          <h2 id="title-navegacao">Quando os caminhos para encontrar informações são longos</h2>
+          <div class="map-metrics"><div><strong>7.357</strong><span>conteúdos a mais de três passos</span></div><div><strong>27</strong><span>passos no caminho mais longo identificado no mapeamento anterior.</span></div></div>
+          <p class="prose">Usando o mapa de navegação, contamos quantos links, um depois do outro, seria preciso seguir para chegar a cada página ou documento partindo da página inicial.</p>
+          <p class="prose">Imagine uma pessoa procurando uma orientação sobre marcas. Ela abre uma página, escolhe um link, chega a outra página e continua procurando. Quanto mais longo o caminho, mais escolhas podem ser necessárias. Para quem não enxerga, cada uma dessas escolhas significa ouvir a página e seus links até achar o próximo passo.</p>
+          <aside class="note"><h3>Por que isso importa?</h3><p><strong>Experiência de uso.</strong> Caminhos longos aumentam o número de etapas e de escolhas para localizar uma informação.</p><p><strong>Acessibilidade.</strong> A cada nova página, a pessoa precisa entender como ela está organizada e achar o próximo link. Isso pode exigir mais esforço de quem navega pelo teclado, passando de um elemento a outro, ou com tecnologias assistivas.</p><p><strong>Busca na internet.</strong> Uma boa organização dos links ajuda os buscadores a descobrir páginas e a entender como os conteúdos se relacionam.</p><p>Ter mais de três passos não quer dizer, por si só, que a navegação seja ruim. Os dados servem para apontar os caminhos que merecem revisão. Os números de 7.357 conteúdos e de 27 passos no máximo vêm do mapeamento citado na versão atual, e ainda falta anexar à base consolidada o extrato específico correspondente.</p></aside>
+        </section>
+
+        <section class="chapter" id="links" aria-labelledby="title-links">
+          <p class="chapter-kicker">07 · Links</p>
+          <h2 id="title-links">Quando os links não explicam o destino</h2>
+          <div class="hero-stat"><strong>319</strong><span>ocorrências · 105 páginas</span></div>
+          <p class="prose"><strong>Links com nomes genéricos.</strong> Encontramos expressões como “clique aqui” e “acesse aqui”. Elas pedem uma ação, mas não dizem qual informação será aberta.</p>
+          <p class="prose">“Consultar classificação de marcas” é mais claro do que “Clique aqui”. Também ajuda quem percorre uma lista de links fora do contexto da página, como faz o leitor de tela quando a pessoa pede para ouvir só os links. Nesse caso, uma lista de vários “clique aqui” não diz nada sobre o destino de cada um.</p>
+          <h3 class="subheading">Quando o download aparece sem informações suficientes</h3>
+          <div class="finding-list"><article class="finding"><div class="finding-value"><strong>6.402</strong><span>ocorrências · 578 páginas</span></div><div class="finding-copy"><p>Links de download que não informam o tamanho do arquivo no texto analisado.</p></div></article></div>
+          <p class="prose">Entre os arquivos identificados, <strong>1.409 PDFs diferentes tinham mais de 1 MB</strong>. Saber o formato e o tamanho antes de clicar ajuda a pessoa a decidir quando baixar e como abrir o arquivo.</p>
+        </section>
+
+        <section class="chapter" id="conteudo-editorial" aria-labelledby="title-conteudo">
+          <p class="chapter-kicker">08 · Conteúdo</p>
+          <h2 id="title-conteudo">Quando o conteúdo é difícil de percorrer</h2>
+          <div class="finding-list">
+            <article class="finding"><div class="finding-value"><strong>644</strong><span>tabelas · 285 registros HTML</span></div><div class="finding-copy"><p>No levantamento, encontramos tabelas usadas para apresentar informações. Em <strong class="number-highlight">101 registros HTML</strong>, também identificamos as marcações de cabeçalho, que indicam o título de cada linha ou coluna. Esse dado mostra onde revisar a organização das tabelas, mas não permite afirmar que todas as 644 estejam sem cabeçalhos.</p><p class="impact"><strong>Impacto na acessibilidade.</strong> O leitor de tela lê a tabela célula por célula. Quando a tabela não liga corretamente os títulos aos dados, a pessoa ouve os valores soltos e pode ter dificuldade para entender o que cada um significa.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>2.824</strong><span>ocorrências · 183 páginas</span></div><div class="finding-copy"><p><strong>Parágrafos extensos.</strong> Um dos exemplos registrados é um parágrafo de <strong class="number-highlight">185 palavras</strong> em uma orientação sobre pedidos de patente. Blocos longos podem obrigar a pessoa a ler, ou a ouvir, muito mais para encontrar uma instrução específica.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>5.941</strong><span>ocorrências · 1.103 páginas</span></div><div class="finding-copy"><p><strong>Siglas sem explicação por perto, segundo a verificação automática.</strong> Cerca de <strong class="number-highlight">21 em cada 100 endereços</strong> de páginas HTML do conjunto editorial de <strong class="number-highlight">5.194</strong> receberam esse alerta. Siglas como PCT, RPI e CUP podem ser desconhecidas para quem procura um serviço pela primeira vez.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>222</strong><span>ocorrências · 119 páginas</span></div><div class="finding-copy"><p><strong>Listas que aparecem na tela, mas não estão marcadas como lista no código, segundo a triagem.</strong> Para quem vê, o conteúdo parece uma lista. O leitor de tela, porém, pode não reconhecê-lo como tal e deixar de avisar quantos itens existem e onde cada um começa.</p></div></article>
+          </div>
+          <aside class="note"><h3>O que isso significa?</h3><p>Dividir instruções em etapas, explicar siglas e usar títulos claros pode facilitar a leitura e a localização das informações. Um parágrafo longo ou uma sigla, sozinhos, não tornam o conteúdo necessariamente incompreensível. Essas contagens indicam onde a revisão feita por pessoas é mais útil.</p></aside>
+        </section>
+
+        <section class="chapter" id="areas" aria-labelledby="title-areas">
+          <p class="chapter-kicker">09 · Áreas</p>
+          <h2 id="title-areas">Onde encontramos mais alertas</h2>
+          <p class="chapter-lead">Para ajudar a decidir o que revisar primeiro, organizamos os resultados de acordo com as áreas do portal.</p>
+          <div class="area-grid"><article class="area-card"><h3>Serviços</h3><p><strong>433 páginas com alertas e 2.307 PDFs diferentes,</strong> segundo o agrupamento apresentado no levantamento por área. Serviços e procedimentos devem receber atenção prioritária, porque podem fazer parte de tarefas que a pessoa precisa concluir, muitas vezes sem ajuda de outra pessoa.</p></article><article class="area-card"><h3>Assuntos</h3><p><strong>56 de 59 páginas com alertas,</strong> ou seja, cerca de 95 em cada 100 páginas examinadas nessa área.</p></article><article class="area-card"><h3>Acesso à informação</h3><p><strong>154 de 272 páginas com alertas,</strong> ou seja, cerca de 57 em cada 100 páginas analisadas nessa área.</p></article></div>
+          <aside class="note"><h3>O que esses números mostram?</h3><p>Uma página sinalizada tem pelo menos um indício encontrado pela análise automática. Isso não quer dizer que todos os seus elementos tenham problemas. As contagens por área foram mantidas do levantamento anterior, mas, para a publicação definitiva, ainda dependem da planilha original que classifica as páginas por seção.</p></aside>
+        </section>
+
+        <section class="chapter" id="melhorias" aria-labelledby="title-melhorias">
+          <p class="chapter-kicker">10 · Melhorias</p>
+          <h2 id="title-melhorias">Por onde começar as melhorias</h2>
+          <p class="chapter-lead">A partir dos resultados, a auditoria aponta quatro prioridades.</p>
+          <ol class="priority-list">
+            <li><h3>Garantir o acesso aos documentos</h3><p>Começar pelos PDFs necessários para usar os serviços. Há <strong>2.652 arquivos sem estrutura interna (árvore de estrutura)</strong>, <strong>2.733 sem idioma declarado</strong> e <strong>2.315 sem título na ficha interna (metadados)</strong>, além de <strong>1.474 registros de PDF sem texto que o computador consiga ler</strong>. Corrigir esses pontos e verificar se o conteúdo pode ser lido, pesquisado e percorrido com tecnologias assistivas, como o leitor de tela.</p></li>
+            <li><h3>Corrigir formulários, botões e links</h3><p>Revisar primeiro os <strong>195 campos sem nome ligado a eles no código</strong>, os <strong>82 botões sem nome em texto</strong>, os <strong>432 alertas editoriais de links sem texto</strong> e os <strong>157 elementos apontados na amostra pelo teste automático de acessibilidade (axe-core)</strong>. Conferir também as <strong>174 áreas de toque sinalizadas (botões e links que podem ser pequenos demais para tocar com o dedo)</strong> e as <strong>8 páginas que podem obrigar a pessoa a arrastar a tela para os lados (rolagem horizontal)</strong>.</p></li>
+            <li><h3>Melhorar a organização e a busca por informações</h3><p>Revisar os <strong>312 registros sem título principal</strong>, os <strong>218 com saltos na ordem dos títulos</strong>, os <strong>319 links com nomes genéricos</strong>, as <strong>5.941 sinalizações de siglas sem explicação por perto</strong> e os <strong>2.824 parágrafos extensos</strong>. Verificar também os caminhos de navegação mais longos.</p></li>
+            <li><h3>Melhorar a publicação de novos conteúdos</h3><p>Definir verificações antes de publicar páginas, imagens e arquivos. Entre os pontos que mais se repetem estão <strong>6.402 alertas de downloads sem tamanho</strong>, <strong>2.588 descrições de imagem parecidas com nomes de arquivo</strong> e <strong>5.607 registros HTML sem resumo para buscadores (meta description)</strong>.</p></li>
+          </ol>
+          <aside class="note"><h3>Como definir a ordem?</h3><p>Primeiro, os conteúdos necessários para concluir serviços. Depois, os componentes que se repetem em várias páginas. Por fim, os demais ajustes editoriais. Uma correção feita no modelo de página pode resolver o mesmo problema em muitos endereços de uma só vez.</p></aside>
+        </section>
+
       </div>
-    </section>
-
-    <section class="chapter" id="documentos" aria-labelledby="documentos-title">
-      <p class="chapter-label">01 · Documentos</p>
-      <h2 id="documentos-title">Quando um documento não pode ser lido como texto</h2>
-      <div class="text-coverage" aria-labelledby="text-coverage-title">
-        <div class="coverage-intro"><p class="metric-kicker">PDFs sem texto</p><h3 id="text-coverage-title"><strong>1.474</strong><span> PDFs não têm texto</span></h3><p><strong>20,7% dos 7.135 PDFs examinados.</strong></p><p>Isso significa que, a cada 10 PDFs analisados, cerca de 2 não tinham texto que o computador pudesse reconhecer diretamente.</p></div>
-        <div class="coverage-chart"><div class="stacked-bar" role="img" aria-label="Texto em todas as páginas: 71,8%. Em algumas páginas: 7,5%. Em nenhuma página: 20,7%"><span class="all" style="width:71.8%"></span><span class="partial" style="width:7.5%"></span><span class="none" style="width:20.7%"></span></div>
-          <ul class="legend"><li><span class="key all" aria-hidden="true"></span><span class="legend-copy"><strong>71,8%</strong> · 5.123 · texto em todas as páginas</span></li><li><span class="key partial" aria-hidden="true"></span><span class="legend-copy"><strong>7,5%</strong> · 538 · texto em algumas páginas</span></li><li><span class="key none" aria-hidden="true"></span><span class="legend-copy"><strong>20,7%</strong> · 1.474 · nenhuma página com texto</span></li></ul>
-        </div>
-      </div>
-      <div class="section-copy"><p>Esses documentos são formados apenas por imagens, como fotografias de páginas impressas.</p><p>Uma pessoa consegue ver as palavras na tela, mas não pode selecioná-las ou pesquisar diretamente dentro do arquivo.</p></div>
-      <div class="table-wrap" role="region" aria-label="Distribuição dos PDFs por presença de texto" tabindex="0">
-        <table><caption>Texto reconhecido nos documentos PDF</caption><thead><tr><th scope="col">O que encontramos</th><th scope="col">PDFs</th></tr></thead><tbody><tr><th scope="row">Texto em todas as páginas</th><td>5.123 (71,8%)</td></tr><tr><th scope="row">Texto em algumas páginas</th><td>538 (7,5%)</td></tr><tr><th scope="row">Nenhuma página com texto</th><td>1.474 (20,7%)</td></tr></tbody></table>
-      </div>
-      <h3 class="subsection-title">Como isso afeta as pessoas?</h3>
-      <div class="impact-grid"><p><strong>Experiência de uso.</strong> Não é possível copiar um trecho ou usar a busca comum do PDF para encontrar uma palavra.</p><p><strong>Acessibilidade.</strong> Leitores de tela precisam reconhecer o texto para apresentá-lo em voz ou braile. Quando o documento é apenas uma imagem, a leitura depende de outros recursos de reconhecimento de texto.</p><p><strong>Busca na internet.</strong> Um texto reconhecível facilita a interpretação do conteúdo por ferramentas de pesquisa. Documentos feitos apenas de imagens podem exigir processamento adicional para que seu conteúdo seja identificado.</p></div>
-    </section>
-
-    <section class="chapter" id="estrutura-pdf" aria-labelledby="estrutura-pdf-title">
-      <p class="chapter-label">02 · Documentos</p>
-      <h2 id="estrutura-pdf-title">Quando o PDF não explica como seu conteúdo está organizado</h2>
-      <p class="section-lead">Examinamos as informações internas de 4.236 PDFs. Essas informações ajudam os programas a entender o idioma, os títulos e a organização do documento. Encontramos três problemas.</p>
-      <div class="pdf-overview" aria-label="Problemas de organização interna dos PDFs">
-        <article><div class="metric-heading"><div><strong>64,5%</strong><span>2.733 de 4.236 PDFs</span></div><h3>Sem idioma definido</h3></div><div class="track" role="img" aria-label="64,5% dos PDFs sem idioma definido"><span style="width:64.5%"></span></div><p>Aproximadamente 6 de cada 10 arquivos não informam em qual idioma foram escritos.</p><p><strong>Impacto na acessibilidade.</strong> Um leitor de tela pode usar a pronúncia errada. Um texto em português, por exemplo, pode ser lido com regras de outro idioma.</p></article>
-        <article><div class="metric-heading"><div><strong>62,6%</strong><span>2.652 de 4.236 PDFs</span></div><h3>Sem estrutura identificada</h3></div><div class="track" role="img" aria-label="62,6% dos PDFs sem estrutura identificada"><span style="width:62.6%"></span></div><p>Aproximadamente 6 de cada 10 documentos não identificam corretamente títulos, listas e outras partes em sua estrutura interna.</p><p><strong>Impacto na experiência de uso e na acessibilidade.</strong> Quem usa tecnologias assistivas pode ter dificuldade para passar diretamente de um título para outro ou encontrar uma seção do documento.</p></article>
-        <article><div class="metric-heading"><div><strong>54,7%</strong><span>2.315 de 4.236 PDFs</span></div><h3>Sem título registrado</h3></div><div class="track" role="img" aria-label="54,7% dos PDFs sem título registrado"><span style="width:54.7%"></span></div><p>Mais da metade dos documentos não apresenta um título em suas informações internas.</p><p><strong>Impacto na experiência de uso e na acessibilidade.</strong> Fica mais difícil identificar os arquivos em programas que utilizam essa informação para apresentar o nome do documento.</p></article>
-      </div>
-      <div class="reading-note"><strong>O que esses números mostram?</strong> Não basta que o PDF pareça organizado na tela. Sua estrutura interna também precisa informar aos programas o que é título, lista, parágrafo e outras partes do conteúdo. Um documento pode apresentar os três problemas ao mesmo tempo. Por isso, essas quantidades não devem ser somadas.</div>
-    </section>
-
-    <section class="chapter" id="interacao" aria-labelledby="interacao-title">
-      <p class="chapter-label">03 · Interação</p>
-      <h2 id="interacao-title">Quando botões e campos não explicam para que servem</h2>
-      <p class="section-lead">Um formulário precisa informar onde digitar, o que preencher e como continuar. Na auditoria, encontramos elementos que não apresentam corretamente essas informações no código.</p>
-      <div class="finding-list">
-        <article class="finding"><div class="finding-number"><strong>195</strong><span>campos · 70 páginas</span></div><div><h3>Campos sem nome</h3><p>Um campo pode aparecer ao lado da palavra “E-mail”, mas não ter essa informação associada corretamente no código.</p><p class="impact"><strong>Impacto.</strong> Quem usa leitor de tela pode ouvir apenas “campo de edição”, sem saber o que preencher.</p></div></article>
-        <article class="finding"><div class="finding-number"><strong>82</strong><span>botões · 38 páginas</span></div><div><h3>Botões sem nome</h3><p>Um botão pode mostrar uma lupa, por exemplo, mas não informar que sua função é pesquisar.</p><p class="impact"><strong>Impacto.</strong> A pessoa pode ouvir apenas “botão”, sem saber o que acontecerá ao utilizá-lo.</p></div></article>
-        <article class="finding"><div class="finding-number"><strong>432</strong><span>links · 136 páginas</span></div><div><h3>Links sem nome</h3><p>O link não apresenta uma identificação que explique seu destino.</p><p class="impact"><strong>Impacto.</strong> A pessoa pode encontrar links anunciados sem informações suficientes para escolher qual abrir.</p></div></article>
-      </div>
-      <div class="prose-note"><h3>Por que isso importa?</h3><p>Esses elementos permitem pesquisar informações, preencher formulários e acessar serviços.</p><p>Quando suas funções não estão identificadas corretamente, a interação fica menos clara, principalmente para quem utiliza tecnologias assistivas.</p><p>A identificação de campos e botões é fundamental para a acessibilidade. O texto dos links também ajuda os mecanismos de busca a compreender o assunto das páginas conectadas.</p></div>
-    </section>
-
-    <section class="chapter" id="conteudo-visual" aria-labelledby="imagens-title">
-      <p class="chapter-label">04 · Imagens</p>
-      <h2 id="imagens-title">Quando as imagens não explicam o que mostram</h2>
-      <p class="section-lead">As imagens podem apresentar orientações, exemplos, avisos e informações importantes. Para que leitores de tela possam transmitir essas informações, imagens que comunicam conteúdo precisam de descrições adequadas.</p>
-      <div class="finding-list">
-        <article class="finding"><div class="finding-number"><strong>570</strong><span>imagens · 158 páginas</span></div><div><h3>Imagens sem texto alternativo</h3><p>Essas imagens não apresentam uma descrição alternativa no código.</p><p class="impact"><strong>Impacto na acessibilidade.</strong> Quando a imagem transmite uma informação, a ausência de descrição pode impedir que esse conteúdo seja apresentado pelo leitor de tela.</p><p>Imagens apenas decorativas não precisam de uma descrição, mas devem ser identificadas corretamente no código.</p></div></article>
-        <article class="finding"><div class="finding-number"><strong>2.588</strong><span>imagens · 155 páginas</span></div><div><h3>Descrições pouco informativas</h3><p>Encontramos descrições que repetem nomes de arquivos ou usam expressões genéricas.</p><p>Por exemplo, em vez de explicar uma ilustração sobre invenções, a descrição apresenta apenas “INVENCAO.jpg”.</p><p class="impact"><strong>Impacto na compreensão.</strong> O nome do arquivo não explica necessariamente o conteúdo da imagem.</p><p class="impact"><strong>Impacto na busca na internet.</strong> Descrições adequadas também ajudam o Google a entender o assunto das imagens e relacioná-las às pesquisas realizadas pelas pessoas.</p><p>Uma boa descrição deve transmitir a informação importante da imagem, sem repetir desnecessariamente o texto da página.</p></div></article>
-      </div>
-    </section>
-
-    <section class="chapter" id="paginas" aria-labelledby="paginas-title">
-      <p class="chapter-label">05 · Páginas</p>
-      <h2 id="paginas-title">Quando a página não deixa claro onde a pessoa está</h2>
-      <div class="finding-list">
-        <article class="finding"><div class="finding-number"><strong>49</strong><span>páginas</span></div><div><h3>Sem título na aba do navegador</h3><p>O título aparece na aba do navegador e ajuda a identificar qual página está aberta.</p><p class="impact"><strong>Experiência de uso.</strong> Quando há várias abas abertas, fica mais difícil encontrar a página desejada.</p><p class="impact"><strong>Acessibilidade.</strong> O título ajuda quem utiliza leitores de tela a identificar a página atual.</p><p class="impact"><strong>Busca na internet.</strong> O Google pode usar esse título para apresentar a página nos resultados de pesquisa. Sem ele, perde-se uma informação importante sobre o assunto do conteúdo.</p></div></article>
-        <article class="finding"><div class="finding-number"><strong>312</strong><span>páginas · 5,2% de 5.952</span></div><div><h3>Sem título principal</h3><p>Isso equivale a aproximadamente 5 páginas sem título principal a cada 100 examinadas.</p><p>O título principal apresenta o assunto da página. Ele também ajuda a organizar os outros títulos e subtítulos.</p><p class="impact"><strong>Experiência de uso.</strong> Fica menos claro qual é o assunto principal e como o conteúdo está organizado.</p><p class="impact"><strong>Acessibilidade.</strong> Quem usa leitor de tela pode navegar diretamente pelos títulos. Sem um título principal identificado, perde uma referência importante.</p><p class="impact"><strong>Busca na internet.</strong> Títulos bem escritos e organizados ajudam os mecanismos de pesquisa a interpretar o conteúdo. A ausência de um título principal não impede, por si só, que a página apareça no Google.</p></div></article>
-      </div>
-    </section>
-
-    <section class="chapter" id="navegacao" aria-labelledby="caminhos-title">
-      <p class="chapter-label">06 · Navegação</p>
-      <h2 id="caminhos-title">Quando os caminhos para encontrar informações são longos</h2>
-      <div class="finding-list single-finding"><article class="finding"><div class="finding-number"><strong>7.357</strong><span>conteúdos a mais de três passos</span></div><div><h3>O caminho mais longo identificado tem 27 passos</h3><p>Contamos os links que precisam ser seguidos para chegar às páginas e aos documentos do portal.</p><p>Encontramos 7.357 conteúdos que estão a quatro passos ou mais da página inicial.</p><h4>O que isso significa?</h4><p>Imagine uma pessoa que precisa encontrar uma orientação. Ela abre uma página, escolhe um link, chega a outra página e continua procurando.</p><p>Quanto maior o caminho, mais etapas ela precisa percorrer.</p><p class="impact"><strong>Experiência de uso.</strong> Caminhos longos aumentam a quantidade de escolhas necessárias para encontrar uma informação.</p><p class="impact"><strong>Acessibilidade.</strong> Cada nova página exige reconhecer sua organização e localizar o próximo link. Isso pode exigir mais esforço de quem navega pelo teclado ou utiliza tecnologias assistivas.</p><p class="impact"><strong>Busca na internet.</strong> A organização dos links internos ajuda os buscadores a descobrir páginas e compreender as relações entre os conteúdos.</p><p>Ter mais de três passos não significa, sozinho, que a navegação seja ruim. O resultado mostra quais conteúdos estão mais distantes da página inicial e precisam de atenção na revisão da estrutura.</p></div></article></div>
-    </section>
-
-    <section class="chapter" id="links" aria-labelledby="links-title">
-      <p class="chapter-label">07 · Links</p>
-      <h2 id="links-title">Quando os links não explicam o destino</h2>
-      <div class="finding-list">
-        <article class="finding"><div class="finding-number"><strong>319</strong><span>links · 105 páginas</span></div><div><h3>Links com nomes genéricos</h3><p>Encontramos links com nomes como “clique aqui” e “acesse aqui”.</p><p>Essas expressões indicam uma ação, mas não dizem qual informação será aberta.</p><p>Por exemplo, “Consultar classificação de marcas” explica melhor o destino do que “Clique aqui”.</p><p class="impact"><strong>Experiência de uso.</strong> A pessoa precisa ler o texto ao redor para entender para onde o link leva.</p><p class="impact"><strong>Acessibilidade.</strong> Quem navega por uma lista de links pode não compreender o destino de cada um.</p><p class="impact"><strong>Busca na internet.</strong> Textos claros ajudam o Google a entender o conteúdo da página de destino.</p></div></article>
-        <article class="finding"><div class="finding-number"><strong>568</strong><span>páginas</span></div><div><h3>Links para PDFs sem informar formato e tamanho</h3><p>Encontramos links que não deixam claro que o arquivo é um PDF nem informam seu tamanho.</p><p>Entre os arquivos examinados, 1.409 PDFs têm mais de 1 MB.</p><p class="impact"><strong>Impacto na experiência de uso.</strong> Quem usa internet móvel ou uma conexão limitada não consegue saber antecipadamente quanto precisará transferir para abrir o documento.</p><p>Informar o formato e o tamanho do arquivo ajuda a pessoa a escolher quando e como acessá-lo.</p></div></article>
-      </div>
-    </section>
-
-    <section class="chapter" id="conteudo-dificil" aria-labelledby="percorrer-title">
-      <p class="chapter-label">08 · Conteúdo</p>
-      <h2 id="percorrer-title">Quando o conteúdo é difícil de percorrer</h2>
-      <div class="finding-list">
-        <article class="finding"><div class="finding-number"><strong>644</strong><span>tabelas · 285 páginas</span></div><div><h3>Tabelas sem cabeçalhos identificados</h3><p>Os cabeçalhos explicam o significado das informações em uma linha ou coluna.</p><p>Imagine uma tabela com valores de pagamentos, mas sem a identificação adequada das colunas. Quem vê a tabela pode reconhecer os títulos pela aparência, enquanto um leitor de tela depende das informações presentes no código.</p><p class="impact"><strong>Impacto na acessibilidade.</strong> A pessoa pode ter dificuldade para relacionar um valor à informação correta.</p></div></article>
-        <article class="finding"><div class="finding-number"><strong>2.824</strong><span>parágrafos · 183 páginas</span></div><div><h3>Parágrafos longos</h3><p>A análise encontrou parágrafos extensos, incluindo um texto com 185 palavras em uma orientação sobre pedidos de patente.</p><p class="impact"><strong>Impacto na experiência de uso.</strong> Encontrar uma instrução específica dentro de um bloco longo pode exigir mais leitura e atenção.</p><p>Dividir instruções em etapas e usar títulos claros facilita a localização das informações.</p><p>O tamanho do parágrafo, sozinho, não determina se um texto é fácil ou difícil de compreender, mas ajuda a identificar conteúdos que merecem revisão.</p></div></article>
-      </div>
-    </section>
-
-    <section class="chapter" id="areas" aria-labelledby="areas-title">
-      <p class="chapter-label">09 · Áreas</p>
-      <h2 id="areas-title">Onde encontramos mais alertas</h2>
-      <p class="section-lead">Os resultados foram organizados pelas áreas do portal para identificar onde há mais itens que precisam de atenção.</p>
-      <div class="area-grid">
-        <article><h3>Serviços</h3><p class="area-metric"><strong>433</strong> páginas com alertas</p><p><strong>2.307 PDFs diferentes.</strong></p><p>Essa área reúne conteúdos ligados a serviços e procedimentos do INPI.</p><p>Os resultados mostram a necessidade de revisar páginas e documentos utilizados para realizar essas atividades.</p></article>
-        <article><h3>Assuntos</h3><p class="area-metric"><strong>56</strong> de 59 páginas</p><p>Isso significa que aproximadamente 95 de cada 100 páginas examinadas nessa área tiveram pelo menos um item identificado pela análise.</p></article>
-        <article><h3>Acesso à informação</h3><p class="area-metric"><strong>154</strong> de 272 páginas</p><p>Isso representa aproximadamente 57 de cada 100 páginas analisadas.</p></article>
-      </div>
-      <div class="reading-note"><strong>Por que isso importa?</strong> Esses números ajudam a identificar as áreas que precisam de revisão e a organizar as prioridades de melhoria. Uma página sinalizada apresenta pelo menos um alerta encontrado pela análise automática. Isso não significa que todos os elementos dessa página tenham problemas.</div>
-    </section>
-
-    <section class="chapter" id="melhorias" aria-labelledby="melhorias-title">
-      <p class="chapter-label">10 · Melhorias</p>
-      <h2 id="melhorias-title">Por onde começar as melhorias</h2>
-      <p class="section-lead">Os resultados da auditoria indicam quatro prioridades.</p>
-      <ol class="priority-list"><li><strong>Garantir o acesso aos documentos</strong><span>Revisar os PDFs sem texto e os documentos que não apresentam idioma, título ou estrutura interna adequada. Priorizar os arquivos necessários para utilizar os serviços.</span></li><li><strong>Corrigir formulários, botões e links</strong><span>Garantir que os elementos informem suas funções e possam ser identificados por tecnologias assistivas.</span></li><li><strong>Melhorar a organização e a busca por informações</strong><span>Revisar os títulos das páginas, os nomes dos links, os caminhos de navegação e a organização do conteúdo.</span></li><li><strong>Melhorar a publicação de novos conteúdos</strong><span>Definir verificações para páginas, imagens, tabelas e PDFs antes da publicação.</span></li></ol>
-    </section>
-
-    <section class="chapter methodology" id="metodo" aria-labelledby="metodo-title">
-      <p class="chapter-label">Método</p>
-      <h2 id="metodo-title">Como fizemos a auditoria</h2>
-      <div class="method-copy"><p>Desenvolvemos scripts em Python com auxílio de modelos de inteligência artificial (LLMs) na programação, nos testes e na revisão do código.</p><p>Esses programas foram usados para coletar, organizar e analisar automaticamente páginas, links, imagens, formulários e documentos PDF do portal do INPI.</p><p>A análise em larga escala permitiu examinar milhares de arquivos, identificar problemas técnicos, localizar os conteúdos afetados e reunir os resultados para orientar melhorias.</p><p><strong>Os scripts também podem ser adaptados para auditar outros sites do governo federal e ampliar a análise para todo o portal Gov.br</strong>, respeitando as diferenças técnicas entre os sites.</p><p>Isso permite aplicar os mesmos métodos de coleta e análise a diferentes órgãos públicos, comparar resultados e acompanhar melhorias ao longo do tempo.</p><p>A auditoria utilizou como referência as WCAG 2.2, o eMAG e boas práticas de experiência do usuário (UX), acessibilidade digital e organização da informação.</p></div>
-    </section>
+    </div>
   </main>
 
-  <footer><p>Auditoria do portal do INPI · INPI | CGDI</p></footer>
+  <footer class="report-footer"><p>Auditoria do portal do INPI · INPI | CGDI</p></footer>
 </body>
 </html>
