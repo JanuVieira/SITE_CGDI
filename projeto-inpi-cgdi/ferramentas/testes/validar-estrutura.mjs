@@ -329,10 +329,10 @@ for (const page of pages) {
       /indispon[ií]vel/i,
       name + ' não deve acrescentar “indisponível” aos rótulos dos controles.'
     );
-    const unavailableActions = html.match(/<button\b[^>]*\bv2-action-off\b[^>]*>/gi) || [];
-    assert.ok(unavailableActions.length > 0, name + ' deve preservar os controles sem destino como botões.');
-    for (const action of unavailableActions) {
-      assert.ok(hasAttribute(action, 'disabled'), name + ' deve manter sem ação apenas botões nativamente disabled.');
+    const buttons = html.match(/<button\b[^>]*>/gi) || [];
+    for (const button of buttons) {
+      assert.ok(!hasAttribute(button, 'disabled'), name + ' deve manter todos os botões visualmente habilitados.');
+      assert.ok(!/\bv2-action-off\b/i.test(button), name + ' não deve aplicar estado visual desabilitado aos botões.');
     }
   }
 

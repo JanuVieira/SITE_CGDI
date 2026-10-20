@@ -45,7 +45,6 @@ JS = r'''(() => {
   const CHOICE_KEY = 'cgdi.ga4.consent.v1';
   let loaded = false;
   let banner;
-  let privacyButton;
 
   function storedChoice() {
     try {
@@ -132,7 +131,6 @@ JS = r'''(() => {
   function choose(value) {
     storeChoice(value);
     banner.hidden = true;
-    privacyButton.hidden = false;
     // URL reservada a revisao da escolha; a barra de enderecos volta ao normal.
     if (new URLSearchParams(location.search).get('privacidade') === 'alterar') {
       const cleanUrl = new URL(location.href);
@@ -186,26 +184,13 @@ JS = r'''(() => {
 
     banner.append(heading, description, actions);
 
-    privacyButton = document.createElement('button');
-    privacyButton.id = 'cgdi-ga4-privacy-settings';
-    privacyButton.type = 'button';
-    privacyButton.textContent = 'Preferências de privacidade';
-    privacyButton.setAttribute('aria-controls', banner.id);
-    privacyButton.addEventListener('click', () => {
-      banner.hidden = false;
-      privacyButton.hidden = true;
-      banner.tabIndex = -1;
-      banner.focus({ preventScroll: true });
-    });
-
-    document.body.append(banner, privacyButton);
+    document.body.append(banner);
 
     const choice = storedChoice();
     // Visita inicial: mostrar. Escolha salva: nao mostrar nada.
     // A revisao pode ser aberta pelo endereco ?privacidade=alterar.
     const reviewMode = new URLSearchParams(location.search).get('privacidade') === 'alterar';
     banner.hidden = choice !== null && !reviewMode;
-    privacyButton.hidden = !banner.hidden;
     if (choice === 'accepted' && !reviewMode) startAnalytics();
   }
 
@@ -228,10 +213,6 @@ CSS = r'''#cgdi-ga4-consent, #cgdi-ga4-consent * { box-sizing: border-box; }
 #cgdi-ga4-consent .cgdi-ga4-accept:hover { background: #0c326f; }
 #cgdi-ga4-consent button:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
 #cgdi-ga4-consent[hidden] { display: none !important; }
-#cgdi-ga4-privacy-settings { position: fixed; z-index: 2147482999; bottom: 12px; left: 12px; min-height: 44px; padding: 8px 14px; border: 1px solid #1351b4; border-radius: 22px; background: #fff; color: #1351b4; box-shadow: 0 2px 10px rgba(0,0,0,.14); font: 600 14px/1.4 Rawline, Arial, sans-serif; cursor: pointer; }
-#cgdi-ga4-privacy-settings:hover { background: #edf3ff; }
-#cgdi-ga4-privacy-settings:focus-visible { outline: 3px solid #ffcd07; outline-offset: 3px; }
-#cgdi-ga4-privacy-settings[hidden] { display: none !important; }
 @media (max-width: 520px) { #cgdi-ga4-consent { right: 8px; left: 8px; bottom: 8px; padding: 16px; max-width: none; } .cgdi-ga4-actions { flex-direction: column; align-items: stretch; } #cgdi-ga4-consent button { width: 100%; } }
 @media (prefers-contrast: more) { #cgdi-ga4-consent { border: 2px solid currentColor; } }'''
 

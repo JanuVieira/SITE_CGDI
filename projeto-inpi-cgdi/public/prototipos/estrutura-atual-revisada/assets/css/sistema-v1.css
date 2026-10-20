@@ -13,6 +13,8 @@ body.cgdi-page[data-version="V1"] #conteudo {
   --v1-title-card:1.125rem;
   --v1-title-section:1.75rem;
   --v1-title-page:2.25rem;
+  --v1-reading-measure:72ch;
+  --v1-editorial-width:960px;
   font-size:var(--v1-text-md);
   line-height:1.6;
   padding-bottom:var(--v1-space-8);
@@ -31,7 +33,7 @@ body.cgdi-page[data-version="V1"] #conteudo > .container-lg > cgdi-breadcrumb {
 
 body.cgdi-page[data-version="V1"] #conteudo > .container-lg > :is(.page-intro,cgdi-page-intro) {
   width:100%;
-  max-width:none;
+  max-width:var(--v1-editorial-width);
   margin:0 0 var(--v1-space-4);
   padding:0;
 }
@@ -77,8 +79,42 @@ body.cgdi-page[data-version="V1"] #conteudo :is(.p04-step-title h3,.step h3,.p03
 }
 
 body.cgdi-page[data-version="V1"] #conteudo :is(.p04-step-content > p,.step p,.p06-section > p,.p07-section-intro,.dashboard-head p,.section > p) {
+  max-width:var(--v1-reading-measure);
   font-size:var(--v1-text-md);
   line-height:1.6;
+  text-wrap:pretty;
+}
+
+/* Blocos exclusivamente editoriais não precisam ocupar as 12 colunas.
+   Grids, calendários, painéis e embeds continuam usando toda a largura. */
+body.cgdi-page[data-version="V1"] #conteudo :is(
+  .p04-flow-head,
+  .p04-flow,
+  .p04-note,
+  .flow-block,
+  .p06-context,
+  .p07-hero,
+  .p07-help,
+  .fed .join
+) {
+  width:100%;
+  max-width:var(--v1-editorial-width);
+}
+
+body.cgdi-page[data-version="V1"] #conteudo :is(
+  .p04-description,
+  .p04-note p,
+  .callout p,
+  .criteria,
+  .p06-context p,
+  .p07-highlight p,
+  .p07-help-copy p,
+  .purpose p,
+  .join p,
+  .note
+) {
+  max-width:var(--v1-reading-measure);
+  text-wrap:pretty;
 }
 
 body.cgdi-page[data-version="V1"] #conteudo :is(.p04-flow,.flow,.p07-steps,.p06-resource-grid,.resources) {
