@@ -319,23 +319,23 @@ if (finalMode) {
   const gaScript = await readFile(join(artifactRoot, 'assets/cgdi-ga4-consent.js'), 'utf8');
   assert.match(
     gaScript,
-    /\.textContent\s*=\s*['"]Preferências de privacidade['"]/,
-    'O JS de consentimento deve gerar o controle persistente “Preferências de privacidade”.'
+    /localStorage\.setItem\(CHOICE_KEY,\s*value\)/,
+    'O JS de consentimento deve persistir a escolha feita pelo usuário.'
   );
   assert.match(
     gaScript,
-    /cgdi-ga4-privacy-settings/,
-    'O JS de consentimento deve identificar o controle persistente de preferências.'
+    /banner\.hidden\s*=\s*true/,
+    'O banner de consentimento deve desaparecer imediatamente após a escolha.'
   );
   assert.match(
     gaScript,
-    /privacyButton\.addEventListener\(\s*['"]click['"]/,
-    'O controle persistente de preferências deve reabrir a escolha de privacidade.'
+    /banner\.hidden\s*=\s*choice\s*!==\s*null\s*&&\s*!reviewMode/,
+    'Uma escolha persistida deve impedir que o banner reapareça na navegação comum.'
   );
-  assert.match(
+  assert.doesNotMatch(
     gaScript,
-    /document\.body\.append\([^)]*\bprivacyButton\b[^)]*\)/,
-    'O controle persistente de preferências deve ser anexado ao documento.'
+    /cgdi-ga4-privacy-settings|\bprivacyButton\b/,
+    'O artefato não deve recriar um botão persistente de cookies após a escolha.'
   );
 
   for (const path of artifactFiles.filter(path => extname(path).toLowerCase() === '.html')) {
