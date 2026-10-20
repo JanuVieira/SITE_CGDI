@@ -1731,16 +1731,17 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="inverse"] {
 
 /* V2 | Revisão final de UI: hierarquia, medidas de leitura e ritmo editorial. */
 body.cgdi-page[data-version="V2"] .home-v2-pdf {
-  --v2-space-section:clamp(72px,7vw,96px);
-  --v2-title-page:clamp(2.25rem,3.5vw,3rem);
-  --v2-title-feature:clamp(1.5rem,2.25vw,2rem);
-  --v2-title-section:clamp(1.625rem,2.25vw,2rem);
-  --v2-title-card:1.25rem;
-  line-height:1.55;
+  --v2-space-section:clamp(72px,6vw,88px);
+  --v2-title-page:clamp(2.5rem,3.8vw,3.25rem);
+  --v2-title-feature:clamp(1.75rem,2.4vw,2.125rem);
+  --v2-title-section:clamp(1.75rem,2.4vw,2.125rem);
+  --v2-title-card:1.375rem;
+  font-size:1.0625rem;
+  line-height:1.6;
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf > .v2-container > .v2-opening-intro {
-  margin:clamp(32px,4vw,48px) 0 clamp(40px,5vw,56px);
+  margin:clamp(32px,4vw,48px) 0 clamp(36px,4vw,48px);
   text-align:left;
 }
 
@@ -1762,7 +1763,7 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-results {
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-section-title {
   max-width:32ch;
-  margin:0 0 28px;
+  margin:0 0 32px;
   font-size:var(--v2-title-section)!important;
   font-weight:700;
   line-height:1.2;
@@ -1780,9 +1781,21 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf :is(
   cgdi-card[variant="support"],
   cgdi-card[variant="large"]
 ) {
-  padding:32px;
+  padding:36px;
   align-items:flex-start;
   text-align:left;
+}
+
+body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="standard"] {
+  min-height:320px;
+}
+
+body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="support"] {
+  min-height:288px;
+}
+
+body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="large"] {
+  min-height:320px;
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf :is(
@@ -1805,10 +1818,10 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf :is(
   cgdi-card[variant="large"]
 ) > p {
   max-width:48ch;
-  margin:0 0 24px;
+  margin:0 0 28px;
   color:var(--v2-muted);
-  font-size:1rem;
-  line-height:1.55;
+  font-size:1.0625rem;
+  line-height:1.6;
   text-wrap:pretty;
 }
 
@@ -1821,7 +1834,7 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf :is(
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-card {
-  min-height:380px;
+  min-height:408px;
   grid-template-columns:minmax(0,1fr) minmax(420px,.92fr);
 }
 
@@ -1848,7 +1861,8 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-copy h2 {
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-copy > p:not(.v2-date):not(.v2-demo-label) {
   max-width:56ch;
-  margin:0 0 24px;
+  margin:0 0 28px;
+  font-size:1.0625rem;
   line-height:1.6;
   text-wrap:pretty;
 }
@@ -1875,13 +1889,14 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-story-inner h3 {
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-story-inner p {
   max-width:56ch;
-  margin:0 0 24px;
+  margin:0 0 28px;
+  font-size:1.0625rem;
   line-height:1.6;
   text-wrap:pretty;
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-format {
-  min-height:136px;
+  min-height:152px;
   gap:12px;
   padding:24px 16px;
   font-size:1rem;
@@ -1903,8 +1918,8 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-attendance-card h3 {
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-metric {
-  min-height:176px;
-  padding:24px;
+  min-height:192px;
+  padding:28px 24px;
   justify-content:center;
 }
 
@@ -1924,8 +1939,8 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-metric span {
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-report {
-  min-height:96px;
-  padding:20px 24px;
+  min-height:104px;
+  padding:24px 28px;
   justify-content:space-between;
 }
 
@@ -1941,8 +1956,8 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-report h3 {
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="inverse"] {
-  min-height:320px;
-  padding:32px;
+  min-height:344px;
+  padding:40px;
   align-items:flex-start;
   justify-content:center;
   text-align:left;
@@ -1970,11 +1985,12 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="inverse"] p {
 
 @media(max-width:740px) {
   body.cgdi-page[data-version="V2"] .home-v2-pdf {
-    --v2-space-section:64px;
+    --v2-space-section:56px;
     --v2-title-page:2rem;
     --v2-title-feature:1.375rem;
     --v2-title-section:1.5rem;
     --v2-title-card:1.125rem;
+    font-size:1rem;
   }
   body.cgdi-page[data-version="V2"] .home-v2-pdf > .v2-container > .v2-opening-intro {
     margin:24px 0 32px;
@@ -1985,7 +2001,7 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="inverse"] p {
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-grid {gap:16px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-card {grid-template-columns:1fr;min-height:0}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-copy {padding:24px}
-  body.cgdi-page[data-version="V2"] .home-v2-pdf :is(cgdi-card[variant="standard"],cgdi-card[variant="support"],cgdi-card[variant="large"]) {padding:24px}
+  body.cgdi-page[data-version="V2"] .home-v2-pdf :is(cgdi-card[variant="standard"],cgdi-card[variant="support"],cgdi-card[variant="large"]) {min-height:0;padding:24px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-story-inner > div {padding:32px 24px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-attendance-card > div {padding:24px 24px 0}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-metric {min-height:144px;padding:20px}
