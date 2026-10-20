@@ -8,11 +8,13 @@
   <meta name="description" content="Como o projeto reuniu orientações oficiais, criou critérios de auditoria, examinou conteúdos e desenvolveu propostas para a CGDI do INPI.">
   <title>Conheça o projeto — INPI | CGDI</title>
   <link rel="stylesheet" href="../../vendor/govbr-ds-core.css">
+  <link rel="stylesheet" href="../assets/css/stepper.css">
   <link rel="stylesheet" href="./assets/css/fluxos.css">
   <link rel="stylesheet" href="../../prototipos/componentes/pre-download/pre-download.css" data-cgdi-pre-download-style>
   <script defer src="../../prototipos/componentes/pre-download/pre-download.js" data-cgdi-pre-download-script></script>
   <script defer src="./assets/js/versoes.js"></script>
-  <script defer src="./assets/js/stepper.js"></script>
+  <script defer src="./assets/js/visualizador-imagens.js"></script>
+  <script defer src="../assets/js/stepper.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -25,7 +27,7 @@
     <header class="hero">
       <p class="eyebrow">Projeto e processo</p>
       <h1>Conheça o projeto</h1>
-      <p class="lead">Como reunimos orientações oficiais, criamos 55 critérios de auditoria, examinamos o conteúdo do INPI e desenvolvemos duas propostas de interface para a CGDI.</p>
+      <p class="lead">Como reunimos orientações oficiais, criamos 55 critérios de auditoria, examinamos o conteúdo do INPI e propusemos duas interfaces para a CGDI.</p>
 
       <dl class="project-meta" aria-label="Dados do projeto">
         <div><dt>Edital</dt><dd>Nº 04/2025</dd></div>
@@ -59,23 +61,22 @@
           <header class="chapter-heading">
             <p class="story-number">Capítulo 01 · Escopo</p>
             <h2>O projeto prevê três entregas</h2>
-            <p>O Edital nº 04/2025 definiu três entregas para examinar a comunicação digital da CGDI e propor melhorias.</p>
+            <p>Definidas pelo Edital nº 04/2025 para examinar a comunicação digital da CGDI e propor melhorias.</p>
           </header>
 
           <ol class="commitment-grid" aria-label="Entregas definidas pelo edital">
-            <li><span aria-hidden="true">01</span><h3>Diagnóstico da comunicação institucional</h3><p>Examinar o conteúdo publicado, identificar problemas e registrar oportunidades de melhoria.</p></li>
-            <li><span aria-hidden="true">02</span><h3>Plano estratégico de comunicação digital</h3><p>Organizar prioridades e diretrizes para melhorar a comunicação digital.</p></li>
-            <li><span aria-hidden="true">03</span><h3>Protótipo da página da CGDI</h3><p>Mostrar uma nova proposta de organização e acesso aos conteúdos.</p></li>
+            <li><span aria-hidden="true">01</span><h3>Diagnóstico da comunicação institucional</h3><p>Examinar o conteúdo publicado e registrar problemas e oportunidades.</p></li>
+            <li><span aria-hidden="true">02</span><h3>Plano estratégico de comunicação digital</h3><p>Prioridades e diretrizes para a comunicação digital.</p></li>
+            <li><span aria-hidden="true">03</span><h3>Protótipo da página da CGDI</h3><p>Nova proposta de organização e acesso aos conteúdos.</p></li>
           </ol>
 
-          <p class="chapter-synthesis">Para conectar essas entregas, o trabalho seguiu um processo de pesquisa, auditoria e design, apresentado nos capítulos a seguir.</p>
         </article>
 
         <article class="story-step story-step--featured" id="etapa-02" data-story-step>
           <header class="chapter-heading">
             <p class="story-number">Capítulo 02 · Critérios</p>
             <h2>De orientações oficiais a 55 critérios</h2>
-            <p>Leis, manuais, cartilhas e padrões do Governo Federal estavam publicados em diferentes lugares. Reunimos as orientações e as transformamos em regras que podem ser consultadas e verificadas.</p>
+            <p>Leis, manuais e padrões do Governo Federal estavam dispersos. Reunimos essas orientações em regras verificáveis.</p>
           </header>
 
           <section class="framework-intro" aria-labelledby="framework-titulo">
@@ -90,7 +91,7 @@
 
           <section class="criteria-section criteria-model" aria-labelledby="campos-regra-titulo">
             <h3 id="campos-regra-titulo">Como uma orientação virou critério</h3>
-            <p>Cada critério segue a mesma frase-modelo, com cinco campos, e mantém o vínculo com a orientação que o fundamentou.</p>
+            <p>Todo critério segue a mesma frase-modelo e cita a orientação que o fundamenta.</p>
             <p class="framework-formula">O <strong>[objeto]</strong> deve <strong>[condição esperada]</strong> em <strong>[contexto]</strong>, a fim de <strong>[objetivo]</strong>, conforme <strong>[referência normativa]</strong>.</p>
 
             <ol class="framework-fields" aria-label="Os cinco campos do framework">
@@ -121,20 +122,20 @@
 
             <p class="subsection-label">Os mesmos critérios, classificados por aplicação</p>
             <dl class="criteria-scope">
-              <div><dt><strong>27</strong> gerais</dt><dd>Aplicáveis de forma ampla às páginas e aos conteúdos.</dd></div>
-              <div><dt><strong>21</strong> condicionais</dt><dd>Aplicáveis quando o recurso ou a situação existe.</dd></div>
-              <div><dt><strong>7</strong> de gestão</dt><dd>Relacionados à manutenção e ao acompanhamento.</dd></div>
+              <div><dt><strong>27</strong> gerais</dt><dd>Valem para todas as páginas e conteúdos.</dd></div>
+              <div><dt><strong>21</strong> condicionais</dt><dd>Valem quando o recurso ou a situação existe.</dd></div>
+              <div><dt><strong>7</strong> de gestão</dt><dd>Manutenção e acompanhamento.</dd></div>
             </dl>
           </section>
 
           <aside class="semantic-summary" aria-labelledby="html-complementar-titulo">
             <h3 id="html-complementar-titulo">Exame complementar do HTML</h3>
-            <p><strong>133 verificações</strong> distribuídas em <strong>13 grupos</strong> para examinar a estrutura semântica do HTML.</p>
-            <p>Esse catálogo foi organizado depois dos 55 critérios. Seus itens são verificações previstas, não uma contagem de problemas encontrados.</p>
+            <p><strong>133 verificações</strong> em <strong>13 grupos</strong> para a estrutura semântica do HTML.</p>
+            <p>São verificações previstas, não problemas encontrados.</p>
           </aside>
 
           <nav class="story-links" aria-label="Referências dos critérios">
-            <a class="text-link" href="https://drive.google.com/drive/folders/1u791cSxtQ7Y1opNp4ETsPRGPNmP7GCii?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Consultar documentação legal (abre em nova aba)">Consultar documentação legal <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://drive.google.com/drive/folders/1u791cSxtQ7Y1opNp4ETsPRGPNmP7GCii?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar arquivos da base legal (abre em nova aba)">Consultar arquivos da base legal <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://www.gov.br/ds/downloads/manuais-orientadores" target="_blank" rel="noopener noreferrer" aria-label="Consultar manuais orientadores (abre em nova aba)">Consultar manuais orientadores <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://drive.google.com/file/d/1zS2lJPjQu-rgT3tjtWV-Beyt47jyjLlf/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Consultar os critérios de auditoria (abre em nova aba)">Consultar os critérios de auditoria <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="../auditoria-acessibilidade/index.html">Ver critérios aplicados na auditoria <span aria-hidden="true">→</span></a>
@@ -154,22 +155,22 @@
               <li>Mapa no Figma</li><li>Crawler</li><li>Inventário de endereços</li><li>Arquivo preservado</li><li>Identificador</li>
             </ol>
             <ul class="method-notes">
-              <li><strong>Mapear.</strong> O levantamento começou com um mapa de páginas no Figma. Depois, um crawler, programa que visita páginas, registrou os links encontrados.</li>
-              <li><strong>Preservar.</strong> Outros scripts acessaram os endereços, guardaram cópias de HTML e PDF e registraram erros e redirecionamentos.</li>
-              <li><strong>Identificar.</strong> Cada arquivo recebeu um identificador que o liga ao registro correspondente. Quando o acesso falhou, a falha também foi registrada.</li>
+              <li><strong>Mapear.</strong> Um mapa de páginas no Figma e, depois, um crawler, programa que visita páginas e registra links.</li>
+              <li><strong>Preservar.</strong> Scripts guardaram cópias de HTML e PDF e registraram erros e redirecionamentos.</li>
+              <li><strong>Identificar.</strong> Cada arquivo recebeu um identificador ligado ao seu registro, inclusive quando o acesso falhou.</li>
             </ul>
 
             <div class="br-message info project-alert" role="note" aria-labelledby="alerta-enderecos-titulo">
               <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg>
-              <div><p id="alerta-enderecos-titulo"><strong>Dois endereços podem levar ao mesmo arquivo.</strong></p><p>O Plone também usa endereços técnicos, como <code>@@download/file</code>. Por isso, contamos separadamente endereços encontrados e arquivos confirmados, e só consideramos a duplicidade depois de conferir o destino.</p></div>
+              <div><p id="alerta-enderecos-titulo"><strong>Dois endereços podem levar ao mesmo arquivo.</strong></p><p>O Plone também usa endereços técnicos, como <code>@@download/file</code>. Por isso, contamos endereços e arquivos separadamente e só marcamos duplicidade após conferir o destino.</p></div>
             </div>
           </section>
 
           <div class="evidence-grid evidence-grid--process" aria-label="Evidências visuais do mapeamento e da coleta">
-            <figure class="evidence-figure evidence-figure--wide"><a href="./assets/img/processo/mapa-navegacao-figma.webp"><img src="./assets/img/processo/mapa-navegacao-figma.webp" alt="Captura do mapa manual de páginas e caminhos da CGDI no Figma" loading="lazy"></a><figcaption><strong>Mapa de páginas no Figma.</strong> O levantamento começou com um mapa manual. <span>Selecione para ampliar.</span></figcaption></figure>
-            <figure class="evidence-figure"><a href="./assets/img/processo/02-codigo-crawler.webp"><img src="./assets/img/processo/02-codigo-crawler.webp" alt="Trecho do programa usado para percorrer o portal" loading="lazy"></a><figcaption><strong>Código do crawler.</strong> O programa passou a registrar links em escala. <span>Selecione para ampliar.</span></figcaption></figure>
-            <figure class="evidence-figure"><a href="./assets/img/processo/lista-urls-crawler.webp"><img src="./assets/img/processo/lista-urls-crawler.webp" alt="Captura da planilha que relaciona identificadores aos endereços encontrados pelo crawler" loading="lazy"></a><figcaption><strong>Planilha de endereços.</strong> O inventário organiza os destinos encontrados. <span>Selecione para ampliar.</span></figcaption></figure>
-            <figure class="evidence-figure evidence-figure--wide"><a href="./assets/img/processo/04-arquivos-coletados.webp"><img src="./assets/img/processo/04-arquivos-coletados.webp" alt="Captura das pastas dos arquivos preservados, nomeadas com os identificadores da planilha" loading="lazy"></a><figcaption><strong>Arquivos preservados.</strong> As cópias ficam identificadas para conferência. <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure evidence-figure--wide"><a href="./assets/img/processo/mapa-navegacao-figma.webp"><img src="./assets/img/processo/mapa-navegacao-figma.webp" alt="Captura do mapa manual de páginas e caminhos da CGDI no Figma" loading="lazy"></a><figcaption><strong>Mapa de páginas no Figma.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure"><a href="./assets/img/processo/02-codigo-crawler.webp"><img src="./assets/img/processo/02-codigo-crawler.webp" alt="Trecho do programa usado para percorrer o portal" loading="lazy"></a><figcaption><strong>Código do crawler.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure"><a href="./assets/img/processo/lista-urls-crawler.webp"><img src="./assets/img/processo/lista-urls-crawler.webp" alt="Captura da planilha que relaciona identificadores aos endereços encontrados pelo crawler" loading="lazy"></a><figcaption><strong>Planilha de endereços.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure evidence-figure--wide"><a href="./assets/img/processo/04-arquivos-coletados.webp"><img src="./assets/img/processo/04-arquivos-coletados.webp" alt="Captura das pastas dos arquivos preservados, nomeadas com os identificadores da planilha" loading="lazy"></a><figcaption><strong>Arquivos preservados.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
           </div>
         </article>
 
@@ -177,8 +178,19 @@
           <header class="chapter-heading">
             <p class="story-number">Capítulo 04 · Auditoria</p>
             <h2>Da evidência ao diagnóstico</h2>
-            <p>Criamos programas para examinar páginas e arquivos, localizar elementos do conteúdo e registrar cada problema junto à sua evidência.</p>
+            <p>Programas examinaram páginas e arquivos e registraram cada problema com sua evidência.</p>
           </header>
+
+          <section class="method-section" aria-labelledby="como-fizemos-titulo">
+            <h3 id="como-fizemos-titulo">Como fizemos a auditoria</h3>
+            <p>Para fazer a auditoria, desenvolvemos programas (scripts) em Python. Modelos de inteligência artificial (LLMs) nos auxiliaram na programação, nos testes e na revisão desse código.</p>
+            <p>Esses programas percorreram o portal do INPI para coletar, organizar e examinar páginas, links, imagens, formulários e documentos PDF, verificando o que pode impedir quem usa leitor de tela ou teclado de navegar e entender o conteúdo.</p>
+          </section>
+
+          <aside class="method-highlight" aria-labelledby="metodo-importa-titulo">
+            <h3 id="metodo-importa-titulo">Por que esse método importa?</h3>
+            <p>Trabalhar em grande escala permitiu examinar milhares de arquivos, localizar os conteúdos que merecem atenção e reunir evidências para orientar as melhorias. <strong>Os programas podem ser adaptados para auditar outros sites do governo federal</strong>, desde que os endereços, sistemas e formatos de cada um sejam verificados separadamente.</p>
+          </aside>
 
           <section class="traceability" aria-labelledby="rastreabilidade-titulo">
             <h3 id="rastreabilidade-titulo">Como os critérios orientaram a auditoria</h3>
@@ -215,16 +227,18 @@
 
           <section class="audit-section" aria-labelledby="inspecao-real-titulo">
             <h3 id="inspecao-real-titulo">Da interface à evidência técnica</h3>
-            <p class="section-intro">Dois exemplos reais: como um leitor de tela anuncia um link e como um elemento publicado é relacionado ao seu código.</p>
             <div class="evidence-grid evidence-grid--media">
-              <figure class="evidence-figure"><video controls playsinline preload="metadata" poster="./assets/img/processo/05-exemplo-navegacao-leitor-tela.webp"><source src="./assets/video/leitor-de-tela.mp4" type="video/mp4"><a href="./assets/video/leitor-de-tela.mp4">Baixar a gravação do leitor de tela</a>.</video><figcaption><strong>Leitor de tela em uso.</strong> Quando o rótulo é inadequado, a navegação fica ambígua ou incompleta. O texto no vídeo descreve o que é anunciado.</figcaption></figure>
-              <figure class="evidence-figure"><a href="./assets/img/processo/codigo-alt-exemplo-2.webp"><img src="./assets/img/processo/codigo-alt-exemplo-2.webp" alt="Captura da interface do portal e do inspetor do navegador, com o atributo alternativo de uma imagem destacado" loading="lazy"></a><figcaption><strong>Interface e código.</strong> O elemento publicado e o trecho de código ficam reunidos para conferência. <span>Selecione para ampliar.</span></figcaption></figure>
+              <figure class="evidence-figure"><video controls playsinline preload="metadata" poster="./assets/img/processo/05-exemplo-navegacao-leitor-tela.webp"><source src="./assets/video/leitor-de-tela.mp4" type="video/mp4"><a href="./assets/video/leitor-de-tela.mp4">Baixar a gravação do leitor de tela</a>.</video><figcaption><strong>Leitor de tela em uso.</strong> Com rótulos inadequados, a navegação fica ambígua.</figcaption></figure>
+              <figure class="evidence-figure"><a href="./assets/img/processo/codigo-alt-exemplo-2.webp"><img src="./assets/img/processo/codigo-alt-exemplo-2.webp" alt="Captura da interface do portal e do inspetor do navegador, com o atributo alternativo de uma imagem destacado" loading="lazy"></a><figcaption><strong>Interface e código.</strong> O elemento publicado ao lado do seu código. <span>Selecione para ampliar.</span></figcaption></figure>
             </div>
           </section>
 
           <section class="audit-cta" aria-labelledby="documentado-titulo">
-            <div><h3 id="documentado-titulo">O que ficou documentado</h3><p>Cada evidência foi registrada em planilha e resumida em fichas de diagnóstico com recomendação para a CGDI.</p></div>
-            <a class="action-link" href="../auditoria-acessibilidade/index.html">Explorar a auditoria completa <span aria-hidden="true">→</span></a>
+            <div><h3 id="documentado-titulo">O que ficou documentado</h3><p>Evidências registradas em planilhas e resumidas em fichas de diagnóstico com recomendações.</p></div>
+            <div class="audit-cta-actions">
+              <a class="action-link" href="../auditoria-acessibilidade/index.html">Explorar a auditoria completa <span aria-hidden="true">→</span></a>
+              <a class="action-link action-link--secondary" href="https://drive.google.com/drive/folders/1OnPS7MlRquGe8Q18eP8Xe65L0jxMgogZ?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar as planilhas da auditoria (abre em nova aba)">Consultar as planilhas <span aria-hidden="true">↗</span></a>
+            </div>
           </section>
         </article>
 
@@ -232,20 +246,20 @@
           <header class="chapter-heading">
             <p class="story-number">Capítulo 05 · Organização</p>
             <h2>Como estudamos a organização dos assuntos</h2>
-            <p>O inventário também ajudou a revisar a organização dos conteúdos. Preparamos cartões com assuntos do portal para uma pesquisa de Card Sorting.</p>
+            <p>Com o inventário, preparamos cartões com os assuntos do portal para uma pesquisa de Card Sorting.</p>
           </header>
 
           <section class="method-section" aria-labelledby="card-sorting-titulo">
             <h3 id="card-sorting-titulo">O que é Card Sorting</h3>
-            <p>As pessoas organizam cartões com assuntos em grupos que fazem sentido para elas. Isso ajuda a investigar como os conteúdos podem ser agrupados e nomeados.</p>
+            <p>As pessoas agrupam cartões de assuntos como faz sentido para elas, o que mostra como os conteúdos podem ser organizados e nomeados.</p>
             <ol class="flow-chain flow-chain--short" aria-label="Percurso documentado do Card Sorting">
               <li>Inventário</li><li>Revisão de nomes e sobreposições</li><li>Cartões no UserBit</li>
             </ol>
           </section>
 
           <div class="evidence-grid evidence-grid--two" aria-label="Evidências visuais da organização dos assuntos">
-            <figure class="evidence-figure"><a href="./assets/img/processo/inventario-conteudo-card-sorting.webp"><img src="./assets/img/processo/inventario-conteudo-card-sorting.webp" alt="Captura da planilha de inventário usada para revisar nomes e sobreposições" loading="lazy"></a><figcaption><strong>Inventário.</strong> Revisão dos nomes dos assuntos e das sobreposições. <span>Selecione para ampliar.</span></figcaption></figure>
-            <figure class="evidence-figure"><a href="./assets/img/processo/userbit-card-sorting.webp"><img src="./assets/img/processo/userbit-card-sorting.webp" alt="Captura do UserBit com cartões e áreas de agrupamento configuradas para a pesquisa" loading="lazy"></a><figcaption><strong>Plataforma de cartões.</strong> Organização dos cartões para a pesquisa. <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure"><a href="./assets/img/processo/inventario-conteudo-card-sorting.webp"><img src="./assets/img/processo/inventario-conteudo-card-sorting.webp" alt="Captura da planilha de inventário usada para revisar nomes e sobreposições" loading="lazy"></a><figcaption><strong>Inventário.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure"><a href="./assets/img/processo/userbit-card-sorting.webp"><img src="./assets/img/processo/userbit-card-sorting.webp" alt="Captura do UserBit com cartões e áreas de agrupamento configuradas para a pesquisa" loading="lazy"></a><figcaption><strong>Plataforma de cartões.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
           </div>
         </article>
 
@@ -253,24 +267,24 @@
           <header class="chapter-heading">
             <p class="story-number">Capítulo 06 · Protótipos</p>
             <h2>Como o diagnóstico virou interface</h2>
-            <p>As evidências da auditoria, a revisão dos conteúdos e os padrões do Design System Gov.br orientaram duas propostas navegáveis.</p>
+            <p>A auditoria, a revisão dos conteúdos e o Design System Gov.br orientaram duas propostas navegáveis.</p>
           </header>
 
           <div class="proposal-grid">
-            <article><p>Proposta 01</p><h3>Revisão da estrutura atual</h3><p>Melhorias de conteúdo, navegação, interface e acessibilidade, mantendo a organização principal da página.</p><a href="../../prototipos/estrutura-atual-revisada/index.html">Conhecer a proposta 01 <span aria-hidden="true">→</span></a></article>
-            <article><p>Proposta 02</p><h3>Experiência orientada à ação</h3><p>Organização das informações a partir das necessidades e tarefas de quem usa o portal.</p><a href="../../prototipos/orientado-a-acao/index.html">Conhecer a proposta 02 <span aria-hidden="true">→</span></a></article>
+            <article><p>Proposta 01</p><h3>Revisão da estrutura atual</h3><p>Melhora conteúdo, navegação, interface e acessibilidade, mantendo a organização atual.</p><a href="../../prototipos/estrutura-atual-revisada/index.html">Conhecer a proposta 01 <span aria-hidden="true">→</span></a></article>
+            <article><p>Proposta 02</p><h3>Experiência orientada à ação</h3><p>Organiza as informações a partir das tarefas de quem usa o portal.</p><a href="../../prototipos/orientado-a-acao/index.html">Conhecer a proposta 02 <span aria-hidden="true">→</span></a></article>
           </div>
 
           <section class="predownload-demo" aria-labelledby="predownload-titulo">
             <div class="predownload-intro">
               <p class="section-kicker">Exemplo de solução · Componente de pré-download</p>
               <h3 id="predownload-titulo">Entender o documento antes de abrir ou baixar</h3>
-              <p>O pré-download reúne as informações principais de um arquivo e separa as ações de consulta e download.</p>
+              <p>Reúne as informações principais do arquivo e separa as ações de abrir e baixar.</p>
             </div>
 
             <div class="br-message info project-alert" role="note" aria-labelledby="problema-observado-titulo">
               <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg>
-              <div><p id="problema-observado-titulo"><strong>Problema observado</strong></p><p>Na apresentação atual, dados como descrição, formato e tamanho podem ficar dispersos. Isso dificulta reconhecer e comparar documentos antes de abri-los.</p></div>
+              <div><p id="problema-observado-titulo"><strong>Problema observado</strong></p><p>Hoje, descrição, formato e tamanho ficam dispersos, o que dificulta reconhecer e comparar documentos.</p></div>
             </div>
 
             <h3 class="demo-subheading">Demonstração funcional</h3>
@@ -352,7 +366,7 @@
               <article><h3>Comparar</h3><p>Formato, tamanho e assuntos aparecem juntos.</p></article>
               <article><h3>Escolher</h3><p>Abrir, baixar e consultar detalhes são ações separadas.</p></article>
             </div>
-            <p class="benefits-note"><strong>Monitoramento e busca.</strong> Com o monitoramento configurado, essas ações podem ser medidas. As informações publicadas em HTML também ajudam os buscadores a encontrar os documentos.</p>
+            <p class="benefits-note"><strong>Monitoramento e busca.</strong> Com monitoramento configurado, essas ações podem ser medidas. As informações em HTML também ajudam os buscadores.</p>
           </section>
 
           <section class="project-closing" aria-labelledby="encerramento-projeto-titulo">

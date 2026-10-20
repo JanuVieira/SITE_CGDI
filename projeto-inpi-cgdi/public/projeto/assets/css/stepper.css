@@ -1,0 +1,58 @@
+/* Stepper lateral compartilhado pelas páginas de projeto e de auditoria. */
+.story-stepper {
+  position: sticky;
+  top: 20px;
+  max-height: calc(100vh - 40px);
+  padding: 18px 0;
+  overflow-y: auto;
+}
+.story-stepper > p { margin: 0 0 12px; color: var(--quiet, #86868b); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.story-stepper ol { margin: 0; padding: 0; list-style: none; }
+.story-stepper li { position: relative; margin: 0; padding-left: 18px; }
+.story-stepper li::before { position: absolute; inset: 0 auto 0 5px; width: 1px; background: var(--line, #d2d2d7); content: ""; }
+.story-stepper a {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  min-height: 46px;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 18px 7px 7px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: var(--muted, #6e6e73);
+  font-size: .875rem;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.story-stepper a > span:first-child {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line, #d2d2d7);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--muted, #6e6e73);
+  font-size: .6875rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.story-stepper a:hover { background: var(--surface, #f5f5f7); color: var(--ink, #1d1d1f); }
+.story-stepper a.is-current,
+.story-stepper a[aria-current="step"] { border-color: var(--line, #d2d2d7); background: var(--surface, #f5f5f7); color: var(--ink, #1d1d1f); font-weight: 700; }
+.story-stepper a.is-current::after,
+.story-stepper a[aria-current="step"]::after { position: absolute; right: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--ink, #1d1d1f); content: ""; }
+.story-stepper a.is-current > span:first-child,
+.story-stepper a[aria-current="step"] > span:first-child { border-color: var(--ink, #1d1d1f); background: var(--ink, #1d1d1f); color: #fff; }
+
+@media (max-width: 900px) {
+  .story-stepper { top: 0; z-index: 20; max-width: 100%; max-height: none; margin: 0 0 28px; padding: 12px 0; overflow-x: auto; overflow-y: hidden; border-block: 1px solid var(--line-soft, #e5e5e5); background: #fff; overscroll-behavior-inline: contain; scrollbar-width: thin; }
+  .story-stepper > p { margin-bottom: 8px; }
+  .story-stepper ol { display: flex; width: max-content; gap: 6px; }
+  .story-stepper li { padding: 0; }
+  .story-stepper li::before { display: none; }
+  .story-stepper a { display: inline-flex; width: auto; min-height: 44px; padding: 5px 26px 5px 5px; white-space: nowrap; }
+  .story-stepper a > span:first-child { flex: 0 0 32px; }
+}
