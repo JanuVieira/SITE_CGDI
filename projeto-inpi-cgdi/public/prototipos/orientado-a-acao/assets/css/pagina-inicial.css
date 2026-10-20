@@ -1741,7 +1741,7 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf {
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf > .v2-container > .v2-opening-intro {
-  margin:clamp(32px,4vw,48px) 0 clamp(128px,13vw,160px);
+  margin:clamp(32px,4vw,48px) 0 clamp(160px,15vw,192px);
   text-align:left;
 }
 
@@ -1834,30 +1834,30 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf :is(
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-card {
-  min-height:376px;
+  min-height:400px;
   grid-template-columns:minmax(0,1fr) minmax(420px,.92fr);
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-copy {
-  padding:clamp(28px,3.25vw,40px);
+  padding:clamp(32px,3.5vw,44px);
   align-items:flex-start;
   text-align:left;
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-date {
-  margin-bottom:12px;
+  margin-bottom:16px;
   font-weight:500;
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-news-copy {
   max-width:56ch;
-  margin:0 0 36px;
+  margin:0 0 32px;
 }
 
 body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-news-copy h2 {
   max-width:28ch;
   min-height:0;
-  margin:0 0 20px;
+  margin:0 0 1rem;
   font-size:var(--v2-title-feature)!important;
   font-weight:700;
   line-height:1.2;
@@ -2056,14 +2056,14 @@ body.cgdi-page[data-version="V2"] .home-v2-pdf cgdi-card[variant="inverse"] p {
     font-size:1rem;
   }
   body.cgdi-page[data-version="V2"] .home-v2-pdf > .v2-container > .v2-opening-intro {
-    margin:24px 0 112px;
+    margin:24px 0 128px;
     text-align:left;
   }
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-opening-title {max-width:22ch}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-section-title {max-width:26ch;margin-bottom:24px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-grid {gap:16px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-card {grid-template-columns:1fr;min-height:0}
-  body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-copy {padding:24px}
+  body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-feature-copy {padding:28px 24px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-news-copy {margin-bottom:28px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf :is(cgdi-card[variant="standard"],cgdi-card[variant="support"],cgdi-card[variant="large"]) {min-height:0;padding:24px}
   body.cgdi-page[data-version="V2"] .home-v2-pdf .v2-protection cgdi-card > :is(h3,p) {min-height:0}
