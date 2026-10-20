@@ -22,7 +22,7 @@ const requiredPages = [
   'prototipos/orientado-a-acao/index.html'
 ];
 const publicExtensions = new Set([
-  '.css', '.gif', '.html', '.ico', '.jpeg', '.jpg', '.js', '.json', '.otf',
+  '.css', '.gif', '.html', '.ico', '.jpeg', '.jpg', '.js', '.json', '.mp4', '.otf',
   '.pdf', '.png', '.svg', '.ttf', '.webmanifest', '.webp', '.woff', '.woff2', '.xml'
 ]);
 const blockedSegments = new Set([
