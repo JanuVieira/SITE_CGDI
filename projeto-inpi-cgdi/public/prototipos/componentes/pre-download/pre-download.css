@@ -55,8 +55,8 @@ cgdi-pre-download .pd-cover-mask > img.pd-cover--software {
   transform-origin: center center;
 }
 cgdi-pre-download .pd-content { display: flex; flex-direction: column; min-width: 0; min-height: 300px; }
-/* Com os detalhes abertos, a capa mantém a proporção original no topo em vez de esticar com o texto. */
-cgdi-pre-download .pd-card-body:has(.pd-details:not([hidden])) .pd-cover-mask { height: 300px; align-self: start; }
+/* Expandido, a capa fica no topo com a altura do estado compacto (definida pelo pre-download.js). */
+cgdi-pre-download .pd-card.is-expanded .pd-cover-mask { align-self: start; }
 cgdi-pre-download .pd-file {
   display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
   min-height: 28px; margin: 0 0 12px; padding: 0;

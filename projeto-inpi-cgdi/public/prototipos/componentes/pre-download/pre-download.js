@@ -7,6 +7,9 @@
     const toggle = card.querySelector('[data-pd-toggle]');
     const cardBody = card.querySelector('.pd-card');
     if (!details || !toggle) return;
+    // A capa mantém a altura do estado compacto: abrir os detalhes não a redimensiona.
+    const cover = card.querySelector('.pd-cover-mask');
+    if (cover) cover.style.height = expanded ? `${cover.getBoundingClientRect().height}px` : '';
     details.hidden = !expanded;
     toggle.setAttribute('aria-expanded', String(expanded));
     card.classList.toggle('is-expanded', expanded);
