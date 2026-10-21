@@ -116,7 +116,7 @@ main { padding-bottom: 112px; }
 
 .opening-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1px;
   margin: 48px 0 0;
   padding: 1px;
@@ -524,6 +524,7 @@ cgdi-pre-download .pd-card > .component-alert { width: 100%; margin: 0; padding:
   .story-content { max-width: none; }
   .story-step { scroll-margin-top: 112px; }
   .opening-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .opening-metrics div:last-child { grid-column: 1 / -1; }
 }
 
 @media (max-width: 700px) {
