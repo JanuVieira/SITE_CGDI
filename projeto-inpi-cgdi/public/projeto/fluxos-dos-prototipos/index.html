@@ -267,17 +267,31 @@
 
             <section class="guideline-quotes" aria-labelledby="orientacoes-download-titulo">
               <h4 id="orientacoes-download-titulo">O que as orientações oficiais pedem</h4>
+              <p class="guideline-group"><span aria-hidden="true">1</span> Publicar o conteúdo preferencialmente em HTML</p>
               <div class="guideline-quotes-grid">
-                <figure><blockquote><p>“É necessário, também, <strong>informar o formato e o tamanho do arquivo no próprio texto do link</strong>, por exemplo: Manual do W3C (formato .odt, tamanho 150 Kb).”</p></blockquote><figcaption>Cartilha Gov.br de conteúdo acessível, 2023</figcaption></figure>
-                <figure><blockquote><p>“Um dos formatos mais acessíveis é o próprio HTML; por isso, disponibilize documentos nesse formato. Outra estratégia é <strong>oferecer várias opções de formatos, incluindo sempre o HTML e o ODF</strong>.”</p></blockquote><figcaption>Cartilha Gov.br de conteúdo acessível, 2023</figcaption></figure>
-                <figure><blockquote><p>“Junto com o nome <strong>deve ser agregada a extensão do arquivo</strong> que está sendo disponibilizado para download, para que o usuário saiba que tipo de documento está disponível para baixar. O seu conteúdo deve estar disponibilizado de forma mais simples possível, para facilitar a compreensão do usuário.”</p></blockquote><figcaption>Checklist eMAG de acessibilidade para deficientes visuais</figcaption></figure>
-                <figure><blockquote><p>“Sugere-se <strong>colocar a extensão junto com o nome do arquivo</strong>, para que o DV [deficiente visual] tenha conhecimento do tipo de arquivo que está sendo disponibilizado.”</p></blockquote><figcaption>Checklist eMAG para desenvolvedores, seção 2.2 Conteúdos</figcaption></figure>
+                <figure><p class="quote-takeaway">HTML como formato preferencial</p><blockquote><p>“Os documentos devem ser <strong>disponibilizados preferencialmente em HTML</strong>. […] Se um arquivo for disponibilizado em PDF, deverá ser fornecida uma alternativa em HTML ou ODF.”</p></blockquote><figcaption>eMAG 3.1, recomendação 3.8</figcaption></figure>
+                <figure><p class="quote-takeaway">HTML e ODF sempre entre as opções</p><blockquote><p>“Um dos formatos mais acessíveis é o próprio HTML; por isso, disponibilize documentos nesse formato. Outra estratégia é <strong>oferecer várias opções de formatos, incluindo sempre o HTML e o ODF</strong>.”</p></blockquote><figcaption>Cartilha Gov.br de conteúdo acessível, 2023</figcaption></figure>
+              </div>
+              <p class="guideline-group"><span aria-hidden="true">2</span> Informar formato e tamanho antes do clique</p>
+              <div class="guideline-quotes-grid guideline-quotes-grid--three">
+                <figure><p class="quote-takeaway">Formato e tamanho no texto do link</p><blockquote><p>“É necessário, também, <strong>informar o formato e o tamanho do arquivo no próprio texto do link</strong>, por exemplo: Manual do W3C (formato .odt, tamanho 150 Kb).”</p></blockquote><figcaption>Cartilha Gov.br de conteúdo acessível, 2023</figcaption></figure>
+                <figure><p class="quote-takeaway">Extensão junto ao nome do arquivo</p><blockquote><p>“Junto com o nome <strong>deve ser agregada a extensão do arquivo</strong> que está sendo disponibilizado para download, para que o usuário saiba que tipo de documento está disponível para baixar.”</p></blockquote><figcaption>Checklist eMAG de acessibilidade para deficientes visuais</figcaption></figure>
+                <figure><p class="quote-takeaway">Tipo do arquivo claro para quem usa leitor de tela</p><blockquote><p>“Sugere-se <strong>colocar a extensão junto com o nome do arquivo</strong>, para que o DV [deficiente visual] tenha conhecimento do tipo de arquivo que está sendo disponibilizado.”</p></blockquote><figcaption>Checklist eMAG para desenvolvedores, seção 2.2 Conteúdos</figcaption></figure>
               </div>
             </section>
 
+            <aside class="method-highlight predownload-reach" aria-labelledby="indexacao-monitoramento-titulo">
+              <h3 id="indexacao-monitoramento-titulo">Indexação e monitoramento</h3>
+              <ul>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><div><strong>Indexação nos buscadores</strong><p>Título, resumo, formato e assuntos escritos em HTML ficam legíveis para buscadores e leitores de tela, sem abrir o arquivo. O Google indexa páginas HTML e também PDF.</p></div></li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><strong>Monitoramento de downloads</strong><p>Na medição otimizada do Google Analytics 4, cliques em links para arquivos, como .pdf, geram o evento <code>file_download</code>, com nome, extensão e texto do link. Abrir e baixar, separados no componente, podem ter eventos próprios.</p></div></li>
+              </ul>
+              <p class="predownload-sources">Fontes: eMAG 3.1, recomendação 3.8; Google Search Central, tipos de arquivo indexáveis; Ajuda do Google Analytics, medição otimizada.</p>
+            </aside>
+
             <div class="br-message info project-alert" role="note" aria-labelledby="solucao-proposta-titulo">
               <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.7 2.7L16.5 9"/></svg>
-              <div><p id="solucao-proposta-titulo"><strong>Solução proposta</strong></p><p>Um componente de pré-download que informe título, finalidade, data, formato, tamanho e licença antes do clique, mantendo as informações essenciais também disponíveis em HTML estruturado.</p></div>
+              <div><p id="solucao-proposta-titulo"><strong>Solução proposta</strong></p><p>Um componente de pré-download que informe, antes do clique:</p><ul class="solution-fields" aria-label="Informações apresentadas antes do clique"><li>Título</li><li>Finalidade</li><li>Data</li><li>Formato</li><li>Tamanho</li><li>Licença</li></ul><p>As informações essenciais ficam também disponíveis em HTML estruturado.</p></div>
             </div>
 
             <h3 class="demo-subheading">Demonstração funcional</h3>
@@ -359,7 +373,6 @@
               <article><h3>Comparar</h3><p>Formato, tamanho e assuntos aparecem juntos.</p></article>
               <article><h3>Escolher</h3><p>Abrir, baixar e consultar detalhes são ações separadas.</p></article>
             </div>
-            <p class="benefits-note"><strong>Monitoramento e busca.</strong> Com monitoramento configurado, essas ações podem ser medidas. As informações em HTML também ajudam os buscadores.</p>
           </section>
         </article>
       </div>

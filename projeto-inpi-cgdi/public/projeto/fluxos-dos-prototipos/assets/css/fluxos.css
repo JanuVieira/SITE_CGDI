@@ -461,11 +461,22 @@ code { padding: .12em .35em; border-radius: 4px; background: #e8e8ea; color: var
 .predownload-intro .section-kicker { margin-bottom: 14px; }
 .guideline-quotes { margin-top: 36px; }
 .guideline-quotes h4 { margin: 0; color: var(--quiet); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.guideline-quotes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+.guideline-quotes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 12px; }
+.guideline-group { display: flex; align-items: flex-start; gap: 10px; line-height: 1.35; margin: 22px 0 0; color: var(--ink); font-size: 1rem; font-weight: 700; }
+.guideline-group span { flex: none; margin-top: -2px; display: inline-grid; width: 26px; height: 26px; place-items: center; border-radius: 50%; background: var(--ink); color: #fff; font-size: .75rem; }
+.guideline-quotes-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.predownload-reach { margin-top: 36px; }
+.solution-fields { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 14px; padding: 0; list-style: none; }
+.solution-fields li { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--ink); font-size: .875rem; font-weight: 650; }
+.guideline-group:first-of-type { margin-top: 16px; }
+.guideline-quotes-grid + .guideline-group { margin-top: 32px; }
+.predownload-sources { margin: 22px 0 0; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8125rem; line-height: 1.5; }
 .guideline-quotes figure { display: flex; flex-direction: column; justify-content: space-between; gap: 18px; min-width: 0; margin: 0; padding: 22px 24px; border: 1px solid var(--line-soft); border-radius: 18px; background: #fff; }
 .guideline-quotes blockquote { margin: 0; padding: 0; border: 0; background: transparent; }
-.guideline-quotes blockquote p { margin: 0; color: var(--secondary); font-size: .9375rem; font-style: normal; line-height: 1.6; }
-.guideline-quotes blockquote strong { color: var(--ink); }
+.quote-takeaway { margin: 0 0 -6px; color: var(--ink); font-size: 1.05rem; font-weight: 700; line-height: 1.3; letter-spacing: -.015em; }
+.guideline-quotes figure > p + blockquote { flex: 1; }
+.guideline-quotes blockquote p { margin: 0; color: var(--muted); font-size: .875rem; font-style: normal; line-height: 1.6; }
+.guideline-quotes blockquote strong { color: var(--secondary); font-weight: 600; }
 .guideline-quotes figcaption { padding-top: 12px; border-top: 1px solid var(--line-soft); color: var(--muted); font-size: .8125rem; font-weight: 650; }
 .demo-subheading { margin: 40px 0 0; color: var(--ink); font-size: 1.35rem; letter-spacing: -.02em; }
 .demo-controls {
@@ -522,8 +533,6 @@ cgdi-pre-download .pd-card > .component-alert { width: 100%; margin: 0; padding:
 .benefits article { padding: 24px; border-top: 2px solid var(--ink); background: var(--surface-soft); }
 .benefits article h3 { margin: 0; font-size: 1.1rem; }
 .benefits article p { margin: 10px 0 0; color: var(--secondary); font-size: .9375rem; line-height: 1.55; }
-.benefits-note { max-width: 760px; margin: 22px 0 0; color: var(--muted); font-size: .9375rem; line-height: 1.6; }
-.benefits-note strong { color: var(--secondary); }
 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); border: 0; white-space: nowrap; }
@@ -570,6 +579,7 @@ cgdi-pre-download .pd-card > .component-alert { width: 100%; margin: 0; padding:
   .chapter-heading > p:last-child { font-size: 1.0625rem; }
   .commitment-grid,
   .guideline-quotes-grid,
+  .guideline-quotes-grid--three,
   .criteria-themes,
   .criteria-scope,
   .semantic-summary,
