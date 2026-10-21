@@ -80,19 +80,9 @@
           </header>
 
           <dl class="criteria-origin" aria-label="Da base legal aos critérios">
-            <div><dt>Base legal</dt><dd><strong>46</strong> documentos</dd></div>
-            <div><dt>Resultado</dt><dd><strong>55</strong> critérios verificáveis</dd></div>
+            <div><dt>Base legal</dt><dd><strong>46</strong> documentos<a class="origin-link" href="https://drive.google.com/drive/folders/1u791cSxtQ7Y1opNp4ETsPRGPNmP7GCii?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar os 46 documentos da base legal (abre em nova aba)">Consultar documentos <span aria-hidden="true">↗</span></a></dd></div>
+            <div><dt>Resultado</dt><dd><strong>55</strong> critérios verificáveis<a class="origin-link" href="https://drive.google.com/file/d/1zS2lJPjQu-rgT3tjtWV-Beyt47jyjLlf/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Consultar os 55 critérios de auditoria (abre em nova aba)">Consultar critérios <span aria-hidden="true">↗</span></a></dd></div>
           </dl>
-
-          <section class="framework-intro" aria-labelledby="framework-titulo">
-            <p class="section-kicker">O framework de auditoria</p>
-            <h3 id="framework-titulo">Da regra oficial à recomendação documentada</h3>
-            <ol class="framework-movements">
-              <li><span>01</span><strong>Fundamentar</strong><p>Localizar a orientação oficial e escrever um critério verificável.</p></li>
-              <li><span>02</span><strong>Examinar</strong><p>Conferir o conteúdo publicado e registrar a evidência encontrada.</p></li>
-              <li><span>03</span><strong>Documentar</strong><p>Explicar o problema, a possível consequência e a recomendação.</p></li>
-            </ol>
-          </section>
 
           <section class="criteria-section criteria-model" aria-labelledby="campos-regra-titulo">
             <h3 id="campos-regra-titulo">Como uma orientação virou critério</h3>
@@ -133,15 +123,6 @@
             </dl>
           </section>
 
-          <aside class="semantic-summary" aria-labelledby="html-complementar-titulo">
-            <h3 id="html-complementar-titulo">Exame complementar do HTML</h3>
-            <p><strong>133 verificações</strong> em <strong>13 grupos</strong> para a estrutura semântica do HTML.</p>
-          </aside>
-
-          <nav class="story-links" aria-label="Referências dos critérios">
-            <a class="text-link" href="https://drive.google.com/drive/folders/1u791cSxtQ7Y1opNp4ETsPRGPNmP7GCii?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar arquivos da base legal (abre em nova aba)">Consultar arquivos da base legal <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://drive.google.com/file/d/1zS2lJPjQu-rgT3tjtWV-Beyt47jyjLlf/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Consultar os critérios de auditoria (abre em nova aba)">Consultar os critérios de auditoria <span aria-hidden="true">↗</span></a>
-          </nav>
         </article>
 
         <article class="story-step" id="etapa-03" data-story-step>
@@ -215,6 +196,11 @@
             </div>
           </section>
 
+          <aside class="semantic-summary" aria-labelledby="html-complementar-titulo">
+            <h3 id="html-complementar-titulo">Exame complementar do HTML</h3>
+            <p><strong>133 verificações</strong> em <strong>13 grupos</strong> para a estrutura semântica do HTML.</p>
+          </aside>
+
           <section class="audit-section" aria-labelledby="problemas-impactos-titulo">
             <h3 id="problemas-impactos-titulo">Três exemplos de problema e impacto</h3>
             <div class="finding-cases">
@@ -277,12 +263,22 @@
             <div class="predownload-intro">
               <p class="section-kicker">Exemplo de solução · Componente de pré-download</p>
               <h3 id="predownload-titulo">Entender o documento antes de abrir ou baixar</h3>
-              <p>Reúne as informações principais do arquivo e separa as ações de abrir e baixar.</p>
+              <p>Hoje, descrição, formato e tamanho dos documentos podem ficar dispersos, o que dificulta reconhecer e comparar arquivos antes do clique.</p>
             </div>
 
-            <div class="br-message info project-alert" role="note" aria-labelledby="problema-observado-titulo">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg>
-              <div><p id="problema-observado-titulo"><strong>Problema observado</strong></p><p>Hoje, descrição, formato e tamanho podem ficar dispersos, o que dificulta reconhecer e comparar documentos.</p></div>
+            <section class="guideline-quotes" aria-labelledby="orientacoes-download-titulo">
+              <h4 id="orientacoes-download-titulo">O que as orientações oficiais pedem</h4>
+              <div class="guideline-quotes-grid">
+                <figure><blockquote><p>“É necessário, também, <strong>informar o formato e o tamanho do arquivo no próprio texto do link</strong>, por exemplo: Manual do W3C (formato .odt, tamanho 150 Kb).”</p></blockquote><figcaption>Cartilha Gov.br de conteúdo acessível, 2023</figcaption></figure>
+                <figure><blockquote><p>“Um dos formatos mais acessíveis é o próprio HTML; por isso, disponibilize documentos nesse formato. Outra estratégia é <strong>oferecer várias opções de formatos, incluindo sempre o HTML e o ODF</strong>.”</p></blockquote><figcaption>Cartilha Gov.br de conteúdo acessível, 2023</figcaption></figure>
+                <figure><blockquote><p>“Junto com o nome <strong>deve ser agregada a extensão do arquivo</strong> que está sendo disponibilizado para download, para que o usuário saiba que tipo de documento está disponível para baixar. O seu conteúdo deve estar disponibilizado de forma mais simples possível, para facilitar a compreensão do usuário.”</p></blockquote><figcaption>Checklist eMAG de acessibilidade para deficientes visuais</figcaption></figure>
+                <figure><blockquote><p>“Sugere-se <strong>colocar a extensão junto com o nome do arquivo</strong>, para que o DV [deficiente visual] tenha conhecimento do tipo de arquivo que está sendo disponibilizado.”</p></blockquote><figcaption>Checklist eMAG para desenvolvedores, seção 2.2 Conteúdos</figcaption></figure>
+              </div>
+            </section>
+
+            <div class="br-message info project-alert" role="note" aria-labelledby="solucao-proposta-titulo">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.7 2.7L16.5 9"/></svg>
+              <div><p id="solucao-proposta-titulo"><strong>Solução proposta</strong></p><p>Um componente de pré-download que informe título, finalidade, data, formato, tamanho e licença antes do clique, mantendo as informações essenciais também disponíveis em HTML estruturado.</p></div>
             </div>
 
             <h3 class="demo-subheading">Demonstração funcional</h3>
