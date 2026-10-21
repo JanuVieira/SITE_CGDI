@@ -51,5 +51,4 @@ npm run build
 npm run check:artifact
 ```
 
-O build é criado em `_site/`. Essa pasta e os demais arquivos locais listados
-no `.gitignore` não fazem parte do código versionado.
+O build é criado em `_site/` e não faz parte do código versionado.
