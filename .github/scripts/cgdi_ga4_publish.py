@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Acrescenta GA4 com consentimento somente à cópia _site do GitHub Pages.
 
-Os arquivos sob projeto-inpi-cgdi/public NÃO são modificados.
+Os arquivos sob public NÃO são modificados.
 Este script roda DEPOIS de stamp_pages.py, no GitHub Actions.
 """
 from __future__ import annotations

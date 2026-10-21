@@ -1,0 +1,22 @@
+{
+  "name": "projeto-inpi-cgdi",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate:components": "node tools/scripts/gerar-bundle-componentes.mjs",
+    "secure:prototypes": "node tools/scripts/aplicar-seguranca-prototipos.mjs",
+    "disable:unavailable": "node tools/scripts/desabilitar-links-indisponiveis.mjs",
+    "check": "node tools/scripts/gerar-bundle-componentes.mjs --check && node tools/tests/validar-estrutura.mjs && node tools/tests/validar-dados-acessibilidade.mjs",
+    "check:mobile": "node tools/tests/validar-interacoes-mobile.mjs",
+    "check:responsive": "node tools/tests/validar-layouts-responsivos.mjs",
+    "check:browser": "node tools/tests/validar-navegador.mjs",
+    "check:artifact": "node tools/tests/validar-artefato.mjs",
+    "check:published": "node tools/tests/validar-artefato.mjs --final",
+    "build": "node tools/scripts/preparar-publicacao.mjs",
+    "dev": "node tools/scripts/servidor-local.mjs"
+  },
+  "engines": {
+    "node": ">=22 <26"
+  }
+}

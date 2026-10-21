@@ -30,7 +30,6 @@ jobs:
           node-version: 22
 
       - name: Validar o site ativo
-        working-directory: projeto-inpi-cgdi
         run: npm run check
 
       - name: Validar layouts e interações no Chrome
@@ -59,7 +58,7 @@ jobs:
 
           python3 -m http.server 4173 \
             --bind 127.0.0.1 \
-            --directory projeto-inpi-cgdi/public \
+            --directory public \
             >"$RUNNER_TEMP/cgdi-http.log" 2>&1 &
           server_pid=$!
 
@@ -88,19 +87,19 @@ jobs:
           done
           test "$ready" -eq 1
           "$chrome_bin" --version
-          npm --prefix projeto-inpi-cgdi run check:browser
+          npm run check:browser
 
       - name: Preparar publicação pela allowlist
         shell: bash
         run: |
           set -euo pipefail
-          npm --prefix 'projeto-inpi-cgdi' run build -- --output ../_site
-          test ! -e _site/quarentena
-          test ! -e _site/ferramentas
+          npm run build
+          test ! -e _site/archive
+          test ! -e _site/tools
           test ! -e _site/package.json
 
       - name: Validar artefato gerado
-        run: npm --prefix projeto-inpi-cgdi run check:artifact
+        run: npm run check:artifact
 
       - name: Atualizar cache a cada publicacao
         shell: bash
@@ -118,7 +117,7 @@ jobs:
             --site _site
 
       - name: Validar artefato final publicado
-        run: npm --prefix projeto-inpi-cgdi run check:published
+        run: npm run check:published
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5

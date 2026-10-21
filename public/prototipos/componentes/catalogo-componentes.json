@@ -1,0 +1,19 @@
+{
+  "versao": 3,
+  "paginaInicial": "../../index.html",
+  "prototiposAtivos": {
+    "estruturaAtualRevisada": "../estrutura-atual-revisada/index.html",
+    "orientadoAAcao": "../orientado-a-acao/index.html"
+  },
+  "componentes": {
+    "cabecalho": "portal/template.html#cgdi-portal-top",
+    "rodape": "portal/template.html#cgdi-portal-footer",
+    "calendario": "calendario/template.html#cgdi-calendar-template",
+    "cards": "cards/cards.css#cgdi-card",
+    "pesquisa": "pesquisa/pesquisa.js#cgdi-page-feedback",
+    "navegacaoPrototipos": "navegacao-prototipos/template.html#cgdi-prototype-nav-template",
+    "preDownload": "pre-download/pre-download.js#cgdi-pre-download",
+    "estruturaEditorial": "estrutura-editorial/estrutura-editorial.css"
+  },
+  "archivePublished": false
+}
