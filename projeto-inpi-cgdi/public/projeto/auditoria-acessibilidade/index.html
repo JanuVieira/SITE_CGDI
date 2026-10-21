@@ -39,6 +39,8 @@
     .audit-hero h1, .chapter h2, .chapter h3 { color: var(--ink); }
     .audit-hero h1 { max-width: 900px; margin: 0; font-size: clamp(3.5rem, 7vw, 5.75rem); font-weight: 720; letter-spacing: -.057em; line-height: .96; text-wrap: balance; }
 
+    .audit-lead { max-width: 760px; margin: 26px 0 0; color: var(--ink-soft); font-size: clamp(1.125rem, 2vw, 1.3rem); line-height: 1.55; }
+    .finding-copy .criterion-tag { display: inline-block; margin: 14px 0 0; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 12.5px; font-weight: 650; line-height: 1.5; }
     .doc-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
     .doc-links a { display: inline-flex; min-height: 44px; align-items: center; gap: 12px; padding: 10px 18px; border: 1px solid var(--ink); border-radius: 999px; color: var(--ink); font-size: 14px; font-weight: 700; text-decoration: none; }
     .doc-links a:hover { background: var(--surface); }
@@ -160,6 +162,7 @@
   <main class="audit-page" id="conteudo" tabindex="-1">
     <header class="audit-hero">
       <h1>Auditoria de acessibilidade</h1>
+      <p class="audit-lead">Resultados da auditoria das páginas e dos PDFs públicos do portal do INPI, com o impacto para quem usa o site e as prioridades de correção.</p>
       <nav class="doc-links" aria-label="Documentos da auditoria">
         <a href="https://drive.google.com/drive/folders/1OnPS7MlRquGe8Q18eP8Xe65L0jxMgogZ?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar as planilhas da auditoria (abre em nova aba)">Consultar as planilhas <span aria-hidden="true">↗</span></a>
         <a href="https://drive.google.com/drive/folders/1u791cSxtQ7Y1opNp4ETsPRGPNmP7GCii?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Consultar arquivos da base legal (abre em nova aba)">Consultar arquivos da base legal <span aria-hidden="true">↗</span></a>
@@ -220,7 +223,7 @@
           <div class="finding-list">
             <article class="finding"><div class="finding-value"><strong>195</strong><span>campos<br>em 70 documentos HTML</span></div><div class="finding-copy"><h3>Campos sem nome ligado a eles no código</h3><p>O campo não está ligado, no código, ao texto que explica o que deve ser preenchido (o rótulo).</p><p class="impact"><strong>Impacto.</strong> O leitor de tela pode anunciar apenas “campo de edição”, sem dizer o que digitar.</p></div></article>
             <article class="finding"><div class="finding-value"><strong>82</strong><span>botões<br>em 38 documentos HTML</span></div><div class="finding-copy"><h3>Botões sem nome em texto</h3><p class="impact"><strong>Impacto.</strong> A pessoa pode encontrar um botão sem saber o que vai acontecer ao acioná-lo.</p></div></article>
-            <article class="finding"><div class="finding-value"><strong>432</strong><span>links<br>em 136 documentos HTML</span></div><div class="finding-copy"><h3>Links sem texto identificado</h3><p class="impact"><strong>Impacto.</strong> A pessoa pode não saber para onde o link leva antes de acessá-lo.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>432</strong><span>links<br>em 136 documentos HTML</span></div><div class="finding-copy"><h3>Links sem texto identificado</h3><p class="impact"><strong>Impacto.</strong> A pessoa pode não saber para onde o link leva antes de acessá-lo.</p><p class="criterion-tag">Critério: WCAG 2.4.4</p></div></article>
           </div>
         </section>
 
@@ -228,10 +231,10 @@
           <p class="chapter-kicker">04 · Imagens</p>
           <h2 id="title-imagens">Quando as imagens não explicam o que mostram</h2>
           <p class="chapter-lead">Imagens que transmitem informação precisam de uma alternativa em texto, que o leitor de tela lê no lugar da imagem.</p>
-          <div class="hero-stat"><strong>284</strong><span>imagens sem texto alternativo</span><small>Em 125 páginas, após a triagem editorial.</small></div>
+          <div class="hero-stat"><strong>284</strong><span>imagens sem texto alternativo</span><small>Em 125 páginas, após a triagem editorial. Critério: WCAG 1.1.1.</small></div>
           <div class="finding-list">
-            <article class="finding"><div class="finding-value"><strong>2.588</strong><span>descrições em 155 páginas</span></div><div class="finding-copy"><h3>Descrições que parecem nome de arquivo</h3><p>A descrição pode trazer algo como “INVENCAO.jpg”, e é isso que o leitor de tela vai ler.</p></div></article>
-            <article class="finding"><div class="finding-value"><strong>210</strong><span>descrições em 10 páginas</span></div><div class="finding-copy"><h3>Descrições genéricas</h3><p>Palavras como “imagem” ou “foto” não dizem o que é importante naquele conteúdo.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>2.588</strong><span>descrições em 155 páginas</span></div><div class="finding-copy"><h3>Descrições que parecem nome de arquivo</h3><p>A descrição pode trazer algo como “INVENCAO.jpg”, e é isso que o leitor de tela vai ler.</p><p class="criterion-tag">Critério: WCAG 1.1.1</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>210</strong><span>descrições em 10 páginas</span></div><div class="finding-copy"><h3>Descrições genéricas</h3><p>Palavras como “imagem” ou “foto” não dizem o que é importante naquele conteúdo.</p><p class="criterion-tag">Critério: WCAG 1.1.1</p></div></article>
           </div>
           <aside class="note"><p>Não basta preencher o campo de descrição. O texto precisa explicar a informação ou a função da imagem.</p></aside>
         </section>
@@ -241,12 +244,12 @@
           <h2 id="title-paginas">Quando a página não deixa claro onde a pessoa está</h2>
           <p class="chapter-lead">Títulos ajudam as pessoas a saber onde estão, reconhecer o assunto e encontrar uma seção.</p>
           <div class="finding-list">
-            <article class="finding"><div class="finding-value"><strong>49</strong><span>de 5.952 registros HTML</span></div><div class="finding-copy"><h3>Sem título de documento</h3><p>Esse título aparece na aba do navegador, é a primeira informação que o leitor de tela anuncia e diz aos buscadores de que assunto a página trata.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>5.607</strong><span>de 5.952 registros HTML · 94,2%</span></div><div class="finding-copy"><h3>Sem resumo para buscadores (meta description)</h3><p>É um texto curto, que não aparece na página, usado pelos buscadores para resumir o conteúdo.</p></div></article>
             <article class="finding"><div class="finding-value"><strong>312</strong><span>de 5.952 registros HTML · 5,2%</span></div><div class="finding-copy"><h3>Sem título principal identificado (h1)</h3><p>Quem usa leitor de tela costuma procurar o título principal para saber onde o conteúdo começa.</p></div></article>
             <article class="finding"><div class="finding-value"><strong>218</strong><span>de 5.952 registros HTML</span></div><div class="finding-copy"><h3>Com saltos na ordem dos títulos</h3><p>A sequência de níveis pula etapas, por exemplo de h2 para h4. Isso dificulta navegar pulando de um título para o próximo.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>49</strong><span>de 5.952 registros HTML</span></div><div class="finding-copy"><h3>Sem título de documento</h3><p>Esse título aparece na aba do navegador, é a primeira informação que o leitor de tela anuncia e diz aos buscadores de que assunto a página trata.</p></div></article>
             <article class="finding"><div class="finding-value"><strong>47</strong><span>de 5.952 registros HTML</span></div><div class="finding-copy"><h3>Com mais de um título principal (h1)</h3><p>Com mais de um título principal, fica menos claro qual é o assunto central da página.</p></div></article>
             <article class="finding"><div class="finding-value"><strong>2</strong><span>de 5.952 registros HTML</span></div><div class="finding-copy"><h3>Sem idioma declarado no código da página</h3><p>Informar o idioma ajuda o leitor de tela a escolher a pronúncia correta.</p></div></article>
-            <article class="finding"><div class="finding-value"><strong>5.607</strong><span>de 5.952 registros HTML · 94,2%</span></div><div class="finding-copy"><h3>Sem resumo para buscadores (meta description)</h3><p>É um texto curto, que não aparece na página, usado pelos buscadores para resumir o conteúdo.</p></div></article>
           </div>
         </section>
 
@@ -266,12 +269,13 @@
         <section class="chapter" id="links" aria-labelledby="title-links">
           <p class="chapter-kicker">07 · Links</p>
           <h2 id="title-links">Quando os links não explicam o destino</h2>
-          <div class="hero-stat"><strong>319</strong><span>links com nomes genéricos, como “clique aqui”</span><small>Em 105 páginas</small></div>
+          <div class="hero-stat"><strong>319</strong><span>links com nomes genéricos, como “clique aqui”</span><small>Em 105 páginas. Critério: WCAG 2.4.4.</small></div>
           <p class="prose">Expressões como “clique aqui” e “acesse aqui” pedem uma ação, mas não dizem qual informação será aberta. “Consultar classificação de marcas” é mais claro.</p>
           <h3 class="subheading">Downloads sem informações suficientes</h3>
           <div class="finding-list">
-            <article class="finding"><div class="finding-value"><strong>6.402</strong><span>links de download em 578 páginas</span></div><div class="finding-copy"><h3>Links de download sem tamanho do arquivo</h3></div></article>
-            <article class="finding"><div class="finding-value"><strong>1.409</strong><span>de 4.236 PDFs diferentes · 33,3%</span></div><div class="finding-copy"><h3>Arquivos acima de 1 MB</h3><p>Saber o formato e o tamanho antes de clicar ajuda quem usa dados móveis ou tem conexão limitada.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>6.402</strong><span>links de download em 578 páginas</span></div><div class="finding-copy"><h3>Links de download sem tamanho do arquivo</h3><p class="impact"><strong>Impacto.</strong> Quem tem conexão limitada não consegue prever quanto vai baixar antes de clicar.</p><p class="criterion-tag">Critério: eMAG — links e documentos</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>568</strong><span>páginas com links para PDF</span></div><div class="finding-copy"><h3>Links que não indicam o formato PDF</h3><p class="impact"><strong>Impacto.</strong> A pessoa pode abrir um documento sem saber que vai sair da página.</p><p class="criterion-tag">Critério: eMAG — links e documentos</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>1.409</strong><span>de 4.236 PDFs diferentes · 33,3%</span></div><div class="finding-copy"><h3>Arquivos acima de 1 MB</h3><p class="impact"><strong>Impacto.</strong> Arquivos grandes demoram mais e consomem mais dados móveis.</p></div></article>
           </div>
         </section>
 
@@ -279,9 +283,9 @@
           <p class="chapter-kicker">08 · Conteúdo</p>
           <h2 id="title-conteudo">Quando o conteúdo é difícil de percorrer</h2>
           <div class="finding-list">
-            <article class="finding"><div class="finding-value"><strong>2.824</strong><span>parágrafos em 183 páginas</span></div><div class="finding-copy"><h3>Parágrafos extensos</h3><p>Um dos exemplos é um parágrafo de <strong class="number-highlight">185 palavras</strong> em uma orientação sobre pedidos de patente. Blocos longos obrigam a ler, ou ouvir, muito mais para achar uma instrução.</p></div></article>
-            <article class="finding"><div class="finding-value"><strong>5.941</strong><span>siglas em 1.103 páginas</span></div><div class="finding-copy"><h3>Siglas sem explicação por perto</h3><p>Siglas como PCT, RPI e CUP podem ser desconhecidas para quem procura um serviço pela primeira vez.</p></div></article>
-            <article class="finding"><div class="finding-value"><strong>222</strong><span>listas em 119 páginas</span></div><div class="finding-copy"><h3>Listas que não estão marcadas como lista</h3><p>Para quem vê, o conteúdo parece uma lista. O leitor de tela, porém, pode não reconhecê-lo e deixar de avisar quantos itens existem e onde cada um começa.</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>2.824</strong><span>parágrafos em 183 páginas</span></div><div class="finding-copy"><h3>Parágrafos extensos</h3><p>Um dos exemplos é um parágrafo de <strong class="number-highlight">185 palavras</strong> em uma orientação sobre pedidos de patente. Blocos longos obrigam a ler, ou ouvir, muito mais para achar uma instrução.</p><p class="criterion-tag">Critério: linguagem simples e legibilidade</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>5.941</strong><span>siglas em 1.103 páginas</span></div><div class="finding-copy"><h3>Siglas sem explicação por perto</h3><p>Siglas como PCT, RPI e CUP podem ser desconhecidas para quem procura um serviço pela primeira vez.</p><p class="criterion-tag">Critério: WCAG 3.1.4</p></div></article>
+            <article class="finding"><div class="finding-value"><strong>222</strong><span>listas em 119 páginas</span></div><div class="finding-copy"><h3>Listas que não estão marcadas como lista</h3><p>Para quem vê, o conteúdo parece uma lista. O leitor de tela, porém, pode não reconhecê-lo e deixar de avisar quantos itens existem e onde cada um começa.</p><p class="criterion-tag">Critério: WCAG 1.3.1</p></div></article>
           </div>
         </section>
 
@@ -296,10 +300,10 @@
           <p class="chapter-kicker">10 · Melhorias</p>
           <h2 id="title-melhorias">Por onde começar as melhorias</h2>
           <ol class="priority-list">
-            <li><h3>Garantir o acesso aos documentos</h3><div><p>Começar pelos PDFs necessários para usar os serviços: incluir texto legível, idioma, título e estrutura interna.</p><p class="priority-ref">Capítulos 01 e 02</p></div></li>
-            <li><h3>Corrigir formulários, botões e links</h3><div><p>Revisar os campos, botões e links sem nome. Conferir também as áreas de toque que podem ser pequenas demais para o dedo e as páginas que obrigam a arrastar a tela para os lados.</p><p class="priority-ref">Capítulo 03</p></div></li>
-            <li><h3>Melhorar a organização e a busca por informações</h3><div><p>Revisar os títulos das páginas, os links com nomes genéricos, as siglas sem explicação, os parágrafos extensos e os caminhos de navegação mais longos.</p><p class="priority-ref">Capítulos 05 a 08</p></div></li>
-            <li><h3>Melhorar a publicação de novos conteúdos</h3><div><p>Definir verificações antes de publicar páginas, imagens e arquivos, começando pelos alertas que mais se repetem: downloads sem tamanho, descrições de imagem parecidas com nomes de arquivo e páginas sem resumo para buscadores.</p><p class="priority-ref">Capítulos 04, 05 e 07</p></div></li>
+            <li><h3>Garantir o acesso aos documentos</h3><div><p>Começar pelos PDFs necessários para usar os serviços: incluir texto legível, idioma, título e estrutura interna.</p><p class="priority-ref">Capítulos <a href="#documentos">01</a> e <a href="#estrutura">02</a></p></div></li>
+            <li><h3>Corrigir formulários, botões e links</h3><div><p>Revisar os campos, botões e links sem nome. Conferir também as áreas de toque que podem ser pequenas demais para o dedo e as páginas que obrigam a arrastar a tela para os lados.</p><p class="priority-ref">Capítulo <a href="#interacoes">03</a></p></div></li>
+            <li><h3>Melhorar a organização e a busca por informações</h3><div><p>Revisar os títulos das páginas, os links com nomes genéricos, as siglas sem explicação, os parágrafos extensos e os caminhos de navegação mais longos.</p><p class="priority-ref">Capítulos <a href="#paginas">05</a> a <a href="#conteudo-editorial">08</a></p></div></li>
+            <li><h3>Melhorar a publicação de novos conteúdos</h3><div><p>Definir verificações antes de publicar páginas, imagens e arquivos, começando pelos alertas que mais se repetem: downloads sem tamanho, descrições de imagem parecidas com nomes de arquivo e páginas sem resumo para buscadores.</p><p class="priority-ref">Capítulos <a href="#imagens">04</a>, <a href="#paginas">05</a> e <a href="#links">07</a></p></div></li>
           </ol>
           <aside class="note"><h3>Como definir a ordem?</h3><p>Primeiro, os conteúdos necessários para concluir serviços. Depois, os componentes que se repetem em várias páginas. Por fim, os demais ajustes editoriais.</p></aside>
         </section>

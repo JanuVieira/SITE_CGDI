@@ -158,10 +158,10 @@
           </aside>
 
           <div class="evidence-grid evidence-grid--process" aria-label="Evidências visuais do mapeamento e da coleta">
-            <figure class="evidence-figure evidence-figure--wide"><a href="./assets/img/processo/mapa-navegacao-figma.webp"><img src="./assets/img/processo/mapa-navegacao-figma.webp" alt="Captura do mapa manual de páginas e caminhos da CGDI no Figma" loading="lazy"></a><figcaption><strong>Mapa de páginas no Figma.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure"><a href="./assets/img/processo/mapa-navegacao-figma.webp"><img src="./assets/img/processo/mapa-navegacao-figma.webp" alt="Captura do mapa manual de páginas e caminhos da CGDI no Figma" loading="lazy"></a><figcaption><strong>Mapa de páginas no Figma.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
             <figure class="evidence-figure"><a href="./assets/img/processo/02-codigo-crawler.webp"><img src="./assets/img/processo/02-codigo-crawler.webp" alt="Trecho do programa usado para percorrer o portal" loading="lazy"></a><figcaption><strong>Código do crawler.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
             <figure class="evidence-figure"><a href="./assets/img/processo/lista-urls-crawler.webp"><img src="./assets/img/processo/lista-urls-crawler.webp" alt="Captura da planilha que relaciona identificadores aos endereços encontrados pelo crawler" loading="lazy"></a><figcaption><strong>Planilha de endereços.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
-            <figure class="evidence-figure evidence-figure--wide"><a href="./assets/img/processo/04-arquivos-coletados.webp"><img src="./assets/img/processo/04-arquivos-coletados.webp" alt="Captura das pastas dos arquivos preservados, nomeadas com os identificadores da planilha" loading="lazy"></a><figcaption><strong>Arquivos preservados.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
+            <figure class="evidence-figure"><a href="./assets/img/processo/04-arquivos-coletados.webp"><img src="./assets/img/processo/04-arquivos-coletados.webp" alt="Captura das pastas dos arquivos preservados, nomeadas com os identificadores da planilha" loading="lazy"></a><figcaption><strong>Arquivos preservados.</strong> <span>Selecione para ampliar.</span></figcaption></figure>
           </div>
         </article>
 
@@ -247,8 +247,8 @@
           </header>
 
           <div class="proposal-grid">
-            <article><p>Proposta 01</p><h3>Revisão da estrutura atual</h3><p>Melhora conteúdo, navegação, interface e acessibilidade, mantendo a organização atual.</p><a class="action-link" href="../../prototipos/estrutura-atual-revisada/index.html">Ver protótipo da proposta 01 <span aria-hidden="true">→</span></a></article>
-            <article><p>Proposta 02</p><h3>Experiência orientada à ação</h3><p>Organiza as informações a partir das tarefas de quem usa o portal.</p><a class="action-link" href="../../prototipos/orientado-a-acao/index.html">Ver protótipo da proposta 02 <span aria-hidden="true">→</span></a></article>
+            <article><img class="proposal-thumb" src="./assets/img/processo/prototipo-v1.webp" width="960" height="558" alt="Primeira tela do protótipo da proposta 01, com cards de ações, guias e calendário de eventos" loading="lazy"><p>Proposta 01</p><h3>Revisão da estrutura atual</h3><p>Melhora conteúdo, navegação, interface e acessibilidade, mantendo a organização atual.</p><a class="action-link" href="../../prototipos/estrutura-atual-revisada/index.html">Ver protótipo da proposta 01 <span aria-hidden="true">→</span></a></article>
+            <article><img class="proposal-thumb" src="./assets/img/processo/prototipo-v2.webp" width="960" height="558" alt="Primeira tela do protótipo da proposta 02, com destaque para uma notícia em formato de banner" loading="lazy"><p>Proposta 02</p><h3>Experiência orientada à ação</h3><p>Organiza as informações a partir das tarefas de quem usa o portal.</p><a class="action-link" href="../../prototipos/orientado-a-acao/index.html">Ver protótipo da proposta 02 <span aria-hidden="true">→</span></a></article>
           </div>
 
           <section class="predownload-demo" aria-labelledby="predownload-titulo">
@@ -274,7 +274,8 @@
                 <p>Critério escrito a partir das fontes</p>
                 <blockquote>Os links para documentos devem informar o formato e o tamanho do arquivo no próprio texto do link, com o conteúdo oferecido preferencialmente em HTML, nas páginas que disponibilizam arquivos para download, a fim de que as pessoas, inclusive as que usam leitores de tela, saibam que tipo de documento vão abrir ou baixar, conforme o eMAG 3.1, a Cartilha Gov.br de conteúdo acessível e os checklists eMAG.</blockquote>
               </div>
-              <div class="method-highlight predownload-reach" aria-label="Indexação e monitoramento">
+              <div class="method-highlight predownload-reach" role="group" aria-labelledby="pd-alcance-titulo">
+                <h5 id="pd-alcance-titulo">Indexação e monitoramento</h5>
                 <ul>
                 <li><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><div><strong>Indexação nos buscadores</strong><p>Título, resumo, formato e assuntos escritos em HTML ficam legíveis para buscadores e leitores de tela, sem abrir o arquivo. O Google indexa páginas HTML e também PDF.</p></div></li>
                 <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><strong>Monitoramento de downloads</strong><p>Na medição otimizada do Google Analytics 4, cliques em links para arquivos, como .pdf, geram o evento <code>file_download</code>, com nome, extensão e texto do link. Abrir e baixar, separados no componente, podem ter eventos próprios.</p></div></li>
@@ -283,7 +284,8 @@
               </div>
             </section>
 
-            <section class="pd-step" aria-label="Demonstração do componente de pré-download">
+            <section class="pd-step" aria-labelledby="pd-demo-titulo">
+              <header class="pd-step-heading"><span aria-hidden="true">03</span><h4 id="pd-demo-titulo">Demonstração</h4></header>
             <div class="demo-controls" data-variant-selector data-version="component" aria-label="Controles da demonstração">
               <fieldset class="variant-group">
                 <legend><span class="variant-step" aria-hidden="true">1</span> Visualização</legend>
@@ -359,5 +361,6 @@
       </div>
     </div>
   </main>
+  <footer class="report-footer"><p>Conheça o projeto · INPI | CGDI</p></footer>
 </body>
 </html>
